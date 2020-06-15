@@ -1,6 +1,7 @@
 import csv
 import io
 import os
+from pathlib import Path
 
 from flask import Flask
 from flask import current_app, jsonify
@@ -13,12 +14,14 @@ cache = Cache()
 
 
 def create_app():
-    app = Flask(__name__)
+    app = Flask(__name__, template_folder=Path(__file__).parent.joinpath('templates'))
     cache.init_app(app, config={'CACHE_TYPE': 'simple'})
     app.sheet_values = get_values_from_sheet
     _ = app.sheet_values()  # cache on startup
     from app.blueprints.api import api_blueprint
     app.register_blueprint(api_blueprint)
+    from app.blueprints.site import site_blueprint
+    app.register_blueprint(site_blueprint)
     return app
 
 

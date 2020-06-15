@@ -1,0 +1,90 @@
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6570bf;
+}
+
+h1 {
+  margin-left: 4px;
+}
+
+.navbar {
+  margin-left: 4px;
+  margin-bottom: 20px;
+}
+
+.albumframe {
+  display: inline-grid;
+  border: 2px solid #6570bf;
+  border-radius: 5px;
+  margin: 5px;
+  width: 260px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(69,69,69,1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(69,69,69,1);
+  box-shadow: 5px 5px 5px 0px rgba(69,69,69,1);
+}
+
+.cover {
+  background-color: #6570bf;
+  padding: 5px;
+}
+
+.cover:hover {
+  background-color: #6570bf;
+}
+
+.albumframe:hover {
+  border: 2px solid #0000aa;
+}
+
+.cover img {
+  height:250px;
+}
+
+.blurb {
+  padding: 5px;
+  background-color: #eeeeee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  min-height: 3.5em;
+}
+
+a {
+  color: #6570bf;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0000aa;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body style="background-color: black">
+<div id="bandcamplist">
+
+</div>
+</body>
+
+<script>
+(function() {
+    const sheet_list = "{{ api_url }}";
+    const urlParams = new URLSearchParams(window.location.search);
+    var q = urlParams.get('q') || "";
+    var mode = urlParams.get('mode') || "location";
+
+    $.getJSON( sheet_list ).done(function( mainlist ) {
+      
+      $.each( mainlist, function( key, entry ) {
+        $('#bandcamplist').append(`<a href="${entry.link}" target="_blank"><div class="albumframe"><div class="cover"><img src="${entry.img}" /></div><div class="blurb">${entry.name} - ${entry.location}</div></div></a>`);
+      });
+    });
+})();
+</script>
