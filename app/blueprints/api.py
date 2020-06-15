@@ -1,3 +1,5 @@
+import os
+
 from flask import Blueprint
 from flask import current_app, jsonify
 
@@ -9,4 +11,7 @@ api_blueprint = Blueprint(name='api',
 
 @api_blueprint.route('/list', methods=['GET'])
 def sheet():
-    return jsonify(current_app.sheet_values())
+    db = api_blueprint.config['DB']
+    db_name = os.environ['DB_NAME']
+    docs = db.collection(db_name).stream()
+    return jsonify([doc.to_dict() for doc in docs])
