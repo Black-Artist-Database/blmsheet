@@ -22,6 +22,9 @@ def sheet():
     if request.args.get('location'):
         entries = entries.where('location', '==', request.args.get('location'))
 
+    if request.args.get('first_letter'):
+        entries = entries.where('name_first_letter', '==', request.args.get('first_letter'))
+
     results = entries.get()
     return jsonify([result.to_dict() for result in results])
 
