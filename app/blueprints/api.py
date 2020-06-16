@@ -39,7 +39,7 @@ def locations():
         item = entry.to_dict()
         locations.add(item['location'].strip())
 
-    return jsonify(list(locations))
+    return jsonify(sorted(list(locations)))
 
 
 @api_blueprint.route('/genres', methods=['GET'])
@@ -56,4 +56,4 @@ def genres():
         for genre in item['genre']:
             genres.add(genre.strip())
     
-    return jsonify(list(genres))
+    return jsonify(sorted(list(genres)))
