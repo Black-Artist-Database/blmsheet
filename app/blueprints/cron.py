@@ -56,8 +56,8 @@ def get_values_from_sheet():
             try:
                 value = row[i]
                 if field == 'genre':
-                    value = list(map(lambda x:x.lower(), value.replace('/', ',').split(','))
-                
+                    #normalise genres, allow for separation with slashes rather than columns
+                    value = [genre.lower().strip() for genre in value.replace('/', ',').split(',')]
                 obj[field] = value
             except IndexError:
                 obj[field] = ''  # some fields may be empty which truncates the row data
