@@ -24,3 +24,20 @@ def sheet():
 
     results = entries.get()
     return jsonify([result.to_dict() for result in results])
+
+
+@api_blueprint.route('/locations', methods=['GET'])
+def locations():
+    db = api_blueprint.config['DB']
+    db_name = os.environ['DB_NAME']
+
+    entries = db.collection(db_name).get()
+
+    locations = set()
+
+    for entry in entries:
+        item = entry.to_dict()
+        locations.add(item['location'].strip())
+    
+    #set() unique-ifies the list, then convert back to list so it can be jsonify'd
+    return jsonify(list(locations))
