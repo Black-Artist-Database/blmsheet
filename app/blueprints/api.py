@@ -33,7 +33,7 @@ def locations():
 
     entries = db.collection(db_name).get()
 
-    locations = []
+    locations = set()
 
     for entry in entries:
         item = entry.to_dict()
