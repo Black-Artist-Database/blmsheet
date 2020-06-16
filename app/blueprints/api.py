@@ -50,13 +50,12 @@ def genres():
 
     entries = db.collection(db_name).get()
 
-    genres = []
+    genres = set()
 
     for entry in entries:
         item = entry.to_dict()
-
         for genre in item['genre']:
-            genres.append(genre.strip().title())
+            genres.add(genre.strip())
     
     #set() unique-ifies the list, then convert back to list so it can be jsonify'd
-    return jsonify(list(set(genres)))
+    return jsonify(list(genres))
