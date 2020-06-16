@@ -27,11 +27,11 @@ def entry_list():
             entries = entries.where('location', '==', request.args.get('location'))
 
         if request.args.get('first_letter'):
-            entries = entries.where('name_first_letter', '==', request.args.get('first_letter'))
+            entries = entries.where('name_first_letter', '==', request.args.get('first_letter').lower())
 
         results = [entry.to_dict() for entry in entries.get()]
         cache.set(cache_key, results, timeout=60 * 30)
-        
+
     return jsonify(results)
 
 
