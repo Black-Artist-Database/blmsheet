@@ -10,14 +10,16 @@ Data sourced from the public ["*1800+ Black Producers / Artists / Labels for Ban
 
 To run the Dockerfile locally as a container using [Docker](https://www.docker.com/):
 - create a [service account](https://cloud.google.com/docs/authentication/getting-started) JSON file
+- create a new Google API key in the [Credentials](https://console.developers.google.com/apis/credentials) manager
 - create a file called something like `.env` with:
 ```
 SHEET_ID=1OIUBp4kFxmpWJihhq6WLwJQR1Am4DsD59bEYlJZxeGY
 TAB_ID=Original Sheet
 START_ROW=5
 DB_NAME=entries
-GOOGLE_APPLICATION_CREDENTIALS=blmsheet.json  # service account JSON file
+GOOGLE_APPLICATION_CREDENTIALS=[service_account.json]
 PORT=30808
+API_KEY=[google API key string]
 ```
 - `docker build . -t blmsheet  # builds the container image`
 - `docker run --env-file=.env -d -p 30808:30808 blmsheet  # starts a detached container mapping your local port to the service port`
