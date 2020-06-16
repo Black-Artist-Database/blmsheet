@@ -1,8 +1,8 @@
 # blmsheet
 
-Proof of concept for turning a Google Sheet into a simple API deployed to [Cloud Run](https://cloud.google.com/run/). Built using [Python](https://www.python.org/) & the [Flask](https://flask.palletsprojects.com/) web framework. 
+Proof of concept for turning a Google Sheet into a simple API deployed to [Cloud Run](https://cloud.google.com/run/). Built using **[Python](https://www.python.org/)** & the **[Flask](https://flask.palletsprojects.com/)** web framework. 
 
-Data sourced from the public ["*1800+ Black Producers / Artists / Labels for Bandcamp Day*"](https://docs.google.com/spreadsheets/d/1OIUBp4kFxmpWJihhq6WLwJQR1Am4DsD59bEYlJZxeGY/edit#gid=0).
+Data sourced from the public **["*1800+ Black Producers / Artists / Labels for Bandcamp Day*"](https://docs.google.com/spreadsheets/d/1OIUBp4kFxmpWJihhq6WLwJQR1Am4DsD59bEYlJZxeGY/edit#gid=0)**.
 
 
 
@@ -54,7 +54,7 @@ API_KEY=[GOOGLE_API_KEY_STRING]
 ## Deployment
 
 To deploy the containerised application to Google Cloud Run make sure the following are set and that you have access to the specified Google Cloud Project:
-```
+```bash
 export PROJECT_ID="[GCP_PROJECT_ID]"
 export SERVICE_ID="[GOOGLE_CLOUD_RUN_SERVICE_ID]"
 ```
