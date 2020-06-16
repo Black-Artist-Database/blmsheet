@@ -1,0 +1,6 @@
+grpcio
+Flask
+Flask-Caching
+gunicorn
+google-api-python-client
+google-cloud-firestore
