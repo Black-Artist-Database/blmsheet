@@ -31,7 +31,6 @@ def entry_list():
 
         results = [entry.to_dict() for entry in entries.get()]
         cache.set(cache_key, results, timeout=60 * 30)
-
     return jsonify(results)
 
 
