@@ -38,6 +38,22 @@ def locations():
     for entry in entries:
         item = entry.to_dict()
         locations.add(item['location'].strip())
+
+    return jsonify(sorted(list(locations)))
+
+
+@api_blueprint.route('/genres', methods=['GET'])
+def genres():
+    db = api_blueprint.config['DB']
+    db_name = os.environ['DB_NAME']
+
+    entries = db.collection(db_name).get()
+
+    genres = set()
+
+    for entry in entries:
+        item = entry.to_dict()
+        for genre in item['genre']:
+            genres.add(genre.strip())
     
-    #set() unique-ifies the list, then convert back to list so it can be jsonify'd
-    return jsonify(list(locations))
+    return jsonify(sorted(list(genres)))
