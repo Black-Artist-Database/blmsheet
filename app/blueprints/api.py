@@ -37,7 +37,7 @@ def locations():
 
     for entry in entries:
         item = entry.to_dict()
-        locations.append(item['location'].strip().title())
+        locations.add(item['location'].strip())
     
     #set() unique-ifies the list, then convert back to list so it can be jsonify'd
     return jsonify(list(locations))
