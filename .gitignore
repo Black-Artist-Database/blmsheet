@@ -19,4 +19,5 @@ build/
 .python-version
 
 .vscode/
-*.env
+*.env*
+**/*.json
