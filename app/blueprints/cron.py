@@ -39,8 +39,11 @@ def set_values_to_database(values):
 
 
 def get_values_from_sheet():
-    credentials = compute_engine.Credentials()
-    service = build('sheets', 'v4', credentials=credentials)
+    if 'API_KEY' in os.environ:
+        service = build('sheets', 'v4', developerKey=os.environ['API_KEY'])
+    else:
+        credentials = compute_engine.Credentials()
+        service = build('sheets', 'v4', credentials=credentials)
     sheet = service.spreadsheets()
     sheet_range = f"{os.environ['TAB_ID']}!A{os.environ['START_ROW']}:E"
     result = sheet.values().get(spreadsheetId=os.environ['SHEET_ID'],
