@@ -13,5 +13,5 @@ api_blueprint = Blueprint(name='api',
 def sheet():
     db = api_blueprint.config['DB']
     db_name = os.environ['DB_NAME']
-    docs = db.collection(db_name).stream()
-    return jsonify([doc.to_dict() for doc in docs])
+    entries = db.collection(db_name).stream()
+    return jsonify([entry.to_dict() for entry in entries])
