@@ -51,7 +51,11 @@ def get_values_from_sheet():
         # NB: sheet headers may change!
         for i, field in enumerate(['name', 'location', 'type', 'link', 'genre', 'notes']):
             try:
-                obj[field] = row[i]
+                value = row[i]
+                if field == 'genre':
+                    value = list(map(lambda x:x.lower(), value.replace('/', ',').split(','))
+                
+                obj[field] = value
             except IndexError:
                 obj[field] = ''  # some fields may be empty which truncates the row data
             values.append(obj)
