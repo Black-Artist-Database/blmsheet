@@ -10,37 +10,73 @@ api_blueprint = Blueprint(name='api',
 
 
 @api_blueprint.route('/list', methods=['GET'])
-def sheet():
-    db = api_blueprint.config['DB']
-    db_name = os.environ['DB_NAME']
+def entry_list():
+    cache = api_blueprint.config['CACHE']
+    cache_key = request.full_path
+    results = cache.get(cache_key)
+    if results is None:
+        db = api_blueprint.config['DB']
+        db_name = os.environ['DB_NAME']
 
-    entries = db.collection(db_name)
+        entries = db.collection(db_name)
 
-    if request.args.get('genre'):
-        entries = entries.where('genre', 'array_contains', request.args.get('genre'))
-    
-    if request.args.get('location'):
-        entries = entries.where('location', '==', request.args.get('location'))
+        if request.args.get('genre'):
+            entries = entries.where('genre', 'array_contains', request.args.get('genre'))
 
-    if request.args.get('first_letter'):
-        entries = entries.where('name_first_letter', '==', request.args.get('first_letter'))
+        if request.args.get('location'):
+            entries = entries.where('location', '==', request.args.get('location'))
 
-    results = entries.get()
-    return jsonify([result.to_dict() for result in results])
+        if request.args.get('first_letter'):
+            entries = entries.where('name_first_letter', '==', request.args.get('first_letter'))
+
+        results = [entry.to_dict() for entry in entries.get()]
+        cache.set(cache_key, results, timeout=60 * 30)
+        
+    return jsonify(results)
 
 
 @api_blueprint.route('/locations', methods=['GET'])
 def locations():
-    db = api_blueprint.config['DB']
-    db_name = os.environ['DB_NAME']
+    cache = api_blueprint.config['CACHE']
+    cache_key = 'locations'
+    locations = cache.get(cache_key)
 
-    entries = db.collection(db_name).get()
+    if locations is None:
+        db = api_blueprint.config['DB']
+        db_name = os.environ['DB_NAME']
 
-    locations = set()
+        entries = db.collection(db_name).get()
 
-    for entry in entries:
-        item = entry.to_dict()
-        locations.add(item['location'].strip())
-    
-    #set() unique-ifies the list, then convert back to list so it can be jsonify'd
-    return jsonify(list(locations))
+        locations = set()
+
+        for entry in entries:
+            item = entry.to_dict()
+            locations.add(item['location'].strip())
+
+        locations = sorted(list(locations))
+        cache.set(cache_key, locations, timeout=60 * 60 * 2)
+    return jsonify(locations)
+
+
+@api_blueprint.route('/genres', methods=['GET'])
+def genres():
+    cache = api_blueprint.config['CACHE']
+    cache_key = 'genres'
+    genres = cache.get(cache_key)
+
+    if genres is None:
+        db = api_blueprint.config['DB']
+        db_name = os.environ['DB_NAME']
+
+        entries = db.collection(db_name).get()
+
+        genres = set()
+
+        for entry in entries:
+            item = entry.to_dict()
+            for genre in item['genre']:
+                genres.add(genre.strip())
+
+        genres = sorted(list(genres))
+        cache.set(cache_key, genres, timeout=60 * 60 * 2)
+    return jsonify(genres)
