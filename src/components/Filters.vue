@@ -14,17 +14,17 @@
   <form class="d-block w-100">
     <div class="form-inline">
       <div class="input-group mr-3">
-        <select>
+        <select v-model="filters.genre">
           <option>Genre</option>
-          <option v-for="genre in genresData" :value="genre" v-bind:key="genre">
+          <option v-for="genre in genresData" :value="genre" :key="genre">
               {{ genre }}
           </option>
         </select>
       </div>
       <div class="input-group">
-        <select>
+        <select v-model="filters.location">
           <option value="-">Location</option>
-          <option v-for="location in locationsData" :value="location" v-bind:key="location">
+          <option v-for="location in locationsData" :value="location" :key="location">
               {{ location }}
           </option>
         </select>
@@ -35,6 +35,7 @@
           {{ letter }}
         </li>
     </ul>
+
   </form>
 </nav>
 </template>
@@ -44,12 +45,16 @@ import axios from 'axios';
 
 export default {
   name: 'Filters',
+  props: {
+    filters: Object
+  },
   mounted(){
     this.fetchGenres();
     this.fetchLocations();
   },
   data: function() {
     return {
+      
       genresData: [],
       locationsData: [],
       alphabet: 'abcdefghijklmnopqrstuvwxyz#'.split(''),

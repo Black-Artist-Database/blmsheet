@@ -1,55 +1,14 @@
 <template>
   <div class="container mt-3">
-    <Filters name="Welcome to Your Vue.js App"/>
+    <h2>A crowd-sourced list of black artists on Bandcamp.</h2>
+    <Filters name="Welcome to Your Vue.js App" :filters="filters"/>
 
       <div class="d-flex flex-wrap">
-        <Card 
-          name="Artist A" 
-          location="US" 
-          link="https://efacility.bandcamp.com/" 
-          genres="['techno', 'house', 'disco']"
-        />
-        <Card 
-          name="Artist B" 
-          location="US" 
-          link="https://efacility.bandcamp.com/" 
-          genres="['techno', 'house', 'disco']"
-        />
-        <Card 
-          name="Artist C" 
-          location="US" 
-          link="https://efacility.bandcamp.com/" 
-          genres="['techno', 'house', 'disco']"
-        />
-        <Card 
-          name="Artist D" 
-          location="US" 
-          link="https://efacility.bandcamp.com/" 
-          genres="['techno', 'house', 'disco']"
-        />
-        <Card 
-          name="Artist A" 
-          location="US" 
-          link="https://efacility.bandcamp.com/" 
-          genres="['techno', 'house', 'disco']"
-        />
-        <Card 
-          name="Artist B" 
-          location="US" 
-          link="https://efacility.bandcamp.com/" 
-          genres="['techno', 'house', 'disco']"
-        />
-        <Card 
-          name="Artist C" 
-          location="US" 
-          link="https://efacility.bandcamp.com/" 
-          genres="['techno', 'house', 'disco']"
-        />
-        <Card 
-          name="Artist D" 
-          location="US" 
-          link="https://efacility.bandcamp.com/" 
-          genres="['techno', 'house', 'disco']"
+        <Card v-for="(item, index) in list"
+          :key="index"
+          :name="item.name" 
+          :location="item.location" 
+          :link="item.link" 
         />
     </div>
     
@@ -58,6 +17,7 @@
 
 <script>
 // @ is an alias to /src
+import axios from 'axios';
 import Filters from '@/components/Filters.vue'
 import Card from '@/components/Card.vue'
 
@@ -66,6 +26,34 @@ export default {
   components: {
     Filters,
     Card
+  },
+  data: () => ({
+    list: [],
+    filters: {
+      genre: null,
+      location: null,
+    },
+  }),
+  watch: {
+    'filters.genre': function () {
+      this.fetchList()
+    },
+    'filters.location': function () {
+      this.fetchList()
+    }
+  },
+  mounted(){
+    this.fetchList()
+  },
+  methods: {
+    fetchList(){
+        
+        axios.get('http://localhost:5000/api/list', { params: this.filters })
+        .then((response) => (
+            this.list = response.data
+            ))
+    }
   }
+
 }
 </script>
