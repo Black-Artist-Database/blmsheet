@@ -20,7 +20,7 @@ def scrape_and_update_bandcamp_details(event, context):
     entry_key = message['key']
 
     image_url, location = scrape_bandcamp_location_and_image_url(entry['link'])
-    location_tags = [part.lower().strip() for part in location.split(',')]
+    location_tags = [part.lower().strip() for part in location.split(',')] if location else []
 
     entry['bandcamp_image_url'] = image_url
     entry['bandcamp_location'] = location
