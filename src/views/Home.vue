@@ -4,8 +4,7 @@
     <Filters :filters="filters"/>
       
       <div v-if="list.length === 0" class="m-4">No results found, try broadening your search or <a href="/">reset all filters</a>.</div>
-
-      <div class="d-flex flex-wrap">
+      <div class="row">
         <Card v-for="(item, index) in list"
           :key="index"
           :name="item.name" 
