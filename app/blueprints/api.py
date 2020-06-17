@@ -89,3 +89,10 @@ def genres():
         genres = sorted(list(genres))
         cache.set(cache_key, genres, timeout=60 * 60 * 2)
     return jsonify(genres)
+
+
+@api_blueprint.route('/clear', methods=['POST'])
+def clear_cache():
+    cache = api_blueprint.config['CACHE']
+    cache.clear()
+    return 'OK', 200
