@@ -57,7 +57,9 @@ def locations():
 
         for entry in entries:
             item = entry.to_dict()
-            locations.add(item['location'].strip())
+            for part in item['location_tags']:
+                if part:
+                    locations.add(part.strip())
 
         locations = sorted(list(locations))
         cache.set(cache_key, locations, timeout=60 * 60 * 2)
@@ -80,7 +82,7 @@ def genres():
 
         for entry in entries:
             item = entry.to_dict()
-            for genre in item['genre']:
+            for genre in item['genre_tags']:
                 if genre:
                     genres.add(genre.strip())
 
