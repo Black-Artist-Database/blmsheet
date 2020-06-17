@@ -68,10 +68,12 @@ export default {
   },
   methods: {
     fetchGenres(){
+        this.$emit('loading', true)
         axios.get('/api/genres')
-        .then((response) => (
+        .then((response) => {
             this.genresData = response.data
-        ))
+            this.$emit('loading', false)
+        })
     },
     shuffleRandom(){
       this.$parent.fetchRandom();
