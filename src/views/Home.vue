@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-3">
     <h2>A crowd-sourced list of black artists on Bandcamp.</h2>
-    <Filters name="Welcome to Your Vue.js App" :filters="filters"/>
+    <Filters :filters="filters"/>
 
       <div class="d-flex flex-wrap">
         <Card v-for="(item, index) in list"
@@ -9,6 +9,8 @@
           :name="item.name" 
           :location="item.location" 
           :link="item.link" 
+          :artwork="item.bandcamp_image_url" 
+          :type="item.type"
         />
     </div>
     

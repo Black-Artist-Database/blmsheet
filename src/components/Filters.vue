@@ -1,7 +1,6 @@
 <template>
   <nav class="navbar navbar-light bg-light p-3 mb-2">
   <h3>Filter</h3>
-
   <a class="btn btn-primary">
   <svg class="bi bi-shuffle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" d="M12.646 1.146a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.793 4l-2.147-2.146a.5.5 0 0 1 0-.708zm0 8a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.793 12l-2.147-2.146a.5.5 0 0 1 0-.708z"/>
@@ -23,11 +22,8 @@
       </div>
       <div class="input-group">
         <label for="location">Location</label>
-        <select v-model="filters.location">
-          <option v-for="location in locationsData" :value="location" :key="location">
-              {{ location }}
-          </option>
-        </select>
+        <LocationTypeAhead :filters="filters"/>
+
       </div>
     </div>
     <ul class="mt-3 mb-0">
@@ -43,15 +39,18 @@
 
 <script>
 import axios from 'axios';
+import LocationTypeAhead from '@/components/LocationTypeAhead.vue'
 
 export default {
   name: 'Filters',
   props: {
     filters: Object
   },
+  components: {
+    LocationTypeAhead
+  },
   mounted(){
     this.fetchGenres();
-    this.fetchLocations();
   },
   data: function() {
     return {
@@ -65,12 +64,6 @@ export default {
         axios.get('http://localhost:5000/api/genres')
         .then((response) => (
             this.genresData = response.data
-        ))
-    },
-    fetchLocations(){
-        axios.get('http://localhost:5000/api/locations')
-        .then((response) => (
-            this.locationsData = response.data
         ))
     }
   }

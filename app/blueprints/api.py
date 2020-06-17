@@ -1,4 +1,5 @@
 import os
+import random
 
 from flask import Blueprint
 from flask import current_app, jsonify, request
@@ -28,8 +29,12 @@ def entry_list():
 
         if request.args.get('first_letter'):
             entries = entries.where('name_first_letter', '==', request.args.get('first_letter').lower())
-
+    
         results = [entry.to_dict() for entry in entries.get()]
+
+        if request.args.get('random'):
+            results = random.sample(results, int(request.args.get('random')))
+
         cache.set(cache_key, results, timeout=60 * 30)
     return jsonify(results)
 
