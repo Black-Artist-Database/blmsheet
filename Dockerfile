@@ -5,4 +5,4 @@ WORKDIR ./app
 
 RUN pip install -r requirements.txt
 
-CMD gunicorn --bind :$PORT application:application
+CMD gunicorn --bind :$PORT application:application --timeout=300
