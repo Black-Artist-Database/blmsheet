@@ -62,13 +62,13 @@ export default {
   },
   methods: {
     fetchGenres(){
-        axios.get('http://localhost:5000/api/genres')
+        axios.get('/api/genres')
         .then((response) => (
             this.genresData = response.data
         ))
     },
     fetchLocations(){
-        axios.get('http://localhost:5000/api/locations')
+        axios.get('/api/locations')
         .then((response) => (
             this.locationsData = response.data
         ))

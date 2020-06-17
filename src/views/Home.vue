@@ -55,7 +55,7 @@ export default {
   },
   methods: {
     fetchList(){
-        axios.get('http://localhost:5000/api/list', { params: this.filters })
+        axios.get('/api/list', { params: this.filters })
         .then((response) => (
             this.list = response.data
         ))
