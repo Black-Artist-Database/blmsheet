@@ -19,12 +19,16 @@ def scrape_and_update_bandcamp_details(event, context):
     entry = message['entry']
     entry_key = message['key']
 
-    image_url, location = scrape_bandcamp_location_and_image_url(entry['link'])
+    url = entry['link'] if entry['link'].startswith('http') else f'https://{entry["link"]}'
+    album_ids, genres, image_url, location = scrape_bandcamp_details(url)
     location_tags = [part.lower().strip() for part in location.split(',')] if location else []
 
+    entry['bandcamp_album_ids'] = album_ids
+    entry['bandcamp_genres'] = genres
     entry['bandcamp_image_url'] = image_url
     entry['bandcamp_location'] = location
     entry['location_tags'] = list(set(entry.get('location_tags', []) + location_tags))
+    entry['genre_tags'] = list(set(entry.get('genre_tags', []) + genres))
 
     transaction = db.transaction()
     update_database(transaction, entry_key, entry)
@@ -44,7 +48,7 @@ def update_database(transaction, entry_key, entry):
     transaction.update(entry_ref, entry)
 
 
-def scrape_bandcamp_location_and_image_url(url):
+def scrape_bandcamp_details(url):
     response = requests.get(url)
     if not response.ok:
         return '', ''
@@ -57,4 +61,27 @@ def scrape_bandcamp_location_and_image_url(url):
         image_url = html.cssselect('div#tralbumArt')[0].cssselect('img')[0].attrib['src']
     except (IndexError, KeyError):
         image_url = ''
-    return image_url, location
+    genres = [element.text for element in html.cssselect('a.tag')]
+    album_ids = [scrape_bandcamp_album_ids_from_url(response.text)]
+    if not album_ids:
+        album_ids = [data.split('-')[1] for data in html.xpath('//@data-item-id') if data.startswith('album-')]
+    if not album_ids:
+        album_ids = scrape_bandcamp_album_ids_from_artist_page(url)
+    return album_ids, genres, image_url, location
+
+
+def scrape_bandcamp_album_ids_from_url(content):
+    comment = '<!-- album id '
+    comment_len = len(comment)
+    if comment in content:
+        pos = content.find(comment)
+        album_id = content[pos + comment_len:pos + comment_len + 20]
+        return album_id.split('-->')[0].strip()
+
+
+def scrape_bandcamp_album_ids_from_artist_page(url):
+    response = requests.get(url if url.endswith('/music') else f'{url}/music')
+    if response.ok:
+        html = lxh.fromstring(response.text)
+        return [data.split('-')[1] for data in html.xpath('//@data-item-id') if data.startswith('album-')]
+    return []
