@@ -20,9 +20,11 @@ def scrape_and_update_bandcamp_details(event, context):
     entry_key = message['key']
 
     image_url, location = scrape_bandcamp_location_and_image_url(entry['link'])
+    location_tags = [part.lower().strip() for part in location.split(',')]
 
     entry['bandcamp_image_url'] = image_url
     entry['bandcamp_location'] = location
+    entry['location_tags'] = list(set(entry.get('location_tags', []) + location_tags))
 
     transaction = db.transaction()
     update_database(transaction, entry_key, entry)

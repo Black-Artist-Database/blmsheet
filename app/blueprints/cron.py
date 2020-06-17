@@ -54,6 +54,11 @@ def set_values_to_database(values):
                 except KeyError:
                     continue
                 entry_ref = db.collection(db_name).document(key)
+                existing = entry_ref.get()
+                if existing.exists:
+                    old = existing.to_dict()
+                    entry['genre_tags'] = list(set(old.get('genre_tags', []) + entry['genre_tags']))
+                    entry['location_tags'] = list(set(old.get('location_tags', []) + entry['location_tags']))
                 entry.update({u'timestamp': firestore.SERVER_TIMESTAMP})  # counts as an additional operation
                 batch.update(entry_ref, entry)
         batch.commit()
@@ -75,13 +80,12 @@ def get_values_from_sheet():
         # NB: sheet headers may change!
         for i, field in enumerate(['name', 'location', 'type', 'link', 'genre', 'notes']):
             try:
-                value = row[i]
-                if field == 'genre':
-                    #normalise genres, allow for separation with slashes rather than columns
-                    value = [genre.lower().strip() for genre in value.replace('/', ',').split(',')]
-                obj[field] = value
+                obj[field] = row[i]
             except IndexError:
                 obj[field] = ''  # some fields may be empty which truncates the row data
         obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalpha() else '#'
+        # normalise genres and locations, allow for separation with slashes rather than columns
+        obj['genre_tags'] = [genre.lower().strip() for genre in obj.get('genre', '').replace('/', ',').split(',')]
+        obj['location_tags'] = [part.lower().strip() for part in obj.get('location', '').replace('/', ',').split(',')]
         values.append(obj)
     return values
