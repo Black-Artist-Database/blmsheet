@@ -4,3 +4,6 @@ Flask-Caching
 gunicorn
 google-api-python-client
 google-cloud-firestore
+google-cloud-pubsub
+lxml
+cssselect
