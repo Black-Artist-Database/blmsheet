@@ -61,5 +61,6 @@ def get_values_from_sheet():
                 obj[field] = value
             except IndexError:
                 obj[field] = ''  # some fields may be empty which truncates the row data
-            values.append(obj)
+        obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalnum() else '#'
+        values.append(obj)
     return values
