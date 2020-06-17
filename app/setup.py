@@ -14,6 +14,7 @@ from google.cloud import pubsub
 
 def create_app():
     app = Flask(__name__, template_folder=Path(__file__).parent.joinpath('templates'))
+    CORS(app)
     init_logging(app)
     setup_cache(app)
     setup_db(app)
