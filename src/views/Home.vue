@@ -32,26 +32,33 @@ export default {
     filters: {
       genre: null,
       location: null,
+      first_letter: 'a',
     },
   }),
   watch: {
-    'filters.genre': function () {
-      this.fetchList()
-    },
-    'filters.location': function () {
-      this.fetchList()
-    }
+   filters: {
+      handler: function () {
+          this.fetchList()
+      },
+      deep: true //this picks up nested items e.g. filters.genre
+   },
+   //once we filter into genre or location we can lose the alphabet filter by default
+   'filters.genre': function(){
+     this.filters.first_letter = null
+   },
+   'filters.location': function(){
+     this.filters.first_letter = null
+   }
   },
   mounted(){
     this.fetchList()
   },
   methods: {
     fetchList(){
-        
         axios.get('http://localhost:5000/api/list', { params: this.filters })
         .then((response) => (
             this.list = response.data
-            ))
+        ))
     }
   }
 

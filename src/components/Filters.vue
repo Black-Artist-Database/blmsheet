@@ -14,16 +14,16 @@
   <form class="d-block w-100">
     <div class="form-inline">
       <div class="input-group mr-3">
+        <label for="location">Genre</label>
         <select v-model="filters.genre">
-          <option>Genre</option>
           <option v-for="genre in genresData" :value="genre" :key="genre">
               {{ genre }}
           </option>
         </select>
       </div>
       <div class="input-group">
+        <label for="location">Location</label>
         <select v-model="filters.location">
-          <option value="-">Location</option>
           <option v-for="location in locationsData" :value="location" :key="location">
               {{ location }}
           </option>
@@ -31,7 +31,8 @@
       </div>
     </div>
     <ul class="mt-3 mb-0">
-        <li v-for="letter in alphabet" :key="letter" class="d-inline text-uppercase h2">
+        <li v-on:click="filters.first_letter = null" :class="{ 'd-inline text-uppercase h2 letter': true, active: filters.first_letter === null }">[All]</li>
+        <li v-for="letter in alphabet" :key="letter" v-on:click="filters.first_letter = letter" :class="{ 'd-inline text-uppercase h2 letter': true, active: letter === filters.first_letter }" >
           {{ letter }}
         </li>
     </ul>
@@ -54,7 +55,6 @@ export default {
   },
   data: function() {
     return {
-      
       genresData: [],
       locationsData: [],
       alphabet: 'abcdefghijklmnopqrstuvwxyz#'.split(''),
@@ -65,24 +65,28 @@ export default {
         axios.get('http://localhost:5000/api/genres')
         .then((response) => (
             this.genresData = response.data
-            ))
-        .catch((err) => {
-            console.log(err)
-        })
+        ))
     },
     fetchLocations(){
         axios.get('http://localhost:5000/api/locations')
         .then((response) => (
             this.locationsData = response.data
-            ))
-        .catch((err) => {
-            console.log(err)
-        })
+        ))
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
+  .letter {
+    cursor: pointer;
+    &:hover, &.active {
+      color:blue;
+    }
+  }
 
+  select {
+    width:200px;
+    margin:0 30px 0 10px;
+  }
 </style>

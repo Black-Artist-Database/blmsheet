@@ -1,10 +1,12 @@
 <template>
     <div class="card m-1">
-    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+    <a :href=link target="_blank">
+    <img src="https://via.placeholder.com/150" class="card-img-top" :alt="name">
+    </a>
     <div class="card-body">
         <h5 class="card-title">{{ name }}</h5>
         <p class="card-text">{{ genres }}</p>
-        <a :href=link class="btn btn-primary">Open in Bandcamp</a>
+        <a :href=link class="btn btn-primary" target="_blank">Open in Bandcamp</a>
     </div>
     </div>
 </template>
