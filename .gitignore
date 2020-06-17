@@ -7,7 +7,7 @@ __pycache__
 venv
 
 *.pyc
-
+blmsheet.json 
 instance/
 
 .pytest_cache/
