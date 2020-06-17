@@ -6,6 +6,7 @@
             <img :src="image" class="card-img-top" :alt="name">
         </div>
         <span
+            v-if="type"
             class="badge badge-primary"
             v-bind:class="{
                 'badge-bc-red': type == 'Producer',
