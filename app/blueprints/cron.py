@@ -40,7 +40,7 @@ def scrape_bandcamp():
 def set_values_to_database(values):
     db = cron_blueprint.config['DB']
     db_name = os.environ['DB_NAME']
-    args = [iter(values)] * 500  # firestore limit of operations
+    args = [iter(values)] * 400  # firestore limit of operations
     for group in zip_longest(*args):  # use grouper pattern to batch process
         batch = db.batch()
         for entry in group:
