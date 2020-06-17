@@ -35,7 +35,7 @@ export default {
 
     methods: {
         fetchLocations(){
-            axios.get('http://localhost:5000/api/locations')
+            axios.get('/api/locations')
             .then((response) => (
                 this.locationsData = response.data
             ))

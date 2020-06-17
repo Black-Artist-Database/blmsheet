@@ -69,7 +69,7 @@ export default {
   },
   methods: {
     fetchGenres(){
-        axios.get('http://localhost:5000/api/genres')
+        axios.get('/api/genres')
         .then((response) => (
             this.genresData = response.data
         ))
