@@ -35,5 +35,7 @@ steps:
   - 'scrape_and_update_bandcamp_details'
   - '--memory'
   - '256MB'
+  - '--region'
+  - 'us-central1'
 images:
 - gcr.io/$PROJECT_ID/$REPO_NAME
