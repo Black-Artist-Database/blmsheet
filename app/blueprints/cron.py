@@ -27,7 +27,7 @@ def scrape_bandcamp():
     publisher = cron_blueprint.config['PUBLISHER']
     topic_name = f'projects/{os.environ["PROJECT_ID"]}/topics/{os.environ["SCRAPE_TOPIC"]}'
 
-    for entry in db.collection(db_name).stream:
+    for entry in db.collection(db_name).stream():
         message = {
             "entry": entry.to_dict(),
             "key": entry.id,
