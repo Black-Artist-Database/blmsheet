@@ -2,6 +2,7 @@ grpcio
 redis
 Flask
 Flask-Caching
+Flask-Cors
 gunicorn
 google-api-python-client
 google-cloud-firestore

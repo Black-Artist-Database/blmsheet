@@ -1,12 +1,15 @@
 import os
+import random
 
 from flask import Blueprint
 from flask import current_app, jsonify, request
+from flask_cors import CORS
 
 
 api_blueprint = Blueprint(name='api',
                           import_name=__name__,
                           url_prefix='/api')
+CORS(api_blueprint)  # enable CORS on the API blueprint
 
 
 @api_blueprint.route('/list', methods=['GET'])
@@ -28,8 +31,12 @@ def entry_list():
 
         if request.args.get('first_letter'):
             entries = entries.where('name_first_letter', '==', request.args.get('first_letter').lower())
-
+    
         results = [entry.to_dict() for entry in entries.get()]
+
+        if request.args.get('random'):
+            results = random.sample(results, 12)
+
         cache.set(cache_key, results, timeout=60 * 30)
     return jsonify(results)
 
@@ -74,7 +81,8 @@ def genres():
         for entry in entries:
             item = entry.to_dict()
             for genre in item['genre']:
-                genres.add(genre.strip())
+                if genre:
+                    genres.add(genre.strip())
 
         genres = sorted(list(genres))
         cache.set(cache_key, genres, timeout=60 * 60 * 2)

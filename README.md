@@ -60,3 +60,29 @@ export SERVICE_ID="[GOOGLE_CLOUD_RUN_SERVICE_ID]"
 ```
 - `gcloud builds submit --tag gcr.io/$PROJECT_ID/$SERVICE_ID --project $PROJECT_ID`
 - `gcloud run deploy --image gcr.io/$PROJECT_ID/$SERVICE_ID --platform managed --project $PROJECT_ID`
+
+
+## Running the frontend
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
