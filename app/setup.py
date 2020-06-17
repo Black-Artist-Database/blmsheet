@@ -13,7 +13,10 @@ from google.cloud import pubsub
 
 
 def create_app():
-    app = Flask(__name__, template_folder=Path(__file__).parent.joinpath('templates'))
+    app = Flask(__name__,
+        template_folder=Path(__file__).parent.parent.joinpath('dist'),
+        static_folder=str(Path(__file__).parent.parent.joinpath('dist').joinpath('static')),
+    )
     init_logging(app)
     setup_cache(app)
     setup_db(app)
