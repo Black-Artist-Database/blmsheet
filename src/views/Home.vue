@@ -61,6 +61,12 @@ export default {
         this.fetchList()
       }
    },
+   'filters.name': function(){
+      console.log('ici')
+      if (this.filters.first_letter) {
+        this.filters.first_letter = null
+      }
+   },
   },
   mounted(){
     this.fetchList()

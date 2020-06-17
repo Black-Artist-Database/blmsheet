@@ -6,6 +6,7 @@
         size="sm"
         minLength=1
         :serializer="s => s"
+        :class="{'disabled': filters.name !== ''}"
         placeholder="Type a location..."
       />
     </div>
@@ -52,6 +53,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .disabled {
+        opacity: 0.7;
+        pointer-events: none;
+        /deep/ input {
+            background-color: rgb(233, 236, 239);
+        }
+    }
     @media (max-width: 600px) {
         div {
             width: 100%;
