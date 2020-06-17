@@ -28,11 +28,12 @@ def scrape_bandcamp():
     topic_name = f'projects/{os.environ["PROJECT_ID"]}/topics/{os.environ["SCRAPE_TOPIC"]}'
 
     for entry in db.collection(db_name).stream():
+        entry_key = entry.id
         entry = entry.to_dict()
         entry.pop('timestamp', None)  # not-JSON friendly nor needed on the other end
         message = {
             "entry": entry,
-            "key": entry.id,
+            "key": entry_key,
         }
         # publish message to scraper topic with document object to be picked up by Cloud Function
         publisher.publish(topic_name, json.dumps(message).encode('utf8'))
