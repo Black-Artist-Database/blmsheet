@@ -35,6 +35,7 @@ export default {
     list: [],
     filters: {
       genre: '',
+      name: '',
       location: null,
       first_letter: 'a',
     },

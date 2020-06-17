@@ -11,13 +11,16 @@
     Random Shuffle
     </a>
   <hr>
-    <p>Or filter by genre or location...</p>
+    <p>Or filter by name, genre or location...</p>
 
     <form class="d-flex justify-content-center">
       <div class="form-inline">
-        <div class="input-group">
+        <div class="input-group input-group-sm d-flex justify-content-center">
+          <input placeholder="Artist's name" type="text" class="form-control" id="name-filter" v-model="filters.name">
+        </div>
+        <div class="input-group input-group-sm">
           <div>
-          <select v-model="filters.genre">
+          <select class="custom-select" v-model="filters.genre">
             <option value="">All Genres</option>
             <option v-for="genre in genresData" :value="genre" :key="genre">
                 {{ genre }}
@@ -25,14 +28,10 @@
           </select>
           </div>
         </div>
-        <div class="input-group">
-          <LocationTypeAhead :filters="filters"/>
-        </div>
+        <LocationTypeAhead :filters="filters"/>
       </div>
-
     </form>
   </div>
-
   <div class="alphabet-filter">
   <ul class="mt-3 mb-3 mb-0">
       <li v-on:click="filters.first_letter = null" :class="{ 'd-inline text-uppercase h4 letter mr-3': true, active: filters.first_letter === null }">All</li>
@@ -89,9 +88,11 @@ export default {
     }
   }
 
-  select, input {
-    width:200px;
-    margin:0 30px 0 10px;
+  select, input, /deep/ .form-control {
+    max-width: 200px;
+    width: 100%;
+    height: 40px !important;
+    margin:10px 30px 0 10px;
   }
   select, option {text-transform:capitalize !important;}
 
@@ -102,6 +103,7 @@ export default {
   .alphabet-filter {
     overflow-x:scroll;
     ul {
+      padding-left: 0;
       min-width:710px;
     }
   }

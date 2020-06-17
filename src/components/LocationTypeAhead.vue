@@ -1,12 +1,14 @@
 <template>
-  <vue-bootstrap-typeahead
-    :data="locationsData"
-    v-model="filters.location"
-    size="sm"
-    minLength=1
-    :serializer="s => s"
-    placeholder="Type a location..."
-  />
+    <div>
+      <vue-bootstrap-typeahead
+        :data="locationsData"
+        v-model="filters.location"
+        size="sm"
+        minLength=1
+        :serializer="s => s"
+        placeholder="Type a location..."
+      />
+    </div>
 </template>
 
 <script>
@@ -48,3 +50,16 @@ export default {
 
 }
 </script>
+
+<style lang="scss" scoped>
+    @media (max-width: 600px) {
+        div {
+            width: 100%;
+            /deep/ .input-group {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+</style>
