@@ -24,7 +24,7 @@ def scrape_and_update_bandcamp_details(event, context):
 
     entry['bandcamp_image_url'] = image_url
     entry['bandcamp_location'] = location
-    entry['location_tags'] = list(set(entry['location_tags'] + location_tags if entry['location_tags'] else location_tags))
+    entry['location_tags'] = list(set(entry.get('location_tags', []) + location_tags))
 
     transaction = db.transaction()
     update_database(transaction, entry_key, entry)
