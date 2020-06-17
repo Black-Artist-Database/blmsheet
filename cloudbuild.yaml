@@ -24,7 +24,7 @@ steps:
   - 'deploy'
   - '$_FUNCTION_NAME'
   - '--source'
-  - './function/scrape.py'
+  - './function/'
   - '--runtime'
   - 'python37'
   - '--trigger-topic'
