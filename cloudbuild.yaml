@@ -17,5 +17,23 @@ steps:
   - '$_REGION'
   - '--platform'
   - 'managed'
+# Deploy scrape to Cloud Function
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'functions'
+  - 'deploy'
+  - '$_FUNCTION_NAME'
+  - '--source'
+  - './function/'
+  - '--runtime'
+  - 'python37'
+  - '--trigger-topic'
+  - '$_TOPIC_NAME'
+  - '--timeout'
+  - '60'
+  - '--entry-point'
+  - 'scrape_and_update_bandcamp_details'
+  - '--memory'
+  - '256MB'
 images:
 - gcr.io/$PROJECT_ID/$REPO_NAME

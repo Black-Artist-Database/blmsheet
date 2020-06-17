@@ -47,7 +47,8 @@ export default {
                 return this.artwork
             } 
             //math random to generate different placeholders
-            return 'https://generative-placeholders.glitch.me/image?width=300&height=300&style=triangles&gap='+Math.floor(Math.random() * 30);
+            let gap = Math.random() * 3 + 2;
+            return 'https://generative-placeholders.glitch.me/image?width=300&height=300&style=triangles&gap=' +gap * 50;
         }
     }
 }
