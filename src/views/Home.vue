@@ -3,7 +3,7 @@
     <h2 class="mt-4 mb-4">A crowd-sourced list of black artists on Bandcamp.</h2>
     <Filters :filters="filters" @loading="e => loading = e"/>
     <div class="d-flex justify-content-center" v-if="loading">
-      <div class="spinner-border m-5" role="status" style="color: #1da0c2">
+      <div class="spinner-border m-5" role="status">
         <span class="sr-only">Loading...</span>
       </div>
     </div>
@@ -93,6 +93,7 @@ export default {
 .spinner-border {
   width: 3rem;
   height: 3rem;
+  color: #1da0c2;
 }
 
 </style>
