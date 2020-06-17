@@ -1,9 +1,18 @@
 <template>
 <div class="col-6 col-md-3 col-lg-3 p-2">
     <div class="card">
-        <a :href=link target="_blank">
-        <div class="image-wrapper">
-            <img :src="image" class="card-img-top" :alt="name">
+        <a :href="link" target="_blank">
+        <div class="image-wrapper" :style="{'background-image': `url(${image})`}">
+            <span class="sr-only">{{name}}</span>
+
+            <div class="body hidden">
+                <h5 class="card-title">{{ name }}<br><small>{{location}}</small></h5>
+                <p class="genres"><span v-for="(genre, index) in genres" :key="index">
+                    {{genre}}<span v-if="index != Object.keys(genres).length - 1">, </span>
+                    </span>
+                </p>
+                <span>Click to open in Bandcamp</span>
+            </div>
         </div>
         <span
             v-if="type"
@@ -18,14 +27,7 @@
             {{type}}
         </span>
         </a>
-        <div class="card-body">
-            <h5 class="card-title">{{ name }}<br><small>{{location}}</small></h5>
-            <p class="genres"><span v-for="(genre, index) in genres" :key="index">
-                {{genre}}<span v-if="index != Object.keys(genres).length - 1">, </span>
-                </span>
-            </p>
-            <a :href=link target="_blank">Open in Bandcamp</a>
-        </div>
+        
     </div>
 </div>
 </template>
@@ -87,12 +89,40 @@ export default {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background:black;
-    background-image:url(../assets/loading-spinner.gif);
+    background: #F7f7f7;
+    // background-image: url(../assets/loading-spinner.gif);
     background-position: center;
+    background-size: 100% auto;
     background-repeat:no-repeat;
+    &:hover {
+        .body {
+            opacity: 1;
+        }
+    }
   }
-
+  .body {
+    opacity: 0;
+    position: absolute;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+        color: white;
+    }
+    transition: opacity 0.5s ease;
+    @media (max-width: 415px) {
+        opacity: 1;
+    }
+  }
   .image-wrapper:before{
     content: "";
     display: block;
