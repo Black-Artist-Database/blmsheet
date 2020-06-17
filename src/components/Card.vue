@@ -1,20 +1,22 @@
 <template>
-    <div class="card m-1">
-    <a :href=link target="_blank">
-    <div class="image-wrapper">
-        <img :src="image" class="card-img-top" :alt="name">
+<div class="col-6 col-md-3 col-lg-3 p-2">
+    <div class="card">
+        <a :href=link target="_blank">
+        <div class="image-wrapper">
+            <img :src="image" class="card-img-top" :alt="name">
+        </div>
+        <span class="badge badge-primary">{{type}}</span>
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">{{ name }}<br><small>{{location}}</small></h5>
+            <p class="genres"><span v-for="(genre, index) in genres" :key="index">
+                {{genre}}<span v-if="index != Object.keys(genres).length - 1">, </span>
+                </span>
+            </p>
+            <a :href=link target="_blank">Open in Bandcamp</a>
+        </div>
     </div>
-    <span class="badge badge-primary">{{type}}</span>
-    </a>
-    <div class="card-body">
-        <h5 class="card-title">{{ name }}<br><small>{{location}}</small></h5>
-        <p class="genres"><span v-for="(genre, index) in genres" :key="index">
-            {{genre}}<span v-if="index != Object.keys(genres).length - 1">, </span>
-            </span>
-        </p>
-        <a :href=link target="_blank">Open in Bandcamp</a>
-    </div>
-    </div>
+</div>
 </template>
 
 <script>
@@ -42,10 +44,6 @@ export default {
 
 <style scoped lang="scss">
 
-.card {
-    max-width:200px;
-    min-width:24%;
-}
 
 .badge {
     position:absolute;
