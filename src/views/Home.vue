@@ -62,7 +62,6 @@ export default {
       }
    },
    'filters.name': function(){
-      console.log('ici')
       if (this.filters.first_letter) {
         this.filters.first_letter = null
       }
@@ -81,6 +80,7 @@ export default {
         })
     },
     fetchRandom(){
+        this.filters.name = null
         this.loading = true
         axios.get('/api/list?random=12&timestamp='+new Date().getSeconds())
         .then((response) => {
