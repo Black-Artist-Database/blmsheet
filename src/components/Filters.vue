@@ -1,7 +1,6 @@
 <template>
 <div>
   <div class="bg-light p-3 mb-2">
-
     <p>Discover artists, producers and labels...</p>    
     <a class="btn btn-primary text-white" v-on:click="shuffleRandom">
     <svg class="bi bi-shuffle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -11,7 +10,7 @@
     </svg>
     Random Shuffle
     </a>
-<hr>
+  <hr>
     <p>Or filter by genre or location...</p>
 
     <form class="d-flex justify-content-center">
@@ -94,12 +93,11 @@ export default {
     width:200px;
     margin:0 30px 0 10px;
   }
+  select, option {text-transform:capitalize !important;}
 
   .input-group div {
     margin:auto;
   }
-
-  
 
   .alphabet-filter {
     overflow-x:scroll;
