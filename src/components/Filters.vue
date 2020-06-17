@@ -1,7 +1,8 @@
 <template>
 <div>
-  <nav class="navbar navbar-light bg-light p-3 mb-2">
-    <h3>Filter</h3>
+  <div class="bg-light p-3 mb-2">
+
+    <p>Discover artists, producers and labels...</p>    
     <a class="btn btn-primary text-white" v-on:click="shuffleRandom">
     <svg class="bi bi-shuffle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M12.646 1.146a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.793 4l-2.147-2.146a.5.5 0 0 1 0-.708zm0 8a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.793 12l-2.147-2.146a.5.5 0 0 1 0-.708z"/>
@@ -10,25 +11,26 @@
     </svg>
     Random Shuffle
     </a>
+<hr>
+    <p>Or filter by genre or location...</p>
 
-    <form class="d-block w-100">
+    <form class="d-flex justify-content-center">
       <div class="form-inline">
-        <div class="input-group mr-3">
-          <label for="location">Genre</label>
+        <div class="input-group">
           <select v-model="filters.genre">
+            <option value="">All Genres</option>
             <option v-for="genre in genresData" :value="genre" :key="genre">
                 {{ genre }}
             </option>
           </select>
         </div>
         <div class="input-group">
-          <label for="location">Location</label>
           <LocationTypeAhead :filters="filters"/>
         </div>
       </div>
 
     </form>
-  </nav>
+  </div>
 
   <ul class="mt-3 mb-3 mb-0">
       <li v-on:click="filters.first_letter = null" :class="{ 'd-inline text-uppercase h4 letter mr-3': true, active: filters.first_letter === null }">All</li>

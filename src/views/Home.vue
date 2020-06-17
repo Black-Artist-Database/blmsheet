@@ -34,7 +34,7 @@ export default {
   data: () => ({
     list: [],
     filters: {
-      genre: null,
+      genre: '',
       location: null,
       first_letter: 'a',
     },
@@ -66,8 +66,8 @@ export default {
     },
     fetchRandom(){
         this.filters = {
-          genre: null,
-          location: null,
+          genre: '',
+          location: '',
           first_letter: null
         }
         axios.get('http://localhost:5000/api/list?random=12&timestamp='+new Date().getSeconds())

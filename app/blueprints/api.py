@@ -79,7 +79,8 @@ def genres():
         for entry in entries:
             item = entry.to_dict()
             for genre in item['genre']:
-                genres.add(genre.strip())
+                if genre:
+                    genres.add(genre.strip())
 
         genres = sorted(list(genres))
         cache.set(cache_key, genres, timeout=60 * 60 * 2)
