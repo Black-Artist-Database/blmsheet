@@ -26,13 +26,11 @@ def entry_list():
         if request.args.get('genre'):
             entries = entries.where('genre_tags', 'array_contains', request.args.get('genre'))
 
-        if request.args.get('location'):
-            entries = entries.where('location_tags', 'array_contains', request.args.get('location'))
-
         if request.args.get('first_letter'):
             entries = entries.where('name_first_letter', '==', request.args.get('first_letter').lower())
     
         results = [entry.to_dict() for entry in entries.get()]
+        results = [entry for entry in results if request.args.get('location', '') in (entry.get('location_tags') or '')]
 
         if request.args.get('random'):
             results = random.sample(results, 12)
