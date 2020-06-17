@@ -3,11 +3,13 @@ import random
 
 from flask import Blueprint
 from flask import current_app, jsonify, request
+from flask_cors import CORS
 
 
 api_blueprint = Blueprint(name='api',
                           import_name=__name__,
                           url_prefix='/api')
+CORS(api_blueprint)  # enable CORS on the API blueprint
 
 
 @api_blueprint.route('/list', methods=['GET'])
