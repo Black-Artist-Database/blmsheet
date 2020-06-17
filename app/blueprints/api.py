@@ -24,10 +24,10 @@ def entry_list():
         entries = db.collection(db_name)
 
         if request.args.get('genre'):
-            entries = entries.where('genre', 'array_contains', request.args.get('genre'))
+            entries = entries.where('genre_tags', 'array_contains', request.args.get('genre'))
 
         if request.args.get('location'):
-            entries = entries.where('location', '==', request.args.get('location'))
+            entries = entries.where('location_tags', 'array_contains', request.args.get('location'))
 
         if request.args.get('first_letter'):
             entries = entries.where('name_first_letter', '==', request.args.get('first_letter').lower())
