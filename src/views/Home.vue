@@ -70,7 +70,7 @@ export default {
           location: '',
           first_letter: null
         }
-        axios.get('http://localhost:5000/api/list?random=12&timestamp='+new Date().getSeconds())
+        axios.get('/api/list?random=12&timestamp='+new Date().getSeconds())
         .then((response) => (
             this.list = response.data
         ))
