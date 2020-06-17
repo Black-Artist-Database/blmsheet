@@ -1,4 +1,5 @@
 grpcio
+redis
 Flask
 Flask-Caching
 gunicorn
