@@ -5,7 +5,18 @@
         <div class="image-wrapper">
             <img :src="image" class="card-img-top" :alt="name">
         </div>
-        <span class="badge badge-primary">{{type}}</span>
+        <span
+            v-if="type"
+            class="badge badge-primary"
+            v-bind:class="{
+                'badge-bc-red': type == 'Producer',
+                'badge-bc-purple': type == 'Label',
+                'badge-bc-blue': type == 'Artist',
+                'badge-bc-green': type == 'Band'
+            }"
+        >
+            {{type}}
+        </span>
         </a>
         <div class="card-body">
             <h5 class="card-title">{{ name }}<br><small>{{location}}</small></h5>
@@ -45,14 +56,34 @@ export default {
 
 <style scoped lang="scss">
 
+  $bc-green: #1DC379;
+  $bc-red: #C3411D;
+  $bc-purple: #941DC3;
+  $bc-blue: #1DA0C3;
 
-.badge {
+  .badge-bc-green {
+    background-color: $bc-green;
+  }
+
+  .badge-bc-red {
+    background-color: $bc-red;
+  }
+
+  .badge-bc-purple {
+    background-color: $bc-purple;
+  }
+
+  .badge-bc-blue {
+    background-color: $bc-blue;
+  }
+
+  .badge {
     position:absolute;
     top:15px;
     right:15px;
-}
+  }
 
-.image-wrapper{
+  .image-wrapper{
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -60,13 +91,15 @@ export default {
     background-image:url(../assets/loading-spinner.gif);
     background-position: center;
     background-repeat:no-repeat;
-}
-.image-wrapper:before{
+  }
+
+  .image-wrapper:before{
     content: "";
     display: block;
     padding-top: 100%;
-}
-.image-wrapper img {
+  }
+
+  .image-wrapper img {
     position:  absolute;
     top: 0;
     left: 0;
@@ -74,14 +107,15 @@ export default {
     right: 0;
     color: white;
     text-align: center;
-}
+  }
 
-.genres {
+  .genres {
     text-transform: capitalize; 
     font-size:80%;
-}
-small {
+  }
+
+  small {
     font-weight:bold;
     font-size:60%;
-}
+  }
 </style>
