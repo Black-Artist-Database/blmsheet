@@ -35,7 +35,5 @@ steps:
   - 'scrape_and_update_bandcamp_details'
   - '--memory'
   - '256MB'
-  - '--service-account'
-  - '$_SERVICE_ACCOUNT'
 images:
 - gcr.io/$PROJECT_ID/$REPO_NAME
