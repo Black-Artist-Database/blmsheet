@@ -1,7 +1,9 @@
 <template>
   <div class="container mt-3">
-    <h2>A crowd-sourced list of black artists on Bandcamp.</h2>
+    <h2 class="mt-4 mb-4">A crowd-sourced list of black artists on Bandcamp.</h2>
     <Filters :filters="filters"/>
+      
+      <div v-if="list.length === 0" class="m-4">No results found, try broadening your search or <a href="/">reset all filters</a>.</div>
 
       <div class="d-flex flex-wrap">
         <Card v-for="(item, index) in list"
@@ -50,7 +52,7 @@ export default {
    },
    'filters.location': function(){
      this.filters.first_letter = null
-   }
+   },
   },
   mounted(){
     this.fetchList()
@@ -58,6 +60,17 @@ export default {
   methods: {
     fetchList(){
         axios.get('http://localhost:5000/api/list', { params: this.filters })
+        .then((response) => (
+            this.list = response.data
+        ))
+    },
+    fetchRandom(){
+        this.filters = {
+          genre: null,
+          location: null,
+          first_letter: null
+        }
+        axios.get('http://localhost:5000/api/list?random=12&timestamp='+new Date().getSeconds())
         .then((response) => (
             this.list = response.data
         ))

@@ -8,14 +8,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" router-link to="/">Discover <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <router-link to="/" class="nav-link">Discover</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" router-link to="/">About</a>
+              <router-link to="/about" class="nav-link">About</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" router-link to="/">Add Submission</a>
+              <router-link to="/add" class="nav-link">Add Submission</router-link>
             </li>
           </ul>
         </div>
@@ -34,16 +34,7 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.router-link-exact-active {
+  color: #fff !important;
 }
 </style>

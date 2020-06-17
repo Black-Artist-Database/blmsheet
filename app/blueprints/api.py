@@ -33,7 +33,7 @@ def entry_list():
         results = [entry.to_dict() for entry in entries.get()]
 
         if request.args.get('random'):
-            results = random.sample(results, int(request.args.get('random')))
+            results = random.sample(results, 12)
 
         cache.set(cache_key, results, timeout=60 * 30)
     return jsonify(results)

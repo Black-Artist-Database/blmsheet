@@ -3,6 +3,7 @@
     :data="locationsData"
     v-model="filters.location"
     size="sm"
+    minLength=1
     :serializer="s => s"
     placeholder="Type a location..."
   />
