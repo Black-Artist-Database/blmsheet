@@ -69,7 +69,7 @@ export default {
   },
   methods: {
     fetchGenres(){
-        axios.get('/api/genres')
+        axios.get('https://blmsheet-api-hnzs3737wa-ew.a.run.app/api/genres')
         .then((response) => (
             this.genresData = response.data
         ))

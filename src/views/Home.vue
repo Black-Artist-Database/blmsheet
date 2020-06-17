@@ -59,13 +59,13 @@ export default {
   },
   methods: {
     fetchList(){
-        axios.get('/api/list', { params: this.filters })
+        axios.get('https://blmsheet-api-hnzs3737wa-ew.a.run.app/api/list', { params: this.filters })
         .then((response) => (
             this.list = response.data
         ))
     },
     fetchRandom(){
-        axios.get('/api/list?random=12&timestamp='+new Date().getSeconds())
+        axios.get('https://blmsheet-api-hnzs3737wa-ew.a.run.app/api/list?random=12&timestamp='+new Date().getSeconds())
         .then((response) => (
             this.list = response.data
         ))

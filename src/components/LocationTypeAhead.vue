@@ -35,7 +35,7 @@ export default {
 
     methods: {
         fetchLocations(){
-            axios.get('/api/locations')
+            axios.get('https://blmsheet-api-hnzs3737wa-ew.a.run.app/api/locations')
             .then((response) => (
                 this.locationsData = response.data
             ))
