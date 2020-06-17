@@ -27,10 +27,13 @@ def scrape_bandcamp():
     publisher = cron_blueprint.config['PUBLISHER']
     topic_name = f'projects/{os.environ["PROJECT_ID"]}/topics/{os.environ["SCRAPE_TOPIC"]}'
 
-    for entry in db.collection(db_name).stream:
+    for entry in db.collection(db_name).stream():
+        entry_key = entry.id
+        entry = entry.to_dict()
+        entry.pop('timestamp', None)  # not-JSON friendly nor needed on the other end
         message = {
-            "entry": entry.to_dict(),
-            "key": entry.id,
+            "entry": entry,
+            "key": entry_key,
         }
         # publish message to scraper topic with document object to be picked up by Cloud Function
         publisher.publish(topic_name, json.dumps(message).encode('utf8'))
@@ -40,7 +43,7 @@ def scrape_bandcamp():
 def set_values_to_database(values):
     db = cron_blueprint.config['DB']
     db_name = os.environ['DB_NAME']
-    args = [iter(values)] * 500  # firestore limit of operations
+    args = [iter(values)] * 250  # firestore limit of operations (500: 2 per row: 1 write; 1 timestamp)
     for group in zip_longest(*args):  # use grouper pattern to batch process
         batch = db.batch()
         for entry in group:
@@ -50,9 +53,9 @@ def set_values_to_database(values):
                     key = str('-'.join(list(entry['name'].strip().replace('/', '-').split(' ')) + [entry['location'].replace('/', '-').strip()])).lower()
                 except KeyError:
                     continue
-                else:
-                    entry_ref = db.collection(db_name).document(key)
-                    batch.set(entry_ref, entry)
+                entry_ref = db.collection(db_name).document(key)
+                entry.update({u'timestamp': firestore.SERVER_TIMESTAMP})  # counts as an additional operation
+                batch.update(entry_ref, entry)
         batch.commit()
 
 
