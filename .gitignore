@@ -20,7 +20,7 @@ build/
 
 .vscode/
 *.env*
-**/*.json
+blmsheet.json
 
 
 .DS_Store
