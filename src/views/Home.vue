@@ -9,6 +9,7 @@
         <Card v-for="(item, index) in list"
           :key="index"
           :name="item.name" 
+          :genres="item.genre" 
           :location="item.location" 
           :link="item.link" 
           :artwork="item.bandcamp_image_url" 

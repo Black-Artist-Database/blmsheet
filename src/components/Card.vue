@@ -7,8 +7,11 @@
     <span class="badge badge-primary">{{type}}</span>
     </a>
     <div class="card-body">
-        <h5 class="card-title">{{ name }}</h5>
-        <p class="card-text">{{ genres }}</p>
+        <h5 class="card-title">{{ name }}<br><small>{{location}}</small></h5>
+        <p class="genres"><span v-for="(genre, index) in genres" :key="index">
+            {{genre}}<span v-if="index != Object.keys(genres).length - 1">, </span>
+            </span>
+        </p>
         <a :href=link target="_blank">Open in Bandcamp</a>
     </div>
     </div>
@@ -72,5 +75,14 @@ export default {
     right: 0;
     color: white;
     text-align: center;
+}
+
+.genres {
+    text-transform: capitalize; 
+    font-size:80%;
+}
+small {
+    font-weight:bold;
+    font-size:60%;
 }
 </style>
