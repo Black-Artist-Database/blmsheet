@@ -1,3 +1,4 @@
+import json
 import os
 from itertools import zip_longest
 
@@ -16,6 +17,23 @@ cron_blueprint = Blueprint(name='cron',
 def sync_db_with_sheet():
     values = get_values_from_sheet()
     set_values_to_database(values)
+    return 'OK', 200
+
+
+@cron_blueprint.route('/scrape-bandcamp', methods=['POST'])
+def scrape_bandcamp():
+    db = cron_blueprint.config['DB']
+    db_name = os.environ['DB_NAME']
+    publisher = cron_blueprint.config['PUBLISHER']
+    topic_name = f'projects/{os.environ["PROJECT_ID"]}/topics/{os.environ["SCRAPE_TOPIC"]}'
+
+    for entry in db.collection(db_name).stream:
+        message = {
+            "entry": entry.to_dict(),
+            "key": entry.id,
+        }
+        # publish message to scraper topic with document object to be picked up by Cloud Function
+        publisher.publish(topic_name, json.dumps(message).encode('utf8'))
     return 'OK', 200
 
 

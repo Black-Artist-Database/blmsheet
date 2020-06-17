@@ -1,0 +1,4 @@
+lxml
+cssselect
+google-cloud-firestore
+requests
