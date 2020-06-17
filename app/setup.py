@@ -9,12 +9,11 @@ from flask import Flask
 from flask import current_app, jsonify
 from flask_caching import Cache
 from google.cloud import firestore
-from flask_cors import CORS
 from google.cloud import pubsub
+
 
 def create_app():
     app = Flask(__name__, template_folder=Path(__file__).parent.joinpath('templates'))
-    CORS(app)
     init_logging(app)
     setup_cache(app)
     setup_db(app)
@@ -33,9 +32,6 @@ def add_blueprints(app):
     from app.blueprints.cron import cron_blueprint
     app.register_blueprint(cron_blueprint)
     cron_blueprint.config = app.config.copy()
-    app.logger.info('App created')
-    CORS(app)
-    return app
 
 
 def init_logging(app):
