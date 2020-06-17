@@ -31,14 +31,15 @@ def scrape_and_update_bandcamp_details(event, context):
 @firestore.transactional
 def update_database(transaction, entry_key, entry):
     db_name = os.environ['DB_NAME']
-    doc_ref = db.collection(db_name).document(document_id=entry_key)
+    entry_ref = db.collection(db_name).document(document_id=entry_key)
 
     try:
-        doc_ref.get(transaction=transaction)
+        entry_ref.get(transaction=transaction)
     except firestore.NotFound:
         return
 
-    transaction.set(doc_ref, entry)
+    entry.update({u'timestamp': firestore.SERVER_TIMESTAMP})
+    transaction.update(entry_ref, entry)
 
 
 def scrape_bandcamp_location_and_image_url(url):

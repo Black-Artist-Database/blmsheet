@@ -50,9 +50,9 @@ def set_values_to_database(values):
                     key = str('-'.join(list(entry['name'].strip().replace('/', '-').split(' ')) + [entry['location'].replace('/', '-').strip()])).lower()
                 except KeyError:
                     continue
-                else:
-                    entry_ref = db.collection(db_name).document(key)
-                    batch.set(entry_ref, entry)
+                entry_ref = db.collection(db_name).document(key)
+                entry.update({u'timestamp': firestore.SERVER_TIMESTAMP})
+                batch.update(entry_ref, entry)
         batch.commit()
 
 
