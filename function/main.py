@@ -64,7 +64,7 @@ def scrape_bandcamp_details(url):
         image_url = html.cssselect('div#tralbumArt')[0].cssselect('img')[0].attrib['src']
     except (IndexError, KeyError):
         image_url = ''
-    genres = [element.text.lower() for element in html.cssselect('a.tag')]
+    genres = [element.text.strip().lower() for element in html.cssselect('a.tag') if element.text.strip()]
     album_ids = scrape_bandcamp_album_ids_from_url(response.text)
     if not album_ids:
         album_ids = [data.split('-')[1] for data in html.xpath('//@data-item-id') if data.startswith('album-')]

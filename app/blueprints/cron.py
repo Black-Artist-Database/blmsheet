@@ -18,7 +18,7 @@ cron_blueprint = Blueprint(name='cron',
 def auth_check(func):
     @functools.wraps(func)
     def wraps(*args, **kwargs):
-        if request.args.get('auth') == os.environ['AUTH_PASS']:
+        if (os.environ.get('FLASK_ENV', '') == 'development' or request.args.get('auth') == os.environ['AUTH_PASS']):
             return func(*args, **kwargs)
         abort(403)
     return wraps
@@ -114,7 +114,7 @@ def get_values_from_sheet():
                 obj[field] = ''  # some fields may be empty which truncates the row data
         obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalpha() else '#'
         # normalise genres and locations, allow for separation with slashes rather than columns
-        obj['genre_tags'] = [genre.lower().strip() for genre in obj.get('genre', '').replace('/', ',').split(',')]
-        obj['location_tags'] = [part.lower().strip() for part in obj.get('location', '').replace('/', ',').split(',')]
+        obj['genre_tags'] = [genre.lower().strip() for genre in obj.get('genre', '').replace('/', ',').split(',') if genre]
+        obj['location_tags'] = [part.lower().strip() for part in obj.get('location', '').replace('/', ',').split(',') if part]
         values.append(obj)
     return values
