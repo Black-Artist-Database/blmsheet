@@ -1,8 +1,9 @@
+import functools
 import json
 import os
 from itertools import zip_longest
 
-from flask import Blueprint
+from flask import Blueprint, abort, request
 from google.auth import compute_engine
 from google.cloud import firestore
 from googleapiclient.discovery import build
@@ -13,7 +14,17 @@ cron_blueprint = Blueprint(name='cron',
                            url_prefix='/cron')
 
 
+def auth_check(func):
+    @functools.wraps(func)
+    def wraps(*args, **kwargs):
+        if request.args.get('auth') == os.environ['AUTH_PASS']:
+            return func(*args, **kwargs)
+        abort(403)
+    return wraps
+
+
 @cron_blueprint.route('/sync', methods=['POST'])
+@auth_check
 def sync_db_with_sheet():
     values = get_values_from_sheet()
     set_values_to_database(values)
@@ -21,6 +32,7 @@ def sync_db_with_sheet():
 
 
 @cron_blueprint.route('/scrape-bandcamp', methods=['POST'])
+@auth_check
 def scrape_bandcamp():
     db = cron_blueprint.config['DB']
     db_name = os.environ['DB_NAME']
