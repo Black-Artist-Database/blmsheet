@@ -51,7 +51,7 @@ def update_database(transaction, entry_key, entry):
 def scrape_bandcamp_details(url):
     response = requests.get(url)
     if not response.ok:
-        return '', ''
+        return [], [], '', ''
     html = lxh.fromstring(response.text)
     try:
         location = html.cssselect('p#band-name-location')[0].cssselect('span.location')[0].text
