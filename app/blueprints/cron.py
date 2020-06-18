@@ -85,8 +85,8 @@ def set_values_to_database(values):
                 existing = entry_ref.get()
                 if existing.exists:
                     old = existing.to_dict()
-                    entry['genre_tags'] = list(set(old.get('genre_tags', []) + entry['genre_tags']))
-                    entry['location_tags'] = list(set(old.get('location_tags', []) + entry['location_tags']))
+                    entry['genre_tags'] = list(set(o for o in (old.get('genre_tags', []) + entry['genre_tags']) if o))
+                    entry['location_tags'] = list(set(o for o in (old.get('location_tags', []) + entry['location_tags']) if o))
                     batch.update(entry_ref, entry)
                 else:
                     batch.set(entry_ref, entry)
