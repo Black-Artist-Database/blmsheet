@@ -35,12 +35,13 @@ def entry_list():
             entries = entries.where('name_first_letter', '==', request.args.get('first_letter').lower())
 
         if request.args.get('genre'):
-            entries = entries.where('genre_tags', 'array_contains', request.args.get('genre'))
+            entries = entries.where('genre_tags', 'array_contains', request.args.get('genre').lower())
 
         results = [entry.to_dict() for entry in entries.get()]
 
         if request.args.get('location'):
-            results = [entry for entry in results if request.args.get('location') in entry.get('location_tags', [])]
+            location = request.args.get('location').lower()
+            results = [entry for entry in results if location in entry.get('location_tags', [])]
 
         if request.args.get('random'):
             results = random.sample(results, 12)
@@ -67,7 +68,7 @@ def locations():
             item = entry.to_dict()
             for part in item['location_tags']:
                 if part:
-                    locations.add(part.strip())
+                    locations.add(part.strip().lower())
 
         locations = sorted(list(locations))
         cache.set(cache_key, locations, timeout=60 * 60 * 2)
@@ -92,7 +93,7 @@ def genres():
             item = entry.to_dict()
             for genre in item['genre_tags']:
                 if genre:
-                    genres.add(genre.strip())
+                    genres.add(genre.strip().lower())
 
         genres = sorted(list(genres))
         cache.set(cache_key, genres, timeout=60 * 60 * 2)
