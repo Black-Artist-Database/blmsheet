@@ -32,7 +32,7 @@
       </div>
     </form>
   </div>
-  <div class="alphabet-filter">
+  <div class="alphabet-filter"  v-if="!filters.name">
   <ul class="mt-3 mb-3 mb-0">
       <li v-on:click="filters.first_letter = null" :class="{ 'd-inline text-uppercase h4 letter mr-3': true, active: filters.first_letter === null }">All</li>
       <li v-for="letter in alphabet" :key="letter" v-on:click="filters.first_letter = letter; filters.name = ''" :class="{ 'd-inline text-uppercase h4 letter': true, active: letter === filters.first_letter }" >
