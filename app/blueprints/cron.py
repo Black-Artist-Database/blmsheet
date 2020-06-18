@@ -115,6 +115,7 @@ def get_values_from_sheet():
         obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalpha() else '#'
         # normalise genres and locations, allow for separation with slashes rather than columns
         obj['genre_tags'] = [genre.lower().strip() for genre in obj.get('genre', '').replace('/', ',').split(',') if genre]
+        obj['genre_tags'] = [genre.lower().strip() for genre in obj['genre_tags'].split('#') if genre]
         obj['location_tags'] = [part.lower().strip() for part in obj.get('location', '').replace('/', ',').split(',') if part]
         values.append(obj)
     return values
