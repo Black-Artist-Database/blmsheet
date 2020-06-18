@@ -39,6 +39,7 @@ export default {
     loading: true,
     filters: {
       genre: '',
+      name: '',
       location: null,
       first_letter: 'a'
     },
@@ -60,6 +61,11 @@ export default {
         this.fetchList()
       }
    },
+   'filters.name': function(){
+      if (this.filters.first_letter) {
+        this.filters.first_letter = null
+      }
+   },
   },
   mounted(){
     this.fetchList()
@@ -74,6 +80,7 @@ export default {
         })
     },
     fetchRandom(){
+        this.filters.name = ''
         this.loading = true
         axios.get('/api/list?random=12&timestamp='+new Date().getSeconds())
         .then((response) => {

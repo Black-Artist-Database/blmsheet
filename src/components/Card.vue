@@ -46,9 +46,33 @@ export default {
             if (this.artwork && this.artwork.length > 1) {
                 return this.artwork
             } 
-            //math random to generate different placeholders
-            let gap = Math.random() * 3 + 2;
-            return 'https://generative-placeholders.glitch.me/image?width=300&height=300&style=triangles&gap=' +gap * 50;
+            var randomFileNumber = parseInt(Math.floor(Math.random() * 10) + 1);
+            
+            switch(randomFileNumber) {
+              case 1:
+                return require('@/assets/placeholders/1.png');
+              case 2:
+                return require('@/assets/placeholders/2.png');
+              case 3:
+                return require('@/assets/placeholders/3.png');
+              case 4:
+                return require('@/assets/placeholders/4.png');
+              case 5:
+                return require('@/assets/placeholders/5.png');
+              case 6:
+                return require('@/assets/placeholders/6.png');
+              case 7:
+                return require('@/assets/placeholders/7.png');
+              case 8:
+                return require('@/assets/placeholders/8.png');
+              case 9:
+                return require('@/assets/placeholders/9.png');
+              case 10:
+                return require('@/assets/placeholders/10.png');
+            } 
+
+            return require('@/assets/placeholders/1.png');
+
         }
     }
 }
