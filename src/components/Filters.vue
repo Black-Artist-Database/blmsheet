@@ -17,7 +17,7 @@
       <div class="form-inline">
         <div class="input-group">
           <div>
-          <select v-model="filters.genre">
+          <select v-model="filters.genre" class="custom-select">
             <option value="">All Genres</option>
             <option v-for="genre in genresData" :value="genre" :key="genre">
                 {{ genre }}
@@ -94,9 +94,11 @@ export default {
     }
   }
 
-  select, input {
-    width:200px;
-    margin:0 30px 0 10px;
+  select, input, /deep/ .form-control {
+    max-width: 200px;
+    width: 100%;
+    height: 40px !important;
+    margin:10px 30px 0 10px;
   }
   select, option {text-transform:capitalize !important;}
 
