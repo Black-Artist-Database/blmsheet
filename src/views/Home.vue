@@ -80,7 +80,7 @@ export default {
         })
     },
     fetchRandom(){
-        this.filters.name = null
+        this.filters.name = ''
         this.loading = true
         axios.get('/api/list?random=12&timestamp='+new Date().getSeconds())
         .then((response) => {
