@@ -2,7 +2,7 @@ import os
 import random
 
 from flask import Blueprint
-from flask import abort, jsonify, request
+from flask import jsonify, request
 from flask_cors import CORS
 
 
