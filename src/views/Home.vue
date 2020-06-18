@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="container mt-3">
-      <h2 class="mt-4 mb-4">A crowd-sourced list of black artists on Bandcamp.</h2>
+      <h2 class="mt-4 mb-4">A crowd-sourced list of Black artists on Bandcamp.</h2>
       <Filters :filters="filters" @loading="e => loading = e"/>
       <div class="d-flex justify-content-center" v-if="loading">
         <div class="spinner-border m-5" role="status">
