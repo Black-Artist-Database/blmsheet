@@ -23,7 +23,6 @@ def auth_check(func):
         ):
             return func(*args, **kwargs)
         abort(403)
-
     return wraps
 
 
