@@ -54,13 +54,15 @@ def set_values_to_database(values):
                 except KeyError:
                     continue
                 entry_ref = db.collection(db_name).document(key)
+                entry.update({u'timestamp': firestore.SERVER_TIMESTAMP})  # counts as an additional operation                
                 existing = entry_ref.get()
                 if existing.exists:
                     old = existing.to_dict()
                     entry['genre_tags'] = list(set(old.get('genre_tags', []) + entry['genre_tags']))
                     entry['location_tags'] = list(set(old.get('location_tags', []) + entry['location_tags']))
-                entry.update({u'timestamp': firestore.SERVER_TIMESTAMP})  # counts as an additional operation
-                batch.update(entry_ref, entry)
+                    batch.update(entry_ref, entry)
+                else:
+                    batch.set(entry_ref, entry)
         batch.commit()
 
 
