@@ -8,6 +8,7 @@
         :serializer="s => s"
         :class="{'disabled': filters.name !== ''}"
         placeholder="Type a location..."
+        backgroundVariant="#343a50"
       />
     </div>
 </template>
@@ -73,7 +74,7 @@ export default {
 </style>
 
 <!-- Unscoped Styles For Dynamic Generated Items -->
-<style>
+<style scoped>
     .list-group-item, .form-control  {
         text-transform: capitalize;
     }

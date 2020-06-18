@@ -27,7 +27,13 @@ export default {
         width:100%;
         z-index:9;
         padding:5px 5px 0 5px;
-        background:#eee;
+        @media (prefers-color-scheme: light) {
+            background:#eee;
+        }
+        @media (prefers-color-scheme: dark) {
+            background: #343a40;
+        }
+        
         iframe {
             max-width:700px;
             margin:auto;

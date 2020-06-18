@@ -98,8 +98,24 @@ export default {
   $bc-green: #1DC379;
   $bc-red: #C3411D;
   $bc-purple: #941DC3;
-  $bc-blue: #1DA0C3;
+  $bc-blue: #0064b5;
 
+   @media (prefers-color-scheme: dark) {
+    .card {
+      border-color: rgba(255,255,255,0.3);
+      background-color: transparent;
+      &:hover {
+        border-color: rgba(255,255,255,0.5);
+      }
+      .card-body {
+        a { color: white; }
+      }
+
+    }
+  }
+  .badge {
+    z-index: 10;
+  }
   .badge-bc-green {
     background-color: $bc-green;
   }
@@ -160,6 +176,7 @@ export default {
     font-size:60%;
   }
 
+
   .play {
     width:100%;
     background:rgba(0,0,0,0.5);
@@ -176,7 +193,7 @@ export default {
       max-width:80px;
     }
   }
-  .card:hover {
+  .image-wrapper:hover {
     .play {
       opacity:1;
     }
