@@ -85,7 +85,7 @@ def set_values_to_database(values):
                 existing = entry_ref.get()
                 if existing.exists:
                     old = existing.to_dict()
-                    entry['genre_tags'] = list(set(o for o in (old.get('genre_tags', []) + entry['genre_tags']) if o))
+                    entry['genre_tags'] = list(set(o.replace('#', '') for o in (old.get('genre_tags', []) + entry['genre_tags']) if o))
                     entry['location_tags'] = list(set(o for o in (old.get('location_tags', []) + entry['location_tags']) if o))
                     batch.update(entry_ref, entry)
                 else:
@@ -114,8 +114,7 @@ def get_values_from_sheet():
                 obj[field] = ''  # some fields may be empty which truncates the row data
         obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalpha() else '#'
         # normalise genres and locations, allow for separation with slashes rather than columns
-        obj['genre_tags'] = [genre.lower().strip() for genre in obj.get('genre', '').replace('/', ',').split(',') if genre]
-        obj['genre_tags'] = [genre.lower().strip() for genre in obj['genre_tags'].split('#') if genre]
+        obj['genre_tags'] = [genre.lower().strip() for genre in obj.get('genre', '').replace('#', ',').replace('/', ',').split(',') if genre]
         obj['location_tags'] = [part.lower().strip() for part in obj.get('location', '').replace('/', ',').split(',') if part]
         values.append(obj)
     return values
