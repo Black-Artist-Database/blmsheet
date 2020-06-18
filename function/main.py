@@ -79,7 +79,7 @@ def scrape_bandcamp_album_ids_from_url(content):
     if comment in content:
         pos = content.find(comment)
         album_id = content[pos + comment_len:pos + comment_len + 20]
-        return album_id.split('-->')[0].strip()
+        return [album_id.split('-->')[0].strip()]
 
 
 def scrape_bandcamp_album_ids_from_artist_page(url):

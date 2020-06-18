@@ -1,6 +1,7 @@
 import functools
 import json
 import os
+from datetime import datetime, timedelta
 from itertools import zip_longest
 
 from flask import Blueprint, abort, request
@@ -21,6 +22,20 @@ def auth_check(func):
             return func(*args, **kwargs)
         abort(403)
     return wraps
+
+
+@cron_blueprint.route('/remove-old', methods=['POST'])
+@auth_check
+def remove_old_entries():
+    db = cron_blueprint.config['DB']
+    db_name = os.environ['DB_NAME']
+
+    entries = db.collection(db_name)
+    entries = entries.where('timestamp', '<', datetime.utcnow() - timedelta(hours=24))
+    for old_entry in entries.get():
+        old_entry.delete()
+
+    return 'OK', 200
 
 
 @cron_blueprint.route('/sync', methods=['POST'])
