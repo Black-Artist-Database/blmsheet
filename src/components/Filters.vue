@@ -16,7 +16,7 @@
     <form class="d-flex justify-content-center">
       <div class="form-inline">
         <div class="input-group input-group-sm d-flex justify-content-center">
-          <input placeholder="Artist's name" type="text" class="form-control" id="name-filter" v-model="filters.name">
+          <input placeholder="Search by name" type="text" class="form-control" id="name-filter" v-model="filters.name">
         </div>
         <div class="input-group input-group-sm">
           <div>
