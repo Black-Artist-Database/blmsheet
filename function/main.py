@@ -19,8 +19,11 @@ def scrape_and_update_bandcamp_details(event, context):
     entry = message['entry']
     entry_key = message['key']
 
-    url = entry['link'] if entry['link'].startswith('http') else f'https://{entry["link"]}'
-    album_ids, genres, image_url, location = scrape_bandcamp_details(url)
+    if not entry['link']:
+        return
+
+    entry['link'] = entry['link'] if entry['link'].startswith('http') else f'https://{entry["link"]}'
+    album_ids, genres, image_url, location = scrape_bandcamp_details(entry['link'])
     location_tags = [part.lower().strip() for part in location.split(',')] if location else []
 
     entry['bandcamp_album_ids'] = album_ids

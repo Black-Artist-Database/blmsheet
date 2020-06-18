@@ -17,10 +17,7 @@ cron_blueprint = Blueprint(name='cron',
 def auth_check(func):
     @functools.wraps(func)
     def wraps(*args, **kwargs):
-        if (
-            request.authorization['username'] == os.environ['AUTH_USER']
-            and request.authorization['password'] == os.environ['AUTH_PASS']
-        ):
+        if request.args.get('auth') == os.environ['AUTH_PASS']:
             return func(*args, **kwargs)
         abort(403)
     return wraps
