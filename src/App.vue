@@ -45,7 +45,15 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: black;
+  @media (prefers-color-scheme: dark) {
+    background-color: black;
+    color: white;
+  }
+  @media (prefers-color-scheme: light) {
+    background-color: #f7f7f7;
+    color: black;
+  }
 }
 
 .router-link-exact-active {

@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="bg-light p-3 mb-2">
+  <div class="filters p-3 mb-2">
     <p>Discover artists, producers and labels...</p>    
     <a class="btn btn-bc-blue text-white" v-on:click="shuffleRandom">
     <svg class="bi bi-shuffle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -84,19 +84,34 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-  $bc-blue: #1DA0C3;
+  $bc-blue: #0064b5;
 
   .letter {
     cursor: pointer;
+    @media (prefers-color-scheme: dark) {
+      color: rgba(255,255,255, 0.5);
+    }
+   
     &:hover, &.active {
       color: $bc-blue;
+      @media (prefers-color-scheme: dark) {
+        color: white;
+      }
+    }
+
+     @media (prefers-color-scheme: light) {
+      color: rgba(0,0,0, 0.5);
+      &:hover {
+        color: black;
+      }
     }
   }
 
   select {
     width: 100% !important;
     height: 100%;
+    background-color: transparent;
+    border-color: rgba(255,255,255,0.5);
   }
 
   .input-group, .location-filter {
@@ -107,6 +122,8 @@ export default {
     input, /deep/div, /deep/ div input {
       height: 100%;
       width: 100%;
+      background-color: transparent;
+      border-color: rgba(255,255,255,0.5);
     }
   }
   select, option {text-transform:capitalize !important;}
@@ -147,6 +164,50 @@ export default {
 
   .btn-bc-blue {
     background-color: $bc-blue;
+    border: 1px solid $bc-blue;
+    @media (prefers-color-scheme: dark) {
+      background-color: transparent;
+      border: 1px solid white;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .filters {
+      border: 1px solid rgba(255,255,255,0.3);
+      background-color: transparent;
+    }
+    select, input, /deep/div, /deep/ div input {
+      background-color: transparent;
+      color: white !important;
+      border-color: rgba(255,255,255,0.5);
+    }
+    select:disabled {
+      background-color: transparent;
+      opacity: 0.7;
+    }
+    hr {
+      background-color: rgba(255,255,255,0.3);
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .filters {
+      background-color: white;
+      color: black;
+    }
+    select, input, /deep/ div input {
+      background-color: #f9f9f9 !important;
+    }
+     select, input, /deep/div, /deep/ div input {
+      color: black !important;
+      border-color: black !important;
+    }
+    select:disabled {
+      opacity: 1;
+    }
+    hr {
+      background-color: #f7f7f7;
+    }
   }
 
 </style>
