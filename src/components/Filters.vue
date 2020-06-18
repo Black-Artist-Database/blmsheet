@@ -14,9 +14,10 @@
     <p>Or filter by name, genre or location...</p>
 
     <form class="d-flex justify-content-center">
-      <div class="form-inline">
+      <div class="d-flex flex-row flex-wrap justify-content-center">
         <div class="input-group input-group-sm d-flex justify-content-center">
           <input placeholder="Search by name" type="text" class="form-control" id="name-filter" v-model="filters.name">
+          <a @click="filters.name = ''" v-if="filters.name !== ''">&times;</a>
         </div>
         <div class="input-group input-group-sm">
           <div>
@@ -28,7 +29,7 @@
           </select>
           </div>
         </div>
-        <LocationTypeAhead :filters="filters"/>
+        <LocationTypeAhead :filters="filters" class="location-filter"/>
       </div>
     </form>
   </div>
@@ -93,17 +94,43 @@ export default {
     }
   }
 
-  select, input, /deep/ .form-control {
-    max-width: 200px;
-    width: 100%;
+  select {
+    width: 100% !important;
+    height: 100%;
+  }
+
+  .input-group, .location-filter {
+    width: 200px;
+    // width: 100%;
     height: 40px !important;
-    margin:10px 30px 0 10px;
+    margin:10px ;
+    input, /deep/div, /deep/ div input {
+      height: 100%;
+      width: 100%;
+    }
   }
   select, option {text-transform:capitalize !important;}
 
   .input-group div {
     margin:auto;
   }
+  .input-group {
+    position: relative;
+    input {
+      z-index: 2;
+    }
+    a {
+      z-index: 3;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 0px;
+      line-height: 40px;
+      font-size: 22px;
+    }
+  }
+
+
 
   .alphabet-filter {
     overflow-x:scroll;
