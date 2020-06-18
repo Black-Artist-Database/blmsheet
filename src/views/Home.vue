@@ -112,7 +112,7 @@ export default {
 .spinner-border {
   width: 3rem;
   height: 3rem;
-  color: #1da0c2;
+  color: #0064b5;
 }
 
 .page {
