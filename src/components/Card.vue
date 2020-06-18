@@ -1,9 +1,12 @@
 <template>
 <div class="col-6 col-md-3 col-lg-3 p-2">
     <div class="card">
-        <a :href=link target="_blank">
+        <a x-href=link target="_blank">
         <div class="image-wrapper">
-            <img :src="image" class="card-img-top" :alt="name">
+            <div class="play" @click="onPlay()">
+              <img src="@/assets/play.png"/>
+            </div>
+            <img :src="image" class="bc-image card-img-top" :alt="name">
         </div>
         <span
             v-if="type"
@@ -40,8 +43,16 @@ export default {
         type: String,
         location: String,
         genres: Array,
+        bandcamp_ids: Array,
     },
     computed: {
+
+        bandcamp_preview_id(){
+          if (typeof this.bandcamp_ids == 'object' && this.bandcamp_ids.length > 0){
+            return this.bandcamp_ids[0]
+          } 
+          return null
+        },
         image(){
             if (this.artwork && this.artwork.length > 1) {
                 return this.artwork
@@ -72,8 +83,12 @@ export default {
             } 
 
             return require('@/assets/placeholders/1.png');
-
         }
+    },
+    methods: {
+      onPlay () {
+        this.$emit('on-play', this.bandcamp_preview_id);
+      }
     }
 }
 </script>
@@ -115,6 +130,8 @@ export default {
     background-image:url(../assets/loading-spinner.gif);
     background-position: center;
     background-repeat:no-repeat;
+    display: flex;
+    align-items: stretch;
   }
 
   .image-wrapper:before{
@@ -123,7 +140,7 @@ export default {
     padding-top: 100%;
   }
 
-  .image-wrapper img {
+  .image-wrapper .bc-image {
     position:  absolute;
     top: 0;
     left: 0;
@@ -141,5 +158,27 @@ export default {
   small {
     font-weight:bold;
     font-size:60%;
+  }
+
+  .play {
+    width:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:9;
+    opacity:0;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor:pointer;
+    img {
+      width:50%;
+      max-width:80px;
+    }
+  }
+  .card:hover {
+    .play {
+      opacity:1;
+    }
   }
 </style>
