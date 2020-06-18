@@ -25,7 +25,7 @@ export default {
         bottom:0;
         left:0;
         width:100%;
-        z-index:9;
+        z-index:100;
         padding:5px 5px 0 5px;
         @media (prefers-color-scheme: light) {
             background:#eee;
