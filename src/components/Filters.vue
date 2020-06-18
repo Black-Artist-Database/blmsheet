@@ -15,7 +15,7 @@
 
     <form class="d-flex justify-content-center">
       <div class="form-inline">
-        <div class="input-group input-group-sm d-flex justify-content-center">
+        <div class="input-group input-group-sm d-flex justify-content-center" v-if="nameSearchEnabled">
           <input placeholder="Artist's name" type="text" class="form-control" id="name-filter" v-model="filters.name">
         </div>
         <div class="input-group input-group-sm">
@@ -51,13 +51,15 @@ import LocationTypeAhead from '@/components/LocationTypeAhead.vue'
 export default {
   name: 'Filters',
   props: {
-    filters: Object
+    filters: Object,
+    nameSearchEnabled: Boolean
   },
   components: {
     LocationTypeAhead
   },
   mounted(){
     this.fetchGenres();
+    this.nameSearchEnabled = false; //currently disabled until we have a backend endpoint
   },
   data: function() {
     return {
@@ -116,4 +118,5 @@ export default {
   .btn-bc-blue {
     background-color: $bc-blue;
   }
+
 </style>

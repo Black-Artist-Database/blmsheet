@@ -71,3 +71,10 @@ export default {
         }
     }
 </style>
+
+<!-- Unscoped Styles For Dynamic Generated Items -->
+<style>
+    .list-group-item  {
+        text-transform: capitalize;
+    }
+</style>
