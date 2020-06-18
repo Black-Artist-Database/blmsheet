@@ -15,7 +15,7 @@
 <style lang="scss" scoped>
 .page {
   @media (prefers-color-scheme: dark) {
-    a { color: white; }
+    a { color: white; text-decoration:underline; }
   }
   // border-top:#1DA0C3 100px solid;
 }

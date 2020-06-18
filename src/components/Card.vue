@@ -108,7 +108,7 @@ export default {
         border-color: rgba(255,255,255,0.5);
       }
       .card-body {
-        a { color: white; }
+        a { color: white; text-decoration:underline; }
       }
 
     }
