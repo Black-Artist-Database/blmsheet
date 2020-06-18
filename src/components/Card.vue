@@ -3,7 +3,7 @@
     <div class="card">
         <a x-href=link target="_blank">
         <div class="image-wrapper">
-            <div class="play" @click="onPlay()">
+            <div class="play" @click="onPlay()" v-if="bandcamp_preview_id">
               <img src="@/assets/play.png"/>
             </div>
             <img :src="image" class="bc-image card-img-top" :alt="name">
