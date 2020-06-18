@@ -10,7 +10,7 @@
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 .page {
   border-top:#1DA0C3 100px solid;
 }
