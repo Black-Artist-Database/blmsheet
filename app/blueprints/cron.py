@@ -1,8 +1,10 @@
+import functools
 import json
 import os
+from datetime import datetime, timedelta
 from itertools import zip_longest
 
-from flask import Blueprint
+from flask import Blueprint, abort, request
 from google.auth import compute_engine
 from google.cloud import firestore
 from googleapiclient.discovery import build
@@ -13,7 +15,31 @@ cron_blueprint = Blueprint(name='cron',
                            url_prefix='/cron')
 
 
+def auth_check(func):
+    @functools.wraps(func)
+    def wraps(*args, **kwargs):
+        if (os.environ.get('FLASK_ENV', '') == 'development' or request.args.get('auth') == os.environ['AUTH_PASS']):
+            return func(*args, **kwargs)
+        abort(403)
+    return wraps
+
+
+@cron_blueprint.route('/remove-old', methods=['POST'])
+@auth_check
+def remove_old_entries():
+    db = cron_blueprint.config['DB']
+    db_name = os.environ['DB_NAME']
+
+    entries = db.collection(db_name)
+    entries = entries.where('timestamp', '<', datetime.utcnow() - timedelta(hours=24))
+    for old_entry in entries.get():
+        old_entry.delete()
+
+    return 'OK', 200
+
+
 @cron_blueprint.route('/sync', methods=['POST'])
+@auth_check
 def sync_db_with_sheet():
     values = get_values_from_sheet()
     set_values_to_database(values)
@@ -21,6 +47,7 @@ def sync_db_with_sheet():
 
 
 @cron_blueprint.route('/scrape-bandcamp', methods=['POST'])
+@auth_check
 def scrape_bandcamp():
     db = cron_blueprint.config['DB']
     db_name = os.environ['DB_NAME']
@@ -54,13 +81,15 @@ def set_values_to_database(values):
                 except KeyError:
                     continue
                 entry_ref = db.collection(db_name).document(key)
+                entry.update({u'timestamp': firestore.SERVER_TIMESTAMP})  # counts as an additional operation                
                 existing = entry_ref.get()
                 if existing.exists:
                     old = existing.to_dict()
-                    entry['genre_tags'] = list(set(old.get('genre_tags', []) + entry['genre_tags']))
-                    entry['location_tags'] = list(set(old.get('location_tags', []) + entry['location_tags']))
-                entry.update({u'timestamp': firestore.SERVER_TIMESTAMP})  # counts as an additional operation
-                batch.update(entry_ref, entry)
+                    entry['genre_tags'] = list(set(o for o in (old.get('genre_tags', []) + entry['genre_tags']) if o))
+                    entry['location_tags'] = list(set(o for o in (old.get('location_tags', []) + entry['location_tags']) if o))
+                    batch.update(entry_ref, entry)
+                else:
+                    batch.set(entry_ref, entry)
         batch.commit()
 
 
@@ -85,7 +114,7 @@ def get_values_from_sheet():
                 obj[field] = ''  # some fields may be empty which truncates the row data
         obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalpha() else '#'
         # normalise genres and locations, allow for separation with slashes rather than columns
-        obj['genre_tags'] = [genre.lower().strip() for genre in obj.get('genre', '').replace('/', ',').split(',')]
-        obj['location_tags'] = [part.lower().strip() for part in obj.get('location', '').replace('/', ',').split(',')]
+        obj['genre_tags'] = [genre.lower().strip() for genre in obj.get('genre', '').replace('/', ',').split(',') if genre]
+        obj['location_tags'] = [part.lower().strip() for part in obj.get('location', '').replace('/', ',').split(',') if part]
         values.append(obj)
     return values

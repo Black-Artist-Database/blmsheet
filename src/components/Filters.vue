@@ -11,13 +11,17 @@
     Random Shuffle
     </a>
   <hr>
-    <p>Or filter by genre or location...</p>
+    <p>Or filter by name, genre or location...</p>
 
     <form class="d-flex justify-content-center">
-      <div class="form-inline">
-        <div class="input-group">
+      <div class="d-flex flex-row flex-wrap justify-content-center">
+        <div class="input-group input-group-sm d-flex justify-content-center">
+          <input placeholder="Search by name" type="text" class="form-control" id="name-filter" v-model="filters.name">
+          <a @click="filters.name = ''" v-if="filters.name !== ''">&times;</a>
+        </div>
+        <div class="input-group input-group-sm">
           <div>
-          <select v-model="filters.genre">
+          <select class="custom-select" v-model="filters.genre" :disabled="filters.name !== ''">
             <option value="">All Genres</option>
             <option v-for="genre in genresData" :value="genre" :key="genre">
                 {{ genre }}
@@ -25,18 +29,14 @@
           </select>
           </div>
         </div>
-        <div class="input-group">
-          <LocationTypeAhead :filters="filters"/>
-        </div>
+        <LocationTypeAhead :filters="filters" class="location-filter"/>
       </div>
-
     </form>
   </div>
-
-  <div class="alphabet-filter">
+  <div :class="{ 'alphabet-filter': true, disabled: filters.name }">
   <ul class="mt-3 mb-3 mb-0">
       <li v-on:click="filters.first_letter = null" :class="{ 'd-inline text-uppercase h4 letter mr-3': true, active: filters.first_letter === null }">All</li>
-      <li v-for="letter in alphabet" :key="letter" v-on:click="filters.first_letter = letter" :class="{ 'd-inline text-uppercase h4 letter': true, active: letter === filters.first_letter }" >
+      <li v-for="letter in alphabet" :key="letter" v-on:click="filters.first_letter = letter; filters.name = ''" :class="{ 'd-inline text-uppercase h4 letter': true, active: letter === filters.first_letter }" >
         {{ letter }}
       </li>
   </ul>
@@ -52,7 +52,7 @@ import LocationTypeAhead from '@/components/LocationTypeAhead.vue'
 export default {
   name: 'Filters',
   props: {
-    filters: Object
+    filters: Object,
   },
   components: {
     LocationTypeAhead
@@ -94,24 +94,59 @@ export default {
     }
   }
 
-  select, input {
-    width:200px;
-    margin:0 30px 0 10px;
+  select {
+    width: 100% !important;
+    height: 100%;
+  }
+
+  .input-group, .location-filter {
+    width: 200px;
+    // width: 100%;
+    height: 40px !important;
+    margin:10px ;
+    input, /deep/div, /deep/ div input {
+      height: 100%;
+      width: 100%;
+    }
   }
   select, option {text-transform:capitalize !important;}
 
   .input-group div {
     margin:auto;
   }
+  .input-group {
+    position: relative;
+    input {
+      z-index: 2;
+    }
+    a {
+      z-index: 3;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 0px;
+      line-height: 40px;
+      font-size: 22px;
+    }
+  }
+
+
 
   .alphabet-filter {
     overflow-x:scroll;
+    transition:opacity 0.2s;
     ul {
+      padding-left: 0;
       min-width:710px;
+    }
+    &.disabled {
+      opacity:0.3;
+      pointer-events: none;
     }
   }
 
   .btn-bc-blue {
     background-color: $bc-blue;
   }
+
 </style>
