@@ -24,9 +24,10 @@ def entry_list():
         entries = db.collection(db_name)
 
         if request.args.get('name'):
-            name = request.args.get('name')
-            entries = entries.where('name', 'in', [name, name.lower(), name.title(), name.upper()])
+            name = request.args.get('name').lower()
+            entries = entries.where('name_first_letter', '==', name[0])
             results = [entry.to_dict() for entry in entries.get()]
+            results = [entry for entry in results if name in entry['name'].lower()]
             cache.set(f'{request.path}?name={name}', results, timeout=60 * 5)
             return jsonify(results)
 
