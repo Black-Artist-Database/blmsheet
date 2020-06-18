@@ -74,7 +74,10 @@ export default {
 
 <!-- Unscoped Styles For Dynamic Generated Items -->
 <style>
-    .list-group-item  {
+    .list-group-item, .form-control  {
         text-transform: capitalize;
+    }
+    .form-control::placeholder {
+        text-transform: none;
     }
 </style>
