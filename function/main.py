@@ -27,8 +27,8 @@ def scrape_and_update_bandcamp_details(event, context):
     entry['bandcamp_genres'] = genres
     entry['bandcamp_image_url'] = image_url
     entry['bandcamp_location'] = location
-    entry['location_tags'] = list(set(entry.get('location_tags', []) + location_tags))
-    entry['genre_tags'] = list(set(entry.get('genre_tags', []) + genres))
+    entry['location_tags'] = list(set(loc.lower() for loc in (entry.get('location_tags', []) + location_tags)))
+    entry['genre_tags'] = list(set(g.lower() for g in (entry.get('genre_tags', []) + genres)))
 
     transaction = db.transaction()
     update_database(transaction, entry_key, entry)
@@ -61,8 +61,8 @@ def scrape_bandcamp_details(url):
         image_url = html.cssselect('div#tralbumArt')[0].cssselect('img')[0].attrib['src']
     except (IndexError, KeyError):
         image_url = ''
-    genres = [element.text for element in html.cssselect('a.tag')]
-    album_ids = [scrape_bandcamp_album_ids_from_url(response.text)]
+    genres = [element.text.lower() for element in html.cssselect('a.tag')]
+    album_ids = scrape_bandcamp_album_ids_from_url(response.text)
     if not album_ids:
         album_ids = [data.split('-')[1] for data in html.xpath('//@data-item-id') if data.startswith('album-')]
     if not album_ids:
