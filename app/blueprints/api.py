@@ -36,11 +36,13 @@ def entry_list():
 
         if request.args.get('genre'):
             entries = entries.where('genre_tags', 'array_contains', request.args.get('genre').lower())
+        elif request.args.get('location'):  # firestore only allows a single `array_contains` in a query
+            entries = entries.where('location_tags', 'array_contains', request.args.get('location').lower())
 
         results = [entry.to_dict() for entry in entries.get()]
 
-        if request.args.get('location'):
-            location = request.args.get('location').lower()
+        if request.args.get('genre') and request.args.get('location'):
+            location = request.args.get('location').lower()  # workaround for firestore limitation
             results = [entry for entry in results if location in entry.get('location_tags', [])]
 
         if request.args.get('random'):
