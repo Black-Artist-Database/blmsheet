@@ -1,6 +1,7 @@
 import functools
 import json
 import os
+import re
 from datetime import datetime, timedelta
 from itertools import zip_longest
 
@@ -113,6 +114,9 @@ def get_values_from_sheet():
                 obj[field] = row[i]
             except IndexError:
                 obj[field] = ''  # some fields may be empty which truncates the row data
+        match = re.match('www\.([a-zA-Z0-9]+\.bandcamp\.com)', obj['link'])
+        if match is not None:
+            obj['link'] = f'https://{match.group(1)}'
         obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalpha() else '#'
         # normalise genres and locations, allow for separation with slashes rather than columns
         obj['genre_tags'] = [genre.lower().strip() for genre in obj.get('genre', '').replace('#', ',').replace('/', ',').split(',') if genre]
