@@ -28,7 +28,7 @@ def entry_list():
             entries = entries.where('name_first_letter', '==', name[0])
             results = [entry.to_dict() for entry in entries.get()]
             results = [entry for entry in results if name in entry['name'].lower()]
-            cache.set(f'{request.path}?name={name}', results, timeout=60 * 5)
+            cache.set(f'{request.path}?name={name}', results, timeout=60 * 60 * 1)
             return jsonify(results)
 
         if request.args.get('first_letter'):
@@ -48,7 +48,7 @@ def entry_list():
         if request.args.get('random'):
             results = random.sample(results, 12)
 
-        cache.set(cache_key, results, timeout=60 * 30)
+        cache.set(cache_key, results, timeout=60 * 60 * 1)
     return jsonify(results)
 
 
