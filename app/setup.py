@@ -8,6 +8,7 @@ from pathlib import Path
 from flask import Flask
 from flask import current_app, jsonify
 from flask_caching import Cache
+from flask_compress import Compress
 from google.cloud import firestore
 from google.cloud import pubsub
 
@@ -19,6 +20,7 @@ def create_app():
     )
     init_logging(app)
     setup_cache(app)
+    setup_compress(app)
     setup_db(app)
     setup_pubsub(app)
     add_blueprints(app)
@@ -54,6 +56,14 @@ def setup_cache(app):
             'CACHE_REDIS_PORT': 6379,
         })
     app.config['CACHE'] = cache
+
+
+def setup_compress(app):
+    compress = Compress()
+    if os.environ.get('FLASK_ENV', '') != 'development':
+        app.config['COMPRESS_CACHE_BACKEND'] = lambda: app.config['CACHE']
+        app.config['COMPRESS_CACHE_KEY'] = lambda r: f'{r.full_path}-compress'
+    compress.init_app(app)
 
 
 def setup_db(app):
