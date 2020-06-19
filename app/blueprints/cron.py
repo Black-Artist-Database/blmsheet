@@ -117,7 +117,11 @@ def get_values_from_sheet():
         match = re.match('www\.([a-zA-Z0-9]+\.bandcamp\.com)', obj['link'])
         if match is not None:
             obj['link'] = f'https://{match.group(1)}'
-        obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalpha() else '#'
+        try:
+            obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalpha() else '#'
+        except IndexError:
+            current_app.logger.warn(f'Row missing name value (not saved): {row}')
+            continue
         # normalise genres and locations, allow for separation with slashes rather than columns
         obj['genre_tags'] = [genre.lower().strip() for genre in obj.get('genre', '').replace('#', ',').replace('/', ',').split(',') if genre]
         obj['location_tags'] = [part.lower().strip() for part in obj.get('location', '').replace('/', ',').split(',') if part]
