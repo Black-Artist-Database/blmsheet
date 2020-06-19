@@ -56,7 +56,31 @@ export default {
   watch: {
    filters: {
       handler: debounce(function () {
-        this.fetchList()
+        this.fetchList();
+        //google analytics custom tracking event
+        if (typeof window.ga == 'function') { 
+          //genre
+          window.ga('gtag_UA_169837392_1.send', {
+            hitType: 'event',
+            eventCategory: 'genre',
+            eventAction: 'search',
+            eventLabel: this.filters.genre
+          });
+          //location
+          window.ga('gtag_UA_169837392_1.send', {
+            hitType: 'event',
+            eventCategory: 'location',
+            eventAction: 'search',
+            eventLabel: this.filters.location
+          });
+          //name
+          window.ga('gtag_UA_169837392_1.send', {
+            hitType: 'event',
+            eventCategory: 'name',
+            eventAction: 'search',
+            eventLabel: this.filters.name
+          });
+        }
       }, 500),
       deep: true //this picks up nested items e.g. filters.genre
    },
