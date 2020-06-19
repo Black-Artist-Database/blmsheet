@@ -4,7 +4,7 @@ import os
 from datetime import datetime, timedelta
 from itertools import zip_longest
 
-from flask import Blueprint, abort, request
+from flask import Blueprint, abort, current_app, request
 from google.auth import compute_engine
 from google.cloud import firestore
 from googleapiclient.discovery import build
@@ -33,7 +33,8 @@ def remove_old_entries():
     entries = db.collection(db_name)
     entries = entries.where('timestamp', '<', datetime.utcnow() - timedelta(hours=24))
     for old_entry in entries.get():
-        old_entry.delete()
+        current_app.logger.info(f'Deleting doc {old_entry.id} => {old_entry.to_dict()}')
+        old_entry.reference.delete()
 
     return 'OK', 200
 
