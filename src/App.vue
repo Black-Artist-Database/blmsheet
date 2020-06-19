@@ -46,6 +46,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: black;
+  min-height:100vh;
   @media (prefers-color-scheme: dark) {
     background-color: black;
     color: white;
