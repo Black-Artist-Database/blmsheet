@@ -54,6 +54,9 @@ def setup_cache(app):
             'CACHE_TYPE': 'redis',
             'CACHE_REDIS_HOST': os.environ['REDIS_HOST'],
             'CACHE_REDIS_PORT': 6379,
+            'CACHE_OPTIONS': {
+                'health_check_interval': 30,
+            },
         })
     app.config['CACHE'] = cache
 
