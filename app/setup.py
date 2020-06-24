@@ -49,6 +49,14 @@ def setup_cache(app):
     cache = Cache()
     if os.environ.get('FLASK_ENV', '') == 'development':
         cache.init_app(app, config={'CACHE_TYPE': 'simple'})
+    elif 'REDIS_URL' in os.environ:
+        cache.init_app(app, config={
+            'CACHE_TYPE': 'redis',
+            'CACHE_REDIS_URL': os.environ['REDIS_URL'],
+            'CACHE_OPTIONS': {
+                'health_check_interval': 30,
+            },
+        })
     else:
         cache.init_app(app, config={
             'CACHE_TYPE': 'redis',
