@@ -73,6 +73,8 @@ def set_values_to_database(values):
     db = cron_blueprint.config['DB']
     db_name = os.environ['DB_NAME']
     args = [iter(values)] * 250  # firestore limit of operations (500: 2 per row: 1 write; 1 timestamp)
+    new_entries = 0
+    total_entries = 0
     for group in zip_longest(*args):  # use grouper pattern to batch process
         batch = db.batch()
         for entry in group:
@@ -91,8 +93,11 @@ def set_values_to_database(values):
                     entry['location_tags'] = list(set(o for o in (old.get('location_tags', []) + entry['location_tags']) if o))
                     batch.update(entry_ref, entry)
                 else:
+                    new_entries += 1
                     batch.set(entry_ref, entry)
+                total_entries += 1
         batch.commit()
+    current_app.logger.info(f'Sync to database complete: {total_entries} entries from Sheet ({new_entries} new)')
 
 
 def get_values_from_sheet():
