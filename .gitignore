@@ -40,3 +40,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Terraform local files
+*.tfstate*
+.terraform/
