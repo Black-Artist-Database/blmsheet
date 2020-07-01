@@ -18,6 +18,11 @@
               <router-link to="/add" class="nav-link">Add Submission</router-link>
             </li>
           </ul>
+              <ul class="nav navbar-nav ml-auto">
+              <li>
+                  <a href="https://www.instagram.com/blackbandcamp/" class="nav-link" target="_blank"><img src="./assets/instagram-icon.png" class="ig-icon"></a>
+              </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -59,5 +64,9 @@ export default {
 
 .router-link-exact-active {
   color: #fff !important;
+}
+
+.ig-icon {
+  width:30px;
 }
 </style>
