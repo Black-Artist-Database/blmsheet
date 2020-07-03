@@ -107,14 +107,14 @@ def get_values_from_sheet():
         credentials = compute_engine.Credentials()
         service = build('sheets', 'v4', credentials=credentials)
     sheet = service.spreadsheets()
-    sheet_range = f"{os.environ['TAB_ID']}!A{os.environ['START_ROW']}:E"
+    sheet_range = f"{os.environ['TAB_ID']}!A{os.environ['START_ROW']}:H"
     result = sheet.values().get(spreadsheetId=os.environ['SHEET_ID'],
                                 range=sheet_range).execute()
     values = []
     for row in result.get('values', []):
         obj = {}
         # NB: sheet headers may change!
-        for i, field in enumerate(['name', 'location', 'type', 'link', 'genre', 'notes']):
+        for i, field in enumerate(['name', 'country', 'city', 'state', 'type', 'link', 'genre', 'notes']):
             try:
                 obj[field] = row[i]
             except IndexError:
@@ -128,6 +128,7 @@ def get_values_from_sheet():
             current_app.logger.warn(f'Row missing name value (not saved): {row}')
             continue
         # normalise genres and locations, allow for separation with slashes rather than columns
+        obj['location'] = ', '.join(e for e in [obj["city"], obj["state"], obj["country"]] if e)  # temp fix for splitting location into individual columns
         obj['genre_tags'] = [genre.lower().strip() for genre in obj.get('genre', '').replace('#', ',').replace('/', ',').split(',') if genre]
         obj['location_tags'] = [part.lower().strip() for part in obj.get('location', '').replace('/', ',').split(',') if part]
         values.append(obj)
