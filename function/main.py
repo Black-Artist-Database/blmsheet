@@ -28,7 +28,7 @@ def scrape_and_update_bandcamp_details(event, context):
 
     entry['bandcamp_album_ids'] = album_ids
     entry['bandcamp_genres'] = genres
-    entry['bandcamp_image_url'] = image_url.replace('_16', '_14')
+    entry['bandcamp_image_url'] = image_url.replace('_16', '_14').replace('_21', '_14')
     entry['bandcamp_location'] = location
     entry['location_tags'] = list(set(loc.lower() for loc in (entry.get('location_tags', []) + location_tags)))
     entry['genre_tags'] = list(set(g.lower() for g in (entry.get('genre_tags', []) + genres)))
@@ -63,7 +63,10 @@ def scrape_bandcamp_details(url):
     try:
         image_url = html.cssselect('div#tralbumArt')[0].cssselect('img')[0].attrib['src']
     except (IndexError, KeyError):
-        image_url = ''
+        try:
+            image_url = html.cssselect('img.band-photo')[0].attrib['src']
+        except (IndexError, KeyError):
+            image_url = ''
     genres = [element.text.strip().lower() for element in html.cssselect('a.tag') if element.text.strip()]
     album_ids = scrape_bandcamp_album_ids_from_url(response.text)
     if not album_ids:
