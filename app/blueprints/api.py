@@ -45,7 +45,7 @@ def entry_list():
             location = request.args.get('location').lower()  # workaround for firestore limitation
             results = [entry for entry in results if location in entry.get('location_tags', [])]
 
-        if request.args.get('random'):
+        if request.args.get('random') and results:
             results = random.sample(results, 12)
 
         cache.set(cache_key, results, timeout=60 * 60 * 1)
