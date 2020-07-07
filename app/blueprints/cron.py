@@ -107,6 +107,7 @@ def get_values_from_sheet():
         credentials = compute_engine.Credentials()
         service = build('sheets', 'v4', credentials=credentials)
     sheet = service.spreadsheets()
+    # if sheet headers change the capture range may have to change
     sheet_range = f"{os.environ['TAB_ID']}!A{os.environ['START_ROW']}:H"
     result = sheet.values().get(spreadsheetId=os.environ['SHEET_ID'],
                                 range=sheet_range).execute()
@@ -119,6 +120,7 @@ def get_values_from_sheet():
                 obj[field] = row[i]
             except IndexError:
                 obj[field] = ''  # some fields may be empty which truncates the row data
+        # fixes issues where submissions mistakenly type e.g.: www.bandname.bandcamp.com
         match = re.match('www\.([a-zA-Z0-9]+\.bandcamp\.com)', obj['link'])
         if match is not None:
             obj['link'] = f'https://{match.group(1)}'
