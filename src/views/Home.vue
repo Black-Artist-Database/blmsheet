@@ -1,6 +1,13 @@
 <template>
   <div class="page">
     <div class="container mt-3">
+
+      <div class="alert alert-info" role="alert">
+        <a href="https://www.instagram.com/blackbandcamp/" class="nav-link" target="_blank"><img src="../assets/instagram-icon-blue.png" class="ig-icon"></a>
+        <h4 class="alert-heading">We are now on Instagram</h4>
+        <p><a href="https://www.instagram.com/blackbandcamp/" class="ig-link" target="_blank">Follow us for updates</a></p>
+      </div>
+
       <h2 class="mt-4 mb-4">A crowd-sourced list of Black artists on Bandcamp.</h2>
       <Filters :filters="filters" @loading="e => loading = e"/>
       <div class="d-flex justify-content-center" v-if="loading">
@@ -117,6 +124,11 @@ export default {
 
 .page {
   padding-bottom:100px;
+}
+
+.ig-link {
+  color:#0c5460;
+  text-decoration:underline;
 }
 
 </style>
