@@ -10,6 +10,7 @@ from flask import current_app, jsonify
 from flask_caching import Cache
 from flask_compress import Compress
 from google.cloud import firestore
+from google.cloud import logging as cloud_logging
 from google.cloud import pubsub
 from redis.exceptions import ConnectionError, TimeoutError
 
@@ -41,8 +42,10 @@ def add_blueprints(app):
 
 
 def init_logging(app):
-    app.logger.addHandler(logging.StreamHandler(sys.stdout))
     app.logger.setLevel(logging.INFO)
+    app.logger.addHandler(logging.StreamHandler(sys.stdout))
+    if os.environ.get('FLASK_ENV', '') != 'development':
+        app.logger.addHandler(cloud_logging.Client().get_default_handler())
     app.logger.info('App initialised')
 
 
@@ -77,8 +80,9 @@ def test_redis_connection():
     try:
         current_app.config['CACHE'].set('startup-test', True, timeout=5)
     except (ConnectionError, TimeoutError):
-        current_app.logger.error('Redis cache connection failed')
+        current_app.logger.exception('Redis cache connection failed')
         current_app.config['CACHE'].init_app(current_app, config={'CACHE_TYPE': 'simple'})
+        current_app.logger.info('Falling back on simple cache')
 
 
 def setup_compress(app):
