@@ -7,4 +7,5 @@ Flask-Cors
 gunicorn
 google-api-python-client
 google-cloud-firestore
+google-cloud-logging
 google-cloud-pubsub
