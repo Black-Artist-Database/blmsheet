@@ -11,6 +11,7 @@ from flask_caching import Cache
 from flask_compress import Compress
 from google.cloud import firestore
 from google.cloud import pubsub
+from redis.exceptions import ConnectionError, TimeoutError
 
 
 def create_app():
@@ -55,6 +56,7 @@ def setup_cache(app):
             'CACHE_REDIS_URL': os.environ['REDIS_URL'],
             'CACHE_OPTIONS': {
                 'health_check_interval': 30,
+                'socket_timeout': 10,
             },
         })
     else:
@@ -64,9 +66,19 @@ def setup_cache(app):
             'CACHE_REDIS_PORT': 6379,
             'CACHE_OPTIONS': {
                 'health_check_interval': 30,
+                'socket_timeout': 10,
             },
         })
     app.config['CACHE'] = cache
+    app.before_first_request(test_redis_connection)
+
+
+def test_redis_connection():
+    try:
+        current_app.config['CACHE'].set('startup-test', True, timeout=5)
+    except (ConnectionError, TimeoutError):
+        current_app.logger.error('Redis cache connection failed')
+        current_app.config['CACHE'].init_app(current_app, config={'CACHE_TYPE': 'simple'})
 
 
 def setup_compress(app):
