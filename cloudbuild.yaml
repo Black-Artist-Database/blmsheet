@@ -43,6 +43,6 @@ steps:
   - '--memory'
   - '256MB'
   - '--set-env-vars'
-  - '[DB_NAME=entries]'
+  - 'DB_NAME=entries'
 images:
 - gcr.io/$PROJECT_ID/$REPO_NAME
