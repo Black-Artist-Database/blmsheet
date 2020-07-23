@@ -50,20 +50,19 @@ def init_logging(app):
 
 
 def setup_cache(app):
-    cache = Cache()
     if os.environ.get('FLASK_ENV', '') == 'development':
-        cache.init_app(app, config={'CACHE_TYPE': 'simple'})
+        config = {'CACHE_TYPE': 'simple'}
     elif 'REDIS_URL' in os.environ:
-        cache.init_app(app, config={
+        config = {
             'CACHE_TYPE': 'redis',
             'CACHE_REDIS_URL': os.environ['REDIS_URL'],
             'CACHE_OPTIONS': {
                 'health_check_interval': 30,
                 'socket_timeout': 10,
             },
-        })
+        }
     else:
-        cache.init_app(app, config={
+        config = {
             'CACHE_TYPE': 'redis',
             'CACHE_REDIS_HOST': os.environ['REDIS_HOST'],
             'CACHE_REDIS_PORT': 6379,
@@ -71,9 +70,11 @@ def setup_cache(app):
                 'health_check_interval': 30,
                 'socket_timeout': 10,
             },
-        })
-    app.config['CACHE'] = cache
+        }
+    app.config.from_mapping(config)
+    app.config['CACHE'] = Cache(app)
     app.before_first_request(test_redis_connection)
+    app.logger.info(f'Cache initialised ({app.config["CACHE_TYPE"]})')
 
 
 def test_redis_connection():
