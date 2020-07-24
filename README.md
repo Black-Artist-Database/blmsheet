@@ -62,6 +62,10 @@ export SERVICE_ID="[GOOGLE_CLOUD_RUN_SERVICE_ID]"
 - `gcloud run deploy --image gcr.io/$PROJECT_ID/$SERVICE_ID --platform managed --project $PROJECT_ID`
 
 
+## Infrastructure
+
+The complete Google Cloud Platform infrastructure used for this project is defined as code to be used with [Terraform](https://learn.hashicorp.com/terraform) and can be found at [jcox-dev/blmsheet-terraform](https://github.com/jcox-dev/blmsheet-terraform).
+
 ## Running the frontend
 
 ## Project setup
