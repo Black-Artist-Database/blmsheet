@@ -20,12 +20,14 @@ def create_app():
         template_folder=Path(__file__).parent.parent.joinpath('dist'),
         static_folder=str(Path(__file__).parent.parent.joinpath('dist').joinpath('static')),
     )
-    init_logging(app)
-    setup_cache(app)
-    setup_compress(app)
+    development = os.environ.get('FLASK_ENV', '') == 'development'
+    init_logging(app, development=development)
+    setup_cache(app, development=development)
+    setup_compress(app, development=development)
     setup_db(app)
     setup_pubsub(app)
     add_blueprints(app)
+    app.logger.info(f'{"Development" if development else "Live"} app initialised')
     return app
 
 
@@ -41,16 +43,15 @@ def add_blueprints(app):
     cron_blueprint.config = app.config.copy()
 
 
-def init_logging(app):
-    app.logger.setLevel(logging.INFO)
+def init_logging(app, development=False):
+    app.logger.setLevel(logging.DEBUG if development else logging.INFO)
     app.logger.addHandler(logging.StreamHandler(sys.stdout))
-    if os.environ.get('FLASK_ENV', '') != 'development':
+    if not development:
         app.logger.addHandler(cloud_logging.Client().get_default_handler())
-    app.logger.info('App initialised')
 
 
-def setup_cache(app):
-    if os.environ.get('FLASK_ENV', '') == 'development':
+def setup_cache(app, development=False):
+    if development:
         config = {'CACHE_TYPE': 'simple'}
     elif 'REDIS_URL' in os.environ:
         config = {
@@ -74,21 +75,22 @@ def setup_cache(app):
     app.config.from_mapping(config)
     app.config['CACHE'] = Cache(app)
     app.before_first_request(test_redis_connection)
-    app.logger.info(f'Cache initialised ({app.config["CACHE_TYPE"]})')
+    app.logger.info(f'{app.config["CACHE_TYPE"].title()} cache initialised')
 
 
 def test_redis_connection():
     try:
+        current_app.logger.debug(f'Testing connection to {current_app.config["CACHE_TYPE"]} cache')
         current_app.config['CACHE'].set('startup-test', True, timeout=5)
     except (ConnectionError, TimeoutError):
-        current_app.logger.exception('Redis cache connection failed')
+        current_app.logger.exception(f'{current_app.config["CACHE_TYPE"].title()} cache connection failed')
         current_app.config['CACHE'].init_app(current_app, config={'CACHE_TYPE': 'simple'})
         current_app.logger.info('Falling back on simple cache')
 
 
-def setup_compress(app):
+def setup_compress(app, development=False):
     compress = Compress()
-    if os.environ.get('FLASK_ENV', '') != 'development':
+    if not development:
         app.config['COMPRESS_CACHE_BACKEND'] = lambda: app.config['CACHE']
         app.config['COMPRESS_CACHE_KEY'] = lambda r: f'{r.full_path}-compress'
     compress.init_app(app)
