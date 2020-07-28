@@ -19,6 +19,8 @@ steps:
   - '$_REGION1'
   - '--platform'
   - 'managed'
+  - '--memory'
+  - '512M'
   waitFor: ['build', 'push']
 # Deploy image to Cloud Run #2
 - name: 'gcr.io/cloud-builders/gcloud'
