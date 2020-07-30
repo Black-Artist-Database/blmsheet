@@ -17,17 +17,23 @@
             <li class="nav-item">
               <router-link to="/add" class="nav-link">Add Submission</router-link>
             </li>
+            <li class="nav-item" v-if="canDisplay">
+              <router-link to="/read" class="nav-link">Read</router-link>
+            </li>
           </ul>
           <ul class="nav navbar-nav ml-auto">
               <li>
                   <a href="https://www.instagram.com/blackbandcamp/" class="nav-link" target="_blank"><img src="./assets/instagram-icon.png" class="ig-icon"></a>
+              </li>
+              <li>
+                  <a href="https://www.twitter.com/blackbandcamp/" class="nav-link" target="_blank"><img src="./assets/twitter-icon.png" class="ig-icon"></a>
               </li>
           </ul>
         </div>
       </div>
     </nav>
     <router-view/>
-    
+
   </div>
 </template>
 
@@ -36,11 +42,18 @@
 
 export default {
   name: 'App',
-  
+
   data: () => ({
-    
+
   }),
-  
+  computed: {
+    canDisplay () {
+      var release = new Date("07/31/2020")
+      var now = new Date()
+      return now >= release
+    }
+  }
+
 }
 </script>
 

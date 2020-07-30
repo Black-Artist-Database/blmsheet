@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Read from '../views/Read.vue'
+import Article from '../views/Article.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +11,16 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/read',
+    name: 'Read',
+    component: Read
+  },
+  {
+    path: '/article',
+    name: 'article',
+    component: Article
   },
   {
     path: '/about',
