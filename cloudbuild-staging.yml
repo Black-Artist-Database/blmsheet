@@ -19,6 +19,7 @@ steps:
   - 'europe-west1'
   - '--platform'
   - 'managed'
+  - '--allow-unauthenticated'
   - '--update-env-vars'
   - 'SHEET_ID=1OIUBp4kFxmpWJihhq6WLwJQR1Am4DsD59bEYlJZxeGY,TAB_ID=Original Sheet,START_ROW=5,DB_NAME=entries-staging,PROJECT_ID=$PROJECT_ID,FLASK_ENV=development'
   waitFor: ['build', 'push']
