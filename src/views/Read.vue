@@ -2,7 +2,7 @@
   <div class="page">
     <div class="container mt-3">
       <div v-if="articles.length === 0" class="m-4">Nothing to see here</div>
-      <div class="row" v-if="canDisplayArticles">
+      <div class="row">
         <ArticleCard v-for="(item, index) in articles"
           :key="index"
           :name="item.short_name"

@@ -17,7 +17,7 @@
             <li class="nav-item">
               <router-link to="/add" class="nav-link">Add Submission</router-link>
             </li>
-            <li class="nav-item" v-if="canDisplay">
+            <li class="nav-item">
               <router-link to="/read" class="nav-link">Read</router-link>
             </li>
           </ul>
@@ -47,11 +47,6 @@ export default {
 
   }),
   computed: {
-    canDisplay () {
-      var release = new Date("07/31/2020")
-      var now = new Date()
-      return now >= release
-    }
   }
 
 }
