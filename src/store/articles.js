@@ -10,7 +10,7 @@ const mutations = {
       name: 'JON DIXON’S QUIET GENIUS',
       credit: 'Chris Thorn',
       author: 'Crystal Mioner',
-      date: '07/28/2020',
+      date: '07/31/2020',
       illus: 'articles/dixon/dixon.jpg',
       introduction: "With one foot firmly rooted in jazz and the other in techno, producer and keyboardist Jon Dixon is a physical embodiment of the bridge upon which Black music spans. He’s played with everyone from Underground Resistance to Chick Corea in his 30 years of music making. On July 31st, Times of Change, his latest release for his label 4EVR 4WRD, drops on vinyl. Black Bandcamp chatted with Jon to talk about his new 4-track Hi-Tech Jazz project and his musical lineage.",
       links: [
@@ -88,7 +88,7 @@ const mutations = {
       name: 'TAKE OFF ON A SONICALLY ENTRANCING JOURNEY WITH BLAQKONGO ON "38 DAYS 38 WAYS"',
       credit: 'Keith Virgo',
       author: 'Lauryn Njeri',
-      date: '07/28/2020',
+      date: '07/31/2020',
       illus: 'articles/bakongo/bakongo.jpg',
       links: [],
       questions: [
