@@ -19,8 +19,8 @@
           <div v-if="question.type === 'image'">
             <img :src="require(`@/assets/${question.path}`)" />
           </div>
-          <div v-if="question.type === 'quote'">
-            <p>{{article.quote}}</p>
+          <div v-else-if="question.type === 'quote'">
+            <p class="quote">{{question.answer}}</p>
           </div>
           <div v-else>
             <p class="title" v-if="question.title">{{question.title}}</p>
@@ -90,6 +90,11 @@ export default {
     max-width: 800px;
     margin: auto;
     text-align: left;
+    .quote {
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
     .question {
       margin: 40px 0;
       p {
