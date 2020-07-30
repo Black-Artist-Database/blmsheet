@@ -7,7 +7,7 @@
         <p>Photo by <b>{{article.credit}}</b></p>
         <p>Words by <b>{{article.author}}</b></p>
         <img :src="require(`@/assets/${article.illus}`)" />
-        <p v-if="article.introduction">{{article.introduction}}</p>
+        <p class="intro" v-if="article.introduction">{{article.introduction}}</p>
       </div>
       <div class="header-links">
         <div class="link" v-for="(link, index) in article.links" :key="`link-${index}`">
@@ -66,6 +66,12 @@ export default {
   .head {
     text-align: center;
     margin-top: 40px;
+    max-width: 800px;
+    margin: auto;
+    p.intro {
+      text-align: left;
+      width: 100%;
+    }
     img {
       width: 100%;
       max-width: 600px;
