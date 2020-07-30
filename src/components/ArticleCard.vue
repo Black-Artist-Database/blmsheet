@@ -1,5 +1,5 @@
 <template>
-<div class="col-6 col-md-3 col-lg-3 p-2">
+<div class="col-md-3 col-lg-3 col-sm-12 p-2">
     <div class="card">
         <a @click="onClick()">
           <div class="image-wrapper">
@@ -54,6 +54,10 @@ export default {
 
   a { cursor: pointer; }
 
+
+  @media (max-width: 415px) {
+    .card { width: 100%; }
+  }
 
   .image-wrapper{
     position: relative;
