@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
+store.commit('articles/set_current', null)
 
 new Vue({
   router,

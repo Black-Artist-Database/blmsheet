@@ -18,7 +18,7 @@ Vue.use(VueRouter)
     component: Read
   },
   {
-    path: '/article',
+    path: '/article/:id',
     name: 'article',
     component: Article
   },
