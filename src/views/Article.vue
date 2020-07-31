@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <div class="container">
+    <div class="container" v-if="article">
       <router-link to="/read" class="back">Back to the list</router-link>
       <div class="head">
         <h1>{{article.name}}</h1>
@@ -48,10 +48,9 @@ export default {
     })
   },
   mounted () {
-    console.log('ici', this.article, this.list)
-    if (!this.article && this.list.length > 0 && this.$route.params.id) {
+    if (this.$route.params.id) {
       this.$store.commit('articles/set_current_by_id', this.$route.params.id)
-    } else if (!this.article && this.list.length === 0){
+    } else if (!this.article && this.list.length === 0 || !this.$route.params.id){
       this.$router.push({name: 'Read'})
     }
   },

@@ -41,8 +41,17 @@ Vue.use(VueRouter)
 ]
 
 const router = new VueRouter({
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  if ((to.path === '/article' || to.path === '/article/0') && (!to.params.id || to.params.id == "0")) {
+    next({name: 'Read'})
+  } else {
+    next()
+  }
 })
 
 export default router
