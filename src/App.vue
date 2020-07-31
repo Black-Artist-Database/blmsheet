@@ -48,7 +48,6 @@ export default {
   }),
   computed: {
   }
-
 }
 </script>
 

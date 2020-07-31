@@ -43,10 +43,17 @@ export default {
   name: 'Article',
   computed: {
     ...mapState({
+      list: state => state.articles.list,
       article: state => state.articles.current
     })
   },
   mounted () {
+    console.log('ici', this.article, this.list)
+    if (!this.article && this.list.length > 0 && this.$route.params.id) {
+      this.$store.commit('articles/set_current_by_id', this.$route.params.id)
+    } else if (!this.article && this.list.length === 0){
+      this.$router.push({name: 'Read'})
+    }
   },
 }
 </script>

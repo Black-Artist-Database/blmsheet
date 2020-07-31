@@ -8,7 +8,7 @@
           :name="item.short_name"
           :author="item.author"
           :illus="item.illus"
-          @on-click="onClick(item)"
+          @on-click="onClick(item, index)"
         />
       </div>
     </div>
@@ -44,9 +44,9 @@ export default {
     this.$store.commit('articles/set_current', null)
   },
   methods: {
-    onClick (article) {
+    onClick (article, idx) {
       this.$store.commit('articles/set_current', article)
-      this.$router.push({name: 'article'})
+      this.$router.push({name: 'article', params: { id: idx }})
     }
   }
 }
