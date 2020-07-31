@@ -84,6 +84,7 @@ def test_redis_connection():
         current_app.config['CACHE'].set('startup-test', True, timeout=5)
     except (ConnectionError, TimeoutError):
         current_app.logger.exception(f'{current_app.config["CACHE_TYPE"].title()} cache connection failed')
+        del current_app.config['CACHE_OPTIONS']
         current_app.config['CACHE'].init_app(current_app, config={'CACHE_TYPE': 'simple'})
         current_app.logger.info('Falling back on simple cache')
 
