@@ -360,7 +360,7 @@ const mutations = {
         }
       ]
     }]))
-    state.current = state.list[payload]
+    state.current = state.list[payload - 1]
   }
 }
 
