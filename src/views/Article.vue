@@ -4,20 +4,25 @@
       <router-link to="/read" class="back">Back to the list</router-link>
       <div class="head">
         <h1>{{article.name}}</h1>
-        <p>Photo by <b>{{article.credit}}</b></p>
+        <p v-if="article.credit">Photo by <b>{{article.credit}}</b></p>
         <p>Words by <b>{{article.author}}</b></p>
         <img :src="require(`@/assets/${article.illus}`)" />
-        <p class="intro" v-if="article.introduction">{{article.introduction}}</p>
+        <div class="bandcamp">
+          <iframe style="border: 0; max-width: 600px; width: 100%; height: 120px;" :src="`https://bandcamp.com/EmbeddedPlayer/album=${article.bandcamp_id}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true`" seamless><a :href="article.bandcamp_link"></a></iframe>
+        </div>
+        <p class="intro" v-if="article.introduction" v-html="article.introduction"></p>
       </div>
       <div class="header-links">
         <div class="link" v-for="(link, index) in article.links" :key="`link-${index}`">
-          <p> {{link.name}} : <a :href="link.url" target="_blank">{{link.url}}</a></p>
+          <p><a :href="link.url" target="_blank">{{link.name}} </a></p>
         </div>
       </div>
+
       <div class="questions">
         <div class="question" v-for="(question, index) in article.questions" :key="`article-${index}`">
-          <div v-if="question.type === 'image'">
-            <img :src="require(`@/assets/${question.path}`)" />
+          <div class="image" v-if="question.type === 'image'">
+            <img :src="require(`@/assets/${question.path}`)" :class="question.format"/>
+            <p class="credit" v-if="question.author"><i>Photo by {{question.author}}</i></p>
           </div>
           <div v-else-if="question.type === 'quote'">
             <p class="quote">{{question.answer}}</p>
@@ -28,9 +33,10 @@
           </div>
         </div>
       </div>
+
       <div class="footer-links">
         <div class="link" v-for="(link, index) in article.footer_links" :key="`footer-link-${index}`">
-          <p><b>{{link.name}}</b> : <a :href="link.url" target="_blank">{{link.url}}</a></p>
+          <p><a :href="link.url" target="_blank">{{link.name}}</a></p>
         </div>
       </div>
     </div>
@@ -83,6 +89,9 @@ export default {
       max-width: 600px;
       margin: 20px auto;
     }
+    .bandcamp {
+      margin: 20px auto;
+    }
   }
   .header-links, .footer-links{
     max-width: 800px;
@@ -101,6 +110,13 @@ export default {
       text-align: center;
       font-weight: bold;
     }
+    .image {
+      text-align: center;
+      p {
+        margin-top: 0;
+        font-size: 0.9em;
+      }
+    }
     .question {
       margin: 40px 0;
       p {
@@ -115,6 +131,9 @@ export default {
         width: 100%;
         max-width: 320px;
         margin: 20px auto;
+        &.landscape {
+          max-width: 500px;
+        }
       }
     }
  }
