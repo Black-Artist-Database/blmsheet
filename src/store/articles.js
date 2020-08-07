@@ -186,8 +186,8 @@ const mutations = {
       ]
     },
     {
-      short_name: 'Josh Caffé talks Collaborating with Honey Dijon',
-      name: 'Josh Caffé talks Collaborating with Honey Dijon',
+      short_name: 'JOSH CAFFÉ TALKS COLLABORATING WITH HONEY DIJON',
+      name: 'JOSH CAFFÉ TALKS COLLABORATING WITH HONEY DIJON',
       bandcamp_link: "https://honeydijon.bandcamp.com/album/la-femme-fantastique-extended-mix",
       bandcamp_id: "2265069030",
       credit: null,
@@ -453,8 +453,8 @@ const mutations = {
       ]
     },
     {
-      short_name: 'Josh Caffé talks Collaborating with Honey Dijon',
-      name: 'Josh Caffé talks Collaborating with Honey Dijon',
+      short_name: 'JOSH CAFFÉ TALKS COLLABORATING WITH HONEY DIJON',
+      name: 'JOSH CAFFÉ TALKS COLLABORATING WITH HONEY DIJON',
       bandcamp_link: "https://honeydijon.bandcamp.com/album/la-femme-fantastique-extended-mix",
       bandcamp_id: "2265069030",
       credit: null,
