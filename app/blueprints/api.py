@@ -48,7 +48,7 @@ def entry_list():
         if request.args.get('random') and results:
             results = random.sample(results, 12)
 
-        cache.set(cache_key, results, timeout=60 * 60 * 1)
+        cache.set(cache_key, results, timeout=60 * 60 * 3)
     return jsonify(results)
 
 
@@ -73,7 +73,7 @@ def locations():
                     locations.add(part.strip().lower())
 
         locations = sorted(list(locations))
-        cache.set(cache_key, locations, timeout=60 * 60 * 2)
+        cache.set(cache_key, locations, timeout=60 * 60 * 6)
     return jsonify(locations)
 
 
@@ -98,7 +98,7 @@ def genres():
                     genres.add(genre.strip().lower())
 
         genres = sorted(list(genres))
-        cache.set(cache_key, genres, timeout=60 * 60 * 2)
+        cache.set(cache_key, genres, timeout=60 * 60 * 6)
     return jsonify(genres)
 
 
