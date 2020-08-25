@@ -46,7 +46,7 @@ export default {
   methods: {
     onClick (article, idx) {
       this.$store.commit('articles/set_current', article)
-      this.$router.push({name: 'article', params: { id: idx }})
+      this.$router.push({name: 'article', params: { id: idx + 1 }})
     }
   }
 }
