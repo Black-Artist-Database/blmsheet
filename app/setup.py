@@ -5,14 +5,15 @@ import os
 import sys
 from pathlib import Path
 
+import redis
 from flask import Flask
-from flask import current_app, jsonify
+from flask import current_app, jsonify, redirect, request
 from flask_caching import Cache
 from flask_compress import Compress
 from google.cloud import firestore
 from google.cloud import logging as cloud_logging
 from google.cloud import pubsub
-from redis.exceptions import ConnectionError, TimeoutError
+from werkzeug.exceptions import HTTPException
 
 
 def create_app():
@@ -75,18 +76,31 @@ def setup_cache(app, development=False):
     app.config.from_mapping(config)
     app.config['CACHE'] = Cache(app)
     app.before_first_request(test_redis_connection)
+    app.register_error_handler(Exception, fallback_cache)
     app.logger.info(f'{app.config["CACHE_TYPE"].title()} cache initialised')
 
 
+def fallback_cache(e):
+    original = getattr(e, 'original_exception', None)
+
+    if isinstance(e, HTTPException) and original is None:
+        return e
+
+    if not isinstance(original, redis.exceptions.ConnectionError):
+        return e
+
+    current_app.logger.exception(f'{current_app.config["CACHE_TYPE"].title()} cache connection failed')
+    del current_app.config['CACHE_OPTIONS']
+    current_app.config['CACHE'].init_app(current_app, config={'CACHE_TYPE': 'simple'})
+    current_app.config['CACHE_TYPE'] = 'simple'
+    current_app.logger.info('Falling back on simple cache')
+    return redirect(request.full_path)
+
+
 def test_redis_connection():
-    try:
-        current_app.logger.debug(f'Testing connection to {current_app.config["CACHE_TYPE"]} cache')
-        current_app.config['CACHE'].set('startup-test', True, timeout=5)
-    except (ConnectionError, TimeoutError):
-        current_app.logger.exception(f'{current_app.config["CACHE_TYPE"].title()} cache connection failed')
-        del current_app.config['CACHE_OPTIONS']
-        current_app.config['CACHE'].init_app(current_app, config={'CACHE_TYPE': 'simple'})
-        current_app.logger.info('Falling back on simple cache')
+    current_app.logger.debug(f'Testing connection to {current_app.config["CACHE_TYPE"]} cache')
+    current_app.config['CACHE'].set('startup-test', True, timeout=5)
+    current_app.logger.debug(f'Cache connection succeeded for {current_app.config["CACHE_TYPE"]} cache')
 
 
 def setup_compress(app, development=False):
