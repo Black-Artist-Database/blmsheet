@@ -87,13 +87,12 @@ const mutations = {
           url: 'https://www.instagram.com/jonnynabb/'
         },
         {
-          name: 'Follow the writer',
+          name: 'Follow Crystal Mioner',
           url: 'https://www.instagram.com/crystal.mioner/'
         }
       ]
     },
     {
-
       short_name: 'BLAQKONGO ON "38 DAYS 38 WAYS"',
       name: 'TAKE OFF ON A SONICALLY ENTRANCING JOURNEY WITH BLAQKONGO ON "38 DAYS 38 WAYS"',
       bandcamp_link: "http://blaqkongo.bandcamp.com/album/38-days-38-ways",
@@ -172,6 +171,7 @@ const mutations = {
           title: '',
           answer: 'While COVID has wreaked havoc in the daily routines and livelihood of many,  it is refreshing to hear how these two artists have managed to sidestep some of the sombreness around this period to deliver two releases that breathe new life into the electronic music scene. Awash with low slung grooviness, lush synth work and nimble use of vocal samples, each track on this EP will no doubt find fans among those followers of such groove luminaries as DetroitSwindle, Atjazz and Joe Kay, to name a few.'
         }
+
       ],
       footer_links: [
         {
@@ -193,7 +193,7 @@ const mutations = {
       name: 'JOSH CAFFÉ TALKS COLLABORATING WITH HONEY DIJON',
       bandcamp_link: "https://honeydijon.bandcamp.com/album/la-femme-fantastique-extended-mix",
       bandcamp_id: "2265069030",
-      credit: null,
+      credit_illu: 'Crystal Mioner',
       author: 'Tanya Akinola',
       date: '08/07/2020',
       illus: 'articles/honey/honey.jpg',
@@ -253,7 +253,8 @@ const mutations = {
         {
           type: 'image',
           path: 'articles/honey/honey3.jpg',
-          author: 'Mellisa Gardner'
+          author: 'Mellisa Gardner',
+          format: 'landscape'
         },
       ],
       footer_links: [
@@ -497,6 +498,7 @@ const mutations = {
     {
       short_name: 'PREMIERE: A DYNAMIC DOUBLE PACK FROM HLX-1',
       name: 'PREMIERE: A DYNAMIC DOUBLE PACK FROM HLX-1',
+      credit: null,
       author: 'Crystal Mioner',
       illus: 'articles/hlx1/hlx1.png',
       credit_illu: 'Crystal Mioner',
@@ -506,13 +508,6 @@ const mutations = {
       "I\'m determined to bring the energy back", she exclaims when I ask her about the duo\'s hopes. "I didn’t know anything about music and it was just me and my sister (Ash Lauryn) losing ourselves. Detroit needs that, that ability to just have fun."<br><br>\
       This is Mr Hooper’s first release outside of the Scan 7 umbrella. While not new to the game, he\'s making a new name for himself by "looking forward and creating a fresh and futuristic vibe."<br><br>\
       The two tracks are available now on <a href="https://hlx-1.bandcamp.com/" target="_blank">Bandcamp</a>.',
-      // questions: [
-      //   {
-      //     type: 'image',
-      //     path: 'articles/hlx1/hlx1.png',
-      //     author: 'Crystal Mioner'
-      //   }
-      // ],
       embed_links: [
         '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3846929570/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://hlx-1.bandcamp.com/track/the-cosmos">THE COSMOS by HLX-1</a></iframe>',
         '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1858466569/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://hlx-1.bandcamp.com/track/i-can-tell-you-can-f">I CAN TELL YOU CAN F*** by HLX-1</a></iframe>',
@@ -531,17 +526,17 @@ const mutations = {
         {
           type: 'question',
           title: '',
-          answer: 'We\'re locked in a dream state, a version of Detroit that’s real and unreal, and what Ahya SImone describes as "an iridescent reality". Blue tinges everything, blurring the sky and the mouths of Ahya and her friends, fellow artists <a href="https://www.instagram.com/supercoolwicked/?hl=en" target="_blank">Supercoolwicked</a> and <a href="https://www.instagram.com/kesswa_/?hl=en" target="_blank">Kesswa</a>. The forthcoming video for Frostbite, directed by Jayne Lies, provides an experimental slant to the spaces created with the homegirls versus the space we inhabit alone. In this, her debut single and subsequent video release made by the audiovisual label <a href="https://www.instagram.com/pique.records/" target="_blank">Pique</a>, Ahya finds her release from the confines of isolation.'
+          answer: 'We\'re locked in a dream state, a version of Detroit that’s real and unreal, and what Ahya Simone describes as "an iridescent reality". Blue tinges everything, blurring the sky and the mouths of Ahya and her friends, fellow artists <a href="https://www.instagram.com/supercoolwicked/?hl=en" target="_blank">Supercoolwicked</a> and <a href="https://www.instagram.com/kesswa_/?hl=en" target="_blank">Kesswa</a>. The forthcoming video for Frostbite, directed by Jayne Lies, provides an experimental slant to the spaces created with the homegirls versus the space we inhabit alone. In this, her debut single and subsequent video release made by the audiovisual label <a href="https://www.instagram.com/pique.records/" target="_blank">Pique</a>, Ahya finds her release from the confines of isolation.'
         },
         {
           type: 'question',
           title: '',
-          answer: 'Frostbite was written three  years ago after a period of personal trauma that Ahya remembers being full of days spent in bed, "Frostbite came around as a way to speak to that feeling of isolation, when you don’t feel like you have people who care about you, or the people who care about you are out of your life." she says. It was after the death of two of her aunts, the end of a job, and her first time living alone that Ahya gave voice to the process of change and heartbreak.'
+          answer: 'Frostbite was written three  years ago after a period of personal trauma that Ahya remembers being full of days spent in bed. "Frostbite came around as a way to speak to that feeling of isolation, when you don’t feel like you have people who care about you, or the people who care about you are out of your life," she says. It was after the death of two of her aunts, the end of a job, and her first time living alone that Ahya gave voice to the process of change and heartbreak.'
         },
         {
           type: 'question',
           title: '',
-          answer: 'The song begins with a tender progression of notes, before Ahya’s delicate mezzo- soprano fills the room, reverberating in time with twinkling bursts from her harp. It’s grounded by the initial progression but Ahya isn’t afraid to experiment with different effects, a key reason for her stepping away from the path of traditional harp players, confined to an orchestral pit. "I wanted to play R&B music and experimental music, things I listen to in real life. I wanted to do something that felt more like ME." she expresses.'
+          answer: 'The song begins with a tender progression of notes, before Ahya’s delicate mezzo-soprano fills the room, reverberating in time with twinkling bursts from her harp. It’s grounded by the initial progression but Ahya isn’t afraid to experiment with different effects, a key reason for her stepping away from the path of traditional harp players, confined to an orchestral pit. "I wanted to play R&B music and experimental music, things I listen to in real life. I wanted to do something that felt more like ME," she expresses.'
         },
         {
           type: 'question',
@@ -556,13 +551,40 @@ const mutations = {
         {
           type: 'question',
           title: '',
-          answer: 'The concert grand harp, Ahya’s tool of choice, is a big instrument, averaging a height of 6 feet with a width of 3 feet. Ahya says the size, rather than limiting her ability to play anywhere, has allowed her to go where she fits. "If I don’t fit, I don’t fit," she explains defiantly. "Part of it is the physicality of my instrument. But my instrument also creates boundaries for me. You have to make space for me." She applies this philosophy to performances, letting opportunities flow organically to her gravitational pull.'
+          answer: 'The concert grand harp, Ahya’s tool of choice, is a big instrument averaging a height of 6 feet with a width of 3 feet. Ahya says the size, rather than limiting her ability to play anywhere, has allowed her to go where she fits. "If I don’t fit, I don’t fit," she explains defiantly, "Part of it is the physicality of my instrument. But my instrument also creates boundaries for me. You have to make space for me." She applies this philosophy to performances, letting opportunities flow organically to her gravitational pull.'
+        },
+        {
+          type: 'question',
+          title: '',
+          answer: 'Over the past few years, Ahya has drawn abundance to herself. While still navigating her signature sound, she has stacked performances globally, ranging from local Detroit clubs, to experimental festivals with artists such as Julianna Huxtable, Martha Reeves and the Vandelles, Tunde Olanarian, and Esperanza Spalding. In 2018, she landed a place on "Take Me a_Part, the Remixes", the critically acclaimed remix album by dance music artist Kelela'
+        },
+        {
+          type: 'question',
+          title: '',
+          answer: 'In addition to her work as a musician, Ahya is a cultural worker hoping to advance the arts and cultural output of the Black LGBTQ+ community in Detroit. Her work with <a href="https://fqchronicles.com/" target="_blank">Femme Queen Chronicles</a>, a webseries following the lives of four Black trans women in Detroit, has achieved national acclaim on the film festival circuit. Rather than falling into the limiting position of being a voice for Black trans women, she\'s working to empower her community to find their own voices. In the hypermasculine musical landscape of Detroit, these efforts are sorely needed to give balance but are given little funding.'
+        },
+        {
+          type: 'question',
+          title: '',
+          answer: 'With all of her personal accomplishments, she states how much capitalism has made her ability to focus on her work challenging. During our interview she was in New Mexico for vacation but still working on grant applications to finance her art. "It\'s the grind that takes away from me and feeling like I always have to perform to make money and to make art," she explains. With proper stability and financial support, you can only imagine the impact Ahya’s imaginative music will make on the Black canon.'
+        },
+        {
+          type: 'question',
+          title: '',
+          answer: 'Ahya is currently crowdfunding for a new harp. You can donate <a href="https://www.gofundme.com/f/ahya039s-harp-fund" target="_blank">here</a>.'
+        },
+
+        {
+          type: 'question',
+          title: '',
+          answer: 'Look out for the full \'Frostbite\' video dropping next week. Single available for purchase now on <a href="https://ahyasimone.bandcamp.com/track/frostbite" target="_blank">Bandcamp</a>.'
         }
       ],
       embed_links: [
         '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=479447337/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://ahyasimone.bandcamp.com/track/frostbite">Frostbite by AHYA SIMONE</a></iframe>'
       ]
-    }]))
+    },
+    ]))
     state.current = payload
   },
 
@@ -1085,17 +1107,17 @@ const mutations = {
         {
           type: 'question',
           title: '',
-          answer: 'We\'re locked in a dream state, a version of Detroit that’s real and unreal, and what Ahya SImone describes as "an iridescent reality". Blue tinges everything, blurring the sky and the mouths of Ahya and her friends, fellow artists <a href="https://www.instagram.com/supercoolwicked/?hl=en" target="_blank">Supercoolwicked</a> and <a href="https://www.instagram.com/kesswa_/?hl=en" target="_blank">Kesswa</a>. The forthcoming video for Frostbite, directed by Jayne Lies, provides an experimental slant to the spaces created with the homegirls versus the space we inhabit alone. In this, her debut single and subsequent video release made by the audiovisual label <a href="https://www.instagram.com/pique.records/" target="_blank">Pique</a>, Ahya finds her release from the confines of isolation.'
+          answer: 'We\'re locked in a dream state, a version of Detroit that’s real and unreal, and what Ahya Simone describes as "an iridescent reality". Blue tinges everything, blurring the sky and the mouths of Ahya and her friends, fellow artists <a href="https://www.instagram.com/supercoolwicked/?hl=en" target="_blank">Supercoolwicked</a> and <a href="https://www.instagram.com/kesswa_/?hl=en" target="_blank">Kesswa</a>. The forthcoming video for Frostbite, directed by Jayne Lies, provides an experimental slant to the spaces created with the homegirls versus the space we inhabit alone. In this, her debut single and subsequent video release made by the audiovisual label <a href="https://www.instagram.com/pique.records/" target="_blank">Pique</a>, Ahya finds her release from the confines of isolation.'
         },
         {
           type: 'question',
           title: '',
-          answer: 'Frostbite was written three  years ago after a period of personal trauma that Ahya remembers being full of days spent in bed, "Frostbite came around as a way to speak to that feeling of isolation, when you don’t feel like you have people who care about you, or the people who care about you are out of your life." she says. It was after the death of two of her aunts, the end of a job, and her first time living alone that Ahya gave voice to the process of change and heartbreak.'
+          answer: 'Frostbite was written three  years ago after a period of personal trauma that Ahya remembers being full of days spent in bed. "Frostbite came around as a way to speak to that feeling of isolation, when you don’t feel like you have people who care about you, or the people who care about you are out of your life," she says. It was after the death of two of her aunts, the end of a job, and her first time living alone that Ahya gave voice to the process of change and heartbreak.'
         },
         {
           type: 'question',
           title: '',
-          answer: 'The song begins with a tender progression of notes, before Ahya’s delicate mezzo- soprano fills the room, reverberating in time with twinkling bursts from her harp. It’s grounded by the initial progression but Ahya isn’t afraid to experiment with different effects, a key reason for her stepping away from the path of traditional harp players, confined to an orchestral pit. "I wanted to play R&B music and experimental music, things I listen to in real life. I wanted to do something that felt more like ME." she expresses.'
+          answer: 'The song begins with a tender progression of notes, before Ahya’s delicate mezzo-soprano fills the room, reverberating in time with twinkling bursts from her harp. It’s grounded by the initial progression but Ahya isn’t afraid to experiment with different effects, a key reason for her stepping away from the path of traditional harp players, confined to an orchestral pit. "I wanted to play R&B music and experimental music, things I listen to in real life. I wanted to do something that felt more like ME," she expresses.'
         },
         {
           type: 'question',
@@ -1110,7 +1132,7 @@ const mutations = {
         {
           type: 'question',
           title: '',
-          answer: 'The concert grand harp, Ahya’s tool of choice, is a big instrument, averaging a height of 6 feet with a width of 3 feet. Ahya says the size, rather than limiting her ability to play anywhere, has allowed her to go where she fits. "If I don’t fit, I don’t fit," she explains defiantly. "Part of it is the physicality of my instrument. But my instrument also creates boundaries for me. You have to make space for me." She applies this philosophy to performances, letting opportunities flow organically to her gravitational pull.'
+          answer: 'The concert grand harp, Ahya’s tool of choice, is a big instrument averaging a height of 6 feet with a width of 3 feet. Ahya says the size, rather than limiting her ability to play anywhere, has allowed her to go where she fits. "If I don’t fit, I don’t fit," she explains defiantly, "Part of it is the physicality of my instrument. But my instrument also creates boundaries for me. You have to make space for me." She applies this philosophy to performances, letting opportunities flow organically to her gravitational pull.'
         },
         {
           type: 'question',
@@ -1125,7 +1147,7 @@ const mutations = {
         {
           type: 'question',
           title: '',
-          answer: 'With all of her personal accomplishments, she states how much capitalism has made her ability to focus on her work challenging. During our interview she was in New Mexico for vacation but still working on grant applications to finance her art. "It\'s the grind that takes away from me and feeling like I always have to perform to make money and to make art". she explains. With proper stability and financial support, you can only imagine the impact Ahya’s imaginative music will make on the Black canon.'
+          answer: 'With all of her personal accomplishments, she states how much capitalism has made her ability to focus on her work challenging. During our interview she was in New Mexico for vacation but still working on grant applications to finance her art. "It\'s the grind that takes away from me and feeling like I always have to perform to make money and to make art," she explains. With proper stability and financial support, you can only imagine the impact Ahya’s imaginative music will make on the Black canon.'
         },
         {
           type: 'question',
