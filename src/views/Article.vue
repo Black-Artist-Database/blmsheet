@@ -5,9 +5,10 @@
       <div class="head">
         <h1>{{article.name}}</h1>
         <p v-if="article.credit">Photo by <b>{{article.credit}}</b></p>
-        <p>Words by <b>{{article.author}}</b></p>
+        <p v-if="article.author">Words by <b>{{article.author}}</b></p>
+         <p v-if="article.top_desc">{{article.top_desc}}</p>
         <img :src="require(`@/assets/${article.illus}`)" />
-        <div class="bandcamp">
+        <div class="bandcamp" v-if="article.bandcamp_id && article.bandcamp_link">
           <iframe style="border: 0; max-width: 600px; width: 100%; height: 120px;" :src="`https://bandcamp.com/EmbeddedPlayer/album=${article.bandcamp_id}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true`" seamless><a :href="article.bandcamp_link"></a></iframe>
         </div>
         <p class="intro" v-if="article.introduction" v-html="article.introduction"></p>
@@ -26,6 +27,15 @@
           </div>
           <div v-else-if="question.type === 'quote'">
             <p class="quote">{{question.answer}}</p>
+          </div>
+          <div class="bandcamp_pick" v-else-if="question.type === 'bandcamp_picks'">
+            <p class="title">{{question.title}}</p>
+            <p v-html="question.description"></p>
+            <div class="link" v-for="link in question.links" :key="link.title">
+              <p class="bold">{{link.title}}</p>
+              <p>{{link.description}}</p>
+              <div v-html="link.embed"></div>
+            </div>
           </div>
           <div v-else>
             <p class="title" v-if="question.title">{{question.title}}</p>
@@ -110,12 +120,25 @@ export default {
       text-align: center;
       font-weight: bold;
     }
+    .bandcamp_pick {
+      margin-bottom: 80px;
+      .link {
+        margin: 20px auto;
+      }
+      .title {
+        font-size: 24px;
+      }
+    }
     .image {
       text-align: center;
       p {
         margin-top: 0;
         font-size: 0.9em;
       }
+    }
+    .bold {
+      font-weight: bold;
+      margin-bottom: 0px;
     }
     .question {
       margin: 40px 0;

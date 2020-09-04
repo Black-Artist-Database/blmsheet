@@ -7,7 +7,7 @@
           </div>
         </a>
         <div class="card-body">
-            <h5 class="card-title">{{ name }}<br><small>by {{author}}</small></h5>
+            <h5 class="card-title">{{ name }}<br><small v-if="author">by {{author}}</small></h5>
             <a @click="onClick()">Read the article</a>
         </div>
     </div>
