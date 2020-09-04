@@ -546,12 +546,12 @@ const mutations = {
         {
           type: 'question',
           title: '',
-          answer: 'She took guidance from multiple musical visionaries, namely fellow black women from Detroit: Alice Coltrane and Dorothy Ashby. Their willingness to make their own route in jazz, Ashby at a time when harp wasn’t seen as a credible instrument in the genre and Coltrane carving a path for herself outside of her husband’s legacy, influenced Ahya’s ideas of what it means to be a non-traditional harpist. Later, she stumbled upon Brandee Younger, a harpist who blends soul, funk and jazz, reminiscent to Ahya’s own musical upbringing.'
+          answer: 'She took guidance from multiple musical visionaries, namely fellow black women from Detroit: Alice Coltrane and Dorothy Ashby. Their willingness to make their own route in jazz - Ashby at a time when harp wasn’t seen as a credible instrument in the genre and Coltrane carving a path for herself outside of her husband’s legacy - influenced Ahya’s ideas of what it means to be a non-traditional harpist. Later, she stumbled upon Brandee Younger, a harpist who blends soul, funk and jazz, reminiscent to Ahya’s own musical upbringing.'
         },
         {
           type: 'question',
           title: '',
-          answer: 'The concert grand harp, Ahya’s tool of choice, is a big instrument averaging a height of 6 feet with a width of 3 feet. Ahya says the size, rather than limiting her ability to play anywhere, has allowed her to go where she fits. "If I don’t fit, I don’t fit," she explains defiantly, "Part of it is the physicality of my instrument. But my instrument also creates boundaries for me. You have to make space for me." She applies this philosophy to performances, letting opportunities flow organically to her gravitational pull.'
+          answer: 'The concert grand harp, Ahya’s tool of choice, is a big instrument averaging a height of 6 feet with a width of 3 feet. Ahya says the size, rather than limiting her ability to play anywhere, has allowed her to go where she fits. "If I don’t fit, I don’t fit," she explains defiantly. "Part of it is the physicality of my instrument. But my instrument also creates boundaries for me. You have to make space for me." She applies this philosophy to performances, letting opportunities flow organically to her gravitational pull.'
         },
         {
           type: 'question',
@@ -1127,12 +1127,12 @@ const mutations = {
         {
           type: 'question',
           title: '',
-          answer: 'She took guidance from multiple musical visionaries, namely fellow black women from Detroit: Alice Coltrane and Dorothy Ashby. Their willingness to make their own route in jazz, Ashby at a time when harp wasn’t seen as a credible instrument in the genre and Coltrane carving a path for herself outside of her husband’s legacy, influenced Ahya’s ideas of what it means to be a non-traditional harpist. Later, she stumbled upon Brandee Younger, a harpist who blends soul, funk and jazz, reminiscent to Ahya’s own musical upbringing.'
+          answer: 'She took guidance from multiple musical visionaries, namely fellow black women from Detroit: Alice Coltrane and Dorothy Ashby. Their willingness to make their own route in jazz - Ashby at a time when harp wasn’t seen as a credible instrument in the genre and Coltrane carving a path for herself outside of her husband’s legacy - influenced Ahya’s ideas of what it means to be a non-traditional harpist. Later, she stumbled upon Brandee Younger, a harpist who blends soul, funk and jazz, reminiscent to Ahya’s own musical upbringing.'
         },
         {
           type: 'question',
           title: '',
-          answer: 'The concert grand harp, Ahya’s tool of choice, is a big instrument averaging a height of 6 feet with a width of 3 feet. Ahya says the size, rather than limiting her ability to play anywhere, has allowed her to go where she fits. "If I don’t fit, I don’t fit," she explains defiantly, "Part of it is the physicality of my instrument. But my instrument also creates boundaries for me. You have to make space for me." She applies this philosophy to performances, letting opportunities flow organically to her gravitational pull.'
+          answer: 'The concert grand harp, Ahya’s tool of choice, is a big instrument averaging a height of 6 feet with a width of 3 feet. Ahya says the size, rather than limiting her ability to play anywhere, has allowed her to go where she fits. "If I don’t fit, I don’t fit," she explains defiantly. "Part of it is the physicality of my instrument. But my instrument also creates boundaries for me. You have to make space for me." She applies this philosophy to performances, letting opportunities flow organically to her gravitational pull.'
         },
         {
           type: 'question',
