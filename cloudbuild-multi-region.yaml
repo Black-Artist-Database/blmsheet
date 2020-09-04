@@ -68,6 +68,12 @@ steps:
   - 'jobs'
   - 'run'
   - 'clear-cache'
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'scheduler'
+  - 'jobs'
+  - 'run'
+  - 'clear-cache-us'
 # Deploy scrape to Cloud Function
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
