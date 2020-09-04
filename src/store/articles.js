@@ -555,7 +555,7 @@ const mutations = {
         {
           type: 'question',
           title: '',
-          answer: 'Over the past few years, Ahya has drawn abundance to herself. While still navigating her signature sound, she has stacked performances globally, ranging from local Detroit clubs, to experimental festivals with artists such as Julianna Huxtable, Martha Reeves and the Vandelles, Tunde Olanarian, and Esperanza Spalding. In 2018, she landed a place on "Take Me a_Part, the Remixes", the critically acclaimed remix album by dance music artist Kelela'
+          answer: 'Over the past few years, Ahya has drawn abundance to herself. While still navigating her signature sound, she has stacked performances globally, ranging from local Detroit clubs, to experimental festivals with artists such as Juliana Huxtable, Martha Reeves and the Vandelles, Tunde Olanarian, and Esperanza Spalding. In 2018, she landed a place on "Take Me a_Part, the Remixes", the critically acclaimed remix album by dance music artist Kelela'
         },
         {
           type: 'question',
@@ -1135,7 +1135,7 @@ const mutations = {
         {
           type: 'question',
           title: '',
-          answer: 'Over the past few years, Ahya has drawn abundance to herself. While still navigating her signature sound, she has stacked performances globally, ranging from local Detroit clubs, to experimental festivals with artists such as Julianna Huxtable, Martha Reeves and the Vandelles, Tunde Olanarian, and Esperanza Spalding. In 2018, she landed a place on "Take Me a_Part, the Remixes", the critically acclaimed remix album by dance music artist Kelela'
+          answer: 'Over the past few years, Ahya has drawn abundance to herself. While still navigating her signature sound, she has stacked performances globally, ranging from local Detroit clubs, to experimental festivals with artists such as Juliana Huxtable, Martha Reeves and the Vandelles, Tunde Olanarian, and Esperanza Spalding. In 2018, she landed a place on "Take Me a_Part, the Remixes", the critically acclaimed remix album by dance music artist Kelela'
         },
         {
           type: 'question',
