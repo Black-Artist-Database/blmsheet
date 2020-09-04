@@ -3,6 +3,8 @@ import Vuex from 'vuex'
 import createPersistedState from 'vuex-persistedstate';
 import articles from './articles'
 
+localStorage.removeItem('vuex-state-name')
+
 Vue.use(Vuex)
 export default new Vuex.Store({
   namespaced: true,

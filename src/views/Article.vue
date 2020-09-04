@@ -6,8 +6,9 @@
         <h1>{{article.name}}</h1>
         <p v-if="article.credit">Photo by <b>{{article.credit}}</b></p>
         <p v-if="article.author">Words by <b>{{article.author}}</b></p>
-         <p v-if="article.top_desc">{{article.top_desc}}</p>
-        <img :src="require(`@/assets/${article.illus}`)" />
+        <p v-if="article.top_desc">{{article.top_desc}}</p>
+        <img v-if="article.illus" :src="require(`@/assets/${article.illus}`)" />
+        <p><i>Photo by {{article.credit_illu}}</i></p>
         <div class="bandcamp" v-if="article.bandcamp_id && article.bandcamp_link">
           <iframe style="border: 0; max-width: 600px; width: 100%; height: 120px;" :src="`https://bandcamp.com/EmbeddedPlayer/album=${article.bandcamp_id}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true`" seamless><a :href="article.bandcamp_link"></a></iframe>
         </div>
@@ -48,6 +49,9 @@
         <div class="link" v-for="(link, index) in article.footer_links" :key="`footer-link-${index}`">
           <p><a :href="link.url" target="_blank">{{link.name}}</a></p>
         </div>
+        <div class="link" v-for="(link, index) in article.embed_links" :key="`footer-link-${index}`">
+          <div v-html="link"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -64,8 +68,10 @@ export default {
     })
   },
   mounted () {
+    window.scrollTo(0, 0)
     if (this.$route.params.id) {
       this.$store.commit('articles/set_current_by_id', this.$route.params.id)
+      console.log(this.article)
     } else if (!this.article && this.list.length === 0 || !this.$route.params.id){
       this.$router.push({name: 'Read'})
     }
@@ -107,6 +113,11 @@ export default {
     max-width: 800px;
     margin: auto;
     text-align: left;
+    .link {
+      /deep/ iframe {
+        margin-bottom: 40px;
+      }
+    }
   }
   .footer-links {
     margin-top: 50px;

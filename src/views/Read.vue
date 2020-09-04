@@ -41,6 +41,7 @@ export default {
     }
   },
   mounted () {
+    this.$store.commit('articles/reset')
     this.$store.commit('articles/set_current', null)
   },
   methods: {
