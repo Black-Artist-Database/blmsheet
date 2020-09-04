@@ -510,8 +510,7 @@ const mutations = {
       The two tracks are available now on <a href="https://hlx-1.bandcamp.com/" target="_blank">Bandcamp</a>.',
       embed_links: [
         '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3846929570/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://hlx-1.bandcamp.com/track/the-cosmos">THE COSMOS by HLX-1</a></iframe>',
-        '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1858466569/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://hlx-1.bandcamp.com/track/i-can-tell-you-can-f">I CAN TELL YOU CAN F*** by HLX-1</a></iframe>',
-        '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZOmsmYTge3k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1858466569/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://hlx-1.bandcamp.com/track/i-can-tell-you-can-f">I CAN TELL YOU CAN F*** by HLX-1</a></iframe>'
       ]
     },
     {
@@ -1092,7 +1091,6 @@ const mutations = {
       embed_links: [
         '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3846929570/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://hlx-1.bandcamp.com/track/the-cosmos">THE COSMOS by HLX-1</a></iframe>',
         '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1858466569/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://hlx-1.bandcamp.com/track/i-can-tell-you-can-f">I CAN TELL YOU CAN F*** by HLX-1</a></iframe>',
-        '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZOmsmYTge3k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
       ]
     },
     {
