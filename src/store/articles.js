@@ -267,6 +267,229 @@ const mutations = {
           url: 'https://www.instagram.com/tanyaakinola/'
         }
       ]
+    },
+    {
+      short_name: 'BLACK BAND CAMP SEPTEMBER PICKS: LONDON',
+      name: 'BLACK BAND CAMP SEPTEMBER PICKS: LONDON',
+      bandcamp_link: "",
+      bandcamp_id: "",
+      credit: null,
+      author: null,
+      date: '08/07/2020',
+      illus: 'articles/sept2020/sept2020.jpg',
+      top_desc: "For this month’s Bandcamp Friday, our co-founder NIKS has reached out to her trusted fellow London selectors, to find out who their top Black Band Camp discoveries and picks of the month are.",
+      links: [
+      ],
+      questions: [
+        {
+          type: 'bandcamp_picks',
+          title: 'DJ Winggold',
+          description: 'Founder of <a href="https://www.instagram.com/unboundevents/" target="_blank">Unbound Events</a>, an events platform pushing equality and raising awareness of social issues.',
+          links: [
+            {
+              title: 'Afriqua',
+              description: 'Kinda cheating here since I knew about him before Black Band Camp launched but he\'s super talented. He really nails the airy, melodic Afrofuturist vibe whilst keeping things funky. His album on R&S is a serious vibe',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2226738195/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1151574225/transparent=true/" seamless><a href="http://afriqua.bandcamp.com/album/colored">Colored by Afriqua</a></iframe>',
+            },
+            {
+              title: 'Escaflowne',
+              description: 'Stumbled on them while scrolling through the Black Band Camp’s \'Techno\' selections. I love the genre classifications on Black Band Camp as it\'s so easy to stumble on something new. I\'m a big fan of the soulful controlled rhythmic weirdness that Escaflowne\'s making.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4252785561/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1720586635/transparent=true/" seamless><a href="http://escaflowne.bandcamp.com/album/steel-ep">Steel EP by Escaflowne</a></iframe>',
+            },
+            {
+              title: 'Dele Sosimi',
+              description: 'One of Fela Kuti\'s old collaborators!! He really nails the laid back Afrobeat grooves that Fela pioneered while keeping the lineage of conscious, uncompromising lyrics.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=631756506/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://delesosimi.bandcamp.com/album/you-no-fit-touch-am">You No Fit Touch Am by Dele Sosimi</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Eliza Rose',
+          description: 'I’m a long time record enthusiast, singer, <a href="https://www.instagram.com/rhythm_sister/" target="_blank">Rhythm Sister</a> member with a weekly Rinse FM and monthly Balamii show. Lover of anything with soul.',
+          links: [
+            {
+              title: 'Honey Dijon ft Josh Caffe',
+              description: 'The Queen and the King on collaboration duties. Both are icons and the track is an instant Classique.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2265069030/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://honeydijon.bandcamp.com/album/la-femme-fantastique-extended-mix">La Femme Fantastique (Extended Mix) by Honey Dijon featuring Josh Caffe</a></iframe>'
+            },
+            {
+              title: 'ANZ',
+              description: 'An amazing producer and very inspirational. I LOVE this track, it makes me feel like an alien robot in New York in the late 80s.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2440068854/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://anzdj.bandcamp.com/album/invitation-2-dance">Invitation 2 Dance by Anz</a></iframe>'
+            },
+            {
+              title: 'Tim Reaper',
+              description: 'Whilst jungle is not something I play out a lot, I do still buy bits. I love it and I think Tim Reaper seamlessly compliments his jungle with soul. Feels proper old school.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=573351339/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://timreaper.bandcamp.com/album/pony-fridge-magnets">Pony / Fridge Magnets by Tim Reaper</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Helena Star',
+          description: 'My name is Helena Star, I am a selector and presenter who promotes and shares the love of house and techno across London and on my bi-monthly radio show on <a href="https://foundation.fm/people/helena-star/2" target="_blank">Foundation FM</a>.',
+          links: [
+            {
+              title: 'Delroy Edwards',
+              description: 'I stumbled across this EP on Black Band Camp mainly because I was intrigued by the cover (like most of my finds tbh) and was even more intrigued when I hit play, hearing these bare, head hitting hi-hats that got me so excited. One track that I can just imagine losing my sh*t to in the club is \'Nitemare House\' - I feel like there is a sneaky bassline in there that needs a fat system to set it free!',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1313070075/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://liesrecords.bandcamp.com/album/slap-happy">Slap Happy by Delroy Edwards</a></iframe>'
+            },
+            {
+              title: 'Kenny Larkin',
+              description: 'A \'house\'-hold name and amazing producer whose catelogue I hadn\'t looked much into on Bandcamp, but when stumbling across his name on Black Band Camp, having a listen to \'Keys, Strings and Tambourines\' was such a joy. An album that came out 8 years ago in 2012 and still feels fresh and exciting - you can understand why his style has been so influential to many, myself included. Stand out track for me was \'You Are\'',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1592495196/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1936042545/transparent=true/" seamless><a href="http://kennylarkin.bandcamp.com/album/keys-strings-tambourines">Keys, Strings, Tambourines by Kenny Larkin</a></iframe>'
+            },
+            {
+              title: 'Space Ghost',
+              description: 'I cannot explain how excited I was listening to the new release, I don\'t think I have hit download so fast in ages. \'Time to Dance\' as an entire EP has blown me away, but the single I will be playing out at every set for the next year that\'s for certain. Obsessed.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3217669814/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1745390047/transparent=true/" seamless><a href="http://space-ghost.bandcamp.com/album/time-to-dance">Time To Dance by Space Ghost</a></iframe>',
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'internationalJOE',
+          description: 'All round selector whose only real goal behind the decks is to get and keep the people dancing. I organize raves and DJ mentoring workshops in London with The <a href="https://www.instagram.com/os_community" target="_blank">OS Community</a>.',
+          links: [
+            {
+              title: 'Martyn Bootyspoon',
+              description: 'A friend recommended that I listen to the new ‘Lickity Split’ EP. My favorite track was Resonant Freq - The track reminds me of old school grime tracks I grew up listening to from the likes of Lethal B and Dizzie Rascal. The whole track is infectious and gets you bouncing and on your feet from the onset.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2647734678/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3274972274/transparent=true/" seamless><a href="http://martynbootyspoon.bandcamp.com/album/lickety-split">Lickety Split by Martyn Bootyspoon</a></iframe>',
+            },
+            {
+              title: 'DJ Nativesun',
+              description: 'I discovered this track and the artist while listening to Haus of Altr 011. Immediately I recognized the Mos Def ‘No Panties’ sample used. It was also released during the BLM protests that were happening over the summer. The message repeated during the track is to relax, and I must say the track has helped me to feel relaxed and at ease while dealing with the horrific injustices Black people are going through worldwide.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1268537946/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3096470586/transparent=true/" seamless><a href="http://hausofaltr.bandcamp.com/album/hoa011">HOA011 by Dj Nativesun</a></iframe>',
+            },
+            {
+              title: 'Galcher Lustwerk',
+              description: 'I had previously heard and played a few tracks by Galcher Lustwerk, but it wasn\'t until I heard the track \'Retire\' on the Haus of Altr 10 release that I decided to dig further into his collection of tracks. I especially love how he talks/raps on several of his works giving the listener another layer to enjoy.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1435999462/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=4059670016/transparent=true/" seamless><a href="http://hausofaltr.bandcamp.com/album/hoa010">HOA010 by Galcher Lustwerk</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Mr. Redley',
+          description: 'I\'m a DJ and presenter from North London. I generally lean towards Detroit/Chicago House in my sets, but always see where the night takes me. I also work as label supervisor for Steven Julien\'s <a href="https://www.instagram.com/apronrecords/?hl=en" target="_blank">Apron Records</a>.',
+          links: [
+            {
+              title: 'Huey Mnemonic',
+              description: 'I was scrolling through the Detroit section of the website and this guy\'s productions instantly caught my ear. That sultry tremolo\'d synth with those sharp jacking drums...just how I like it!',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=332277003/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://hueymnemonic.bandcamp.com/album/joyous-occasion">Joyous Occasion by Huey Mnemonic</a></iframe>'
+            },
+            {
+              title: 'J. Bevin',
+              description: 'I\'ve never heard of J. Bevin, but my oh my I\'m all about this kinda sound. Deep grooving house, and he\'s from right here in London. What\'s not to like?',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913003954/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1364628936/transparent=true/" seamless><a href="http://jbevin.bandcamp.com/album/tint-tone-ep">Tint &amp; Tone EP by J.Bevin</a></iframe>'
+            },
+            {
+              title: 'Urban Tribe',
+              description: 'I felt a bit silly that I hadn\'t heard of this group. Coming out of Detroit in the 1990s with former members including Kenny Dixon, Carl Craig and Shake Shakir. I think \'Syncophant\' is my favourite. Making you feel like you\'re underwater staring up at the sun...',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3789082051/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1705368593/transparent=true/" seamless><a href="http://urbantribe.bandcamp.com/album/loyal-opposition">Loyal Opposition by Urban Tribe</a></iframe>'
+            },
+            {
+              title: 'Blixaboy',
+              description: 'Dark, driving, and dirty. I was flicking through the electro section and Blixaboy immediately captured my ears. Makes me want to be in a dark room with some big ol\' speakers.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3311559997/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=912334242/transparent=true/" seamless><a href="http://stereoonstrike.bandcamp.com/album/azanian-funk">Azanian Funk by Blixaboy</a></iframe>'
+            },
+            {
+              title: 'Black Cadmium',
+              description: 'Simply put, \'Stairway\' reminds me of Terrence Dixon\'s \'The Parkhurst\'. I\'m all about that. Again, I stumbled across these duo searching through the Electro section of BBC.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1118391730/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3927587844/transparent=true/" seamless><a href="http://vaultwax.bandcamp.com/album/muted-chaos-ep">Muted Chaos EP by Black Cadmium</a></iframe>'
+            },
+            {
+              title: 'Simba',
+              description: 'This guy is effortless pulling together these dubs. Can’t go wrong really. I found him under the \'house\' tab on Black Band Camp funnily enough. Club cuts of some of the finest funk and disco.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1996097601/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=330549788/transparent=true/" seamless><a href="http://simbaselecta.bandcamp.com/album/stashbox-goodies-3">STASHBOX GOODIES 3 by simba</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'OK Williams',
+          description: 'Hi, I\'m OK Williams and I (used to) bring vibes to London dancefloors and host a monthly radio show on <a href="https://www.nts.live/shows/ok-williams" target="_blank">NTS</a>.',
+          links: [
+            {
+              title: 'Cyberia',
+              description: 'My first selection are Cyberia, a duo from Atlanta. I found them on the Black Band Camp website just browsing genres and really liked the track \'Distant Messenger\'.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1109812344/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1296590890/transparent=true/" seamless><a href="http://cyberiaworld.bandcamp.com/album/distant-signal-physical-aid-pack">Distant Signal (Physical Aid Pack) by CYBERIA</a></iframe>'
+            },
+            {
+              title: 'Rimarkable',
+              description: 'Next is Rimarkable from Detroit with the track \'I\'m in Trouble\', a killer house tune with a very sassy vocal. Another artist I found scrolling through the site looking for womxn producers.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3370506159/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://rimarkable.bandcamp.com/album/im-in-trouble">I&#39;m In Trouble by Rimarkable</a></iframe>'
+            },
+            {
+              title: 'RHR',
+              description: 'Another artist is RHR from Brazil, with "electro, baile funk and favela roots". Favourite track is \'Maloca\'.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3202389260/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2348372538/transparent=true/" seamless><a href="http://gowpe.bandcamp.com/album/maloca">Maloca by RHR</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Ross',
+          description: 'I am part of <a href="https://www.instagram.com/coopaudio/?hl=en" target="_blank">Coop Audio</a> which is a non-profit collective originally born in Bristol but now functioning out of London. I host our monthly radio show on Threads radio with my partner where we go by "Couples Therapy".',
+          links: [
+            {
+              title: 'T. Williams',
+              description: 'Found this tune using the filters on top of Black Band Camp. Kept it \'London\' and \'House\' and we got a big big tune. Pure bass heavy jam clearly designed for the club to get everyone\'s faces scrunched up. Just the type of tune I like to play on our radio show to warm people up before they head out for the night.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1132097993/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://twilliamsmusic.bandcamp.com/track/be-alone">Be Alone by T.Williams</a></iframe>'
+            },
+            {
+              title: 'Scuffed Presents 004',
+              description: 'I discovered this label on Black Band Camp and I’m glad I did because this release is full to the brim of interesting left of centre club music, breaks, 2-step and everything in between. Stand out track for me is the A1 with it\'s pure gun finger vibes! Would sound insane on a good system.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2666486115/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://scuffedrecs.bandcamp.com/album/scuffed-presents-004">Scuffed Presents 004 by Various Artists</a></iframe>',
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'T-Dunn',
+          description: 'I’m a DJ from West London and run vinyl label <a href="https://www.timehri.world/about" target="_blank">Timehri</a> pushing underground electronic music.',
+          links: [
+            {
+              title: 'James Bangura',
+              description: 'I was trawling through some stuff late at night and James\' stuff really stood out. It struck a chord with my mood at the time and I just remember thinking like rah how have I never heard of this guy? Been following him ever since. Every track on his latest EP All Smoke No Mirrors is proper.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1450596680/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://jamesbangura.bandcamp.com/album/all-smoke-no-mirrors-ep">All Smoke No Mirrors EP by JamesBangura</a></iframe>'
+            },
+            {
+              title: 'Ariwa (Label)',
+              description: 'Absolute big boy label. Had no idea they were on Bandcamp! Fave tune has gotta be ‘Aisha - Jah Vengance’. She murdered that riddim. There\'s so much stuff on there so anybody into dub/reggae should spend some time digging through their catalogue. Serious waves.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=186212718/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://sisteraisha.bandcamp.com/album/the-first-lady-of-dub">The First Lady Of Dub by Aisha</a></iframe>'
+            },
+            {
+              title: 'Korrē',
+              description: 'The way this guy draws inspiration for his tracks is mad. I spent the whole evening trying to find out if he\'d made anything more, going through his Soundcloud and stuff. Excited to see what else he\'s got. Everything on this is special but silver is the one for me.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2400214373/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://korre.bandcamp.com/album/cathexis-sessions-vol-1">Cathexis Sessions Vol.1 by Korrē</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'The Baker',
+          description: 'London based promoter, selector, writer and former label manager. Have worked with various brands and venues such as Origins, Tuckshop, Micks Garage and NT\'s Loft.',
+          links: [
+            {
+              title: 'Evan Baggs',
+              description: 'I\'ve known about Evan Baggs for a little while now and he\'s someone I truly admire so I feel its best I start with him. When scrolling through the genre selections, I had to click on the customary \'techno\' tab, hence finding Man like Evan, as I like to call him. Originating from America, living in Europe, pioneering a sound that is still seen as somewhat \'underground\' - all of which is for crowds and audiences that severely lack and racial diversity in all aspects, is something that I don\'t think many people understand. A POC in some of these eastern states is a true testament to his strength. Really like this track \'As It Stands\', nice mixture of galactic space top line elements and a fulfilling groove laden bass line.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3896250958/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1742139497/transparent=true/" seamless><a href="http://parttrec.bandcamp.com/album/201-new-langage-ep">2.01 New Langage EP by Evan Baggs</a></iframe>'
+            },
+            {
+              title: 'Millia Rage',
+              description: 'Again trawling through the \'techno\' section was draw to the striking name. Really liked this track \'Half-Loiner\' with its euphoric tinged begging leading into an energetic breakbeat closing. Nice to hear this sound design coming from America.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=184602861/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://milliarage.bandcamp.com/track/half-loiner">Half-Loiner by Millia Rage</a></iframe>'
+            },
+            {
+              title: 'Veda Black',
+              description: 'They say soul music cures the soul, so during lockdown I\'ve been continuing to expand my horizons with this amazing genre to help my soul, you could say. While flicking through the \'R&B/soul\' selection, I came across Veda Black and her \'Sad Girls Club\' Album. The whole thing is amazing, but my pick has to be \'Serious\'. Its powerful lyrics over that guitar and piano has me transporting between a 2020 and 1980s/1990s soul fusion paradigm.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=557015143/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3582788796/transparent=true/" seamless><a href="http://vedablack.bandcamp.com/album/sad-girls-club-2">Sad Girls Club by VEDA BLACK</a></iframe>'
+            }
+          ]
+        },
+      ]
     }
     ]))
     state.current = payload
@@ -534,6 +757,229 @@ const mutations = {
           name: 'Follow Tanya Akinola here',
           url: 'https://www.instagram.com/tanyaakinola/'
         }
+      ]
+    },
+    {
+      short_name: 'BLACK BAND CAMP SEPTEMBER PICKS: LONDON',
+      name: 'BLACK BAND CAMP SEPTEMBER PICKS: LONDON',
+      bandcamp_link: "",
+      bandcamp_id: "",
+      credit: null,
+      author: null,
+      date: '08/07/2020',
+      illus: 'articles/sept2020/sept2020.jpg',
+      top_desc: "For this month’s Bandcamp Friday, our co-founder NIKS has reached out to her trusted fellow London selectors, to find out who their top Black Band Camp discoveries and picks of the month are.",
+      links: [
+      ],
+      questions: [
+        {
+          type: 'bandcamp_picks',
+          title: 'DJ Winggold',
+          description: 'Founder of <a href="https://www.instagram.com/unboundevents/" target="_blank">Unbound Events</a>, an events platform pushing equality and raising awareness of social issues.',
+          links: [
+            {
+              title: 'Afriqua',
+              description: 'Kinda cheating here since I knew about him before Black Band Camp launched but he\'s super talented. He really nails the airy, melodic Afrofuturist vibe whilst keeping things funky. His album on R&S is a serious vibe',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2226738195/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1151574225/transparent=true/" seamless><a href="http://afriqua.bandcamp.com/album/colored">Colored by Afriqua</a></iframe>',
+            },
+            {
+              title: 'Escaflowne',
+              description: 'Stumbled on them while scrolling through the Black Band Camp’s \'Techno\' selections. I love the genre classifications on Black Band Camp as it\'s so easy to stumble on something new. I\'m a big fan of the soulful controlled rhythmic weirdness that Escaflowne\'s making.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4252785561/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1720586635/transparent=true/" seamless><a href="http://escaflowne.bandcamp.com/album/steel-ep">Steel EP by Escaflowne</a></iframe>',
+            },
+            {
+              title: 'Dele Sosimi',
+              description: 'One of Fela Kuti\'s old collaborators!! He really nails the laid back Afrobeat grooves that Fela pioneered while keeping the lineage of conscious, uncompromising lyrics.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=631756506/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://delesosimi.bandcamp.com/album/you-no-fit-touch-am">You No Fit Touch Am by Dele Sosimi</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Eliza Rose',
+          description: 'I’m a long time record enthusiast, singer, <a href="https://www.instagram.com/rhythm_sister/" target="_blank">Rhythm Sister</a> member with a weekly Rinse FM and monthly Balamii show. Lover of anything with soul.',
+          links: [
+            {
+              title: 'Honey Dijon ft Josh Caffe',
+              description: 'The Queen and the King on collaboration duties. Both are icons and the track is an instant Classique.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2265069030/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://honeydijon.bandcamp.com/album/la-femme-fantastique-extended-mix">La Femme Fantastique (Extended Mix) by Honey Dijon featuring Josh Caffe</a></iframe>'
+            },
+            {
+              title: 'ANZ',
+              description: 'An amazing producer and very inspirational. I LOVE this track, it makes me feel like an alien robot in New York in the late 80s.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2440068854/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://anzdj.bandcamp.com/album/invitation-2-dance">Invitation 2 Dance by Anz</a></iframe>'
+            },
+            {
+              title: 'Tim Reaper',
+              description: 'Whilst jungle is not something I play out a lot, I do still buy bits. I love it and I think Tim Reaper seamlessly compliments his jungle with soul. Feels proper old school.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=573351339/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://timreaper.bandcamp.com/album/pony-fridge-magnets">Pony / Fridge Magnets by Tim Reaper</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Helena Star',
+          description: 'My name is Helena Star, I am a selector and presenter who promotes and shares the love of house and techno across London and on my bi-monthly radio show on <a href="https://foundation.fm/people/helena-star/2" target="_blank">Foundation FM</a>.',
+          links: [
+            {
+              title: 'Delroy Edwards',
+              description: 'I stumbled across this EP on Black Band Camp mainly because I was intrigued by the cover (like most of my finds tbh) and was even more intrigued when I hit play, hearing these bare, head hitting hi-hats that got me so excited. One track that I can just imagine losing my sh*t to in the club is \'Nitemare House\' - I feel like there is a sneaky bassline in there that needs a fat system to set it free!',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1313070075/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://liesrecords.bandcamp.com/album/slap-happy">Slap Happy by Delroy Edwards</a></iframe>'
+            },
+            {
+              title: 'Kenny Larkin',
+              description: 'A \'house\'-hold name and amazing producer whose catelogue I hadn\'t looked much into on Bandcamp, but when stumbling across his name on Black Band Camp, having a listen to \'Keys, Strings and Tambourines\' was such a joy. An album that came out 8 years ago in 2012 and still feels fresh and exciting - you can understand why his style has been so influential to many, myself included. Stand out track for me was \'You Are\'',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1592495196/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1936042545/transparent=true/" seamless><a href="http://kennylarkin.bandcamp.com/album/keys-strings-tambourines">Keys, Strings, Tambourines by Kenny Larkin</a></iframe>'
+            },
+            {
+              title: 'Space Ghost',
+              description: 'I cannot explain how excited I was listening to the new release, I don\'t think I have hit download so fast in ages. \'Time to Dance\' as an entire EP has blown me away, but the single I will be playing out at every set for the next year that\'s for certain. Obsessed.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3217669814/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1745390047/transparent=true/" seamless><a href="http://space-ghost.bandcamp.com/album/time-to-dance">Time To Dance by Space Ghost</a></iframe>',
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'internationalJOE',
+          description: 'All round selector whose only real goal behind the decks is to get and keep the people dancing. I organize raves and DJ mentoring workshops in London with The <a href="https://www.instagram.com/os_community" target="_blank">OS Community</a>.',
+          links: [
+            {
+              title: 'Martyn Bootyspoon',
+              description: 'A friend recommended that I listen to the new ‘Lickity Split’ EP. My favorite track was Resonant Freq - The track reminds me of old school grime tracks I grew up listening to from the likes of Lethal B and Dizzie Rascal. The whole track is infectious and gets you bouncing and on your feet from the onset.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2647734678/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3274972274/transparent=true/" seamless><a href="http://martynbootyspoon.bandcamp.com/album/lickety-split">Lickety Split by Martyn Bootyspoon</a></iframe>',
+            },
+            {
+              title: 'DJ Nativesun',
+              description: 'I discovered this track and the artist while listening to Haus of Altr 011. Immediately I recognized the Mos Def ‘No Panties’ sample used. It was also released during the BLM protests that were happening over the summer. The message repeated during the track is to relax, and I must say the track has helped me to feel relaxed and at ease while dealing with the horrific injustices Black people are going through worldwide.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1268537946/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3096470586/transparent=true/" seamless><a href="http://hausofaltr.bandcamp.com/album/hoa011">HOA011 by Dj Nativesun</a></iframe>',
+            },
+            {
+              title: 'Galcher Lustwerk',
+              description: 'I had previously heard and played a few tracks by Galcher Lustwerk, but it wasn\'t until I heard the track \'Retire\' on the Haus of Altr 10 release that I decided to dig further into his collection of tracks. I especially love how he talks/raps on several of his works giving the listener another layer to enjoy.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1435999462/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=4059670016/transparent=true/" seamless><a href="http://hausofaltr.bandcamp.com/album/hoa010">HOA010 by Galcher Lustwerk</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Mr. Redley',
+          description: 'I\'m a DJ and presenter from North London. I generally lean towards Detroit/Chicago House in my sets, but always see where the night takes me. I also work as label supervisor for Steven Julien\'s <a href="https://www.instagram.com/apronrecords/?hl=en" target="_blank">Apron Records</a>.',
+          links: [
+            {
+              title: 'Huey Mnemonic',
+              description: 'I was scrolling through the Detroit section of the website and this guy\'s productions instantly caught my ear. That sultry tremolo\'d synth with those sharp jacking drums...just how I like it!',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=332277003/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://hueymnemonic.bandcamp.com/album/joyous-occasion">Joyous Occasion by Huey Mnemonic</a></iframe>'
+            },
+            {
+              title: 'J. Bevin',
+              description: 'I\'ve never heard of J. Bevin, but my oh my I\'m all about this kinda sound. Deep grooving house, and he\'s from right here in London. What\'s not to like?',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913003954/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1364628936/transparent=true/" seamless><a href="http://jbevin.bandcamp.com/album/tint-tone-ep">Tint &amp; Tone EP by J.Bevin</a></iframe>'
+            },
+            {
+              title: 'Urban Tribe',
+              description: 'I felt a bit silly that I hadn\'t heard of this group. Coming out of Detroit in the 1990s with former members including Kenny Dixon, Carl Craig and Shake Shakir. I think \'Syncophant\' is my favourite. Making you feel like you\'re underwater staring up at the sun...',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3789082051/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1705368593/transparent=true/" seamless><a href="http://urbantribe.bandcamp.com/album/loyal-opposition">Loyal Opposition by Urban Tribe</a></iframe>'
+            },
+            {
+              title: 'Blixaboy',
+              description: 'Dark, driving, and dirty. I was flicking through the electro section and Blixaboy immediately captured my ears. Makes me want to be in a dark room with some big ol\' speakers.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3311559997/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=912334242/transparent=true/" seamless><a href="http://stereoonstrike.bandcamp.com/album/azanian-funk">Azanian Funk by Blixaboy</a></iframe>'
+            },
+            {
+              title: 'Black Cadmium',
+              description: 'Simply put, \'Stairway\' reminds me of Terrence Dixon\'s \'The Parkhurst\'. I\'m all about that. Again, I stumbled across these duo searching through the Electro section of BBC.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1118391730/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3927587844/transparent=true/" seamless><a href="http://vaultwax.bandcamp.com/album/muted-chaos-ep">Muted Chaos EP by Black Cadmium</a></iframe>'
+            },
+            {
+              title: 'Simba',
+              description: 'This guy is effortless pulling together these dubs. Can’t go wrong really. I found him under the \'house\' tab on Black Band Camp funnily enough. Club cuts of some of the finest funk and disco.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1996097601/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=330549788/transparent=true/" seamless><a href="http://simbaselecta.bandcamp.com/album/stashbox-goodies-3">STASHBOX GOODIES 3 by simba</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'OK Williams',
+          description: 'Hi, I\'m OK Williams and I (used to) bring vibes to London dancefloors and host a monthly radio show on <a href="https://www.nts.live/shows/ok-williams" target="_blank">NTS</a>.',
+          links: [
+            {
+              title: 'Cyberia',
+              description: 'My first selection are Cyberia, a duo from Atlanta. I found them on the Black Band Camp website just browsing genres and really liked the track \'Distant Messenger\'.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1109812344/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1296590890/transparent=true/" seamless><a href="http://cyberiaworld.bandcamp.com/album/distant-signal-physical-aid-pack">Distant Signal (Physical Aid Pack) by CYBERIA</a></iframe>'
+            },
+            {
+              title: 'Rimarkable',
+              description: 'Next is Rimarkable from Detroit with the track \'I\'m in Trouble\', a killer house tune with a very sassy vocal. Another artist I found scrolling through the site looking for womxn producers.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3370506159/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://rimarkable.bandcamp.com/album/im-in-trouble">I&#39;m In Trouble by Rimarkable</a></iframe>'
+            },
+            {
+              title: 'RHR',
+              description: 'Another artist is RHR from Brazil, with "electro, baile funk and favela roots". Favourite track is \'Maloca\'.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3202389260/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2348372538/transparent=true/" seamless><a href="http://gowpe.bandcamp.com/album/maloca">Maloca by RHR</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Ross',
+          description: 'I am part of <a href="https://www.instagram.com/coopaudio/?hl=en" target="_blank">Coop Audio</a> which is a non-profit collective originally born in Bristol but now functioning out of London. I host our monthly radio show on Threads radio with my partner where we go by "Couples Therapy".',
+          links: [
+            {
+              title: 'T. Williams',
+              description: 'Found this tune using the filters on top of Black Band Camp. Kept it \'London\' and \'House\' and we got a big big tune. Pure bass heavy jam clearly designed for the club to get everyone\'s faces scrunched up. Just the type of tune I like to play on our radio show to warm people up before they head out for the night.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1132097993/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://twilliamsmusic.bandcamp.com/track/be-alone">Be Alone by T.Williams</a></iframe>'
+            },
+            {
+              title: 'Scuffed Presents 004',
+              description: 'I discovered this label on Black Band Camp and I’m glad I did because this release is full to the brim of interesting left of centre club music, breaks, 2-step and everything in between. Stand out track for me is the A1 with it\'s pure gun finger vibes! Would sound insane on a good system.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2666486115/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://scuffedrecs.bandcamp.com/album/scuffed-presents-004">Scuffed Presents 004 by Various Artists</a></iframe>',
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'T-Dunn',
+          description: 'I’m a DJ from West London and run vinyl label <a href="https://www.timehri.world/about" target="_blank">Timehri</a> pushing underground electronic music.',
+          links: [
+            {
+              title: 'James Bangura',
+              description: 'I was trawling through some stuff late at night and James\' stuff really stood out. It struck a chord with my mood at the time and I just remember thinking like rah how have I never heard of this guy? Been following him ever since. Every track on his latest EP All Smoke No Mirrors is proper.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1450596680/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://jamesbangura.bandcamp.com/album/all-smoke-no-mirrors-ep">All Smoke No Mirrors EP by JamesBangura</a></iframe>'
+            },
+            {
+              title: 'Ariwa (Label)',
+              description: 'Absolute big boy label. Had no idea they were on Bandcamp! Fave tune has gotta be ‘Aisha - Jah Vengance’. She murdered that riddim. There\'s so much stuff on there so anybody into dub/reggae should spend some time digging through their catalogue. Serious waves.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=186212718/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://sisteraisha.bandcamp.com/album/the-first-lady-of-dub">The First Lady Of Dub by Aisha</a></iframe>'
+            },
+            {
+              title: 'Korrē',
+              description: 'The way this guy draws inspiration for his tracks is mad. I spent the whole evening trying to find out if he\'d made anything more, going through his Soundcloud and stuff. Excited to see what else he\'s got. Everything on this is special but silver is the one for me.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2400214373/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://korre.bandcamp.com/album/cathexis-sessions-vol-1">Cathexis Sessions Vol.1 by Korrē</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'The Baker',
+          description: 'London based promoter, selector, writer and former label manager. Have worked with various brands and venues such as Origins, Tuckshop, Micks Garage and NT\'s Loft.',
+          links: [
+            {
+              title: 'Evan Baggs',
+              description: 'I\'ve known about Evan Baggs for a little while now and he\'s someone I truly admire so I feel its best I start with him. When scrolling through the genre selections, I had to click on the customary \'techno\' tab, hence finding Man like Evan, as I like to call him. Originating from America, living in Europe, pioneering a sound that is still seen as somewhat \'underground\' - all of which is for crowds and audiences that severely lack and racial diversity in all aspects, is something that I don\'t think many people understand. A POC in some of these eastern states is a true testament to his strength. Really like this track \'As It Stands\', nice mixture of galactic space top line elements and a fulfilling groove laden bass line.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3896250958/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1742139497/transparent=true/" seamless><a href="http://parttrec.bandcamp.com/album/201-new-langage-ep">2.01 New Langage EP by Evan Baggs</a></iframe>'
+            },
+            {
+              title: 'Millia Rage',
+              description: 'Again trawling through the \'techno\' section was draw to the striking name. Really liked this track \'Half-Loiner\' with its euphoric tinged begging leading into an energetic breakbeat closing. Nice to hear this sound design coming from America.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=184602861/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://milliarage.bandcamp.com/track/half-loiner">Half-Loiner by Millia Rage</a></iframe>'
+            },
+            {
+              title: 'Veda Black',
+              description: 'They say soul music cures the soul, so during lockdown I\'ve been continuing to expand my horizons with this amazing genre to help my soul, you could say. While flicking through the \'R&B/soul\' selection, I came across Veda Black and her \'Sad Girls Club\' Album. The whole thing is amazing, but my pick has to be \'Serious\'. Its powerful lyrics over that guitar and piano has me transporting between a 2020 and 1980s/1990s soul fusion paradigm.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=557015143/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3582788796/transparent=true/" seamless><a href="http://vedablack.bandcamp.com/album/sad-girls-club-2">Sad Girls Club by VEDA BLACK</a></iframe>'
+            }
+          ]
+        },
       ]
     }]))
     state.current = state.list[payload - 1]
