@@ -8,7 +8,8 @@ const mutations = {
     state.list = null
   },
   set_current (state, payload) {
-    state.list = JSON.parse(JSON.stringify([ {
+    state.list = JSON.parse(JSON.stringify([
+    {
       short_name: 'JON DIXON’S QUIET GENIUS',
       name: 'JON DIXON’S QUIET GENIUS',
       bandcamp_link: "https://jon-dixon.bandcamp.com/album/times-of-change-ep",
@@ -583,12 +584,85 @@ const mutations = {
         '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=479447337/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://ahyasimone.bandcamp.com/track/frostbite">Frostbite by AHYA SIMONE</a></iframe>'
       ]
     },
+    {
+      short_name: 'BAKHITA REFLECTS ON HER MAGICAL EP \'CHAMO MILE:PYE\'',
+      name: 'BAKHITA REFLECTS ON HER MAGICAL EP \'CHAMO MILE:PYE\'',
+      bandcamp_link: "https://bakhita.bandcamp.com/album/chamo-mile-pye",
+      bandcamp_id: "1733537500",
+      credit: '',
+      credit_illu: 'Nala',
+      author: 'Lauryn Njeri',
+      date: '07/31/2020',
+      illus: 'articles/bakhita/bakhita.jpg',
+      introduction: "Dabbling heavily in neo jazz and alternative soul, Bakhita is a recording, performing and visual artist reigning from the buzzing city of Nairobi, Kenya. This Friday 11th of September, the multifaceted artist releases '<b>Chamo Mile:PYE</b>', a 7-track EP that showcases her honeyed vocals and spiritually elevating penmanship intertwined with fun, lively beats and electrifying bass.<br><br>Black Band Camp had a chat with Bakhita to get some insight on her journey of creating meaningful spaces as she navigates Nairobi's dynamic creative scene as a queer, alternative artist.",
+      links: [],
+      questions: [
+        {
+          type: 'question',
+          title: 'How has 2020 been for you so far?',
+          answer: 'I feel like I started 2020 already having set my mind to conquer the things that were preventing me from putting out work and creative input and all of that stuff. I started 2020 saying "this year I\'m going to take charge, take control", and as much as it has been very unexpected and full of ups and downs from our social dynamic and economic spaces, it\'s been great, it\'s really been great.<br><br>Honestly I\'m most appreciative of quarantine, because it\'s given up-and-coming artists a lot of time to put out our work. Now we\'re able to represent ourselves and not wait to be given gigs, because there\'s no work like that right now so we’re literally able to promote ourselves and have more people listen to us. So 2020 has been great because it opened doors and kind of alleviated the gatekeeping that has been present in the Nairobi art industry.',
+        },
+        {
+          type: 'question',
+          title: 'Let\'s get right into the music - how does the title of the EP reflect your journey to creating \'Chamo Mile\'?',
+          answer: 'Wow! ‘Chamo Mile’ is something that I\'ve been contemplating and putting together unconsciously for some time. The title is a reflection of me, and how I’ve had to work towards certain things and even had to hide sometimes or disguise myself to be able maneuver this industry and get recognition or support. So this is kind of an ode to all of the sacrifices I\'ve had to make, and a celebration of me being able to now disguise myself from the evil while still staying true to me. Chamo means to hide in plain sight, camouflage my essence so that I can protect it from evildoers and leeches and all of that.<br><br>The title also reflects the entire journey of the creation of the songs. I started the songwriting process with ‘Upstairs’, ‘Funk’ and ‘Most Days’ before quarantine began. Already by that time I was exhausted by how our industry makes us feel; how people assume to know us without  taking the time to get to know us, and then try to project their assumptions of us as our reality which is crazy to me. I was in a space where I had to camouflage myself from people around me, from people in the industry and just recuperate and take time.<br><br>I also struggled a lot with mental health issues so \'Chamo Mile\' is an appreciation for the fact that I had to build and grow from a space of complete loneliness and sadness, as well as a celebration that I\'m able to be here fighting.<br><br>The other reason I wanted \'chamo\' and \'mile\' is that it\'s a reminder that it\'s a continuous fight. We’re all in constant motion, growing and changing. I\'m always finding ways to be better and I felt ‘Chamo Mile’ is a reflection of everything that\'s happened until now and I\'m appreciative to be able to share this with everyone.'
+        },
+        {
+          type: 'question',
+          title: 'Where do you draw your inspirations and musical influences from?',
+          answer: 'This is a question that has always been difficult for me to answer, mostly because I draw a lot of my musical inspiration from things that aren\'t necessarily tangible - such as nature and the different sounds that we hear, the different movements and weather changes, or the moon and how we observe different astro events and how I believe they affect us. I get a lot of inspiration from things building around that.<br><br>Aside from nature and even animals, I get inspiration from my interactions with people. It could be something as easy as a conversation. If I feel like it\'s a conversation that has been echoing in my mind for some time and I wasn\'t able to really pinpoint, I find myself sitting and writing a song about that thought and it\'s really magical.<br><br>My biggest influence in making music has been my mental health. My ability to create has been very much affected by how well I am doing mentally, so it\'s taken a lot of reflection, shadow work and trauma work to uncover whatever sadness has been clouding my mind.<br><br>The artists that surround me are also a major motivation. I find that I really enjoy listening to music that hasn\'t been tainted by the mainstream media. I get inspired by listening to other artists who put their entire hearts into their music, and I feel a lot of that from unpopular music and artists around me who are also up-and-coming. They inspire me a lot because they give me a lot of faith in the universal consciousness. I always find out that we kind of have a similar message behind what we talk about, which is very encouraging and magical to experience.'
+        },
+        {
+          type: 'quote',
+          answer: '"We\'re all  in constant motion, growing and changing. So I\'m always finding ways to be better, and I felt \'Chamo Mile\' is a reflection of everything that\'s happened until now and I\'m appreciative to be able to share this with everyone."'
+        },
+        {
+          type: 'question',
+          title: 'Can you walk me through your experience creating this body of work?',
+          answer: 'Honestly it\'s been so magical. It\'s felt like a dream, but a waking dream. Everything has flowed so easily and smoothly. Everything aligned when it needed to align, and things failed when they needed to fail to give me time to rebuild on that failure. So, wow! It\'s been such a magical process.<br><br>\'Chamo Mile\' isn\'t just an audio project, it\'s also a body of visuals, both video and fine art. The journey began from the painting that you now see on the cover art. I knew that I needed to be in this space of isolation, growth and wanting to rebuild and protect myself from being eaten by the outside world. Granting myself that space, and then being given the space to express that through quarantine, just makes me lost for words at how much magic this process has been.<br><br>Putting it out and sharing it with everyone I\'d say is the most stressful part that I\'ve experienced thus far, because I now have to consider everyone else. Otherwise it\'s been so much passion and happiness on my end from the people who have supported me on this journey.<br><br>Working with the producer, Lemi, who I\'ve been working with for a very long time made it seem like second nature. Even in creating the visuals, all the people I worked with, I\'ve worked with before and it has been so magical and uplifting.<br><br>As an artist, through it I\'ve grown. I\'m able to understand myself better, know my limitations, my expectations and express them properly without getting sad when things don\'t go right, or offended when people don\'t see my vision. It\'s also been such a humbling process allowing myself to let go, as well as forcing myself to let go - wow! I wish I could always be in the creation stage of things. Creating things is always such a beautiful experience for me and this has been my favourite project yet.'
+        },
+        {
+          type: 'image',
+          path: 'articles/bakhita/bakhita2.jpg'
+        },
+        {
+          type: 'question',
+          title: 'How is it navigating as a queer artist in the Nairobi art space?',
+          answer: 'Hmm, I\'d say it\'s... interesting. Sometimes it\'s amazing because you get to meet and interact with more queer people which is always great. I don\'t think I\'d ever have gotten as much exposure to queerness if not through the art scene and getting to meet all these creatives.<br><br>Sometimes it\'s intoxicating because of how queerness has been sexualised in the entertainment industry. A lot of the time, you\'ll find your sexuality is glorified or wanting to be used for promotion of something, which is exhausting. It gives this false illusion of what queerness is. Queerness is so much more than just sex and I personally dont think the focus should be on the sexual aspect alone.<br><br>Things like this have made navigating life as a queer artist in Nairobi a little tricky. As it is, the entertainment industry demands a lot of sexualisation from women especially, so there is a lot of expectation for you to present yourself sexually having all of these interactions with different women or men.<br><br>Another very frustrating aspect is the misunderstanding of different queer terms. Seeing people living the trans experience not gain the kind of respect that someone else who is cis or bisexual would is so crazy. I\'m really grateful for the people that I\'ve met who have built me along the way and taught me to have patience, love and faith in the queer community which I\'m grateful for having found.'
+        },
+        {
+          type: 'question',
+          title: "How are you able to balance creative freedom and experimentation with the pressure to make 'hits' especially as an upcoming artist?",
+          answer: "It's such a gut wrenching process honestly. Writing music and not knowing whether people will resonate with it or if it will be liked or even supported at all, is so overwhelming and so full of anxiety. I struggle with anxiety and paranoia so it comes in waves of uncertainty and self-doubt, but I'd say that this year I've been able to balance this a lot better. I'm aware when I'm creating for myself and I allow myself to experiment more. That way I'm not judging myself, I just give myself the space to be and to create whatever it is that I want to.<br><br>Especially now in 2020, I've gotten into a lot of production. I've played piano for 15 years but I’d never found a way to integrate it into my production because I was afraid of the experimental stage of doing things because I wanted to make 'hits'. But when you’re doing it for yourself, you give yourself a lot more space to experiment because you’re not putting that pressure on yourself - and even if you are, it's to learn rather than to tear yourself down.<br><br>Also, understanding the language that I have with myself has given me the space to balance creative freedom and experimentation. Otherwise you do have to be conscious and aware of the implications of what it is that you are creating and it has to be in a way that people are ready to accept the information. There is a lot of pressure to make what you are putting out palatable, but it shouldn't prevent us from being and creating art.<br><br>Another way I've been able to strike this balance is by simply sitting on projects. I will sit on something until I feel like it's great so that even if I release it and it doesn't catch on as a hit, I still know that I've done the best that I’m able to. This has really helped me because I know when to let go and say \"yeah this sounds good as it is\" or when to say \"no, this still needs some time\". It doesn’t give me as much pressure."
+        },
+        {
+          type: 'question',
+          title: "What role do you think your immediate society can play to enable artists like yourself to have a bigger platform?",
+          answer: "For one, just sharing our work. People would be surprised but a repost, retweet or a share of a body of work is so powerful because the people around you see it and that causes a ripple effect. It's how the artists who are now ‘big leagues’ got established. I think a big part of it is through spreading the word, liking the videos, being present and following artists.<br><br>Another way that we could really get more support from society is by just keeping up with our work, doing the research when they hear about us and even media stations. They barely give any energy or time to up-and-coming artists because they don't want to take the risk of not satisfying their consumers when in reality the consumer is always looking for something new. Up-and-coming artists being able to package new experiences so well because we are new artists is something I really would urge the media to take advantage of.<br><br>Aside from the entertainment industry, I wish our government gave us grants and opportunities or ways for us to have a steady income. Especially as a growing artist, the chances of having a steady cash flow are so scarce and even if you do, it's very hard to  maintain because you might end up having to sacrifice your creation process to maintain this work. If we were given opportunities by the government, that would give us a lot more breathing room to just create and do better.<br><br>Another thing is to stop the assumption that Kenyan music has to sound a certain way and accept that as long as it's made in Kenya, it's Kenyan. However, I'm so glad to be up-and-coming in a time when this is a lot more possible, and I just hope that it continues to be taken more seriously."
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase on bandcamp here',
+          url: 'https://bakhita.bandcamp.com/album/chamo-mile-pye'
+        },
+        {
+          name: 'Follow Bakhita here',
+          url: 'https://www.instagram.com/lunar_consciousness/'
+        },
+        {
+          name: 'Follow Lauryn Njeri here',
+          url: 'https://www.instagram.com/laurynlikethehills_/'
+        }
+      ]
+    }
     ]))
     state.current = payload
   },
 
   set_current_by_id(state, payload) {
-    state.list = JSON.parse(JSON.stringify([ {
+    state.list = JSON.parse(JSON.stringify([
+    {
       short_name: 'JON DIXON’S QUIET GENIUS',
       name: 'JON DIXON’S QUIET GENIUS',
       bandcamp_link: "https://jon-dixon.bandcamp.com/album/times-of-change-ep",
@@ -1163,6 +1237,78 @@ const mutations = {
         '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=479447337/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://ahyasimone.bandcamp.com/track/frostbite">Frostbite by AHYA SIMONE</a></iframe>'
       ]
     },
+    {
+      short_name: 'BAKHITA REFLECTS ON HER MAGICAL EP \'CHAMO MILE:PYE\'',
+      name: 'BAKHITA REFLECTS ON HER MAGICAL EP \'CHAMO MILE:PYE\'',
+      bandcamp_link: "https://bakhita.bandcamp.com/album/chamo-mile-pye",
+      bandcamp_id: "1733537500",
+      credit: '',
+      credit_illu: 'Nala',
+      author: 'Lauryn Njeri',
+      date: '07/31/2020',
+      illus: 'articles/bakhita/bakhita.jpg',
+      introduction: "Dabbling heavily in neo jazz and alternative soul, Bakhita is a recording, performing and visual artist reigning from the buzzing city of Nairobi, Kenya. This Friday 11th of September, the multifaceted artist releases '<b>Chamo Mile:PYE</b>', a 7-track EP that showcases her honeyed vocals and spiritually elevating penmanship intertwined with fun, lively beats and electrifying bass.<br><br>Black Band Camp had a chat with Bakhita to get some insight on her journey of creating meaningful spaces as she navigates Nairobi's dynamic creative scene as a queer, alternative artist.",
+      links: [],
+      questions: [
+        {
+          type: 'question',
+          title: 'How has 2020 been for you so far?',
+          answer: 'I feel like I started 2020 already having set my mind to conquer the things that were preventing me from putting out work and creative input and all of that stuff. I started 2020 saying "this year I\'m going to take charge, take control", and as much as it has been very unexpected and full of ups and downs from our social dynamic and economic spaces, it\'s been great, it\'s really been great.<br><br>Honestly I\'m most appreciative of quarantine, because it\'s given up-and-coming artists a lot of time to put out our work. Now we\'re able to represent ourselves and not wait to be given gigs, because there\'s no work like that right now so we’re literally able to promote ourselves and have more people listen to us. So 2020 has been great because it opened doors and kind of alleviated the gatekeeping that has been present in the Nairobi art industry.',
+        },
+        {
+          type: 'question',
+          title: 'Let\'s get right into the music - how does the title of the EP reflect your journey to creating \'Chamo Mile\'?',
+          answer: 'Wow! ‘Chamo Mile’ is something that I\'ve been contemplating and putting together unconsciously for some time. The title is a reflection of me, and how I’ve had to work towards certain things and even had to hide sometimes or disguise myself to be able maneuver this industry and get recognition or support. So this is kind of an ode to all of the sacrifices I\'ve had to make, and a celebration of me being able to now disguise myself from the evil while still staying true to me. Chamo means to hide in plain sight, camouflage my essence so that I can protect it from evildoers and leeches and all of that.<br><br>The title also reflects the entire journey of the creation of the songs. I started the songwriting process with ‘Upstairs’, ‘Funk’ and ‘Most Days’ before quarantine began. Already by that time I was exhausted by how our industry makes us feel; how people assume to know us without  taking the time to get to know us, and then try to project their assumptions of us as our reality which is crazy to me. I was in a space where I had to camouflage myself from people around me, from people in the industry and just recuperate and take time.<br><br>I also struggled a lot with mental health issues so \'Chamo Mile\' is an appreciation for the fact that I had to build and grow from a space of complete loneliness and sadness, as well as a celebration that I\'m able to be here fighting.<br><br>The other reason I wanted \'chamo\' and \'mile\' is that it\'s a reminder that it\'s a continuous fight. We’re all in constant motion, growing and changing. I\'m always finding ways to be better and I felt ‘Chamo Mile’ is a reflection of everything that\'s happened until now and I\'m appreciative to be able to share this with everyone.'
+        },
+        {
+          type: 'question',
+          title: 'Where do you draw your inspirations and musical influences from?',
+          answer: 'This is a question that has always been difficult for me to answer, mostly because I draw a lot of my musical inspiration from things that aren\'t necessarily tangible - such as nature and the different sounds that we hear, the different movements and weather changes, or the moon and how we observe different astro events and how I believe they affect us. I get a lot of inspiration from things building around that.<br><br>Aside from nature and even animals, I get inspiration from my interactions with people. It could be something as easy as a conversation. If I feel like it\'s a conversation that has been echoing in my mind for some time and I wasn\'t able to really pinpoint, I find myself sitting and writing a song about that thought and it\'s really magical.<br><br>My biggest influence in making music has been my mental health. My ability to create has been very much affected by how well I am doing mentally, so it\'s taken a lot of reflection, shadow work and trauma work to uncover whatever sadness has been clouding my mind.<br><br>The artists that surround me are also a major motivation. I find that I really enjoy listening to music that hasn\'t been tainted by the mainstream media. I get inspired by listening to other artists who put their entire hearts into their music, and I feel a lot of that from unpopular music and artists around me who are also up-and-coming. They inspire me a lot because they give me a lot of faith in the universal consciousness. I always find out that we kind of have a similar message behind what we talk about, which is very encouraging and magical to experience.'
+        },
+        {
+          type: 'quote',
+          answer: '"We\'re all  in constant motion, growing and changing. So I\'m always finding ways to be better, and I felt \'Chamo Mile\' is a reflection of everything that\'s happened until now and I\'m appreciative to be able to share this with everyone."'
+        },
+        {
+          type: 'question',
+          title: 'Can you walk me through your experience creating this body of work?',
+          answer: 'Honestly it\'s been so magical. It\'s felt like a dream, but a waking dream. Everything has flowed so easily and smoothly. Everything aligned when it needed to align, and things failed when they needed to fail to give me time to rebuild on that failure. So, wow! It\'s been such a magical process.<br><br>\'Chamo Mile\' isn\'t just an audio project, it\'s also a body of visuals, both video and fine art. The journey began from the painting that you now see on the cover art. I knew that I needed to be in this space of isolation, growth and wanting to rebuild and protect myself from being eaten by the outside world. Granting myself that space, and then being given the space to express that through quarantine, just makes me lost for words at how much magic this process has been.<br><br>Putting it out and sharing it with everyone I\'d say is the most stressful part that I\'ve experienced thus far, because I now have to consider everyone else. Otherwise it\'s been so much passion and happiness on my end from the people who have supported me on this journey.<br><br>Working with the producer, Lemi, who I\'ve been working with for a very long time made it seem like second nature. Even in creating the visuals, all the people I worked with, I\'ve worked with before and it has been so magical and uplifting.<br><br>As an artist, through it I\'ve grown. I\'m able to understand myself better, know my limitations, my expectations and express them properly without getting sad when things don\'t go right, or offended when people don\'t see my vision. It\'s also been such a humbling process allowing myself to let go, as well as forcing myself to let go - wow! I wish I could always be in the creation stage of things. Creating things is always such a beautiful experience for me and this has been my favourite project yet.'
+        },
+        {
+          type: 'image',
+          path: 'articles/bakhita/bakhita2.jpg'
+        },
+        {
+          type: 'question',
+          title: 'How is it navigating as a queer artist in the Nairobi art space?',
+          answer: 'Hmm, I\'d say it\'s... interesting. Sometimes it\'s amazing because you get to meet and interact with more queer people which is always great. I don\'t think I\'d ever have gotten as much exposure to queerness if not through the art scene and getting to meet all these creatives.<br><br>Sometimes it\'s intoxicating because of how queerness has been sexualised in the entertainment industry. A lot of the time, you\'ll find your sexuality is glorified or wanting to be used for promotion of something, which is exhausting. It gives this false illusion of what queerness is. Queerness is so much more than just sex and I personally dont think the focus should be on the sexual aspect alone.<br><br>Things like this have made navigating life as a queer artist in Nairobi a little tricky. As it is, the entertainment industry demands a lot of sexualisation from women especially, so there is a lot of expectation for you to present yourself sexually having all of these interactions with different women or men.<br><br>Another very frustrating aspect is the misunderstanding of different queer terms. Seeing people living the trans experience not gain the kind of respect that someone else who is cis or bisexual would is so crazy. I\'m really grateful for the people that I\'ve met who have built me along the way and taught me to have patience, love and faith in the queer community which I\'m grateful for having found.'
+        },
+        {
+          type: 'question',
+          title: "How are you able to balance creative freedom and experimentation with the pressure to make 'hits' especially as an upcoming artist?",
+          answer: "It's such a gut wrenching process honestly. Writing music and not knowing whether people will resonate with it or if it will be liked or even supported at all, is so overwhelming and so full of anxiety. I struggle with anxiety and paranoia so it comes in waves of uncertainty and self-doubt, but I'd say that this year I've been able to balance this a lot better. I'm aware when I'm creating for myself and I allow myself to experiment more. That way I'm not judging myself, I just give myself the space to be and to create whatever it is that I want to.<br><br>Especially now in 2020, I've gotten into a lot of production. I've played piano for 15 years but I’d never found a way to integrate it into my production because I was afraid of the experimental stage of doing things because I wanted to make 'hits'. But when you’re doing it for yourself, you give yourself a lot more space to experiment because you’re not putting that pressure on yourself - and even if you are, it's to learn rather than to tear yourself down.<br><br>Also, understanding the language that I have with myself has given me the space to balance creative freedom and experimentation. Otherwise you do have to be conscious and aware of the implications of what it is that you are creating and it has to be in a way that people are ready to accept the information. There is a lot of pressure to make what you are putting out palatable, but it shouldn't prevent us from being and creating art.<br><br>Another way I've been able to strike this balance is by simply sitting on projects. I will sit on something until I feel like it's great so that even if I release it and it doesn't catch on as a hit, I still know that I've done the best that I’m able to. This has really helped me because I know when to let go and say \"yeah this sounds good as it is\" or when to say \"no, this still needs some time\". It doesn’t give me as much pressure."
+        },
+        {
+          type: 'question',
+          title: "What role do you think your immediate society can play to enable artists like yourself to have a bigger platform?",
+          answer: "For one, just sharing our work. People would be surprised but a repost, retweet or a share of a body of work is so powerful because the people around you see it and that causes a ripple effect. It's how the artists who are now ‘big leagues’ got established. I think a big part of it is through spreading the word, liking the videos, being present and following artists.<br><br>Another way that we could really get more support from society is by just keeping up with our work, doing the research when they hear about us and even media stations. They barely give any energy or time to up-and-coming artists because they don't want to take the risk of not satisfying their consumers when in reality the consumer is always looking for something new. Up-and-coming artists being able to package new experiences so well because we are new artists is something I really would urge the media to take advantage of.<br><br>Aside from the entertainment industry, I wish our government gave us grants and opportunities or ways for us to have a steady income. Especially as a growing artist, the chances of having a steady cash flow are so scarce and even if you do, it's very hard to  maintain because you might end up having to sacrifice your creation process to maintain this work. If we were given opportunities by the government, that would give us a lot more breathing room to just create and do better.<br><br>Another thing is to stop the assumption that Kenyan music has to sound a certain way and accept that as long as it's made in Kenya, it's Kenyan. However, I'm so glad to be up-and-coming in a time when this is a lot more possible, and I just hope that it continues to be taken more seriously."
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase on bandcamp here',
+          url: 'https://bakhita.bandcamp.com/album/chamo-mile-pye'
+        },
+        {
+          name: 'Follow Bakhita here',
+          url: 'https://www.instagram.com/lunar_consciousness/'
+        },
+        {
+          name: 'Follow Lauryn Njeri here',
+          url: 'https://www.instagram.com/laurynlikethehills_/'
+        }
+      ]
+    }
     ]))
     state.current = state.list[payload - 1]
   }
