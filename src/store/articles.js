@@ -659,7 +659,6 @@ const mutations = {
     ]))
     state.current = payload
   },
-
   set_current_by_id(state, payload) {
     state.list = JSON.parse(JSON.stringify([
     {
