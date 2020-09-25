@@ -655,6 +655,78 @@ const mutations = {
           url: 'https://www.instagram.com/laurynlikethehills_/'
         }
       ]
+    },
+    {
+      short_name: 'MILES FROM KINSHASA\'S \'BELOVED\' EP CONVEYS THE POWER OF VULNERABILITY',
+      name: 'MILES FROM KINSHASA\'S \'BELOVED\' EP CONVEYS THE POWER OF VULNERABILITY',
+      bandcamp_link: "https://milesfromkinshasa.bandcamp.com/album/beloved",
+      bandcamp_id: "1239573186",
+      credit: '',
+      credit_illu: 'Elena Cromona',
+      author: 'Lauryn Njeri',
+      date: '07/31/2020',
+      illus: 'articles/vivien/vivien.jpg',
+      introduction: "After stirring curiosity with 'Wearing Smiles', 'Lookin 4 U' and 'Motionz', <b>Miles from Kinshasa</b> now brings forth a sombre, jazz-inflicted body of work with '<b>Beloved</b>'. The 8-track EP is a light blend of reverberating sax, plush chords and bossa nova rhythms detailing the digital disconnect and mystery within hyper millennial relationships.<br><br>Miles, real name <b>Vivien Kongolo</b> is a London-based Congolese singer, songwriter and producer who creates hybridised songs that pull from strands in his nomadic life. His latest piece of work, 'Beloved' wryly zones into the fluidity of contemporary expression.<br><br>Speaking on the overall concept of the EP, <b>Kongolo</b> explains, \"<i>Beloved is an honest project about vulnerability and growth through the lenses of a millennial. It’s millennial blues to get us through the times soaked in nostalgia.</i>\"Marking a shift in creative direction and the start of a new chapter, 'Beloved' is the work of a complex, singular artist with bags of talent. Miles shares with us details about the EP and the power of vulnerability in his work.",
+      links: [],
+      questions: [
+        {
+          type: 'question',
+          title: "How have you been keeping yourself busy during quarantine?",
+          answer: "Just taking it a day at a time, trying to create when I can and rest when I can't think of anything. This is the longest summer holiday we’ve ever had and may as well make the most of it."
+        },
+        {
+          type: 'question',
+          title: "What is the story behind your artist name 'Miles From Kinshasa'?",
+          answer: "I always wanted to have a striking and meaningful name, so it just kind of worked when I called a song of mine Miles from Kinshasa and one day it just came to me that it would work as an alias and boom, it just makes sense."
+        },
+        {
+          type: 'question',
+          title: "The tracks on ​Beloved ​all seem deeply personal. Do the stories all stem from personal experiences?",
+          answer: "Yeah, they are mostly lived experiences. I tried to stay away from fantasy on this one, and I think the project benefits from that."
+        },
+        {
+          type: 'quote',
+          answer: '"I think the only way you can truly connect with people is by being vulnerable"'
+        },
+        {
+          type: 'question',
+          title: "What is the difference between your past EP <i>Limbo</i> and this new body of work? Do you feel you have grown in between the EPs?",
+          answer: "I hope so, at least I think I've grown as a person and become a bit more open which has allowed me to be more honest with myself. Creatively you can hear it. I've had to push myself to find better and clearer ways to get my message out. Beloved is just a more efficient project. I don't think the quality ever dips which is important for me."
+        },
+         {
+          type: 'question',
+          title: "I admire how raw you are when it comes to conveying your emotions which is something that is lacking in the age of the millennial. What encourages you to be so vulnerable?",
+          answer: "I think the only way you can truly connect with people is by being vulnerable. It's all therapy for me because I'm talking about my life out loud whilst also addressing them, well trying to anyway."
+        },
+        {
+          type: 'image',
+          path: 'articles/vivien/vivien2.jpg'
+        },
+        {
+          type: 'question',
+          title: "What is your favourite song off ​Beloved ​and why?",
+          answer: "'Dice Games'. It changes every week, but 'Dice Games' has so many moments. It sounds fresh to me but also very familiar. I love the ad libs too. \"NUMBERS\"!"
+        },
+        {
+          type: 'question',
+          title: "What's next for Miles From Kinshasa?",
+          answer: "We're gonna do some more cool stuff for Beloved. New music isn't too far away either, don't sleep."
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase on bandcamp here',
+          url: 'https://milesfromkinshasa.bandcamp.com/album/beloved'
+        },
+        {
+          name: 'Follow Mile From Kinshasa here',
+          url: 'https://www.instagram.com/milesfromkinshasa'
+        },
+        {
+          name: 'Follow Lauryn Njeri here',
+          url: 'https://www.instagram.com/laurynlikethehills_/'
+        }
+      ]
     }
     ]))
     state.current = payload
@@ -1301,6 +1373,78 @@ const mutations = {
         {
           name: 'Follow Bakhita here',
           url: 'https://www.instagram.com/lunar_consciousness/'
+        },
+        {
+          name: 'Follow Lauryn Njeri here',
+          url: 'https://www.instagram.com/laurynlikethehills_/'
+        }
+      ]
+    },
+    {
+      short_name: 'MILES FROM KINSHASA\'S \'BELOVED\' EP CONVEYS THE POWER OF VULNERABILITY',
+      name: 'MILES FROM KINSHASA\'S \'BELOVED\' EP CONVEYS THE POWER OF VULNERABILITY',
+      bandcamp_link: "https://milesfromkinshasa.bandcamp.com/album/beloved",
+      bandcamp_id: "1239573186",
+      credit: '',
+      credit_illu: 'Elena Cromona',
+      author: 'Lauryn Njeri',
+      date: '07/31/2020',
+      illus: 'articles/vivien/vivien.jpg',
+      introduction: "After stirring curiosity with 'Wearing Smiles', 'Lookin 4 U' and 'Motionz', <b>Miles from Kinshasa</b> now brings forth a sombre, jazz-inflicted body of work with '<b>Beloved</b>'. The 8-track EP is a light blend of reverberating sax, plush chords and bossa nova rhythms detailing the digital disconnect and mystery within hyper millennial relationships.<br><br>Miles, real name <b>Vivien Kongolo</b> is a London-based Congolese singer, songwriter and producer who creates hybridised songs that pull from strands in his nomadic life. His latest piece of work, 'Beloved' wryly zones into the fluidity of contemporary expression.<br><br>Speaking on the overall concept of the EP, <b>Kongolo</b> explains, \"<i>Beloved is an honest project about vulnerability and growth through the lenses of a millennial. It’s millennial blues to get us through the times soaked in nostalgia.</i>\"Marking a shift in creative direction and the start of a new chapter, 'Beloved' is the work of a complex, singular artist with bags of talent. Miles shares with us details about the EP and the power of vulnerability in his work.",
+      links: [],
+      questions: [
+        {
+          type: 'question',
+          title: "How have you been keeping yourself busy during quarantine?",
+          answer: "Just taking it a day at a time, trying to create when I can and rest when I can't think of anything. This is the longest summer holiday we’ve ever had and may as well make the most of it."
+        },
+        {
+          type: 'question',
+          title: "What is the story behind your artist name 'Miles From Kinshasa'?",
+          answer: "I always wanted to have a striking and meaningful name, so it just kind of worked when I called a song of mine Miles from Kinshasa and one day it just came to me that it would work as an alias and boom, it just makes sense."
+        },
+        {
+          type: 'question',
+          title: "The tracks on ​Beloved ​all seem deeply personal. Do the stories all stem from personal experiences?",
+          answer: "Yeah, they are mostly lived experiences. I tried to stay away from fantasy on this one, and I think the project benefits from that."
+        },
+        {
+          type: 'quote',
+          answer: '"I think the only way you can truly connect with people is by being vulnerable"'
+        },
+        {
+          type: 'question',
+          title: "What is the difference between your past EP <i>Limbo</i> and this new body of work? Do you feel you have grown in between the EPs?",
+          answer: "I hope so, at least I think I've grown as a person and become a bit more open which has allowed me to be more honest with myself. Creatively you can hear it. I've had to push myself to find better and clearer ways to get my message out. Beloved is just a more efficient project. I don't think the quality ever dips which is important for me."
+        },
+         {
+          type: 'question',
+          title: "I admire how raw you are when it comes to conveying your emotions which is something that is lacking in the age of the millennial. What encourages you to be so vulnerable?",
+          answer: "I think the only way you can truly connect with people is by being vulnerable. It's all therapy for me because I'm talking about my life out loud whilst also addressing them, well trying to anyway."
+        },
+        {
+          type: 'image',
+          path: 'articles/vivien/vivien2.jpg'
+        },
+        {
+          type: 'question',
+          title: "What is your favourite song off ​Beloved ​and why?",
+          answer: "'Dice Games'. It changes every week, but 'Dice Games' has so many moments. It sounds fresh to me but also very familiar. I love the ad libs too. \"NUMBERS\"!"
+        },
+        {
+          type: 'question',
+          title: "What's next for Miles From Kinshasa?",
+          answer: "We're gonna do some more cool stuff for Beloved. New music isn't too far away either, don't sleep."
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase on bandcamp here',
+          url: 'https://milesfromkinshasa.bandcamp.com/album/beloved'
+        },
+        {
+          name: 'Follow Mile From Kinshasa here',
+          url: 'https://www.instagram.com/milesfromkinshasa'
         },
         {
           name: 'Follow Lauryn Njeri here',
