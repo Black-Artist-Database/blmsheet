@@ -27,7 +27,7 @@
             <p class="credit" v-if="question.author"><i>Photo by {{question.author}}</i></p>
           </div>
           <div v-else-if="question.type === 'quote'">
-            <p class="quote">{{question.answer}}</p>
+            <p class="quote" v-html="question.answer"></p>
           </div>
           <div class="bandcamp_pick" v-else-if="question.type === 'bandcamp_picks'">
             <p class="title">{{question.title}}</p>
@@ -39,7 +39,7 @@
             </div>
           </div>
           <div v-else>
-            <p class="title" v-if="question.title">{{question.title}}</p>
+            <p class="title" v-if="question.title" v-html="question.title"></p>
             <p v-html="question.answer"></p>
           </div>
         </div>
