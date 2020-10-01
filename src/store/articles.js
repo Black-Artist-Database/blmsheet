@@ -729,8 +729,8 @@ const mutations = {
       ]
     },
     {
-      short_name: 'BLACK BAND CAMP SEPTEMBER PICKS: NAIROBI',
-      name: 'BLACK BAND CAMP SEPTEMBER PICKS: NAIROBI',
+      short_name: 'BLACK BAND CAMP OCTOBER PICKS: NAIROBI',
+      name: 'BLACK BAND CAMP OCTOBER PICKS: NAIROBI',
       bandcamp_link: "",
       bandcamp_id: "",
       credit: null,
@@ -1644,8 +1644,8 @@ const mutations = {
       ]
     },
     {
-      short_name: 'BLACK BAND CAMP SEPTEMBER PICKS: NAIROBI',
-      name: 'BLACK BAND CAMP SEPTEMBER PICKS: NAIROBI',
+      short_name: 'BLACK BAND CAMP OCTOBER PICKS: NAIROBI',
+      name: 'BLACK BAND CAMP OCTOBER PICKS: NAIROBI',
       bandcamp_link: "",
       bandcamp_id: "",
       credit: null,
