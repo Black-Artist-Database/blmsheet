@@ -274,8 +274,8 @@ const mutations = {
       ]
     },
     {
-      short_name: 'BLACK BAND CAMP SEPTEMBER PICKS: LONDON',
-      name: 'BLACK BAND CAMP SEPTEMBER PICKS: LONDON',
+      short_name: 'BLACK BANDCAMP SEPTEMBER PICKS: LONDON',
+      name: 'BLACK BANDCAMP SEPTEMBER PICKS: LONDON',
       bandcamp_link: "",
       bandcamp_id: "",
       credit: null,
@@ -727,6 +727,197 @@ const mutations = {
           url: 'https://www.instagram.com/laurynlikethehills_/'
         }
       ]
+    },
+    {
+      short_name: 'BLACK BANDCAMP OCTOBER PICKS: NAIROBI',
+      name: 'BLACK BANDCAMP OCTOBER PICKS: NAIROBI',
+      bandcamp_link: "",
+      bandcamp_id: "",
+      credit: null,
+      author: null,
+      date: '08/07/2020',
+      illus: 'articles/oct2020/oct2020.jpg',
+      top_desc: "For this month's Bandcamp Friday, our core team member KMRU hit up the DJs in his hometown of Nairobi to find out who their top Black Bandcamp discoveries and picks of the month are.",
+      links: [
+      ],
+      questions: [
+        {
+          type: 'bandcamp_picks',
+          title: 'M³',
+          description: 'Musician & Record Producer from Nairobi, Kenya just trying to create music (art) that I feel should exist.',
+          links: [
+            {
+              title: 'Learn To Love - Anais & Azekel',
+              description: 'I stumbled upon this duo on the Black Bandcamp site, just clicking the (very cool) random shuffle button & by the 10th second I was already drawn in. The simple & airy production just makes me fall in love with the song. How their voices blend so well together and the building of the instrumentation throughout the song just amazed me. Definitely one of those songs that I have already added to my playlists and sharing it with everyone around me.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=236942556/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://anaiszero.bandcamp.com/track/learn-to-love">Learn to Love by anaïs &amp; Azekel</a></iframe>',
+            },
+            {
+              title: 'Tatizo Pesa - Jay Mitta',
+              description: 'Being a huge fan of Nyege Nyege Festival, I have always admired their work and the artists they support. Never had the chance to attend one yet, but if (when) I do, I hope I\'ll be performing. This song \'Tatizo Pesa\' by Jay Mitta is packed with so much energy that you just cannot contain the dance in you. The fast beat and Swahili lyrics are so infectious.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4027928840/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nyegenyegetapes.bandcamp.com/album/tatizo-pesa">Tatizo Pesa by Jay Mitta</a></iframe>'
+            },
+            {
+              title: 'Source - Nubya Garcia',
+              description: 'The blend of the reggae groove with the jazz format and characteristics is everything for me. Another discovery off the Black Bandcamp website. From an audio engineer view I enjoyed how the instruments mixed, especially the drums. Plus, the background vocals that come in are a very lovely touch. The 12-minute song can really put you in a proper trance.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1916787340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nubyagarcia.bandcamp.com/album/source">SOURCE by Nubya Garcia</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Nabalayo',
+          description: "I’m Nabalayo. A Nairobi based music maker, ethnomusicology enthusiast and the mother of the Changanya genre.",
+          links: [
+            {
+              title: 'Xenia Franca',
+              description: "I have a weakness for Brazilian music and that’s how I found her. The folk meets modern aura really gives me the feeling of home away from home.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1637863900/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1068746171/transparent=true/" seamless><a href="https://180g-xeniafranca.bandcamp.com/album/xenia">Xenia by Xenia França</a></iframe>'
+            },
+            {
+              title: 'Zara McFarlane',
+              description: "Found her going through the soul selection. I definitely get timeless Afro futuristic vibes from her. If I was on a spaceship doing some intergalactic travel she would definitely make it to my playlist.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1613241991/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3738932123/transparent=true/" seamless><a href="https://zara-mcfarlane.bandcamp.com/album/songs-of-an-unknown-tongue-2">Songs Of An Unknown Tongue by Zara McFarlane</a></iframe>'
+            },
+            {
+              title: 'Thanya Iyer',
+              description: "Found her by total coincidence. Her cover art attracted me because I am an illustrator as well. The fusion and balance of smooth vocals, acoustic and electronic sounds is beautifully executed in her music.  Also being an orchestra nerd, I was excited to learn that she is a violinist as well and it features in her music.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2607222951/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=960911572/transparent=true/" seamless><a href="https://thanyaiyer.bandcamp.com/album/kind">KIND by Thanya Iyer</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Janice Iche',
+          description: "My name is Janice Iche. I am an artist currently working in the field of music. I sing, write songs, produce etc. Music revives me and I am here to share the energy. For this selection, I wanted to keep it East African. It was fun for me to search for and discover sounds from my region. I tried to keep it strictly women but that was more difficult than anticipated. So here we go:",
+          links: [
+            {
+              title: 'Nabalayo',
+              description: "From Kenya. Wow. I felt like I had been asleep and only woke up once I heard 'Mwana Wa Gorofa. It ignited something in me that has since been fueling the wonder and excitement of my days, and the growing desire I have to create and share music. She is pioneering a sound she has coined 'Changanya' and I am all here for it. Might I add that she is her own producer (and illustrator!). Damn! As an East African Coastarian, this song is one I needed to hear as it is connecting the wealth of my pasts to the possibilities of my futures, helping me see better the beauty of the music we are creating today and the possibilities of the sounds that we will be creating tomorrow. I am so happy that this music is here. She is releasing her debut project soon so keep an eye out for her. Also has some other releases on her Bandcamp so check that out. Please enjoy, 'Mwana Wa Gorofa'.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2517284500/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nabalayo.bandcamp.com/track/mwana-wa-gorofa">Mwana Wa Gorofa by Nabalayo</a></iframe>'
+            },
+            {
+              title: 'Siti Muharam',
+              description: "From Tanzania. I have been listening to Taarab lately and it was a pleasant delight to find this project. I think Siti Muharam is the granddaughter to Taarab legend Siti Binti Saad. This particular track ‘Sikitiko’ tugs at my heart strings, the mood and lyrics of the song are somber and display feelings of a painful love that I have felt too many times. I am attracted to music that tells a story I have lived. I also first heard this song performed by another Taarab legend, Bi Kidude, so this is just a gift to find on Black Bandcamp.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3772336838/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3523396614/transparent=true/" seamless><a href="https://sitimuharam.bandcamp.com/album/siti-of-unguja-romance-revolution-on-zanzibar">Siti of Unguja (Romance Revolution On Zanzibar) by Siti Muharam</a></iframe>'
+            },
+            {
+              title: 'ODD OKODDO',
+              description: "A Kenyan-German duo. I've really been into listening to modern-traditional sounds, the music that we are making now influenced by our African traditional sounds. This seems like quite the duo. I was interested in hearing what such a project could sound like and I can say that it does not disappoint. The production is heavily electronic, paired with a traditional kind of high-pitched call and response singing giving it a good and interesting balance to its sound.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1691327597/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1580539519/transparent=true/" seamless><a href="https://oddokoddo.bandcamp.com/album/auma">AUMA by ODD OKODDO</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Jinku',
+          description: "Jinku makes Tribal Downtempo and Organica. He is part of the NuNairobi sound that he is shaping along with his team EA Wave. The site has such a great filter function, and the shuffle has introduced me to some amazing finds, here are my faves so far.",
+          links: [
+            {
+              title: 'Ash Walker - Aquamarine',
+              description: "I am really feeling nostalgic as of late, looking for warmer sounds to counteract the state of the world. This album feels very warm to me.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=506480334/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://ashwalker.bandcamp.com/album/aquamarine">Aquamarine by Ash Walker</a></iframe>'
+            },
+            {
+              title: 'BCUC - The Healing',
+              description: "These guys came down to Nairobi for a liveshow and I have been hooked ever since! Mad tribal, how I love it.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=449580511/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://bcuc.bandcamp.com/album/the-healing">The Healing by BCUC</a></iframe>'
+            },
+            {
+              title: 'Kampire -  Gatluak (Gan Gah, Cardi Monáe & Kampire Remix)',
+              description: "This song slaps in all kinds of ways. I loved the original, but this, this feels like outside.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1071545326/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://kampire.bandcamp.com/track/gatluak-gan-gah-cardi-mon-e-kampire-remix">Gatluak (Gan Gah, Cardi Monáe &amp; Kampire Remix) by Kampire</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: '[MONRHEA]',
+          description: "[Monrhea] is a DJ and Producer, brewing in the experimental music scene in Nairobi and beyond.",
+          links: [
+            {
+              title: 'DJ RAPH',
+              description: "It's always hard to leave him out of any of my lists where I point out my favorite artists. He is one of the best examples of producers who archives our African traditional rhythms through blending with modern electronic sounds.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2384377729/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3496777140/transparent=true/" seamless><a href="https://djraph.bandcamp.com/album/sacred-groves">Sacred Groves by Dj Raph</a></iframe>'
+            },
+            {
+              title: 'ODD OKODDO',
+              description: "I just think this tack is beautiful. Another example of well-blended African rhythms.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1691327597/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1893951686/transparent=true/" seamless><a href="https://oddokoddo.bandcamp.com/album/auma">AUMA by ODD OKODDO</a></iframe>'
+            },
+            {
+              title: 'AFALFL',
+              description: "Recently, I have been finding interest in music made using code. Here's one :)",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1578656020/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://afalfla.bandcamp.com/album/androrythmes">Androrythmes by AFALFL</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Coco Em',
+          description: "I'm Coco Em and I'm a DJ and producer based in Nairobi Kenya. I am part of a bubbly and energetic music scene with diverse sounds from afro house and dance music to gengetone and shrap. I have performed on stages such as Boiler room, Afro punk, Trans Musicales and more. As part of my amazing Nairobi community, I am working toward offering more support to young artists, DJs and producers - most of whom are just breaking into their own careers. I am a filmmaker and I’m currently starting a project to offer quality music videos to artists. I am also part of a music collective Santuri EA which supports the electronic music scene in the East African region through workshops, creative challenges and an informative and engaging music podcast founded by DJ Huilly Huile called Santuri Signal. I have also recently formed an arts collective Sim Sima in conjunction with the creative body Chilli Mango which will focus on music production training, film and fine art training as well as collaborative community events with extra support given to femme and marginalized peoples in our community.",
+          links: [
+            {
+              title: 'Ekiti Sound',
+              description: "I found Ekiti Sound after randomly going through Black Bandcamp. I was first introduced to Black Bandcamp by my friend and Nairobi based producer KMRU. ‘A song for Lara’ opens with a lovely blend of electro disco synths, a thumpy bassline and smooth vocals.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2074360769/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1651396898/transparent=true/" seamless><a href="https://ekitisound.bandcamp.com/album/abeg-no-vex-remixes-vol-1">Abeg No Vex Remixes VOL.1 by Ekiti Sound</a></iframe>'
+            },
+            {
+              title: 'Ase Manual',
+              description: "My partner DJ Huilly Huile introduced me to the sounds of Ase Manual back in 2019 and I've been hooked since. I am drawn to his heavy bass lines and lots of percussion which give me interesting blends while I play my sets.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1902038683/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3266219211/transparent=true/" seamless><a href="https://asemanual.bandcamp.com/album/ase-manual-black-liquid-electronics-deluxe">Ase Manual - Black Liquid Electronics (Deluxe) by Ase Manual</a></iframe>'
+            },
+            {
+              title: 'Nazar',
+              description: "My last pick is from a new favourite of 2020, Nazar. I was led to his page by my love for Cooly G and the label that reps her, Hyperdub. Nazar is a fresh inclusion to the label and his music is out of this world. I would put up a whole album here but since I'm only allowed a track I select 'Airstrike'.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=729183487/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2895578494/transparent=true/" seamless><a href="https://nazar.bandcamp.com/album/enclave">Enclave by Nazar</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'slikback',
+          description: "Experimental producer and DJ from Kenya. ",
+          links: [
+            {
+              title: 'Duma',
+              description: "Loved the sounds of Duma from the moment I saw their live performance (dark, aggressive metal). I found this record through Nyege Tapes, a Ugandan label and collective.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=740785244/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nyegenyegetapes.bandcamp.com/album/duma">Duma by Duma</a></iframe>'
+            },
+            {
+              title: 'Menzi',
+              description: "I first heard the record before it's release as we shared music among ourselves within Hakuna Kulala (the crew I am in) and instantly fell in love with it's fresh take on gqom.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=830547674/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://hakunakulala.bandcamp.com/album/impazamo">Impazamo by Menzi</a></iframe>'
+            },
+            {
+              title: 'KMRU',
+              description: "Kamaru's ambient works are always a go to for me for its calming structures. I found the record when he posted about it on his twitter and instantly connected with it.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1944326644/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://seilrecords.bandcamp.com/album/jar">Jar by KMRU</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'MR.LU*',
+          description: "A self-proclaimed social experiment, Kenyan producer, deejay and composer MR. LU* has quickly turned into one of the Nairobi scene's go-to producers, working with artists such as Taio and Karun, as well as putting out music as part of the XPRSO. collective consisting of RVMP, Mars Maasai and Baby’s Breath.",
+          links: [
+            {
+              title: 'Knxwledge',
+              description: "knxwledge is one artist I bump nearly, if not every day, of my life. I especially love his music because of the consistency he displays with each project.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3915591256/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1123395718/transparent=true/" seamless><a href="https://knxwledge.bandcamp.com/album/vgms-prt-4">VGM&#39;s​​.​​PRT_4 by Knxwledge.</a></iframe>'
+            },
+            {
+              title: 'Ohbliv',
+              description: "ohbliv makes me feel like I am in ohblivion (see what i did there 😂). His unquantized takes on samples inspire me to get up and try stuff I've never tried musically.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=914006972/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1780596001/transparent=true/" seamless><a href="https://ohbliv.bandcamp.com/album/ez-widas">EZ Widas by Ohbliv</a></iframe>'
+            },
+            {
+              title: 'XPRSO',
+              description: "Automatic certified banger by the gang. This will definitely get you up on your feet. If you're doing chores, just be careful not to break the dishes dancing.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2434179039/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1793209958/transparent=true/" seamless><a href="https://xprso.bandcamp.com/album/nairobass-2">NAIROBASS by XPRSO</a></iframe>'
+            }
+          ]
+        },
+      ]
     }
     ]))
     state.current = payload
@@ -998,8 +1189,8 @@ const mutations = {
       ]
     },
     {
-      short_name: 'BLACK BAND CAMP SEPTEMBER PICKS: LONDON',
-      name: 'BLACK BAND CAMP SEPTEMBER PICKS: LONDON',
+      short_name: 'BLACK BANDCAMP SEPTEMBER PICKS: LONDON',
+      name: 'BLACK BANDCAMP SEPTEMBER PICKS: LONDON',
       bandcamp_link: "",
       bandcamp_id: "",
       credit: null,
@@ -1450,6 +1641,197 @@ const mutations = {
           name: 'Follow Lauryn Njeri here',
           url: 'https://www.instagram.com/laurynlikethehills_/'
         }
+      ]
+    },
+    {
+      short_name: 'BLACK BANDCAMP OCTOBER PICKS: NAIROBI',
+      name: 'BLACK BANDCAMP OCTOBER PICKS: NAIROBI',
+      bandcamp_link: "",
+      bandcamp_id: "",
+      credit: null,
+      author: null,
+      date: '08/07/2020',
+      illus: 'articles/oct2020/oct2020.jpg',
+      top_desc: "For this month's Bandcamp Friday, our core team member KMRU hit up the DJs in his hometown of Nairobi to find out who their top Black Bandcamp discoveries and picks of the month are.",
+      links: [
+      ],
+      questions: [
+        {
+          type: 'bandcamp_picks',
+          title: 'M³',
+          description: 'Musician & Record Producer from Nairobi, Kenya just trying to create music (art) that I feel should exist.',
+          links: [
+            {
+              title: 'Learn To Love - Anais & Azekel',
+              description: 'I stumbled upon this duo on the Black Bandcamp site, just clicking the (very cool) random shuffle button & by the 10th second I was already drawn in. The simple & airy production just makes me fall in love with the song. How their voices blend so well together and the building of the instrumentation throughout the song just amazed me. Definitely one of those songs that I have already added to my playlists and sharing it with everyone around me.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=236942556/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://anaiszero.bandcamp.com/track/learn-to-love">Learn to Love by anaïs &amp; Azekel</a></iframe>',
+            },
+            {
+              title: 'Tatizo Pesa - Jay Mitta',
+              description: 'Being a huge fan of Nyege Nyege Festival, I have always admired their work and the artists they support. Never had the chance to attend one yet, but if (when) I do, I hope I\'ll be performing. This song \'Tatizo Pesa\' by Jay Mitta is packed with so much energy that you just cannot contain the dance in you. The fast beat and Swahili lyrics are so infectious.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4027928840/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nyegenyegetapes.bandcamp.com/album/tatizo-pesa">Tatizo Pesa by Jay Mitta</a></iframe>'
+            },
+            {
+              title: 'Source - Nubya Garcia',
+              description: 'The blend of the reggae groove with the jazz format and characteristics is everything for me. Another discovery off the Black Bandcamp website. From an audio engineer view I enjoyed how the instruments mixed, especially the drums. Plus, the background vocals that come in are a very lovely touch. The 12-minute song can really put you in a proper trance.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1916787340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nubyagarcia.bandcamp.com/album/source">SOURCE by Nubya Garcia</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Nabalayo',
+          description: "I’m Nabalayo. A Nairobi based music maker, ethnomusicology enthusiast and the mother of the Changanya genre.",
+          links: [
+            {
+              title: 'Xenia Franca',
+              description: "I have a weakness for Brazilian music and that’s how I found her. The folk meets modern aura really gives me the feeling of home away from home.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1637863900/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1068746171/transparent=true/" seamless><a href="https://180g-xeniafranca.bandcamp.com/album/xenia">Xenia by Xenia França</a></iframe>'
+            },
+            {
+              title: 'Zara McFarlane',
+              description: "Found her going through the soul selection. I definitely get timeless Afro futuristic vibes from her. If I was on a spaceship doing some intergalactic travel she would definitely make it to my playlist.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1613241991/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3738932123/transparent=true/" seamless><a href="https://zara-mcfarlane.bandcamp.com/album/songs-of-an-unknown-tongue-2">Songs Of An Unknown Tongue by Zara McFarlane</a></iframe>'
+            },
+            {
+              title: 'Thanya Iyer',
+              description: "Found her by total coincidence. Her cover art attracted me because I am an illustrator as well. The fusion and balance of smooth vocals, acoustic and electronic sounds is beautifully executed in her music.  Also being an orchestra nerd, I was excited to learn that she is a violinist as well and it features in her music.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2607222951/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=960911572/transparent=true/" seamless><a href="https://thanyaiyer.bandcamp.com/album/kind">KIND by Thanya Iyer</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Janice Iche',
+          description: "My name is Janice Iche. I am an artist currently working in the field of music. I sing, write songs, produce etc. Music revives me and I am here to share the energy. For this selection, I wanted to keep it East African. It was fun for me to search for and discover sounds from my region. I tried to keep it strictly women but that was more difficult than anticipated. So here we go:",
+          links: [
+            {
+              title: 'Nabalayo',
+              description: "From Kenya. Wow. I felt like I had been asleep and only woke up once I heard 'Mwana Wa Gorofa. It ignited something in me that has since been fueling the wonder and excitement of my days, and the growing desire I have to create and share music. She is pioneering a sound she has coined 'Changanya' and I am all here for it. Might I add that she is her own producer (and illustrator!). Damn! As an East African Coastarian, this song is one I needed to hear as it is connecting the wealth of my pasts to the possibilities of my futures, helping me see better the beauty of the music we are creating today and the possibilities of the sounds that we will be creating tomorrow. I am so happy that this music is here. She is releasing her debut project soon so keep an eye out for her. Also has some other releases on her Bandcamp so check that out. Please enjoy, 'Mwana Wa Gorofa'.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2517284500/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nabalayo.bandcamp.com/track/mwana-wa-gorofa">Mwana Wa Gorofa by Nabalayo</a></iframe>'
+            },
+            {
+              title: 'Siti Muharam',
+              description: "From Tanzania. I have been listening to Taarab lately and it was a pleasant delight to find this project. I think Siti Muharam is the granddaughter to Taarab legend Siti Binti Saad. This particular track ‘Sikitiko’ tugs at my heart strings, the mood and lyrics of the song are somber and display feelings of a painful love that I have felt too many times. I am attracted to music that tells a story I have lived. I also first heard this song performed by another Taarab legend, Bi Kidude, so this is just a gift to find on Black Bandcamp.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3772336838/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3523396614/transparent=true/" seamless><a href="https://sitimuharam.bandcamp.com/album/siti-of-unguja-romance-revolution-on-zanzibar">Siti of Unguja (Romance Revolution On Zanzibar) by Siti Muharam</a></iframe>'
+            },
+            {
+              title: 'ODD OKODDO',
+              description: "A Kenyan-German duo. I've really been into listening to modern-traditional sounds, the music that we are making now influenced by our African traditional sounds. This seems like quite the duo. I was interested in hearing what such a project could sound like and I can say that it does not disappoint. The production is heavily electronic, paired with a traditional kind of high-pitched call and response singing giving it a good and interesting balance to its sound.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1691327597/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1580539519/transparent=true/" seamless><a href="https://oddokoddo.bandcamp.com/album/auma">AUMA by ODD OKODDO</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Jinku',
+          description: "Jinku makes Tribal Downtempo and Organica. He is part of the NuNairobi sound that he is shaping along with his team EA Wave. The site has such a great filter function, and the shuffle has introduced me to some amazing finds, here are my faves so far.",
+          links: [
+            {
+              title: 'Ash Walker - Aquamarine',
+              description: "I am really feeling nostalgic as of late, looking for warmer sounds to counteract the state of the world. This album feels very warm to me.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=506480334/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://ashwalker.bandcamp.com/album/aquamarine">Aquamarine by Ash Walker</a></iframe>'
+            },
+            {
+              title: 'BCUC - The Healing',
+              description: "These guys came down to Nairobi for a liveshow and I have been hooked ever since! Mad tribal, how I love it.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=449580511/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://bcuc.bandcamp.com/album/the-healing">The Healing by BCUC</a></iframe>'
+            },
+            {
+              title: 'Kampire -  Gatluak (Gan Gah, Cardi Monáe & Kampire Remix)',
+              description: "This song slaps in all kinds of ways. I loved the original, but this, this feels like outside.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1071545326/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://kampire.bandcamp.com/track/gatluak-gan-gah-cardi-mon-e-kampire-remix">Gatluak (Gan Gah, Cardi Monáe &amp; Kampire Remix) by Kampire</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: '[MONRHEA]',
+          description: "[Monrhea] is a DJ and Producer, brewing in the experimental music scene in Nairobi and beyond.",
+          links: [
+            {
+              title: 'DJ RAPH',
+              description: "It's always hard to leave him out of any of my lists where I point out my favorite artists. He is one of the best examples of producers who archives our African traditional rhythms through blending with modern electronic sounds.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2384377729/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3496777140/transparent=true/" seamless><a href="https://djraph.bandcamp.com/album/sacred-groves">Sacred Groves by Dj Raph</a></iframe>'
+            },
+            {
+              title: 'ODD OKODDO',
+              description: "I just think this tack is beautiful. Another example of well-blended African rhythms.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1691327597/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1893951686/transparent=true/" seamless><a href="https://oddokoddo.bandcamp.com/album/auma">AUMA by ODD OKODDO</a></iframe>'
+            },
+            {
+              title: 'AFALFL',
+              description: "Recently, I have been finding interest in music made using code. Here's one :)",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1578656020/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://afalfla.bandcamp.com/album/androrythmes">Androrythmes by AFALFL</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Coco Em',
+          description: "I'm Coco Em and I'm a DJ and producer based in Nairobi Kenya. I am part of a bubbly and energetic music scene with diverse sounds from afro house and dance music to gengetone and shrap. I have performed on stages such as Boiler room, Afro punk, Trans Musicales and more. As part of my amazing Nairobi community, I am working toward offering more support to young artists, DJs and producers - most of whom are just breaking into their own careers. I am a filmmaker and I’m currently starting a project to offer quality music videos to artists. I am also part of a music collective Santuri EA which supports the electronic music scene in the East African region through workshops, creative challenges and an informative and engaging music podcast founded by DJ Huilly Huile called Santuri Signal. I have also recently formed an arts collective Sim Sima in conjunction with the creative body Chilli Mango which will focus on music production training, film and fine art training as well as collaborative community events with extra support given to femme and marginalized peoples in our community.",
+          links: [
+            {
+              title: 'Ekiti Sound',
+              description: "I found Ekiti Sound after randomly going through Black Bandcamp. I was first introduced to Black Bandcamp by my friend and Nairobi based producer KMRU. ‘A song for Lara’ opens with a lovely blend of electro disco synths, a thumpy bassline and smooth vocals.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2074360769/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1651396898/transparent=true/" seamless><a href="https://ekitisound.bandcamp.com/album/abeg-no-vex-remixes-vol-1">Abeg No Vex Remixes VOL.1 by Ekiti Sound</a></iframe>'
+            },
+            {
+              title: 'Ase Manual',
+              description: "My partner DJ Huilly Huile introduced me to the sounds of Ase Manual back in 2019 and I've been hooked since. I am drawn to his heavy bass lines and lots of percussion which give me interesting blends while I play my sets.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1902038683/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3266219211/transparent=true/" seamless><a href="https://asemanual.bandcamp.com/album/ase-manual-black-liquid-electronics-deluxe">Ase Manual - Black Liquid Electronics (Deluxe) by Ase Manual</a></iframe>'
+            },
+            {
+              title: 'Nazar',
+              description: "My last pick is from a new favourite of 2020, Nazar. I was led to his page by my love for Cooly G and the label that reps her, Hyperdub. Nazar is a fresh inclusion to the label and his music is out of this world. I would put up a whole album here but since I'm only allowed a track I select 'Airstrike'.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=729183487/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2895578494/transparent=true/" seamless><a href="https://nazar.bandcamp.com/album/enclave">Enclave by Nazar</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'slikback',
+          description: "Experimental producer and DJ from Kenya. ",
+          links: [
+            {
+              title: 'Duma',
+              description: "Loved the sounds of Duma from the moment I saw their live performance (dark, aggressive metal). I found this record through Nyege Tapes, a Ugandan label and collective.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=740785244/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nyegenyegetapes.bandcamp.com/album/duma">Duma by Duma</a></iframe>'
+            },
+            {
+              title: 'Menzi',
+              description: "I first heard the record before it's release as we shared music among ourselves within Hakuna Kulala (the crew I am in) and instantly fell in love with it's fresh take on gqom.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=830547674/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://hakunakulala.bandcamp.com/album/impazamo">Impazamo by Menzi</a></iframe>'
+            },
+            {
+              title: 'KMRU',
+              description: "Kamaru's ambient works are always a go to for me for its calming structures. I found the record when he posted about it on his twitter and instantly connected with it.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1944326644/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://seilrecords.bandcamp.com/album/jar">Jar by KMRU</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'MR.LU*',
+          description: "A self-proclaimed social experiment, Kenyan producer, deejay and composer MR. LU* has quickly turned into one of the Nairobi scene's go-to producers, working with artists such as Taio and Karun, as well as putting out music as part of the XPRSO. collective consisting of RVMP, Mars Maasai and Baby’s Breath.",
+          links: [
+            {
+              title: 'Knxwledge',
+              description: "knxwledge is one artist I bump nearly, if not every day, of my life. I especially love his music because of the consistency he displays with each project.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3915591256/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1123395718/transparent=true/" seamless><a href="https://knxwledge.bandcamp.com/album/vgms-prt-4">VGM&#39;s​​.​​PRT_4 by Knxwledge.</a></iframe>'
+            },
+            {
+              title: 'Ohbliv',
+              description: "ohbliv makes me feel like I am in ohblivion (see what i did there 😂). His unquantized takes on samples inspire me to get up and try stuff I've never tried musically.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=914006972/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1780596001/transparent=true/" seamless><a href="https://ohbliv.bandcamp.com/album/ez-widas">EZ Widas by Ohbliv</a></iframe>'
+            },
+            {
+              title: 'XPRSO',
+              description: "Automatic certified banger by the gang. This will definitely get you up on your feet. If you're doing chores, just be careful not to break the dishes dancing.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2434179039/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1793209958/transparent=true/" seamless><a href="https://xprso.bandcamp.com/album/nairobass-2">NAIROBASS by XPRSO</a></iframe>'
+            }
+          ]
+        },
       ]
     }
     ]))
