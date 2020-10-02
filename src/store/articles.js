@@ -274,8 +274,8 @@ const mutations = {
       ]
     },
     {
-      short_name: 'BLACK BAND CAMP SEPTEMBER PICKS: LONDON',
-      name: 'BLACK BAND CAMP SEPTEMBER PICKS: LONDON',
+      short_name: 'BLACK BANDCAMP SEPTEMBER PICKS: LONDON',
+      name: 'BLACK BANDCAMP SEPTEMBER PICKS: LONDON',
       bandcamp_link: "",
       bandcamp_id: "",
       credit: null,
@@ -729,8 +729,8 @@ const mutations = {
       ]
     },
     {
-      short_name: 'BLACK BAND CAMP OCTOBER PICKS: NAIROBI',
-      name: 'BLACK BAND CAMP OCTOBER PICKS: NAIROBI',
+      short_name: 'BLACK BANDCAMP OCTOBER PICKS: NAIROBI',
+      name: 'BLACK BANDCAMP OCTOBER PICKS: NAIROBI',
       bandcamp_link: "",
       bandcamp_id: "",
       credit: null,
@@ -867,8 +867,8 @@ const mutations = {
               embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1902038683/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3266219211/transparent=true/" seamless><a href="https://asemanual.bandcamp.com/album/ase-manual-black-liquid-electronics-deluxe">Ase Manual - Black Liquid Electronics (Deluxe) by Ase Manual</a></iframe>'
             },
             {
-              title: 'Nazaar',
-              description: "My last pick is from a new favourite of 2020, Nazaar. I was led to his page by my love for Cooly G and the label that reps her, Hyperdub. Nazaar is a fresh inclusion to the label and his music is out of this world. I would put up a whole album here but since I'm only allowed a track I select 'Airstrike'.",
+              title: 'Nazar',
+              description: "My last pick is from a new favourite of 2020, Nazar. I was led to his page by my love for Cooly G and the label that reps her, Hyperdub. Nazar is a fresh inclusion to the label and his music is out of this world. I would put up a whole album here but since I'm only allowed a track I select 'Airstrike'.",
               embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=729183487/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2895578494/transparent=true/" seamless><a href="https://nazar.bandcamp.com/album/enclave">Enclave by Nazar</a></iframe>'
             }
           ]
@@ -1189,8 +1189,8 @@ const mutations = {
       ]
     },
     {
-      short_name: 'BLACK BAND CAMP SEPTEMBER PICKS: LONDON',
-      name: 'BLACK BAND CAMP SEPTEMBER PICKS: LONDON',
+      short_name: 'BLACK BANDCAMP SEPTEMBER PICKS: LONDON',
+      name: 'BLACK BANDCAMP SEPTEMBER PICKS: LONDON',
       bandcamp_link: "",
       bandcamp_id: "",
       credit: null,
@@ -1644,8 +1644,8 @@ const mutations = {
       ]
     },
     {
-      short_name: 'BLACK BAND CAMP OCTOBER PICKS: NAIROBI',
-      name: 'BLACK BAND CAMP OCTOBER PICKS: NAIROBI',
+      short_name: 'BLACK BANDCAMP OCTOBER PICKS: NAIROBI',
+      name: 'BLACK BANDCAMP OCTOBER PICKS: NAIROBI',
       bandcamp_link: "",
       bandcamp_id: "",
       credit: null,
@@ -1782,8 +1782,8 @@ const mutations = {
               embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1902038683/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3266219211/transparent=true/" seamless><a href="https://asemanual.bandcamp.com/album/ase-manual-black-liquid-electronics-deluxe">Ase Manual - Black Liquid Electronics (Deluxe) by Ase Manual</a></iframe>'
             },
             {
-              title: 'Nazaar',
-              description: "My last pick is from a new favourite of 2020, Nazaar. I was led to his page by my love for Cooly G and the label that reps her, Hyperdub. Nazaar is a fresh inclusion to the label and his music is out of this world. I would put up a whole album here but since I'm only allowed a track I select 'Airstrike'.",
+              title: 'Nazar',
+              description: "My last pick is from a new favourite of 2020, Nazar. I was led to his page by my love for Cooly G and the label that reps her, Hyperdub. Nazar is a fresh inclusion to the label and his music is out of this world. I would put up a whole album here but since I'm only allowed a track I select 'Airstrike'.",
               embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=729183487/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2895578494/transparent=true/" seamless><a href="https://nazar.bandcamp.com/album/enclave">Enclave by Nazar</a></iframe>'
             }
           ]
