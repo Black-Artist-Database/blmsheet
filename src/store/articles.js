@@ -737,7 +737,7 @@ const mutations = {
       author: null,
       date: '08/07/2020',
       illus: 'articles/oct2020/oct2020.jpg',
-      top_desc: "For this month's Bandcamp Friday, our core team member KMRU hit up the DJs in his hometown of Nairobi to find out who their top Black Bandcamp discoveries and picks of the month are.",
+      top_desc: "For this month's Bandcamp Friday, our core team member KMRU hit up some artists in his hometown of Nairobi to find out who their top Black Bandcamp discoveries and picks of the month are.",
       links: [
       ],
       questions: [
@@ -841,7 +841,7 @@ const mutations = {
             },
             {
               title: 'ODD OKODDO',
-              description: "I just think this tack is beautiful. Another example of well-blended African rhythms.",
+              description: "I just think this track is beautiful. Another example of well-blended African rhythms.",
               embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1691327597/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1893951686/transparent=true/" seamless><a href="https://oddokoddo.bandcamp.com/album/auma">AUMA by ODD OKODDO</a></iframe>'
             },
             {
@@ -1652,7 +1652,7 @@ const mutations = {
       author: null,
       date: '08/07/2020',
       illus: 'articles/oct2020/oct2020.jpg',
-      top_desc: "For this month's Bandcamp Friday, our core team member KMRU hit up the DJs in his hometown of Nairobi to find out who their top Black Bandcamp discoveries and picks of the month are.",
+      top_desc: "For this month's Bandcamp Friday, our core team member KMRU hit up some artists in his hometown of Nairobi to find out who their top Black Bandcamp discoveries and picks of the month are.",
       links: [
       ],
       questions: [
@@ -1756,7 +1756,7 @@ const mutations = {
             },
             {
               title: 'ODD OKODDO',
-              description: "I just think this tack is beautiful. Another example of well-blended African rhythms.",
+              description: "I just think this track is beautiful. Another example of well-blended African rhythms.",
               embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1691327597/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1893951686/transparent=true/" seamless><a href="https://oddokoddo.bandcamp.com/album/auma">AUMA by ODD OKODDO</a></iframe>'
             },
             {
