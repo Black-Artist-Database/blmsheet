@@ -2,7 +2,11 @@
   <div class="page">
     <div class="container mt-3">
       <div v-if="articles.length === 0" class="m-4">Nothing to see here</div>
+      <div class="row" v-if="articles.length > 1">
+        <p>Sort by <a @click="toggleSort"><span :class="{'active': sort === 'oldest'}">oldest</span></a> | <a @click="toggleSort"><span :class="{'active': sort === 'newest'}">newest</span></a></p>
+      </div>
       <div class="row">
+
         <ArticleCard v-for="(item, index) in articles"
           :key="index"
           :name="item.short_name"
@@ -26,7 +30,8 @@ export default {
   },
   computed: {
     ...mapState({
-      articles: state => state.articles.list
+      articles: state => state.articles.list,
+      sort: state => state.articles.sort
     }),
     canDisplayArticles () {
       var canDisplay = false
@@ -38,16 +43,44 @@ export default {
         }
       })
       return canDisplay
+    },
+
+  },
+  data () {
+    return {
+      sortedArticles: []
+    }
+  },
+  watch: {
+    sort(newVal, oldVal) {
+      if (newVal !== oldVal) {
+        this.sortedArticles = this.articles.reverse()
+      }
     }
   },
   mounted () {
     this.$store.commit('articles/reset')
     this.$store.commit('articles/set_current', null)
+    if (this.sort === 'newest') {
+      this.sortedArticles = this.articles.reverse()
+    }
   },
   methods: {
     onClick (article, idx) {
       this.$store.commit('articles/set_current', article)
-      this.$router.push({name: 'article', params: { id: idx + 1 }})
+      if (this.sort === 'oldest') {
+        this.$router.push({name: 'article', params: { id: idx + 1 }})
+      } else {
+        this.$router.push({name: 'article', params: { id: this.articles.length - idx }})
+      }
+
+    },
+    toggleSort () {
+      if (this.sort === 'newest') {
+        this.$store.commit('articles/sort', 'oldest')
+      } else {
+        this.$store.commit('articles/sort', 'newest')
+      }
     }
   }
 }
@@ -70,6 +103,13 @@ export default {
 .ig-link {
   color:#0c5460;
   text-decoration:underline;
+}
+
+a {
+  cursor: pointer;
+}
+.active {
+  font-weight: bold;
 }
 
 </style>

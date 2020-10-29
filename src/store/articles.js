@@ -1,11 +1,15 @@
 const state = {
   list: [],
+  sort: 'oldest',
   current: null
 }
 
 const mutations = {
   reset (state) {
     state.list = null
+  },
+  sort (state, payload) {
+    state.sort = payload
   },
   set_current (state, payload) {
     state.list = JSON.parse(JSON.stringify([
