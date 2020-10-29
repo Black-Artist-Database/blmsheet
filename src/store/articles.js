@@ -918,7 +918,54 @@ const mutations = {
           ]
         },
       ]
-    }
+    },
+    {
+      short_name: 'LEX AMOR GOES INWARD',
+      name: 'LEX AMOR GOES INWARD',
+      bandcamp_link: "https://lexamor.bandcamp.com/album/government-tropican",
+      bandcamp_id: "893411503",
+      credit: '',
+      credit_illu: '',
+      author: 'Lauryn Njeri',
+      date: '07/31/2020',
+      illus: 'articles/lexamor/lexamor.jpg',
+      introduction: "One immediately feels the comfort that lies perfectly in between the arts of poetry and rap when they listen to <b>'Government Tropicana'</b>. The album is a deeply personal account of introspection informed by cultural memory from the North London-based multifaceted artist <b>Lex Amor</b>.<br><br>It’s impossible to miss the bravado in her transcendental whispers, where she lets us in on her bid to trace the evolution of her hometown and her role within it. <i>\"Government Tropicana is the story of first-generation working-class London; an attempt to articulate the nuance of my lived experience,\"</i> Lex explains. <i>\"This project is a celebration of collective cultural norms and an exploration of my life to this point.\"</i>",
+      links: [],
+      questions: [
+        {
+          type: 'image',
+          path: 'articles/lexamor/lexamor2.jpg'
+        },
+        {
+          type: 'quote',
+          answer: "\"This project is a celebration of collective cultural norms<br>and an exploration of my life to this point.\""
+        },
+        {
+          type: 'question',
+          title: "",
+          answer: "The 9-track EP is led by mellow beats and hushed sedating vocals. This gives way for easy listening to internalize the memoirs of her life in-between the lines of her slick wordplay. <i>\"Whilst writing this project I engaged with concepts of home, detachment, disillusionment, perseverance, power and community. It is the fruit of my lifelong introspection. Tap water - government juice - making the most of what we were given: Government Tropicana.\"</i><br><br>Lex Amor comfortably establishes herself as one to watch. Her ability to touch on cultural, political and personal perspectives in her bold bars, all while maintaining a laidback aura and  sense of humour makes her one of the brightest lights to emerge from the UK hip-hop scene in recent years."
+        },
+        {
+          type: 'question',
+          title: "",
+          answer: "<b>'Government Tropicana'</b> is available for purchase on Lex Amor’s Bandcamp page."
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase Government Tropicana here',
+          url: 'https://lexamor.bandcamp.com/album/government-tropicana'
+        },
+        {
+          name: 'Follow Lex Amorhere',
+          url: 'https://www.instagram.com/lexysaluteme/'
+        },
+        {
+          name: 'Follow Lauryn Njeri here',
+          url: 'https://www.instagram.com/laurynlikethehills_/'
+        }
+      ]
+    },
     ]))
     state.current = payload
   },
@@ -1833,7 +1880,54 @@ const mutations = {
           ]
         },
       ]
-    }
+    },
+    {
+      short_name: 'LEX AMOR GOES INWARD',
+      name: 'LEX AMOR GOES INWARD',
+      bandcamp_link: "https://lexamor.bandcamp.com/album/government-tropican",
+      bandcamp_id: "893411503",
+      credit: '',
+      credit_illu: '',
+      author: 'Lauryn Njeri',
+      date: '07/31/2020',
+      illus: 'articles/lexamor/lexamor.jpg',
+      introduction: "One immediately feels the comfort that lies perfectly in between the arts of poetry and rap when they listen to <b>'Government Tropicana'</b>. The album is a deeply personal account of introspection informed by cultural memory from the North London-based multifaceted artist <b>Lex Amor</b>.<br><br>It’s impossible to miss the bravado in her transcendental whispers, where she lets us in on her bid to trace the evolution of her hometown and her role within it. <i>\"Government Tropicana is the story of first-generation working-class London; an attempt to articulate the nuance of my lived experience,\"</i> Lex explains. <i>\"This project is a celebration of collective cultural norms and an exploration of my life to this point.\"</i>",
+      links: [],
+      questions: [
+        {
+          type: 'image',
+          path: 'articles/lexamor/lexamor2.jpg'
+        },
+        {
+          type: 'quote',
+          answer: "\"This project is a celebration of collective cultural norms<br>and an exploration of my life to this point.\""
+        },
+        {
+          type: 'question',
+          title: "",
+          answer: "The 9-track EP is led by mellow beats and hushed sedating vocals. This gives way for easy listening to internalize the memoirs of her life in-between the lines of her slick wordplay. <i>\"Whilst writing this project I engaged with concepts of home, detachment, disillusionment, perseverance, power and community. It is the fruit of my lifelong introspection. Tap water - government juice - making the most of what we were given: Government Tropicana.\"</i><br><br>Lex Amor comfortably establishes herself as one to watch. Her ability to touch on cultural, political and personal perspectives in her bold bars, all while maintaining a laidback aura and  sense of humour makes her one of the brightest lights to emerge from the UK hip-hop scene in recent years."
+        },
+        {
+          type: 'question',
+          title: "",
+          answer: "<b>'Government Tropicana'</b> is available for purchase on Lex Amor’s Bandcamp page."
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase Government Tropicana here',
+          url: 'https://lexamor.bandcamp.com/album/government-tropicana'
+        },
+        {
+          name: 'Follow Lex Amor here',
+          url: 'https://www.instagram.com/lexysaluteme/'
+        },
+        {
+          name: 'Follow Lauryn Njeri here',
+          url: 'https://www.instagram.com/laurynlikethehills_/'
+        }
+      ]
+    },
     ]))
     state.current = state.list[payload - 1]
   }
