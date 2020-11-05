@@ -970,6 +970,197 @@ const mutations = {
         }
       ]
     },
+    {
+      short_name: 'BLACK BANDCAMP NOVEMBER PICKS: NAARM',
+      name: 'BLACK BANDCAMP NOVEMBER PICKS: NAARM',
+      bandcamp_link: "",
+      bandcamp_id: "",
+      credit: null,
+      author: null,
+      date: '08/07/2020',
+      illus: 'articles/nov2020/nov2020.jpg',
+      top_desc: "For this month's Bandcamp Friday, we hit up creatives in Naarm (Melbourne) to find out who their top Black Bandcamp discoveries and picks of the month are.",
+      links: [
+      ],
+      questions: [
+        {
+          type: 'bandcamp_picks',
+          title: 'Beź Zewdie',
+          description: "Beź Zewdie is an African-Australian content and events producer, presenter of <a href='https://www.rrr.org.au/explore/programs/represented' target='_blank'>'Represented'</a> on Triple R 102.7FM, and creator of the <a href='https://www.youtube.com/watch?v=G6NLZcK8pyw&list=PLaF17q8yqWmIUeUkWqmL5-nOrJfIp4ksP&index=1&ab_channel=Be%C5%BA.' target='_blank'>SHADES</a> podcast: an exploration of social issues through the lens of Australian hip hop music.",
+          links: [
+            {
+              title: 'Crystal Axis - Take the Throne',
+              description: "African metal & punk music is so grossly underrated. This five-piece is precisely why you should start taking notice. Rock music IS Black music, and it's high time we take ownership of it.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=4228169348/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://crystalaxis.bandcamp.com/track/take-the-throne">Take The Throne by Crystal Axis</a></iframe>'
+            },
+            {
+              title: "DRMNGNOW ft. Kee'ahn & Riverboy - Ancestors",
+              description: "On this track, three of Melbourne's most promising, up-and-coming talents come together on a powerful track that never fails to give me chills. Riverboy's production is hypnotic, Kee'ahn's vocals haunting, and DRMNGNOW's poetry empowering and uplifting.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2447037193/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://drmngnow.bandcamp.com/track/ancestors">Ancestors by DRMNGNOW</a></iframe>'
+            },
+            {
+              title: 'Stevan - No More Regrets',
+              description: "Stevan tells coming-of-age stories to the backdrop of eclectic, indie rnb music. His melancholy vocals top off his altogether warm and dreamy output.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3493204280/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://stevanofficial.bandcamp.com/track/no-more-regrets">No More Regrets by Stevan</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Darcy Justice',
+          description: 'My name is Darcy Justice and I DJ sometimes. I enjoy music and try not to take myself too seriously, at the end of the day I’m just pressing play.',
+          links: [
+            {
+              title: 'Equiknoxx - Bird Sound Power',
+              description: "Going to highlight a small little part of the world which I hold closely to my heart, Jamaica. Found this awesome \"forward thinking Jamacian music collective\" putting out some heavy beats and nice rhymes. Equiknoxx is the name and this album Bird sound power is my favourite but all albums are equally wicked.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=745435535/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2592718917/transparent=true/" seamless><a href="https://equiknoxx.bandcamp.com/album/bird-sound-power">Bird Sound Power by Equiknoxx</a></iframe>'
+            },
+            {
+              title: 'Shanique Marie - Freak',
+              description: "Delved deeper into the Equiknoxx collective and have officially fallen in love with Shanique Marie. A Slick rapper with a beautiful singing voice also! Paired with some Gavsborg beats and it's unstoppable. Cant help but bop about.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2905252228/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=37227733/transparent=true/" seamless><a href="https://shaniquemarie.bandcamp.com/album/freak">Freak by Shanique Marie</a></iframe>'
+            },
+            {
+              title: 'Riddlore- Afromutations',
+              description: "Came across the label Nyege Nyege tapes and clicked onto the album Afromuations and was sent elsewhere. BeautIful field recordings mixed with real strong and groovy beats . Made my little afrobeat section in my heart melt and my body two step.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2306200836/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3082048501/transparent=true/" seamless><a href="https://nyegenyegetapes.bandcamp.com/album/afromutations">Afromutations by Riddlore</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Paul Gorrie',
+          description: "My name is Paul Gorrie and I am a Gunai/Kurnai & Yorta Yorta man. I’m a radio presenter (<a href='https://www.rrr.org.au/explore/programs/still-here' target='_blank'>RRR</a>), DJ (<a href='https://soundcloud.com/dj-pgz' target='_blank'>dj pgz</a>), assistant music producer (<a href='https://www.rising.melbourne/' target='_blank'>Rising Festival</a>), filmmaker (<a href='https://www.sbs.com.au/ondemand/program/treaty' target='_blank'>Young Mob Questioning Treaty</a>), and drummer (<a href='https://drmngnow.bandcamp.com/' target='_blank'>DRMNGNOW</a> & <a href='https://www.keeahn.com/' target='_blank'>Kee’ahn</a>).",
+          links: [
+            {
+              title: 'Water Streets - Blvck',
+              description: "They’re coming out of FNQ and they have a freshness and steeze that is reminiscent of an East Coast vibe from NYC, Turtle Island while also spitting realness about being a blakfulla from so-called Australia. These fullas are the next generation of hip hop coming out of so-called Australia to keep an eye on. Water Streets is made up of Jamahl (Wanyii), Bardi who is Wagiman (Darwin), St Paul (Torres Strait Islands), Marshal from Darnley Island (Torres Strait Islands).",
+              embed: ''
+            },
+            {
+              title: 'Mulalo - FTN + Chargin',
+              description: "If you are a fan of the likes of Megan Thee Stallion, Rico Nasty, and Bbymutha -  you will have to acquaint yourself with Mulalo. Coming out of Naarm/Melbourne, she brings a rawness and style that quite hasn’t been filled over here. Mulalo refers to her music as “bad b***h music” and it is the baddest. She also has another single out called Check that isn’t on bandcamp that is worth checking out too.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3057282832/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=833411451/transparent=true/" seamless><a href="https://mulalo.bandcamp.com/album/ftn-chargin">FTN + Chargin by Mulalo</a></iframe>'
+            },
+            {
+              title: 'Ase Manual - Eat It Up',
+              description: "I am a fan of club music, and as a DJ with an interest in underground, bassy, dark, trippy and high tempo sounds. For those very reasons; Ase Manual is someone who has found their way into my library. The Yoruba - American DJ and producer that can do no wrong. Especially with the track Eat It Up taken from their project Fuji Club Music.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2524858663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=16609845/transparent=true/" seamless><a href="https://asemanual.bandcamp.com/album/fuji-club-music">Fuji Club Music by Ase Manual</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'C.FRIM',
+          description: 'C.FRIM is a Melbourne (Naarm) based selector and presenter who pushes forward-thinking sounds via a monthly show on <a href="https://skylab-radio.com/shows/shakedown-e1" target="_blank">Skylab Radio</a>.',
+          links: [
+            {
+              title: 'Shyboi - Head Top',
+              description: "I can't explain how gassed up I was for this release. This track effortlessly cultivates techno and merges it with dancehall roots - I'm not sure whether to 2-step or dutty wine. Best believe I'll be smashing that cue button for this one post-Corona.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=309365031/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=558036070/transparent=true/" seamless><a href="https://djshyboi.bandcamp.com/album/rave-down-babylon">Rave Down Babylon by SHYBOI</a></iframe>'
+            },
+            {
+              title: 'Tygapaw - Run 2 U',
+              description: "This new single out from her forthcoming album 'Get Free' pulses with so much energy and reminds me why techno is and has always been Black. I was lucky enough to support Tygapaw at her Naarm show last year and she was just dropping hit after hit. So fire!",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2101995501/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://tygapaw.bandcamp.com/album/get-free">GET FREE by TYGAPAW</a></iframe>'
+            },
+            {
+              title: 'Rey Sapienz - Dancehall Pigmé',
+              description: "'Mushuro' as a complete EP is incredible, but 'Dancehall Pigmé' is the track that I always come back to. The scene in Kampala, Uganda is really pushing this distinct and progressive sound that is mad inspiring.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3759814304/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1244531193/transparent=true/" seamless><a href="https://hakunakulala.bandcamp.com/album/mushoro">Mushoro by Rey Sapienz</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Soju Gang',
+          description: "Yo, I’m Soju Gang; I’m a Melbourne based DJ, designer and owner of my own street wear label called <a href=\"https://www.instagram.com/sawft.wear/\" target=\"_blank\">SAWFT</a>, and an all round creative in Melbourne’s nightlife scene.",
+          links: [
+            {
+              title: 'Nooky - Black Future',
+              description: "Nooky is a talented artist from NSW, Aus who has lately been pushing out some age defining music that’s highlighting the lived experience and disparity of the Blak community of Australia as we move through our own BLM movement.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=447853956/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nooky.bandcamp.com/track/black-future">Black Future by Nooky</a></iframe>'
+            },
+            {
+              title: 'Boston Chery - Summers with you Vol III',
+              description: "As a DJ I’m always looking for unique, eclectic, energy-filled remixes and Boston delivers. New York DJ and producer, Boston’s sound is so vast that there’s always something new.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=341680357/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://bostonchery.bandcamp.com/album/summers-with-you-vol-3">Summers With You Vol. 3 by Boston Chery</a></iframe>'
+            },
+            {
+              title: 'Tera Kòrá - The Legend of Kòrá Remixes & Edits ~Book One~',
+              description: "Tera Kora is one of my faves for mixes; from Rotterdam this creative puts together some really funky, smooth remixes that I adore. Tera is also a member of Soulection.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2550163810/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1559400132/transparent=true/" seamless><a href="https://terakora.bandcamp.com/album/the-legend-of-k-r-remixes-edits-book-one">The Legend of Kòrá Remixes &amp; Edits ~Book One~ by Tera Kòrá</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Afrodisiac',
+          description: "For all things musical I go by Afrodisiac. As a DJ I'm not too interested in tracks I can't dance to and I've reflected this below by choosing 3 superb remixes.",
+          links: [
+            {
+              title: 'Sudan Archives - Glorious (Nídia Remix)',
+              description: "My first selection is an enchanting remix of Sudan Archives' Glorious by Portugese producer Nidia. I found this through the Black Bandcamp website using the genre search and clicked through to Sudan Archives' Bandcamp. At a smooth 100bpm it's the type of track that's easy to get your body warmed up to move and the violin, claps and drums really did transport my brain to a happier place.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=968590833/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://sudanarchives.bandcamp.com/track/glorious-n-dia-remix">Glorious (Nídia Remix) by Sudan Archives</a></iframe>'
+            },
+            {
+              title: 'KOKOKO! - Tokoliana (Citizen Boy Remix)',
+              description: "I found this next track by using the location search. Hailing from the DR Congo the collective KOKOKO! produces massively rhythmic and hypnotic dance tracks that I could listen and groove to all day. In this remix it's the tension and suspense of the percussions and vocals that have me hooked.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=27355656/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=801890419/transparent=true/" seamless><a href="https://kokokomusic.bandcamp.com/album/remixes">Remixes by KOKOKO!</a></iframe>'
+            },
+            {
+              title: 'Ekiti Sound - Abeg No Vex Remixes VOL​.​1',
+              description: "This last recommendation was found again through the location search. It's a remix by Soul Edifice of Nigerian producer Ekiti Sound's song Alutere. The original release is 52 seconds in length so this 7:32min remix is a d-floor blessing. It's the perfect combination of afro infused acid lines, techno and breaks.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2074360769/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://ekitisound.bandcamp.com/album/abeg-no-vex-remixes-vol-1">Abeg No Vex Remixes VOL.1 by Ekiti Sound</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Areej Nur',
+          description: "Melbourne based co-founder of African artist collective, <a href=\"https://www.instagram.com/stillnomads/?hl=en\" target=\"_blank\">Still Nomads</a> and presenter of <a href=\"https://www.rrr.org.au/explore/programs/the-rap\" target=\"_blank\">The Rap</a> on Triple R.",
+          links: [
+            {
+              title: 'Genesis Owusu - WUTD',
+              description: "I have to start with Genesis because this young man is hands down one of the best live performers this country has to offer. Listening to Genesis Owusu is a different experience after you've seen him live. Besides the authentic style and unique flow, I feel his heart in so much of the music and WUTD is no exception.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2982205487/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://genesisowusu.bandcamp.com/track/wutd">WUTD by Genesis Owusu</a></iframe>'
+            },
+            {
+              title: 'KOKOROKO - Carry Me Home',
+              description: "The jazz ensemble of my dreams. I can't believe how much jazz is coming out of London right now especially by young Black geniuses. 2020 is the year of really feeling like being held, and 'Carry Me Home'  holds so much. KOKOROKO does everything right.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2323173687/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=577851728/transparent=true/" seamless><a href="https://kokoroko.bandcamp.com/album/carry-me-home">Carry Me Home by KOKOROKO</a></iframe>'
+            },
+            {
+              title: 'Kaiit - Miss Shiney',
+              description: "I knew all the words to Kaiit's first few singles before she even dropped them. This young sis was singing around Melbourne for a little while before making any official releases and already had a loyal following, of which I am and always will be a part of. Kaiit's voice, energy and soft strength is unmatched - she is such an integral part of the Black music culture in Melbourne and Miss Shiney is a hit!",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1324757541/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://kaiit.bandcamp.com/track/miss-shiney">Miss Shiney by Kaiit</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Claudia Jones',
+          description: "My name is Claudette Justice, I release music under <a href=\"https://www.instagram.com/claudiajoneslive/\" target=\"_blank\">Claudia Jones</a>, <a href=\"https://www.instagram.com/glamouratz/\" target=\"_blank\">Glamouratz</a>, <a href=\"https://www.instagram.com/claudyknight/\" target=\"_blank\">Claudy Knight</a> and <a href=\"https://www.instagram.com/claddywood/\" target=\"_blank\">Claddy</a>. I never ever wanna put myself in a box. I’m a woman of many things. I’m a jazz singer who writes disco, pop and house music. I often get sultry melodies come to me at all hours of the day. I refuse to limit myself by sticking to one genre. I’m a DJ, musical curator who runs parties, forever uplifting & growing with BIPOC community. I also run a couple of Naarm (Melbourne, Australia) based radio shows, <a href=\"https://skylab-radio.com/shows/justicescape-e3\" target=\"_blank\">'JusticEscape'</a> on Skylab Radio & ‘Signal’ on Lossless Radio. Put simply, music is my love language, my heart and my soul.",
+          links: [
+            {
+              title: 'AMARAFLEUR - dontletgo’ ',
+              description: "I am a sucker for a good pop track with an original sound. I could listen to ‘dontletgo’ on repeat for hours. Found in the electro soul genre, Amara Fleur, hailing from Johannesburg, South Africa was an incredible find. ‘Dontletgo’ has a lo-fi, hip hop style beat with beautiful, textured, jazzy, rnb vocals. Perfect tune to light a joint to, and simmer deep into the nostalgic waves of emotion.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3788921813/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://amarafleur.bandcamp.com/track/dontletgo">DontLetGo by AMARAFLEUR</a></iframe>'
+            },
+            {
+              title: 'Carlos Do Complexo - Mistakes',
+              description: "Found in the rnb genre section, hailing from Brazil, Carlos Do Complexo gives us the smoothest, soulful vibes with a groovy electronic twist. There’s a sound in there that makes me think he sampled the x-files theme song. Add raw honest vocals from Lexie Palms and you’ve got yourself a new age rnb classic. Let’s be real though, anything that comes from Brazil is magic.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3294440085/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://carlosdocomplexo.bandcamp.com/track/mistakes">MiSTAKES by Carlos do Complexo, Lexie Palms</a></iframe>'
+            },
+            {
+              title: 'Saine & Smith - Dirty Games',
+              description: "I’m constantly digging for new music, not only to share with the collective but to keep my ears and heart active and happy. I found ‘Dirty Games’ whilst digging in the Afro-Caribbean section. As a Jamaican blooded woman who’s grown up in the club filled with house music, this track touched all the right places. It has an analog, old school feel to it. Repeating bass line (always a fave) deep house groove with a powerful, top vocal. Perfect dance floor meditation to drop in the club at any moment.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=8294460/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2860972202/transparent=true/" seamless><a href="https://sainesmith.bandcamp.com/album/dirty-games">Dirty Games by Saine &amp; Smith</a></iframe>',
+            }
+          ]
+        },
+      ]
+    }
     ]))
     state.current = payload
   },
@@ -1932,6 +2123,197 @@ const mutations = {
         }
       ]
     },
+    {
+      short_name: 'BLACK BANDCAMP NOVEMBER PICKS: NAARM',
+      name: 'BLACK BANDCAMP NOVEMBER PICKS: NAARM',
+      bandcamp_link: "",
+      bandcamp_id: "",
+      credit: null,
+      author: null,
+      date: '08/07/2020',
+      illus: 'articles/nov2020/nov2020.jpg',
+      top_desc: "For this month's Bandcamp Friday, we hit up creatives in Naarm (Melbourne) to find out who their top Black Bandcamp discoveries and picks of the month are.",
+      links: [
+      ],
+      questions: [
+        {
+          type: 'bandcamp_picks',
+          title: 'Beź Zewdie',
+          description: "Beź Zewdie is an African-Australian content and events producer, presenter of <a href='https://www.rrr.org.au/explore/programs/represented' target='_blank'>'Represented'</a> on Triple R 102.7FM, and creator of the <a href='https://www.youtube.com/watch?v=G6NLZcK8pyw&list=PLaF17q8yqWmIUeUkWqmL5-nOrJfIp4ksP&index=1&ab_channel=Be%C5%BA.' target='_blank'>SHADES</a> podcast: an exploration of social issues through the lens of Australian hip hop music.",
+          links: [
+            {
+              title: 'Crystal Axis - Take the Throne',
+              description: "African metal & punk music is so grossly underrated. This five-piece is precisely why you should start taking notice. Rock music IS Black music, and it's high time we take ownership of it.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=4228169348/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://crystalaxis.bandcamp.com/track/take-the-throne">Take The Throne by Crystal Axis</a></iframe>'
+            },
+            {
+              title: "DRMNGNOW ft. Kee'ahn & Riverboy - Ancestors",
+              description: "On this track, three of Melbourne's most promising, up-and-coming talents come together on a powerful track that never fails to give me chills. Riverboy's production is hypnotic, Kee'ahn's vocals haunting, and DRMNGNOW's poetry empowering and uplifting.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2447037193/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://drmngnow.bandcamp.com/track/ancestors">Ancestors by DRMNGNOW</a></iframe>'
+            },
+            {
+              title: 'Stevan - No More Regrets',
+              description: "Stevan tells coming-of-age stories to the backdrop of eclectic, indie rnb music. His melancholy vocals top off his altogether warm and dreamy output.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3493204280/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://stevanofficial.bandcamp.com/track/no-more-regrets">No More Regrets by Stevan</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Darcy Justice',
+          description: 'My name is Darcy Justice and I DJ sometimes. I enjoy music and try not to take myself too seriously, at the end of the day I’m just pressing play.',
+          links: [
+            {
+              title: 'Equiknoxx - Bird Sound Power',
+              description: "Going to highlight a small little part of the world which I hold closely to my heart, Jamaica. Found this awesome \"forward thinking Jamacian music collective\" putting out some heavy beats and nice rhymes. Equiknoxx is the name and this album Bird sound power is my favourite but all albums are equally wicked.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=745435535/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2592718917/transparent=true/" seamless><a href="https://equiknoxx.bandcamp.com/album/bird-sound-power">Bird Sound Power by Equiknoxx</a></iframe>'
+            },
+            {
+              title: 'Shanique Marie - Freak',
+              description: "Delved deeper into the Equiknoxx collective and have officially fallen in love with Shanique Marie. A Slick rapper with a beautiful singing voice also! Paired with some Gavsborg beats and it's unstoppable. Cant help but bop about.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2905252228/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=37227733/transparent=true/" seamless><a href="https://shaniquemarie.bandcamp.com/album/freak">Freak by Shanique Marie</a></iframe>'
+            },
+            {
+              title: 'Riddlore- Afromutations',
+              description: "Came across the label Nyege Nyege tapes and clicked onto the album Afromuations and was sent elsewhere. BeautIful field recordings mixed with real strong and groovy beats . Made my little afrobeat section in my heart melt and my body two step.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2306200836/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3082048501/transparent=true/" seamless><a href="https://nyegenyegetapes.bandcamp.com/album/afromutations">Afromutations by Riddlore</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Paul Gorrie',
+          description: "My name is Paul Gorrie and I am a Gunai/Kurnai & Yorta Yorta man. I’m a radio presenter (<a href='https://www.rrr.org.au/explore/programs/still-here' target='_blank'>RRR</a>), DJ (<a href='https://soundcloud.com/dj-pgz' target='_blank'>dj pgz</a>), assistant music producer (<a href='https://www.rising.melbourne/' target='_blank'>Rising Festival</a>), filmmaker (<a href='https://www.sbs.com.au/ondemand/program/treaty' target='_blank'>Young Mob Questioning Treaty</a>), and drummer (<a href='https://drmngnow.bandcamp.com/' target='_blank'>DRMNGNOW</a> & <a href='https://www.keeahn.com/' target='_blank'>Kee’ahn</a>).",
+          links: [
+            {
+              title: 'Water Streets - Blvck',
+              description: "They’re coming out of FNQ and they have a freshness and steeze that is reminiscent of an East Coast vibe from NYC, Turtle Island while also spitting realness about being a blakfulla from so-called Australia. These fullas are the next generation of hip hop coming out of so-called Australia to keep an eye on. Water Streets is made up of Jamahl (Wanyii), Bardi who is Wagiman (Darwin), St Paul (Torres Strait Islands), Marshal from Darnley Island (Torres Strait Islands).",
+              embed: ''
+            },
+            {
+              title: 'Mulalo - FTN + Chargin',
+              description: "If you are a fan of the likes of Megan Thee Stallion, Rico Nasty, and Bbymutha -  you will have to acquaint yourself with Mulalo. Coming out of Naarm/Melbourne, she brings a rawness and style that quite hasn’t been filled over here. Mulalo refers to her music as “bad b***h music” and it is the baddest. She also has another single out called Check that isn’t on bandcamp that is worth checking out too.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3057282832/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=833411451/transparent=true/" seamless><a href="https://mulalo.bandcamp.com/album/ftn-chargin">FTN + Chargin by Mulalo</a></iframe>'
+            },
+            {
+              title: 'Ase Manual - Eat It Up',
+              description: "I am a fan of club music, and as a DJ with an interest in underground, bassy, dark, trippy and high tempo sounds. For those very reasons; Ase Manual is someone who has found their way into my library. The Yoruba - American DJ and producer that can do no wrong. Especially with the track Eat It Up taken from their project Fuji Club Music.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2524858663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=16609845/transparent=true/" seamless><a href="https://asemanual.bandcamp.com/album/fuji-club-music">Fuji Club Music by Ase Manual</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'C.FRIM',
+          description: 'C.FRIM is a Melbourne (Naarm) based selector and presenter who pushes forward-thinking sounds via a monthly show on <a href="https://skylab-radio.com/shows/shakedown-e1" target="_blank">Skylab Radio</a>.',
+          links: [
+            {
+              title: 'Shyboi - Head Top',
+              description: "I can't explain how gassed up I was for this release. This track effortlessly cultivates techno and merges it with dancehall roots - I'm not sure whether to 2-step or dutty wine. Best believe I'll be smashing that cue button for this one post-Corona.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=309365031/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=558036070/transparent=true/" seamless><a href="https://djshyboi.bandcamp.com/album/rave-down-babylon">Rave Down Babylon by SHYBOI</a></iframe>'
+            },
+            {
+              title: 'Tygapaw - Run 2 U',
+              description: "This new single out from her forthcoming album 'Get Free' pulses with so much energy and reminds me why techno is and has always been Black. I was lucky enough to support Tygapaw at her Naarm show last year and she was just dropping hit after hit. So fire!",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2101995501/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://tygapaw.bandcamp.com/album/get-free">GET FREE by TYGAPAW</a></iframe>'
+            },
+            {
+              title: 'Rey Sapienz - Dancehall Pigmé',
+              description: "'Mushuro' as a complete EP is incredible, but 'Dancehall Pigmé' is the track that I always come back to. The scene in Kampala, Uganda is really pushing this distinct and progressive sound that is mad inspiring.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3759814304/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1244531193/transparent=true/" seamless><a href="https://hakunakulala.bandcamp.com/album/mushoro">Mushoro by Rey Sapienz</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Soju Gang',
+          description: "Yo, I’m Soju Gang; I’m a Melbourne based DJ, designer and owner of my own street wear label called <a href=\"https://www.instagram.com/sawft.wear/\" target=\"_blank\">SAWFT</a>, and an all round creative in Melbourne’s nightlife scene.",
+          links: [
+            {
+              title: 'Nooky - Black Future',
+              description: "Nooky is a talented artist from NSW, Aus who has lately been pushing out some age defining music that’s highlighting the lived experience and disparity of the Blak community of Australia as we move through our own BLM movement.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=447853956/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nooky.bandcamp.com/track/black-future">Black Future by Nooky</a></iframe>'
+            },
+            {
+              title: 'Boston Chery - Summers with you Vol III',
+              description: "As a DJ I’m always looking for unique, eclectic, energy-filled remixes and Boston delivers. New York DJ and producer, Boston’s sound is so vast that there’s always something new.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=341680357/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://bostonchery.bandcamp.com/album/summers-with-you-vol-3">Summers With You Vol. 3 by Boston Chery</a></iframe>'
+            },
+            {
+              title: 'Tera Kòrá - The Legend of Kòrá Remixes & Edits ~Book One~',
+              description: "Tera Kora is one of my faves for mixes; from Rotterdam this creative puts together some really funky, smooth remixes that I adore. Tera is also a member of Soulection.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2550163810/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1559400132/transparent=true/" seamless><a href="https://terakora.bandcamp.com/album/the-legend-of-k-r-remixes-edits-book-one">The Legend of Kòrá Remixes &amp; Edits ~Book One~ by Tera Kòrá</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Afrodisiac',
+          description: "For all things musical I go by Afrodisiac. As a DJ I'm not too interested in tracks I can't dance to and I've reflected this below by choosing 3 superb remixes.",
+          links: [
+            {
+              title: 'Sudan Archives - Glorious (Nídia Remix)',
+              description: "My first selection is an enchanting remix of Sudan Archives' Glorious by Portugese producer Nidia. I found this through the Black Bandcamp website using the genre search and clicked through to Sudan Archives' Bandcamp. At a smooth 100bpm it's the type of track that's easy to get your body warmed up to move and the violin, claps and drums really did transport my brain to a happier place.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=968590833/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://sudanarchives.bandcamp.com/track/glorious-n-dia-remix">Glorious (Nídia Remix) by Sudan Archives</a></iframe>'
+            },
+            {
+              title: 'KOKOKO! - Tokoliana (Citizen Boy Remix)',
+              description: "I found this next track by using the location search. Hailing from the DR Congo the collective KOKOKO! produces massively rhythmic and hypnotic dance tracks that I could listen and groove to all day. In this remix it's the tension and suspense of the percussions and vocals that have me hooked.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=27355656/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=801890419/transparent=true/" seamless><a href="https://kokokomusic.bandcamp.com/album/remixes">Remixes by KOKOKO!</a></iframe>'
+            },
+            {
+              title: 'Ekiti Sound - Abeg No Vex Remixes VOL​.​1',
+              description: "This last recommendation was found again through the location search. It's a remix by Soul Edifice of Nigerian producer Ekiti Sound's song Alutere. The original release is 52 seconds in length so this 7:32min remix is a d-floor blessing. It's the perfect combination of afro infused acid lines, techno and breaks.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2074360769/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://ekitisound.bandcamp.com/album/abeg-no-vex-remixes-vol-1">Abeg No Vex Remixes VOL.1 by Ekiti Sound</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Areej Nur',
+          description: "Melbourne based co-founder of African artist collective, <a href=\"https://www.instagram.com/stillnomads/?hl=en\" target=\"_blank\">Still Nomads</a> and presenter of <a href=\"https://www.rrr.org.au/explore/programs/the-rap\" target=\"_blank\">The Rap</a> on Triple R.",
+          links: [
+            {
+              title: 'Genesis Owusu - WUTD',
+              description: "I have to start with Genesis because this young man is hands down one of the best live performers this country has to offer. Listening to Genesis Owusu is a different experience after you've seen him live. Besides the authentic style and unique flow, I feel his heart in so much of the music and WUTD is no exception.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2982205487/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://genesisowusu.bandcamp.com/track/wutd">WUTD by Genesis Owusu</a></iframe>'
+            },
+            {
+              title: 'KOKOROKO - Carry Me Home',
+              description: "The jazz ensemble of my dreams. I can't believe how much jazz is coming out of London right now especially by young Black geniuses. 2020 is the year of really feeling like being held, and 'Carry Me Home'  holds so much. KOKOROKO does everything right.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2323173687/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=577851728/transparent=true/" seamless><a href="https://kokoroko.bandcamp.com/album/carry-me-home">Carry Me Home by KOKOROKO</a></iframe>'
+            },
+            {
+              title: 'Kaiit - Miss Shiney',
+              description: "I knew all the words to Kaiit's first few singles before she even dropped them. This young sis was singing around Melbourne for a little while before making any official releases and already had a loyal following, of which I am and always will be a part of. Kaiit's voice, energy and soft strength is unmatched - she is such an integral part of the Black music culture in Melbourne and Miss Shiney is a hit!",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1324757541/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://kaiit.bandcamp.com/track/miss-shiney">Miss Shiney by Kaiit</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Claudia Jones',
+          description: "My name is Claudette Justice, I release music under <a href=\"https://www.instagram.com/claudiajoneslive/\" target=\"_blank\">Claudia Jones</a>, <a href=\"https://www.instagram.com/glamouratz/\" target=\"_blank\">Glamouratz</a>, <a href=\"https://www.instagram.com/claudyknight/\" target=\"_blank\">Claudy Knight</a> and <a href=\"https://www.instagram.com/claddywood/\" target=\"_blank\">Claddy</a>. I never ever wanna put myself in a box. I’m a woman of many things. I’m a jazz singer who writes disco, pop and house music. I often get sultry melodies come to me at all hours of the day. I refuse to limit myself by sticking to one genre. I’m a DJ, musical curator who runs parties, forever uplifting & growing with BIPOC community. I also run a couple of Naarm (Melbourne, Australia) based radio shows, <a href=\"https://skylab-radio.com/shows/justicescape-e3\" target=\"_blank\">'JusticEscape'</a> on Skylab Radio & ‘Signal’ on Lossless Radio. Put simply, music is my love language, my heart and my soul.",
+          links: [
+            {
+              title: 'AMARAFLEUR - dontletgo’ ',
+              description: "I am a sucker for a good pop track with an original sound. I could listen to ‘dontletgo’ on repeat for hours. Found in the electro soul genre, Amara Fleur, hailing from Johannesburg, South Africa was an incredible find. ‘Dontletgo’ has a lo-fi, hip hop style beat with beautiful, textured, jazzy, rnb vocals. Perfect tune to light a joint to, and simmer deep into the nostalgic waves of emotion.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3788921813/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://amarafleur.bandcamp.com/track/dontletgo">DontLetGo by AMARAFLEUR</a></iframe>'
+            },
+            {
+              title: 'Carlos Do Complexo - Mistakes',
+              description: "Found in the rnb genre section, hailing from Brazil, Carlos Do Complexo gives us the smoothest, soulful vibes with a groovy electronic twist. There’s a sound in there that makes me think he sampled the x-files theme song. Add raw honest vocals from Lexie Palms and you’ve got yourself a new age rnb classic. Let’s be real though, anything that comes from Brazil is magic.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3294440085/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://carlosdocomplexo.bandcamp.com/track/mistakes">MiSTAKES by Carlos do Complexo, Lexie Palms</a></iframe>'
+            },
+            {
+              title: 'Saine & Smith - Dirty Games',
+              description: "I’m constantly digging for new music, not only to share with the collective but to keep my ears and heart active and happy. I found ‘Dirty Games’ whilst digging in the Afro-Caribbean section. As a Jamaican blooded woman who’s grown up in the club filled with house music, this track touched all the right places. It has an analog, old school feel to it. Repeating bass line (always a fave) deep house groove with a powerful, top vocal. Perfect dance floor meditation to drop in the club at any moment.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=8294460/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2860972202/transparent=true/" seamless><a href="https://sainesmith.bandcamp.com/album/dirty-games">Dirty Games by Saine &amp; Smith</a></iframe>',
+            }
+          ]
+        },
+      ]
+    }
     ]))
     state.current = state.list[payload - 1]
   }
