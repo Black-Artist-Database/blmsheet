@@ -1035,7 +1035,7 @@ const mutations = {
             {
               title: 'Water Streets - Blvck',
               description: "They’re coming out of FNQ and they have a freshness and steeze that is reminiscent of an East Coast vibe from NYC, Turtle Island while also spitting realness about being a blakfulla from so-called Australia. These fullas are the next generation of hip hop coming out of so-called Australia to keep an eye on. Water Streets is made up of Jamahl (Wanyii), Bardi who is Wagiman (Darwin), St Paul (Torres Strait Islands), Marshal from Darnley Island (Torres Strait Islands).",
-              embed: 'https://waterstreets.bandcamp.com/'
+              embed: '<a href="https://waterstreets.bandcamp.com/" target="_blank">https://waterstreets.bandcamp.com/</a>'
             },
             {
               title: 'Mulalo - FTN + Chargin',
@@ -2188,7 +2188,7 @@ const mutations = {
             {
               title: 'Water Streets - Blvck',
               description: "They’re coming out of FNQ and they have a freshness and steeze that is reminiscent of an East Coast vibe from NYC, Turtle Island while also spitting realness about being a blakfulla from so-called Australia. These fullas are the next generation of hip hop coming out of so-called Australia to keep an eye on. Water Streets is made up of Jamahl (Wanyii), Bardi who is Wagiman (Darwin), St Paul (Torres Strait Islands), Marshal from Darnley Island (Torres Strait Islands).",
-              embed: 'https://waterstreets.bandcamp.com/'
+              embed: '<a href="https://waterstreets.bandcamp.com/" target="_blank">https://waterstreets.bandcamp.com/</a>'
             },
             {
               title: 'Mulalo - FTN + Chargin',
