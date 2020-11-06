@@ -986,7 +986,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'Beź Zewdie',
-          description: "<a href='https://www.instagram.com/bezography/' target'_blank>Beź Zewdie</a> is an African-Australian content and events producer, presenter of <a href='https://www.rrr.org.au/explore/programs/represented' target='_blank'>'Represented'</a> on Triple R 102.7FM, and creator of the <a href='https://www.youtube.com/watch?v=G6NLZcK8pyw&list=PLaF17q8yqWmIUeUkWqmL5-nOrJfIp4ksP&index=1&ab_channel=Be%C5%BA.' target='_blank'>SHADES</a> podcast: an exploration of social issues through the lens of Australian hip hop music.",
+          description: "<a href='https://www.instagram.com/bezography/' target='_blank'>Beź Zewdie</a> is an African-Australian content and events producer, presenter of <a href='https://www.rrr.org.au/explore/programs/represented' target='_blank'>'Represented'</a> on Triple R 102.7FM, and creator of the <a href='https://www.youtube.com/watch?v=G6NLZcK8pyw&list=PLaF17q8yqWmIUeUkWqmL5-nOrJfIp4ksP&index=1&ab_channel=Be%C5%BA.' target='_blank'>SHADES</a> podcast: an exploration of social issues through the lens of Australian hip hop music.",
           links: [
             {
               title: 'Crystal Axis - Take the Throne',
