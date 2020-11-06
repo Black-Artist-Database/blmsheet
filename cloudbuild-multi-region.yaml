@@ -9,6 +9,7 @@ steps:
   args: ['push', 'gcr.io/$PROJECT_ID/$_IMAGE_NAME']
 # Deploy image to Cloud Run #1
 - name: 'gcr.io/cloud-builders/gcloud'
+  id: 'deploy-1'
   args:
   - 'run'
   - 'deploy'
@@ -24,6 +25,7 @@ steps:
   waitFor: ['build', 'push']
 # Deploy image to Cloud Run #2
 - name: 'gcr.io/cloud-builders/gcloud'
+  id: 'deploy-2'
   args:
   - 'run'
   - 'deploy'
@@ -37,6 +39,7 @@ steps:
   waitFor: ['build', 'push']
 # Deploy image to Cloud Run #3
 - name: 'gcr.io/cloud-builders/gcloud'
+  id: 'deploy-3'
   args:
   - 'run'
   - 'deploy'
@@ -50,6 +53,7 @@ steps:
   waitFor: ['build', 'push']
 # Deploy image to Cloud Run #4
 - name: 'gcr.io/cloud-builders/gcloud'
+  id: 'deploy-4'
   args:
   - 'run'
   - 'deploy'
@@ -68,12 +72,14 @@ steps:
   - 'jobs'
   - 'run'
   - 'clear-cache'
+  waitFor: ['deploy-1', 'deploy-4']
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'scheduler'
   - 'jobs'
   - 'run'
   - 'clear-cache-us'
+  waitFor: ['deploy-2', 'deploy-3']
 # Deploy scrape to Cloud Function
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
