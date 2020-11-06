@@ -1052,7 +1052,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'C.FRIM',
-          description: '<a href=\"https://www.instagram.com/c.frim/\" target=\"_blank\">C.FRIM</a> is a Melbourne (Naarm) based selector and presenter who pushes forward-thinking sounds via a monthly show on <a href="https://skylab-radio.com/shows/shakedown-e1" target="_blank">Skylab Radio</a>.',
+          description: '<a href="https://www.instagram.com/c.frim" target="_blank">C.FRIM</a> is a Melbourne (Naarm) based selector and presenter who pushes forward-thinking sounds via a monthly show on <a href="https://skylab-radio.com/shows/shakedown-e1" target="_blank">Skylab Radio</a>.',
           links: [
             {
               title: 'Shyboi - Head Top',
@@ -2205,7 +2205,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'C.FRIM',
-          description: '<a href=\"https://www.instagram.com/c.frim/\" target=\"_blank\">C.FRIM</a> is a Melbourne (Naarm) based selector and presenter who pushes forward-thinking sounds via a monthly show on <a href="https://skylab-radio.com/shows/shakedown-e1" target="_blank">Skylab Radio</a>.',
+          description: '<a href="https://www.instagram.com/c.frim/" target="_blank">C.FRIM</a> is a Melbourne (Naarm) based selector and presenter who pushes forward-thinking sounds via a monthly show on <a href="https://skylab-radio.com/shows/shakedown-e1" target="_blank">Skylab Radio</a>.',
           links: [
             {
               title: 'Shyboi - Head Top',
