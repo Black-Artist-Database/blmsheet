@@ -24,7 +24,7 @@ def create_app():
     development = os.environ.get('FLASK_ENV', '') == 'development'
     init_logging(app, development=development)
     setup_cache(app, development=development)
-    setup_compress(app, development=development)
+    # setup_compress(app, development=development)
     setup_db(app)
     setup_pubsub(app)
     add_blueprints(app)
