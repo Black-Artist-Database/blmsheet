@@ -986,7 +986,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'Beź Zewdie',
-          description: "Beź Zewdie is an African-Australian content and events producer, presenter of <a href='https://www.rrr.org.au/explore/programs/represented' target='_blank'>'Represented'</a> on Triple R 102.7FM, and creator of the <a href='https://www.youtube.com/watch?v=G6NLZcK8pyw&list=PLaF17q8yqWmIUeUkWqmL5-nOrJfIp4ksP&index=1&ab_channel=Be%C5%BA.' target='_blank'>SHADES</a> podcast: an exploration of social issues through the lens of Australian hip hop music.",
+          description: "<a href='https://www.instagram.com/bezography/' target'_blank>Beź Zewdie</a> is an African-Australian content and events producer, presenter of <a href='https://www.rrr.org.au/explore/programs/represented' target='_blank'>'Represented'</a> on Triple R 102.7FM, and creator of the <a href='https://www.youtube.com/watch?v=G6NLZcK8pyw&list=PLaF17q8yqWmIUeUkWqmL5-nOrJfIp4ksP&index=1&ab_channel=Be%C5%BA.' target='_blank'>SHADES</a> podcast: an exploration of social issues through the lens of Australian hip hop music.",
           links: [
             {
               title: 'Crystal Axis - Take the Throne',
@@ -1030,12 +1030,12 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'Paul Gorrie',
-          description: "My name is Paul Gorrie and I am a Gunai/Kurnai & Yorta Yorta man. I’m a radio presenter (<a href='https://www.rrr.org.au/explore/programs/still-here' target='_blank'>RRR</a>), DJ (<a href='https://soundcloud.com/dj-pgz' target='_blank'>dj pgz</a>), assistant music producer (<a href='https://www.rising.melbourne/' target='_blank'>Rising Festival</a>), filmmaker (<a href='https://www.sbs.com.au/ondemand/program/treaty' target='_blank'>Young Mob Questioning Treaty</a>), and drummer (<a href='https://drmngnow.bandcamp.com/' target='_blank'>DRMNGNOW</a> & <a href='https://www.keeahn.com/' target='_blank'>Kee’ahn</a>).",
+          description: "My name is <a href=\"https://www.instagram.com/lil_p_geezy/\" target=\"_blank\">Paul Gorrie</a> and I am a Gunai/Kurnai & Yorta Yorta man. I’m a radio presenter (<a href='https://www.rrr.org.au/explore/programs/still-here' target='_blank'>RRR</a>), DJ (<a href='https://soundcloud.com/dj-pgz' target='_blank'>dj pgz</a>), assistant music producer (<a href='https://www.rising.melbourne/' target='_blank'>Rising Festival</a>), filmmaker (<a href='https://www.sbs.com.au/ondemand/program/treaty' target='_blank'>Young Mob Questioning Treaty</a>), and drummer (<a href='https://drmngnow.bandcamp.com/' target='_blank'>DRMNGNOW</a> & <a href='https://www.keeahn.com/' target='_blank'>Kee’ahn</a>).",
           links: [
             {
               title: 'Water Streets - Blvck',
               description: "They’re coming out of FNQ and they have a freshness and steeze that is reminiscent of an East Coast vibe from NYC, Turtle Island while also spitting realness about being a blakfulla from so-called Australia. These fullas are the next generation of hip hop coming out of so-called Australia to keep an eye on. Water Streets is made up of Jamahl (Wanyii), Bardi who is Wagiman (Darwin), St Paul (Torres Strait Islands), Marshal from Darnley Island (Torres Strait Islands).",
-              embed: ''
+              embed: 'https://waterstreets.bandcamp.com/'
             },
             {
               title: 'Mulalo - FTN + Chargin',
@@ -1052,7 +1052,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'C.FRIM',
-          description: 'C.FRIM is a Melbourne (Naarm) based selector and presenter who pushes forward-thinking sounds via a monthly show on <a href="https://skylab-radio.com/shows/shakedown-e1" target="_blank">Skylab Radio</a>.',
+          description: '<a href=\"https://www.instagram.com/c.frim/\" target=\"_blank\">C.FRIM</a> is a Melbourne (Naarm) based selector and presenter who pushes forward-thinking sounds via a monthly show on <a href="https://skylab-radio.com/shows/shakedown-e1" target="_blank">Skylab Radio</a>.',
           links: [
             {
               title: 'Shyboi - Head Top',
@@ -1074,7 +1074,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'Soju Gang',
-          description: "Yo, I’m Soju Gang; I’m a Melbourne based DJ, designer and owner of my own street wear label called <a href=\"https://www.instagram.com/sawft.wear/\" target=\"_blank\">SAWFT</a>, and an all round creative in Melbourne’s nightlife scene.",
+          description: "Yo, I’m <a href=\"https://www.instagram.com/soju_gang/\" target=\"_blank\">Soju Gang</a>; I’m a Melbourne based DJ, designer and owner of my own street wear label called <a href=\"https://www.instagram.com/sawft.wear/\" target=\"_blank\">SAWFT</a>, and an all round creative in Melbourne’s nightlife scene.",
           links: [
             {
               title: 'Nooky - Black Future',
@@ -1096,7 +1096,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'Afrodisiac',
-          description: "For all things musical I go by Afrodisiac. As a DJ I'm not too interested in tracks I can't dance to and I've reflected this below by choosing 3 superb remixes.",
+          description: "For all things musical I go by <a href=\"https://www.instagram.com/gabby.au/\" target=\"_blank\">Afrodisiac</a>. As a DJ I'm not too interested in tracks I can't dance to and I've reflected this below by choosing 3 superb remixes.",
           links: [
             {
               title: 'Sudan Archives - Glorious (Nídia Remix)',
@@ -1118,7 +1118,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'Areej Nur',
-          description: "Melbourne based co-founder of African artist collective, <a href=\"https://www.instagram.com/stillnomads/?hl=en\" target=\"_blank\">Still Nomads</a> and presenter of <a href=\"https://www.rrr.org.au/explore/programs/the-rap\" target=\"_blank\">The Rap</a> on Triple R.",
+          description: "<a href=\"https://www.instagram.com/areejrun/\" target=\"_blank\">Areej Nur</a> is a Melbourne based co-founder of African artist collective, <a href=\"https://www.instagram.com/stillnomads/?hl=en\" target=\"_blank\">Still Nomads</a> and presenter of <a href=\"https://www.rrr.org.au/explore/programs/the-rap\" target=\"_blank\">The Rap</a> on Triple R.",
           links: [
             {
               title: 'Genesis Owusu - WUTD',
@@ -2139,7 +2139,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'Beź Zewdie',
-          description: "Beź Zewdie is an African-Australian content and events producer, presenter of <a href='https://www.rrr.org.au/explore/programs/represented' target='_blank'>'Represented'</a> on Triple R 102.7FM, and creator of the <a href='https://www.youtube.com/watch?v=G6NLZcK8pyw&list=PLaF17q8yqWmIUeUkWqmL5-nOrJfIp4ksP&index=1&ab_channel=Be%C5%BA.' target='_blank'>SHADES</a> podcast: an exploration of social issues through the lens of Australian hip hop music.",
+          description: "<a href='https://www.instagram.com/bezography/' target'_blank>Beź Zewdie</a> is an African-Australian content and events producer, presenter of <a href='https://www.rrr.org.au/explore/programs/represented' target='_blank'>'Represented'</a> on Triple R 102.7FM, and creator of the <a href='https://www.youtube.com/watch?v=G6NLZcK8pyw&list=PLaF17q8yqWmIUeUkWqmL5-nOrJfIp4ksP&index=1&ab_channel=Be%C5%BA.' target='_blank'>SHADES</a> podcast: an exploration of social issues through the lens of Australian hip hop music.",
           links: [
             {
               title: 'Crystal Axis - Take the Throne',
@@ -2183,12 +2183,12 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'Paul Gorrie',
-          description: "My name is Paul Gorrie and I am a Gunai/Kurnai & Yorta Yorta man. I’m a radio presenter (<a href='https://www.rrr.org.au/explore/programs/still-here' target='_blank'>RRR</a>), DJ (<a href='https://soundcloud.com/dj-pgz' target='_blank'>dj pgz</a>), assistant music producer (<a href='https://www.rising.melbourne/' target='_blank'>Rising Festival</a>), filmmaker (<a href='https://www.sbs.com.au/ondemand/program/treaty' target='_blank'>Young Mob Questioning Treaty</a>), and drummer (<a href='https://drmngnow.bandcamp.com/' target='_blank'>DRMNGNOW</a> & <a href='https://www.keeahn.com/' target='_blank'>Kee’ahn</a>).",
+          description: "My name is <a href=\"https://www.instagram.com/lil_p_geezy/\" target=\"_blank\">Paul Gorrie</a> and I am a Gunai/Kurnai & Yorta Yorta man. I’m a radio presenter (<a href='https://www.rrr.org.au/explore/programs/still-here' target='_blank'>RRR</a>), DJ (<a href='https://soundcloud.com/dj-pgz' target='_blank'>dj pgz</a>), assistant music producer (<a href='https://www.rising.melbourne/' target='_blank'>Rising Festival</a>), filmmaker (<a href='https://www.sbs.com.au/ondemand/program/treaty' target='_blank'>Young Mob Questioning Treaty</a>), and drummer (<a href='https://drmngnow.bandcamp.com/' target='_blank'>DRMNGNOW</a> & <a href='https://www.keeahn.com/' target='_blank'>Kee’ahn</a>).",
           links: [
             {
               title: 'Water Streets - Blvck',
               description: "They’re coming out of FNQ and they have a freshness and steeze that is reminiscent of an East Coast vibe from NYC, Turtle Island while also spitting realness about being a blakfulla from so-called Australia. These fullas are the next generation of hip hop coming out of so-called Australia to keep an eye on. Water Streets is made up of Jamahl (Wanyii), Bardi who is Wagiman (Darwin), St Paul (Torres Strait Islands), Marshal from Darnley Island (Torres Strait Islands).",
-              embed: ''
+              embed: 'https://waterstreets.bandcamp.com/'
             },
             {
               title: 'Mulalo - FTN + Chargin',
@@ -2205,7 +2205,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'C.FRIM',
-          description: 'C.FRIM is a Melbourne (Naarm) based selector and presenter who pushes forward-thinking sounds via a monthly show on <a href="https://skylab-radio.com/shows/shakedown-e1" target="_blank">Skylab Radio</a>.',
+          description: '<a href=\"https://www.instagram.com/c.frim/\" target=\"_blank\">C.FRIM</a> is a Melbourne (Naarm) based selector and presenter who pushes forward-thinking sounds via a monthly show on <a href="https://skylab-radio.com/shows/shakedown-e1" target="_blank">Skylab Radio</a>.',
           links: [
             {
               title: 'Shyboi - Head Top',
@@ -2227,7 +2227,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'Soju Gang',
-          description: "Yo, I’m Soju Gang; I’m a Melbourne based DJ, designer and owner of my own street wear label called <a href=\"https://www.instagram.com/sawft.wear/\" target=\"_blank\">SAWFT</a>, and an all round creative in Melbourne’s nightlife scene.",
+          description: "Yo, I’m <a href=\"https://www.instagram.com/soju_gang/\" target=\"_blank\">Soju Gang</a>; I’m a Melbourne based DJ, designer and owner of my own street wear label called <a href=\"https://www.instagram.com/sawft.wear/\" target=\"_blank\">SAWFT</a>, and an all round creative in Melbourne’s nightlife scene.",
           links: [
             {
               title: 'Nooky - Black Future',
@@ -2249,7 +2249,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'Afrodisiac',
-          description: "For all things musical I go by Afrodisiac. As a DJ I'm not too interested in tracks I can't dance to and I've reflected this below by choosing 3 superb remixes.",
+          description: "For all things musical I go by <a href=\"https://www.instagram.com/gabby.au/\" target=\"_blank\">Afrodisiac</a>. As a DJ I'm not too interested in tracks I can't dance to and I've reflected this below by choosing 3 superb remixes.",
           links: [
             {
               title: 'Sudan Archives - Glorious (Nídia Remix)',
@@ -2271,7 +2271,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'Areej Nur',
-          description: "Melbourne based co-founder of African artist collective, <a href=\"https://www.instagram.com/stillnomads/?hl=en\" target=\"_blank\">Still Nomads</a> and presenter of <a href=\"https://www.rrr.org.au/explore/programs/the-rap\" target=\"_blank\">The Rap</a> on Triple R.",
+          description: "<a href=\"https://www.instagram.com/areejrun/\" target=\"_blank\">Areej Nur</a> is a Melbourne based co-founder of African artist collective, <a href=\"https://www.instagram.com/stillnomads/?hl=en\" target=\"_blank\">Still Nomads</a> and presenter of <a href=\"https://www.rrr.org.au/explore/programs/the-rap\" target=\"_blank\">The Rap</a> on Triple R.",
           links: [
             {
               title: 'Genesis Owusu - WUTD',
