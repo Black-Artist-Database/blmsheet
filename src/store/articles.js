@@ -1237,7 +1237,7 @@ const mutations = {
           url: 'https://www.betinaquest.com/'
         },
         {
-          name: 'Purchase the singles on bandcamp here',
+          name: 'Purchase the singles on Bandcamp here',
           url: 'https://betinaquest.bandcamp.com/music'
         },
         {
@@ -2479,7 +2479,7 @@ const mutations = {
           url: 'https://www.betinaquest.com/'
         },
         {
-          name: 'Purchase the singles on bandcamp here',
+          name: 'Purchase the singles on Bandcamp here',
           url: 'https://betinaquest.bandcamp.com/music'
         },
         {
