@@ -10,7 +10,8 @@
         <img v-if="article.illus" :src="require(`@/assets/${article.illus}`)" />
         <p v-if="article.credit_illu"><i>Photo by {{article.credit_illu}}</i></p>
         <div class="bandcamp" v-if="article.bandcamp_id && article.bandcamp_link">
-          <iframe style="border: 0; max-width: 600px; width: 100%; height: 120px;" :src="`https://bandcamp.com/EmbeddedPlayer/album=${article.bandcamp_id}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true`" seamless><a :href="article.bandcamp_link"></a></iframe>
+          <iframe style="border: 0; width: 100%; height: 120px;" :src="`https://bandcamp.com/EmbeddedPlayer/track=${article.bandcamp_id}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/`" seamless v-if="article.isSingle"><a :href="article.bandcamp_link"></a></iframe>
+          <iframe style="border: 0; max-width: 600px; width: 100%; height: 120px;" :src="`https://bandcamp.com/EmbeddedPlayer/album=${article.bandcamp_id}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true`" seamless v-else><a :href="article.bandcamp_link"></a></iframe>
         </div>
         <p class="intro" v-if="article.introduction" v-html="article.introduction"></p>
       </div>

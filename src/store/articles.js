@@ -1160,7 +1160,96 @@ const mutations = {
           ]
         },
       ]
-    }
+    },
+    {
+      short_name: 'BETINA QUEST: ALWAYS EVOLVING',
+      name: 'BETINA QUEST: ALWAYS EVOLVING',
+      bandcamp_link: "https://betinaquest.bandcamp.com/track/ikangure",
+      bandcamp_id: "2360356237",
+      isSingle: true,
+      credit: '',
+      credit_illu: 'Tommy Wá',
+      author: 'Tanya Akinola',
+      date: '07/31/2020',
+      illus: 'articles/betinaquest/betina.jpg',
+      introduction: "Having now settled in Ghana after living across several countries and continents, German-Burundian artist Betina Quest channels her physical and sonic explorations into her most compelling piece of work yet. Fusing neo-soul and R&B with afro influences, her debut LP 'room in a room' emerges as an innovative cross-media art piece of music, poetry and photography that centres the experiences of African women. As Betina Quest explains: \"We have to own our stories to heal. And we have to heal to form healthier, saner societies. I often wondered how I could contribute to the change I want to see. This is it.\"<br>'room in a room' is out on the 11th of November and the full album is available exclusively through Betina Quest's website.",
+      links: [],
+      questions: [
+        {
+          type: 'question',
+          title: 'How are you and how have you been spending your time during this period of semi-lockdown?',
+          answer: "I am well thank you. I am mostly in the house either working, working out, catching up with my family and friends, cooking or just enjoying the silence."
+        },
+        {
+          type: 'question',
+          title: "Your latest body of work, 'room in a room' is due to release on the 11th of November. This will be your debut LP after releasing two EPs, the 'Questapes'. How are you feeling about it and how does this LP differ from your previous releases in your opinion?",
+          answer: "I’m very excited for the project to come out, because it’s very special to me. Comparatively it took a lot longer to come together than the questapes, so the story is more extensive, there are a lot more details to discover and it’s also the first time I implemented poetry and photography in a project. Musically as well, as personally I have grown a lot since my last questape which also sets ‘room in a room’ apart from my previous releases."
+        },
+        {
+          type: 'question',
+          title: "You explore themes on this album that I'm sure many members of the African diaspora are familiar with, such as: defining 'home', returning to your ancestral land, the barriers of language and defining oneself when you've lived between cultures. As you said, \"room in a room is about the human experience from a Black African female’s perspective.\" This LP is quite raw and personal, almost a diary of your experiences. Would you agree and did you intend to create an album with a specific message or did it just come together naturally?",
+          answer: "I would definitely agree with the project being very personal. It’s the only kind of art I know how to make. At the same time though, I believe I am telling not just my story, but someone else’s as well. At the very least I am sharing the story to encourage others to own theirs. I can’t say I had a specific message in mind when I first started putting the project together. As much as I generally gravitate towards genuine storytelling I wouldn’t say I knew exactly where I was going. Rather it came together naturally.",
+        },
+        {
+          type: 'question',
+          title: "You've lived in a few different countries over the past decade. How has living across different countries and cultural experiences and now settling in Ghana shaped 'room in a room' and your approach to creating music?",
+          answer: "All the cultures inhabiting me certainly shape my story and therefore infuse 'room in a room' with everything it has become. The most obvious example of that being that the virtual gallery we have created to exhibit the project will exist in six languages representing all the places I have been to and all the people I have met, but also almost personally inviting all of them to discover this creation they are somehow a part of. Musically I was interested in combining my favorites of smooth soul and mellow hip hop beats with anything afro. I wanted to explore both contemporary and traditional melody, harmony, chord progression, rhythm, language - all of that - and fuse those influences. Settling in Ghana definitely allowed me to expand that part of my vocabulary and express that fusion I have envisioned since 'questape vol. 2' that much more.",
+        },
+        {
+          type: 'question',
+          title: "There's a variety of musical influences on the album, though a fusion of soul, R&B and jazz beautifully take centre stage on a lot of the tracks. Can you tell us from your perspective a bit more about what types of sounds you were drawn to explore on this album and why?",
+          answer: "As I briefly mentioned before I would say my main influences in the beginning of my music making were people like Erykah Badu, Tweet, Jill Scott, Robert Glasper, J Dilla, Georgia Anne Muldrow. It’s because I was always drawn to and curious about Black culture, though growing up Afro American culture was more accessible to me than African pop culture. I always felt there was something missing though, because that so-called 'neo soul' sound felt like I had borrowed it and it told just half of my story. And so I began introducing Afro influences to my sound to represent that part of me as well. Settling in Ghana was - musically as well as personally - a very significant homecoming."
+        },
+        {
+          type: 'image',
+          path: 'articles/betinaquest/betina2.jpg',
+          author: 'Tommy Wá'
+        },
+        {
+          type: 'question',
+          title: "I read that this project took two and a half years to make and that it almost made you want to quit music entirely. What led you back to completing the album and inspired you to see it through and keep going?",
+          answer: "Taking a break was what allowed me to come back. 100%. I needed to regroup, inject a healthier energy and approach to my career and somewhat start over. Being a DIY independent solo artist is tough! But at the end of the day I realized it’s indeed what I want to do - I just had to identify healthier ways of doing it."
+        },
+        {
+          type: 'question',
+          title: "And what did you learn about yourself as an artist during this time?",
+          answer: "I learnt I am capable of more than I thought I was. I learnt I can not collaborate with just anybody. And I learnt I really quite like the artist I am becoming :)"
+        },
+        {
+          type: 'question',
+          title: "You have your own website where you sell your music and have spoken about the importance of artists receiving the bulk of profit from their work, as well as finding where you draw the line as an artist with exploitative major platforms like Spotify. Is this something you were concerned with from the outset of your career in music or something you learned along the way?",
+          answer: "It is definitely something I was always alarmed by. Musicians are too often underpaid and overall not appreciated the way I believe we should be. I first realized that when I started playing cover gigs and had to grow the courage to say no to those paying horrifically little and demand for what I believe I deserve. As I am diversifying my revenue streams though, I realize exploitation is everywhere. Instead of losing myself in frustration, however, I try to identify ways of how I can contribute to a system that favors me as an independent artist and that allows my listeners to support me sustainably. It requires a lot of research, trial and error and certainly a constant dialogue with my audience, but I trust it will be worth it. Especially if I get to pass this blueprint on to other creatives!"
+        },
+        {
+          type: 'question',
+          title: "Can you explain the concept behind the virtual gallery and how you want fans to interact with the album in this digital space given the absence of live performance due to COVID-19?",
+          answer: "The concept of the virtual gallery is basically to globally provide a virtual space to experience 'room in a room'. We created a photograph for each track and wanted to appreciate the lyrics for the poetry they are. In the gallery you will be able to listen to each song while reading along and viewing the photograph all at once. As I explained earlier we translated the poems to Kirundi, German, French, Spanish and Japanese. Our interactive platform 'room in a room in a www' - possibly the most important element of the project - is designed to allow you to own and share your story. As I said before it is not just about me, but about all of us. It is about being represented as well as being a representation to somebody else. It is about owning your story to live more wholeheartedly. And it is about understanding each other a little better to form healthier societies which, in my opinion, has proven to be more relevant and urgent now than ever. The distance we all experience can be challenging to bridge via the internet, but we hope this virtual gallery enables you to slow down for a while and genuinely reconnect with yourself and others."
+        },
+        {
+          type: 'question',
+          title: "What is something you hope listeners, and more specifically African people and African women, are able to take away from listening to this album?",
+          answer: "I understand the temptation of wanting anyone, but especially my people and my fellow African women to take away something particular from the work. But the truth - and beauty - is it is out of my control. I believe the album has many many gifts to offer, so I hope - and I trust - that everyone takes away from it exactly what it is they need. Whatever that may be :)"
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase on her website here',
+          url: 'https://www.betinaquest.com/'
+        },
+        {
+          name: 'Purchase the singles on Bandcamp here',
+          url: 'https://betinaquest.bandcamp.com/music'
+        },
+        {
+          name: 'Follow Betina Quest here',
+          url: 'https://www.instagram.com/betinaquest/?hl=en'
+        },
+        {
+          name: 'Follow Tanya Akinola here',
+          url: 'https://www.instagram.com/tanyaakinola/'
+        }
+      ]
+    },
     ]))
     state.current = payload
   },
@@ -2312,6 +2401,95 @@ const mutations = {
             }
           ]
         },
+      ]
+    },
+    {
+      short_name: 'BETINA QUEST: ALWAYS EVOLVING',
+      name: 'BETINA QUEST: ALWAYS EVOLVING',
+      bandcamp_link: "https://betinaquest.bandcamp.com/track/ikangure",
+      bandcamp_id: "2360356237",
+      isSingle: true,
+      credit: '',
+      credit_illu: 'Tommy Wá',
+      author: 'Tanya Akinola',
+      date: '07/31/2020',
+      illus: 'articles/betinaquest/betina.jpg',
+      introduction: "Having now settled in Ghana after living across several countries and continents, German-Burundian artist Betina Quest channels her physical and sonic explorations into her most compelling piece of work yet. Fusing neo-soul and R&B with afro influences, her debut LP 'room in a room' emerges as an innovative cross-media art piece of music, poetry and photography that centres the experiences of African women. As Betina Quest explains: \"We have to own our stories to heal. And we have to heal to form healthier, saner societies. I often wondered how I could contribute to the change I want to see. This is it.\"<br>'room in a room' is out on the 11th of November and the full album is available exclusively through Betina Quest's website.",
+      links: [],
+      questions: [
+        {
+          type: 'question',
+          title: 'How are you and how have you been spending your time during this period of semi-lockdown?',
+          answer: "I am well thank you. I am mostly in the house either working, working out, catching up with my family and friends, cooking or just enjoying the silence."
+        },
+        {
+          type: 'question',
+          title: "Your latest body of work, 'room in a room' is due to release on the 11th of November. This will be your debut LP after releasing two EPs, the 'Questapes'. How are you feeling about it and how does this LP differ from your previous releases in your opinion?",
+          answer: "I’m very excited for the project to come out, because it’s very special to me. Comparatively it took a lot longer to come together than the questapes, so the story is more extensive, there are a lot more details to discover and it’s also the first time I implemented poetry and photography in a project. Musically as well, as personally I have grown a lot since my last questape which also sets ‘room in a room’ apart from my previous releases."
+        },
+        {
+          type: 'question',
+          title: "You explore themes on this album that I'm sure many members of the African diaspora are familiar with, such as: defining 'home', returning to your ancestral land, the barriers of language and defining oneself when you've lived between cultures. As you said, \"room in a room is about the human experience from a Black African female’s perspective.\" This LP is quite raw and personal, almost a diary of your experiences. Would you agree and did you intend to create an album with a specific message or did it just come together naturally?",
+          answer: "I would definitely agree with the project being very personal. It’s the only kind of art I know how to make. At the same time though, I believe I am telling not just my story, but someone else’s as well. At the very least I am sharing the story to encourage others to own theirs. I can’t say I had a specific message in mind when I first started putting the project together. As much as I generally gravitate towards genuine storytelling I wouldn’t say I knew exactly where I was going. Rather it came together naturally.",
+        },
+        {
+          type: 'question',
+          title: "You've lived in a few different countries over the past decade. How has living across different countries and cultural experiences and now settling in Ghana shaped 'room in a room' and your approach to creating music?",
+          answer: "All the cultures inhabiting me certainly shape my story and therefore infuse 'room in a room' with everything it has become. The most obvious example of that being that the virtual gallery we have created to exhibit the project will exist in six languages representing all the places I have been to and all the people I have met, but also almost personally inviting all of them to discover this creation they are somehow a part of. Musically I was interested in combining my favorites of smooth soul and mellow hip hop beats with anything afro. I wanted to explore both contemporary and traditional melody, harmony, chord progression, rhythm, language - all of that - and fuse those influences. Settling in Ghana definitely allowed me to expand that part of my vocabulary and express that fusion I have envisioned since 'questape vol. 2' that much more.",
+        },
+        {
+          type: 'question',
+          title: "There's a variety of musical influences on the album, though a fusion of soul, R&B and jazz beautifully take centre stage on a lot of the tracks. Can you tell us from your perspective a bit more about what types of sounds you were drawn to explore on this album and why?",
+          answer: "As I briefly mentioned before I would say my main influences in the beginning of my music making were people like Erykah Badu, Tweet, Jill Scott, Robert Glasper, J Dilla, Georgia Anne Muldrow. It’s because I was always drawn to and curious about Black culture, though growing up Afro American culture was more accessible to me than African pop culture. I always felt there was something missing though, because that so-called 'neo soul' sound felt like I had borrowed it and it told just half of my story. And so I began introducing Afro influences to my sound to represent that part of me as well. Settling in Ghana was - musically as well as personally - a very significant homecoming."
+        },
+        {
+          type: 'image',
+          path: 'articles/betinaquest/betina2.jpg',
+          author: 'Tommy Wá'
+        },
+        {
+          type: 'question',
+          title: "I read that this project took two and a half years to make and that it almost made you want to quit music entirely. What led you back to completing the album and inspired you to see it through and keep going?",
+          answer: "Taking a break was what allowed me to come back. 100%. I needed to regroup, inject a healthier energy and approach to my career and somewhat start over. Being a DIY independent solo artist is tough! But at the end of the day I realized it’s indeed what I want to do - I just had to identify healthier ways of doing it."
+        },
+        {
+          type: 'question',
+          title: "And what did you learn about yourself as an artist during this time?",
+          answer: "I learnt I am capable of more than I thought I was. I learnt I can not collaborate with just anybody. And I learnt I really quite like the artist I am becoming :)"
+        },
+        {
+          type: 'question',
+          title: "You have your own website where you sell your music and have spoken about the importance of artists receiving the bulk of profit from their work, as well as finding where you draw the line as an artist with exploitative major platforms like Spotify. Is this something you were concerned with from the outset of your career in music or something you learned along the way?",
+          answer: "It is definitely something I was always alarmed by. Musicians are too often underpaid and overall not appreciated the way I believe we should be. I first realized that when I started playing cover gigs and had to grow the courage to say no to those paying horrifically little and demand for what I believe I deserve. As I am diversifying my revenue streams though, I realize exploitation is everywhere. Instead of losing myself in frustration, however, I try to identify ways of how I can contribute to a system that favors me as an independent artist and that allows my listeners to support me sustainably. It requires a lot of research, trial and error and certainly a constant dialogue with my audience, but I trust it will be worth it. Especially if I get to pass this blueprint on to other creatives!"
+        },
+        {
+          type: 'question',
+          title: "Can you explain the concept behind the virtual gallery and how you want fans to interact with the album in this digital space given the absence of live performance due to COVID-19?",
+          answer: "The concept of the virtual gallery is basically to globally provide a virtual space to experience 'room in a room'. We created a photograph for each track and wanted to appreciate the lyrics for the poetry they are. In the gallery you will be able to listen to each song while reading along and viewing the photograph all at once. As I explained earlier we translated the poems to Kirundi, German, French, Spanish and Japanese. Our interactive platform 'room in a room in a www' - possibly the most important element of the project - is designed to allow you to own and share your story. As I said before it is not just about me, but about all of us. It is about being represented as well as being a representation to somebody else. It is about owning your story to live more wholeheartedly. And it is about understanding each other a little better to form healthier societies which, in my opinion, has proven to be more relevant and urgent now than ever. The distance we all experience can be challenging to bridge via the internet, but we hope this virtual gallery enables you to slow down for a while and genuinely reconnect with yourself and others."
+        },
+        {
+          type: 'question',
+          title: "What is something you hope listeners, and more specifically African people and African women, are able to take away from listening to this album?",
+          answer: "I understand the temptation of wanting anyone, but especially my people and my fellow African women to take away something particular from the work. But the truth - and beauty - is it is out of my control. I believe the album has many many gifts to offer, so I hope - and I trust - that everyone takes away from it exactly what it is they need. Whatever that may be :)"
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase on her website here',
+          url: 'https://www.betinaquest.com/'
+        },
+        {
+          name: 'Purchase the singles on Bandcamp here',
+          url: 'https://betinaquest.bandcamp.com/music'
+        },
+        {
+          name: 'Follow Betina Quest here',
+          url: 'https://www.instagram.com/betinaquest/'
+        },
+        {
+          name: 'Follow Tanya Akinola here',
+          url: 'https://www.instagram.com/tanyaakinola/'
+        }
       ]
     }
     ]))
