@@ -1251,8 +1251,8 @@ const mutations = {
       ]
     },
     {
-      short_name: 'SPIRITUAL JAZZ  AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
-      name: 'SPIRITUAL JAZZ  AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
+      short_name: 'SPIRITUAL JAZZ AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
+      name: 'SPIRITUAL JAZZ AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
       bandcamp_link: "https://pyramidprojectfeatcontours.bandcamp.com/album/mangroves-ep",
       bandcamp_id: "1941076607",
       isSingle: false,
@@ -2557,8 +2557,8 @@ const mutations = {
       ]
     },
     {
-      short_name: 'SPIRITUAL JAZZ  AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
-      name: 'SPIRITUAL JAZZ  AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
+      short_name: 'SPIRITUAL JAZZ AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
+      name: 'SPIRITUAL JAZZ AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
       bandcamp_link: "https://pyramidprojectfeatcontours.bandcamp.com/album/mangroves-ep",
       bandcamp_id: "1941076607",
       isSingle: false,
