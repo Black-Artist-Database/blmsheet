@@ -1250,6 +1250,148 @@ const mutations = {
         }
       ]
     },
+    {
+      short_name: 'SPIRITUAL JAZZ AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
+      name: 'SPIRITUAL JAZZ AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
+      bandcamp_link: "https://pyramidprojectfeatcontours.bandcamp.com/album/mangroves-ep",
+      bandcamp_id: "1941076607",
+      isSingle: false,
+      credit: '',
+      credit_illu: '',
+      author: 'Lauryn Njeri',
+      date: '07/31/2020',
+      illus: 'articles/pyramid/pyramid.jpg',
+      introduction: "Created in just 2 days back in 2018, \"<b>Mangroves</b>\" is a 4-track collaborative EP between UK producer <b>Contours</b> and a selection of Kenya’s most accomplished musicians, formed as <b>Pyramid Project</b>, by ADA Records Label Head, <b>Lasta</b>.<br><br>Each track on the EP sizzles with an improvised approach resulting in an electric vibe that provides a truly live feel.The instrumental journey begins in a climate of mystery before immersing you into a ferocious yet atmospheric Swahili Jazz composition, \"<b>Mangroves</b>\".  The track is birthed by percussive instruments that are then awakened by a toying bassline that soon builds into a driving riff with skipping drums.<br><br><b>Contours</b> is on percussion with the Space Echo, <b>Katumba</b> is on the drums providing the Afro-Rhythms, and <b>Abaki Simba's Masta</b> and <b>Inspekta</b> on Percussion. The track flawlessly ebbs and flows allowing young pianist <b>Mutoriah to</b> take the lead.<br><br>Pyramid Project kicks up the energy on an electric Afro-Disco composition, \"<b>Driver</b>\" which is led by  the sounds of the Orutu, a single-stringed fiddle from Western Kenya, played by <b>Boaz Jagingo</b>. The disco melody quickly builds to uplifting Drum and Bass before dropping away  to reveal Jagingo’s Echo’s in the hook lifting the track as he depicts a busy Kenyan Central Business District.<br><br>Surrounded by a four-piece percussion section, the excitement of the live recording shines through as <b>Abaki Simba</b> faces off <b>Katumba</b> in a percussive breakdown.  The song is then lifted again by Jagingo’s rhythmic chants blended with the energetic Drum and Bass of <b>Contours</b> and <b>Mbaluka</b>.<br><br>Black Bandcamp caught up with <b>Lasta</b>, producer and spearhead of the sublime collective, to learn about their creative process in the making of their enchanting brainchild.",
+      links: [],
+      questions: [
+        {
+          type: 'question',
+          title: "Tell us the story behind your intriguing name, “The Pyramid Project” and how you all came together.",
+          answer: "The band were brought together by ADA Records label head Lasta to collaborate with  who was visiting East Africa at the time. The label saw this as a great opportunity to shine a light on some of Kenya’s amazing musicians and the tradition of live music that they are keeping alive.<br><br>The name 'The Pyramid Project' came about to add an air of mystery and a sense of ancient spiritualism and culture to the project. The idea is that each composition is not overly thought out, instead an improvised approach is adopted, calling on ancestral sounds and translating them through the conduit of today’s Kenyan musicians."
+        },
+        {
+          type: 'question',
+          title: "Mangroves was recorded in an impressive 2 days. How was the process of composing and writing the EP?",
+          answer: "It was intense! But we allocated 1 day to each of the original compositions for song writing, rehearsing the final recording, of which there were only 3 takes. This ensured true collaboration in the song writing, and a truly live feel with the magic coming through the improvised elements. Such a process meant that the whole day was focussed on 1 song and didn’t allow for any slump in creativity. With so many creative minds in the room, the energy and excitement was real! There was no time for big mistakes in the recordings, but the calibre of musicians meant that there was no need for concern."
+        },
+        {
+          type: 'image',
+          path: 'articles/pyramid/pyramid2.jpg'
+        },
+        {
+          type: 'question',
+          title: "What was the atmosphere you were striving for when the band created this piece of work?",
+          answer: "Mangroves was intended to be a souring spiritual jazz number, with heavy Swahili influence. The idea was to channel coastal rhythms and melodies and tell a story with a beginning, middle and end, and lots of drama. Mutoriah’s key solo really brought this through backed up by a pulsating rhythm and percussion section.<br><br>Driver was intended more for the dancefloor, channelling an Afro-Disco vibe, but looking to Western Kenya for its distinct Oruto sound by Boaz Jagingo. The image is that of a busy CBD in Kenya, translated by a percussive battle between Abaki Simba and Gervais Katumba. This is a track to groove to."
+        },
+        {
+          type: 'question',
+          title: "So how does the dynamic work in the group with nine of you? Is it led or does everyone have an input?",
+          answer: "The concept was brought together by ADA Records, but the songwriting was truly collaborative. Each track required the skills of different lead players, and once all the musicians were in the room together and the concept clarified, the song writing came together democratically, with each of the musicians having an equal say in the direction of each track."
+        },
+        {
+          type: 'question',
+          title: "What is the band’s vision in terms of creating an earspace for more alternative Kenyan music?",
+          answer: "With so many re-releases of great live music from the 70s and 80s, the concept of The Pyramid Project was to write and release live music that channeled the same energy and live excitement as the golden era, but with a contemporary take on it. The music is not strictly aligned with any specific Kenyan genre, but instead is free, bringing musicians from all parts of Kenya together to present a contemporary and alternative take on Kenyan live music today. This music is not necessarily for the mainstream Kenyan market, but more as an artistic comment, displaying the true talent and diversity of Kenyan music."
+        },
+        {
+          type: 'question',
+          title: "What would be a dream collaboration for the collective?",
+          answer: "All the band members would have a different answer for this and there are way too many Kenyan and international producers that we would love to work with. However, there is another release in the wings, with a different selection of Kenyan artists, hold tight for more info. But to try and answer the question, the Godfather of contemporary, alternative music from Kenya today is Blinky Bill, so Bill if you like what you hear, give us a call!!!"
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase on Bandcamp here',
+          url: 'https://pyramidprojectfeatcontours.bandcamp.com/album/mangroves-ep'
+        },
+        {
+          name: 'Follow ADA Records here',
+          url: 'https://www.instagram.com/adarecordske'
+        },
+        {
+          name: 'Follow Tanya Akinola here',
+          url: 'https://www.instagram.com/laurynlikethehills_'
+        }
+      ]
+    },
+    {
+      short_name: 'AGAINST ALL ODDS',
+      name: 'CHANNEL U & AGAINST ALL ODS: IN CONVERSATION WITH NICO TYLER JAMES',
+      isSingle: false,
+      credit_illu: '',
+      author: 'Tochi Chelsea',
+      date: '11/13/2020',
+      illus: 'articles/nico/nico.jpeg',
+      introduction: "SBTV, GRM Daily and Mixtape Madness have become household names in the Grime and UK Rap scene, but before them was their forefather - Channel U. Beginning in 2003, the channel provided a platform for up and coming artists in underground genres such as Grime. From Wiley to Bashy, there was nowhere else you could find a space as dedicated to fresh Black talent as Channel U.<br><br>The platform was integral to the popularising of bangers such as Lethal Bizzle's Forward, Kano's P's & Q's and Dizzee Rascal's I Love U. Following its name change to Channel AKA, the channel stopped being broadcast in 2018 and Grime lovers especially have had their Channel U nostalgia confined to hazy memories.<br><br>However, the channel is now making its return. After two years off of the air, Channel U is \
+        relaunching with the premier of the first ever Grime-film Against All Odds. With star-studded cast \
+        members including Richard Blackwood, Jammer and Ghetts, Grime and lovers of the culture are \
+        anticipating its release. The film follows the plight of young rapper MC Active, played by Nico \
+        Tyler James, as he struggles to prove his stake in the Grime scene. \
+        Ahead of the premier, Black Bandcamp spoke with Nico about his acting career and his \
+        relationship with Channel U and Grime:",
+      questions: [
+        {
+          type: 'question',
+          title: 'Tochi: When did you first begin acting and how did you know it\'s what you wanted to do?',
+          answer: 'Nico: Acting was the first thing I ever wanted to do growing up. I used to, and still do, idolise Will Smith and Denzel Washington. I think acting first sparked my interest when I was 7 years old, if I had to put an age on it.'
+        },
+        {
+          type: 'question',
+          title: 'How did the opportunity to play MC Active in Against All Odds come about?',
+          answer: 'Well I\'ve known Femi (director of Against All Odds) since I was about 13-14 years old, maybe even younger. I starred in a short film that he wrote and directed at the beginning of his career and this is where we first met, so I\'ve actually known him for a long time. When the opportunity came about he gave me a call asking me to audition and now here we are!',
+        },
+        {
+          type: 'question',
+          title: 'What was the hardest part about filming for you?',
+          answer: 'There\'s a lot of waiting around when on set and I\'m very impatient so I found that quite draining. I love getting in front of the camera and doing my thing, but the waiting part is not ideal.'
+        },
+        {
+          type: 'question',
+          title: 'Are there any similarities between you and MC Active?',
+          answer: 'I would say there are a few similarities between us. MC Active is young, fearless and super passionate about what he does, and I am too. I\'d always been pitted against olders in my area too which was daunting at times, but the difference with Active is that type of competition doesn\'t phase him at all.'
+        },
+        {
+          type: 'question',
+          title: 'What did Channel U mean to you when it was first on air and how do you feel about it making a return?',
+          answer: 'Channel U meant a lot to me. It gave me hope for the UK scene and introduced me to British artists I wouldn\'t have been exposed to if not for the channel. It gave those with an urban identity a platform to showcase our culture and it was definitely the first of its kind, there was nothing else like it.'
+        },
+        {
+          type: 'question',
+          title: 'Against All Odds is the first ever Grime film, do you think this is one of the ways the genre can be kept alive?',
+          answer: 'I do! I think Grime has played a massive part in shaping UK music today. I can even hear similarities in genres like UK Drill today; it\'s like a slower version of grime almost.'
+        },
+        {
+          type: 'question',
+          title: 'Who are your favourite grime artists of all time?',
+          answer: 'This is tricky for me. I would say I have favourite moments rather than artists. For example, Kano Vs Wiley\'s Lord of the Mics was legendary, as was Ghetts vs P Money - both are my favourite clashes of all time. Grime produces loads of amazing moments.'
+        },
+        {
+          type: 'question',
+          title: 'How was it working alongside Black British legends such as D Double E and Richard Blackwood?',
+          answer: 'I was in awe the whole time to be honest. D Double E is a super legend! Working with Richard was very different, or rather special. He plays MC Active\'s dad in the film and he offered so much insight both on and off set. The encouragement he offered alone was invaluable and it\'s not everyday you get to work with the first Black comedian to have his own TV show in the UK!'
+        },
+        {
+          type: 'question',
+          title: 'What advice would you give to actors younger than yourself?',
+          answer: 'Stay focused, have tunnel vision and be relentless. It’s a hard grind but if you stay on track and you put your all into it you will get where you want to be sooner rather than later.'
+        },
+        {
+          type: 'question',
+          title: '',
+          answer: 'Against All Odds will premiere on Channel U on the 13th November.'
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Follow Nico Tyler James here',
+          url: 'https://www.instagram.com/navtyler_/'
+        },
+        {
+          name: 'Follow Tochi Chelsea here',
+          url: 'https://www.instagram.com/tochichels/'
+        }
+      ]
+    }
     ]))
     state.current = payload
   },
@@ -2489,6 +2631,148 @@ const mutations = {
         {
           name: 'Follow Tanya Akinola here',
           url: 'https://www.instagram.com/tanyaakinola/'
+        }
+      ]
+    },
+    {
+      short_name: 'SPIRITUAL JAZZ AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
+      name: 'SPIRITUAL JAZZ AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
+      bandcamp_link: "https://pyramidprojectfeatcontours.bandcamp.com/album/mangroves-ep",
+      bandcamp_id: "1941076607",
+      isSingle: false,
+      credit: '',
+      credit_illu: '',
+      author: 'Lauryn Njeri',
+      date: '07/31/2020',
+      illus: 'articles/pyramid/pyramid.jpg',
+      introduction: "Created in just 2 days back in 2018, \"<b>Mangroves</b>\" is a 4-track collaborative EP between UK producer <b>Contours</b> and a selection of Kenya’s most accomplished musicians, formed as <b>Pyramid Project</b>, by ADA Records Label Head, <b>Lasta</b>.<br><br>Each track on the EP sizzles with an improvised approach resulting in an electric vibe that provides a truly live feel.The instrumental journey begins in a climate of mystery before immersing you into a ferocious yet atmospheric Swahili Jazz composition, \"<b>Mangroves</b>\".  The track is birthed by percussive instruments that are then awakened by a toying bassline that soon builds into a driving riff with skipping drums.<br><br><b>Contours</b> is on percussion with the Space Echo, <b>Katumba</b> is on the drums providing the Afro-Rhythms, and <b>Abaki Simba's Masta</b> and <b>Inspekta</b> on Percussion. The track flawlessly ebbs and flows allowing young pianist <b>Mutoriah to</b> take the lead.<br><br>Pyramid Project kicks up the energy on an electric Afro-Disco composition, \"<b>Driver</b>\" which is led by  the sounds of the Orutu, a single-stringed fiddle from Western Kenya, played by <b>Boaz Jagingo</b>. The disco melody quickly builds to uplifting Drum and Bass before dropping away  to reveal Jagingo’s Echo’s in the hook lifting the track as he depicts a busy Kenyan Central Business District.<br><br>Surrounded by a four-piece percussion section, the excitement of the live recording shines through as <b>Abaki Simba</b> faces off <b>Katumba</b> in a percussive breakdown.  The song is then lifted again by Jagingo’s rhythmic chants blended with the energetic Drum and Bass of <b>Contours</b> and <b>Mbaluka</b>.<br><br>Black Bandcamp caught up with <b>Lasta</b>, producer and spearhead of the sublime collective, to learn about their creative process in the making of their enchanting brainchild.",
+      links: [],
+      questions: [
+        {
+          type: 'question',
+          title: "Tell us the story behind your intriguing name, “The Pyramid Project” and how you all came together.",
+          answer: "The band were brought together by ADA Records label head Lasta to collaborate with  who was visiting East Africa at the time. The label saw this as a great opportunity to shine a light on some of Kenya’s amazing musicians and the tradition of live music that they are keeping alive.<br><br>The name 'The Pyramid Project' came about to add an air of mystery and a sense of ancient spiritualism and culture to the project. The idea is that each composition is not overly thought out, instead an improvised approach is adopted, calling on ancestral sounds and translating them through the conduit of today’s Kenyan musicians."
+        },
+        {
+          type: 'question',
+          title: "Mangroves was recorded in an impressive 2 days. How was the process of composing and writing the EP?",
+          answer: "It was intense! But we allocated 1 day to each of the original compositions for song writing, rehearsing the final recording, of which there were only 3 takes. This ensured true collaboration in the song writing, and a truly live feel with the magic coming through the improvised elements. Such a process meant that the whole day was focussed on 1 song and didn’t allow for any slump in creativity. With so many creative minds in the room, the energy and excitement was real! There was no time for big mistakes in the recordings, but the calibre of musicians meant that there was no need for concern."
+        },
+        {
+          type: 'image',
+          path: 'articles/pyramid/pyramid2.jpg'
+        },
+        {
+          type: 'question',
+          title: "What was the atmosphere you were striving for when the band created this piece of work?",
+          answer: "Mangroves was intended to be a souring spiritual jazz number, with heavy Swahili influence. The idea was to channel coastal rhythms and melodies and tell a story with a beginning, middle and end, and lots of drama. Mutoriah’s key solo really brought this through backed up by a pulsating rhythm and percussion section.<br><br>Driver was intended more for the dancefloor, channelling an Afro-Disco vibe, but looking to Western Kenya for its distinct Oruto sound by Boaz Jagingo. The image is that of a busy CBD in Kenya, translated by a percussive battle between Abaki Simba and Gervais Katumba. This is a track to groove to."
+        },
+        {
+          type: 'question',
+          title: "So how does the dynamic work in the group with nine of you? Is it led or does everyone have an input?",
+          answer: "The concept was brought together by ADA Records, but the songwriting was truly collaborative. Each track required the skills of different lead players, and once all the musicians were in the room together and the concept clarified, the song writing came together democratically, with each of the musicians having an equal say in the direction of each track."
+        },
+        {
+          type: 'question',
+          title: "What is the band’s vision in terms of creating an earspace for more alternative Kenyan music?",
+          answer: "With so many re-releases of great live music from the 70s and 80s, the concept of The Pyramid Project was to write and release live music that channeled the same energy and live excitement as the golden era, but with a contemporary take on it. The music is not strictly aligned with any specific Kenyan genre, but instead is free, bringing musicians from all parts of Kenya together to present a contemporary and alternative take on Kenyan live music today. This music is not necessarily for the mainstream Kenyan market, but more as an artistic comment, displaying the true talent and diversity of Kenyan music."
+        },
+        {
+          type: 'question',
+          title: "What would be a dream collaboration for the collective?",
+          answer: "All the band members would have a different answer for this and there are way too many Kenyan and international producers that we would love to work with. However, there is another release in the wings, with a different selection of Kenyan artists, hold tight for more info. But to try and answer the question, the Godfather of contemporary, alternative music from Kenya today is Blinky Bill, so Bill if you like what you hear, give us a call!!!"
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase on Bandcamp here',
+          url: 'https://pyramidprojectfeatcontours.bandcamp.com/album/mangroves-ep'
+        },
+        {
+          name: 'Follow ADA Records here',
+          url: 'https://www.instagram.com/adarecordske'
+        },
+        {
+          name: 'Follow Tanya Akinola here',
+          url: 'https://www.instagram.com/laurynlikethehills_'
+        }
+      ]
+    },
+    {
+      short_name: 'AGAINST ALL ODDS',
+      name: 'CHANNEL U & AGAINST ALL ODDS: IN CONVERSATION WITH NICO TYLER JAMES',
+      isSingle: false,
+      credit_illu: '',
+      author: 'Tochi Chelsea',
+      date: '11/13/2020',
+      illus: 'articles/nico/nico.jpeg',
+      introduction: "SBTV, GRM Daily and Mixtape Madness have become household names in the Grime and UK Rap scene, but before them was their forefather - Channel U. Beginning in 2003, the channel provided a platform for up and coming artists in underground genres such as Grime. From Wiley to Bashy, there was nowhere else you could find a space as dedicated to fresh Black talent as Channel U.<br><br>The platform was integral to the popularising of bangers such as Lethal Bizzle's Forward, Kano's P's & Q's and Dizzee Rascal's I Love U. Following its name change to Channel AKA, the channel stopped being broadcast in 2018 and Grime lovers especially have had their Channel U nostalgia confined to hazy memories.<br><br>However, the channel is now making its return. After two years off of the air, Channel U is \
+        relaunching with the premier of the first ever Grime-film Against All Odds. With star-studded cast \
+        members including Richard Blackwood, Jammer and Ghetts, Grime and lovers of the culture are \
+        anticipating its release. The film follows the plight of young rapper MC Active, played by Nico \
+        Tyler James, as he struggles to prove his stake in the Grime scene. \
+        Ahead of the premier, Black Bandcamp spoke with Nico about his acting career and his \
+        relationship with Channel U and Grime:",
+      questions: [
+        {
+          type: 'question',
+          title: 'Tochi: When did you first begin acting and how did you know it\'s what you wanted to do?',
+          answer: 'Nico: Acting was the first thing I ever wanted to do growing up. I used to, and still do, idolise Will Smith and Denzel Washington. I think acting first sparked my interest when I was 7 years old, if I had to put an age on it.'
+        },
+        {
+          type: 'question',
+          title: 'How did the opportunity to play MC Active in Against All Odds come about?',
+          answer: 'Well I\'ve known Femi (director of Against All Odds) since I was about 13-14 years old, maybe even younger. I starred in a short film that he wrote and directed at the beginning of his career and this is where we first met, so I\'ve actually known him for a long time. When the opportunity came about he gave me a call asking me to audition and now here we are!',
+        },
+        {
+          type: 'question',
+          title: 'What was the hardest part about filming for you?',
+          answer: 'There\'s a lot of waiting around when on set and I\'m very impatient so I found that quite draining. I love getting in front of the camera and doing my thing, but the waiting part is not ideal.'
+        },
+        {
+          type: 'question',
+          title: 'Are there any similarities between you and MC Active?',
+          answer: 'I would say there are a few similarities between us. MC Active is young, fearless and super passionate about what he does, and I am too. I\'d always been pitted against olders in my area too which was daunting at times, but the difference with Active is that type of competition doesn\'t phase him at all.'
+        },
+        {
+          type: 'question',
+          title: 'What did Channel U mean to you when it was first on air and how do you feel about it making a return?',
+          answer: 'Channel U meant a lot to me. It gave me hope for the UK scene and introduced me to British artists I wouldn\'t have been exposed to if not for the channel. It gave those with an urban identity a platform to showcase our culture and it was definitely the first of its kind, there was nothing else like it.'
+        },
+        {
+          type: 'question',
+          title: 'Against All Odds is the first ever Grime film, do you think this is one of the ways the genre can be kept alive?',
+          answer: 'I do! I think Grime has played a massive part in shaping UK music today. I can even hear similarities in genres like UK Drill today; it\'s like a slower version of grime almost.'
+        },
+        {
+          type: 'question',
+          title: 'Who are your favourite grime artists of all time?',
+          answer: 'This is tricky for me. I would say I have favourite moments rather than artists. For example, Kano Vs Wiley\'s Lord of the Mics was legendary, as was Ghetts vs P Money - both are my favourite clashes of all time. Grime produces loads of amazing moments.'
+        },
+        {
+          type: 'question',
+          title: 'How was it working alongside Black British legends such as D Double E and Richard Blackwood?',
+          answer: 'I was in awe the whole time to be honest. D Double E is a super legend! Working with Richard was very different, or rather special. He plays MC Active\'s dad in the film and he offered so much insight both on and off set. The encouragement he offered alone was invaluable and it\'s not everyday you get to work with the first Black comedian to have his own TV show in the UK!'
+        },
+        {
+          type: 'question',
+          title: 'What advice would you give to actors younger than yourself?',
+          answer: 'Stay focused, have tunnel vision and be relentless. It’s a hard grind but if you stay on track and you put your all into it you will get where you want to be sooner rather than later.'
+        },
+        {
+          type: 'question',
+          title: '',
+          answer: 'Against All Odds will premiere on Channel U on the 13th November.'
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Follow Nico Tyler James here',
+          url: 'https://www.instagram.com/navtyler_/'
+        },
+        {
+          name: 'Follow Tochi Chelsea here',
+          url: 'https://www.instagram.com/tochichels/'
         }
       ]
     }
