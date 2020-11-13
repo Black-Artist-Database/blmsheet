@@ -1313,6 +1313,84 @@ const mutations = {
           url: 'https://www.instagram.com/laurynlikethehills_'
         }
       ]
+    },
+    {
+      short_name: 'AGAINST ALL ODDS',
+      name: 'CHANNEL U & AGAINST ALL ODS: IN CONVERSATION WITH NICO TYLER JAMES',
+      isSingle: false,
+      credit_illu: '',
+      author: 'Tochi Chelsea',
+      date: '11/13/2020',
+      illus: 'articles/nico/nico.jpeg',
+      introduction: "SBTV, GRM Daily and Mixtape Madness have become household names in the Grime and UK Rap scene, but before them was their forefather - Channel U. Beginning in 2003, the channel provided a platform for up and coming artists in underground genres such as Grime. From Wiley to Bashy, there was nowhere else you could find a space as dedicated to fresh Black talent as Channel U.<br><br>The platform was integral to the popularising of bangers such as Lethal Bizzle's Forward, Kano's P's & Q's and Dizzee Rascal's I Love U. Following its name change to Channel AKA, the channel stopped being broadcast in 2018 and Grime lovers especially have had their Channel U nostalgia confined to hazy memories.<br><br>However, the channel is now making its return. After two years off of the air, Channel U is \
+        relaunching with the premier of the first ever Grime-film Against All Odds. With star-studded cast \
+        members including Richard Blackwood, Jammer and Ghetts, Grime and lovers of the culture are \
+        anticipating its release. The film follows the plight of young rapper MC Active, played by Nico \
+        Tyler James, as he struggles to prove his stake in the Grime scene. \
+        Ahead of the premier, Black Bandcamp spoke with Nico about his acting career and his \
+        relationship with Channel U and Grime:",
+      questions: [
+        {
+          type: 'question',
+          title: 'Tochi: When did you first begin acting and how did you know it\'s what you wanted to do?',
+          answer: 'Nico: Acting was the first thing I ever wanted to do growing up. I used to, and still do, idolise Will Smith and Denzel Washington. I think acting first sparked my interest when I was 7 years old, if I had to put an age on it.'
+        },
+        {
+          type: 'question',
+          title: 'How did the opportunity to play MC Active in Against All Odds come about?',
+          answer: 'Well I\'ve known Femi (director of Against All Odds) since I was about 13-14 years old, maybe even younger. I starred in a short film that he wrote and directed at the beginning of his career and this is where we first met, so I\'ve actually known him for a long time. When the opportunity came about he gave me a call asking me to audition and now here we are!',
+        },
+        {
+          type: 'question',
+          title: 'What was the hardest part about filming for you?',
+          answer: 'There\'s a lot of waiting around when on set and I\'m very impatient so I found that quite draining. I love getting in front of the camera and doing my thing, but the waiting part is not ideal.'
+        },
+        {
+          type: 'question',
+          title: 'Are there any similarities between you and MC Active?',
+          answer: 'I would say there are a few similarities between us. MC Active is young, fearless and super passionate about what he does, and I am too. I\'d always been pitted against olders in my area too which was daunting at times, but the difference with Active is that type of competition doesn\'t phase him at all.'
+        },
+        {
+          type: 'question',
+          title: 'What did Channel U mean to you when it was first on air and how do you feel about it making a return?',
+          answer: 'Channel U meant a lot to me. It gave me hope for the UK scene and introduced me to British artists I wouldn\'t have been exposed to if not for the channel. It gave those with an urban identity a platform to showcase our culture and it was definitely the first of its kind, there was nothing else like it.'
+        },
+        {
+          type: 'question',
+          title: 'Against All Odds is the first ever Grime film, do you think this is one of the ways the genre can be kept alive?',
+          answer: 'I do! I think Grime has played a massive part in shaping UK music today. I can even hear similarities in genres like UK Drill today; it\'s like a slower version of grime almost.'
+        },
+        {
+          type: 'question',
+          title: 'Who are your favourite grime artists of all time?',
+          answer: 'This is tricky for me. I would say I have favourite moments rather than artists. For example, Kano Vs Wiley\'s Lord of the Mics was legendary, as was Ghetts vs P Money - both are my favourite clashes of all time. Grime produces loads of amazing moments.'
+        },
+        {
+          type: 'question',
+          title: 'How was it working alongside Black British legends such as D Double E and Richard Blackwood?',
+          answer: 'I was in awe the whole time to be honest. D Double E is a super legend! Working with Richard was very different, or rather special. He plays MC Active\'s dad in the film and he offered so much insight both on and off set. The encouragement he offered alone was invaluable and it\'s not everyday you get to work with the first Black comedian to have his own TV show in the UK!'
+        },
+        {
+          type: 'question',
+          title: 'What advice would you give to actors younger than yourself?',
+          answer: 'Stay focused, have tunnel vision and be relentless. It’s a hard grind but if you stay on track and you put your all into it you will get where you want to be sooner rather than later.'
+        },
+        {
+          type: 'question',
+          title: '',
+          answer: 'Against All Odds will premiere on Channel U on the 13th November.'
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Follow Nico Tyler James here',
+          url: 'https://www.instagram.com/navtyler_/'
+        },
+        {
+          name: 'Follow Tochi Chelsea here',
+          url: 'https://www.instagram.com/tochichels/'
+        }
+      ]
     }
     ]))
     state.current = payload
@@ -2617,6 +2695,84 @@ const mutations = {
         {
           name: 'Follow Tanya Akinola here',
           url: 'https://www.instagram.com/laurynlikethehills_'
+        }
+      ]
+    },
+    {
+      short_name: 'AGAINST ALL ODDS',
+      name: 'CHANNEL U & AGAINST ALL ODDS: IN CONVERSATION WITH NICO TYLER JAMES',
+      isSingle: false,
+      credit_illu: '',
+      author: 'Tochi Chelsea',
+      date: '11/13/2020',
+      illus: 'articles/nico/nico.jpeg',
+      introduction: "SBTV, GRM Daily and Mixtape Madness have become household names in the Grime and UK Rap scene, but before them was their forefather - Channel U. Beginning in 2003, the channel provided a platform for up and coming artists in underground genres such as Grime. From Wiley to Bashy, there was nowhere else you could find a space as dedicated to fresh Black talent as Channel U.<br><br>The platform was integral to the popularising of bangers such as Lethal Bizzle's Forward, Kano's P's & Q's and Dizzee Rascal's I Love U. Following its name change to Channel AKA, the channel stopped being broadcast in 2018 and Grime lovers especially have had their Channel U nostalgia confined to hazy memories.<br><br>However, the channel is now making its return. After two years off of the air, Channel U is \
+        relaunching with the premier of the first ever Grime-film Against All Odds. With star-studded cast \
+        members including Richard Blackwood, Jammer and Ghetts, Grime and lovers of the culture are \
+        anticipating its release. The film follows the plight of young rapper MC Active, played by Nico \
+        Tyler James, as he struggles to prove his stake in the Grime scene. \
+        Ahead of the premier, Black Bandcamp spoke with Nico about his acting career and his \
+        relationship with Channel U and Grime:",
+      questions: [
+        {
+          type: 'question',
+          title: 'Tochi: When did you first begin acting and how did you know it\'s what you wanted to do?',
+          answer: 'Nico: Acting was the first thing I ever wanted to do growing up. I used to, and still do, idolise Will Smith and Denzel Washington. I think acting first sparked my interest when I was 7 years old, if I had to put an age on it.'
+        },
+        {
+          type: 'question',
+          title: 'How did the opportunity to play MC Active in Against All Odds come about?',
+          answer: 'Well I\'ve known Femi (director of Against All Odds) since I was about 13-14 years old, maybe even younger. I starred in a short film that he wrote and directed at the beginning of his career and this is where we first met, so I\'ve actually known him for a long time. When the opportunity came about he gave me a call asking me to audition and now here we are!',
+        },
+        {
+          type: 'question',
+          title: 'What was the hardest part about filming for you?',
+          answer: 'There\'s a lot of waiting around when on set and I\'m very impatient so I found that quite draining. I love getting in front of the camera and doing my thing, but the waiting part is not ideal.'
+        },
+        {
+          type: 'question',
+          title: 'Are there any similarities between you and MC Active?',
+          answer: 'I would say there are a few similarities between us. MC Active is young, fearless and super passionate about what he does, and I am too. I\'d always been pitted against olders in my area too which was daunting at times, but the difference with Active is that type of competition doesn\'t phase him at all.'
+        },
+        {
+          type: 'question',
+          title: 'What did Channel U mean to you when it was first on air and how do you feel about it making a return?',
+          answer: 'Channel U meant a lot to me. It gave me hope for the UK scene and introduced me to British artists I wouldn\'t have been exposed to if not for the channel. It gave those with an urban identity a platform to showcase our culture and it was definitely the first of its kind, there was nothing else like it.'
+        },
+        {
+          type: 'question',
+          title: 'Against All Odds is the first ever Grime film, do you think this is one of the ways the genre can be kept alive?',
+          answer: 'I do! I think Grime has played a massive part in shaping UK music today. I can even hear similarities in genres like UK Drill today; it\'s like a slower version of grime almost.'
+        },
+        {
+          type: 'question',
+          title: 'Who are your favourite grime artists of all time?',
+          answer: 'This is tricky for me. I would say I have favourite moments rather than artists. For example, Kano Vs Wiley\'s Lord of the Mics was legendary, as was Ghetts vs P Money - both are my favourite clashes of all time. Grime produces loads of amazing moments.'
+        },
+        {
+          type: 'question',
+          title: 'How was it working alongside Black British legends such as D Double E and Richard Blackwood?',
+          answer: 'I was in awe the whole time to be honest. D Double E is a super legend! Working with Richard was very different, or rather special. He plays MC Active\'s dad in the film and he offered so much insight both on and off set. The encouragement he offered alone was invaluable and it\'s not everyday you get to work with the first Black comedian to have his own TV show in the UK!'
+        },
+        {
+          type: 'question',
+          title: 'What advice would you give to actors younger than yourself?',
+          answer: 'Stay focused, have tunnel vision and be relentless. It’s a hard grind but if you stay on track and you put your all into it you will get where you want to be sooner rather than later.'
+        },
+        {
+          type: 'question',
+          title: '',
+          answer: 'Against All Odds will premiere on Channel U on the 13th November.'
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Follow Nico Tyler James here',
+          url: 'https://www.instagram.com/navtyler_/'
+        },
+        {
+          name: 'Follow Tochi Chelsea here',
+          url: 'https://www.instagram.com/tochichels/'
         }
       ]
     }
