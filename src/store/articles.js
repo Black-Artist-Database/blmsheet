@@ -1393,7 +1393,7 @@ const mutations = {
       ]
     },
     {
-      short_name: 'MORGAN MUNROE  IS UNRAVELING THE  LAYERS OF HER ARTISTRY',
+      short_name: 'MORGAN MUNROE IS UNRAVELING THE LAYERS OF HER ARTISTRY',
       name: 'MORGAN MUNROE IS PEELING BACK LAYERS OF HER ARTISTRY ON \'LAYERS 0.5\'',
       isSingle: false,
       bandcamp_id: '3508943609',
@@ -2918,7 +2918,7 @@ const mutations = {
       ]
     },
     {
-      short_name: 'MORGAN MUNROE  IS UNRAVELING THE  LAYERS OF HER ARTISTRY',
+      short_name: 'MORGAN MUNROE IS UNRAVELING THE LAYERS OF HER ARTISTRY',
       name: 'MORGAN MUNROE IS PEELING BACK LAYERS OF HER ARTISTRY ON \'LAYERS 0.5\'',
       isSingle: false,
       bandcamp_id: '3508943609',
