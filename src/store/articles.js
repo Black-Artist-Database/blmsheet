@@ -1402,7 +1402,7 @@ const mutations = {
       author: 'Lauryn Njeri',
       date: '11/13/2020',
       illus: 'articles/munroe/munroe.jpg',
-      introduction: "UK singer-songwriter, <b>Morgan Munroe</b> makes a powerful debut with the release of her long awaited EP, \"<b>Layers 0.5</b>\". <br><br>Moving through the passionate encounters of an empowered, independent  woman navigating love and self worth, Morgan is unapologetic in letting her soft sultry vibe ooze effortlessly through the 5-track EP. \"All of these songs are written from true and personal experiences,\" Morgan explains. \"Five songs that show five different layers to me, musically and personally.\"<br><br>Released on the 13th of November, Layers 0.5 is a collection of easily enjoyable bops graced with Morgan’s silky harmonies and relatable themes.",
+      introduction: "UK singer-songwriter, <b>Morgan Munroe</b> makes a powerful debut with the release of her long awaited EP, \"<b>Layers 0.5</b>\". <br><br>Moving through the passionate encounters of an empowered, independent woman navigating love and self worth, Morgan is unapologetic in letting her soft sultry vibe ooze effortlessly through the 5-track EP. \"<i>All of these songs are written from true and personal experiences,</i>\" Morgan explains. \"<i>Five songs that show five different layers to me, musically and personally.</i>\"<br><br>Released on the 13th of November, Layers 0.5 is a collection of easily enjoyable bops graced with Morgan’s silky harmonies and relatable themes.",
       questions: [
         {
           type: 'question',
@@ -2927,7 +2927,7 @@ const mutations = {
       author: 'Lauryn Njeri',
       date: '11/13/2020',
       illus: 'articles/munroe/munroe.jpg',
-      introduction: "UK singer-songwriter, <b>Morgan Munroe</b> makes a powerful debut with the release of her long awaited EP, \"<b>Layers 0.5</b>\". <br><br>Moving through the passionate encounters of an empowered, independent  woman navigating love and self worth, Morgan is unapologetic in letting her soft sultry vibe ooze effortlessly through the 5-track EP. \"All of these songs are written from true and personal experiences,\" Morgan explains. \"Five songs that show five different layers to me, musically and personally.\"<br><br>Released on the 13th of November, Layers 0.5 is a collection of easily enjoyable bops graced with Morgan’s silky harmonies and relatable themes.",
+      introduction: "UK singer-songwriter, <b>Morgan Munroe</b> makes a powerful debut with the release of her long awaited EP, \"<b>Layers 0.5</b>\". <br><br>Moving through the passionate encounters of an empowered, independent woman navigating love and self worth, Morgan is unapologetic in letting her soft sultry vibe ooze effortlessly through the 5-track EP. \"<i>All of these songs are written from true and personal experiences,</i>\" Morgan explains. \"<i>Five songs that show five different layers to me, musically and personally.</i>\"<br><br>Released on the 13th of November, Layers 0.5 is a collection of easily enjoyable bops graced with Morgan’s silky harmonies and relatable themes.",
       questions: [
         {
           type: 'question',
