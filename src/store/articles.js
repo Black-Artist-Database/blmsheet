@@ -1391,6 +1391,147 @@ const mutations = {
           url: 'https://www.instagram.com/tochichels/'
         }
       ]
+    },
+    {
+      short_name: 'MORGAN MUNROE IS PEELING BACK LAYERS OF HER ARTISTRY ON \'LAYERS 0.5\'',
+      name: 'MORGAN MUNROE IS PEELING BACK LAYERS OF HER ARTISTRY ON \'LAYERS 0.5\'',
+      isSingle: false,
+      bandcamp_id: '3508943609',
+      bandcamp_link: 'https://morganmunroe.bandcamp.com/album/layers-05',
+      credit_illu: 'Ruma',
+      author: 'Lauryn Njeri',
+      date: '11/13/2020',
+      illus: 'articles/munroe/munroe.jpg',
+      introduction: "UK singer-songwriter, <b>Morgan Munroe</b> makes a powerful debut with the release of her long awaited EP, \"<b>Layers 0.5</b>\". <br><br>Moving through the passionate encounters of an empowered, independent  woman navigating love and self worth, Morgan is unapologetic in letting her soft sultry vibe ooze effortlessly through the 5-track EP. \"All of these songs are written from true and personal experiences,\" Morgan explains. \"Five songs that show five different layers to me, musically and personally.\"<br><br>Released on the 13th of November, Layers 0.5 is a collection of easily enjoyable bops graced with Morgan’s silky harmonies and relatable themes.",
+      questions: [
+        {
+          type: 'question',
+          title: "How have you been keeping yourself busy all through the global pandemic?",
+          answer: "I’ve been on Instagram a lot lol, taking part in lotsss of music challenges and competitions on Insta-live’s. I’ve been finding creative new things to do… I had a go at making my own music video, I also started making clothes, decorating the house, and a lot of Netflix!"
+        },
+        {
+          type: 'question',
+          title: "The title to your EP is ‘Layers 0.5’. Tell us a little more about it?",
+          answer: "I called my EP layers because I feel like every song shows a different layer of my personality and also highlights a different musical element of my music."
+        },
+        {
+          type: 'question',
+          title: "What are some of the lessons you learnt from your mother that led you to write 'mama taught me'?",
+          answer: "Never give up, own it, don’t cry over boys who aren’t worth it, put yourself first."
+        },
+        {
+          type: 'image',
+          path: "articles/munroe/munroe2.jpg",
+          author: 'Ruma'
+        },
+        {
+          type: 'question',
+          title: "I'm keen to know about what inspired the track \"Who The F@#*\".",
+          answer: "F*** boys, lol! I think at the time I was very bored with my love life and wanted to do something about that but all I was being met with was unwanted attention from all the wrong boys and never the ones who I actually wanted it from."
+        },
+        {
+          type: 'question',
+          title: "With this being your debut EP what are you hoping your listeners take from it?",
+          answer: "I want my listeners to get to know me, to peel back the layers of my artistry and find something within my music that they can connect with."
+        },
+        {
+          type: 'question',
+          title: "Do you have a favourite record off this body of work? Why that specific track?",
+          answer: "Take me home – it’s my personal banger. Allowed me to explore a more sultry side which I usually keep hidden, since this song I think I’ve felt more comfortable in expressing this side through my music."
+        },
+        {
+          type: 'question',
+          title: "Tell us one thing about yourself that no one would expect?",
+          answer: "I have a pet tortoise named Shelly."
+        },
+
+      ],
+      footer_links: [
+        {
+          name: 'Purchase on Bandcamp here',
+          url: 'https://morganmunroe.bandcamp.com/album/layers-05'
+        },
+        {
+          name: 'Follow Morgan Munroe here',
+          url: 'https://www.instagram.com/morganmunroeofficial'
+        },
+        {
+          name: 'Follow Lauryn Njeri here',
+          url: 'https://www.instagram.com/laurynlikethehills_'
+        }
+      ]
+    },
+    {
+      short_name: 'III META: ALXNDR LONDON’S ASCENT TO SELF ACTUALIZATION',
+      name: 'III META: ALXNDR LONDON’S ASCENT TO SELF ACTUALIZATION',
+      isSingle: false,
+      bandcamp_id: '313033869',
+      bandcamp_link: 'https://alxndrlondon.bandcamp.com/album/iii-meta',
+      credit_illu: 'Mimi Yvonne',
+      author: 'Lauryn Njeri',
+      date: '11/13/2020',
+      illus: 'articles/alxndr/alxndr.jpg',
+      introduction: "Drawing energy from his Yoruba Heritage, London based singer - songwriter <b>Alxndr London</b>, releases an minimalist sci-fi-inspired odyssey, <b>III META</b>. The 3-track project reflects Alxndr transversing introspective themes of existence and rebirth, realisation and acceptance.<br><br>\
+        Produced collaboratively with East London-based production duo, <b>Bon</b> we see Alxndr employ experimental rhythms to which he adds a paradox of haunting yet angelic lyricism. The use of  his mother's tranquil tones of  praise and worship at the end of each track give the air of a welcomed calm after a storm.<br><br>\
+        Prior to 2019’s  IV MERIN, Alxndr released three EPs in as many years, first emerging onto the scene with 2016’s '<i>A Long Time Ago</i>' which was followed up by 2017's '<i>Today</i>' and 2018's '<i>2023</i>'. All lying comfortably within spiritual soul, electronica and experimental music, the enigmatic creator continues to unfold sonically on his intimate journey to 2023.",
+      questions: [
+        {
+          type: 'question',
+          title: "2020 has been quite an eventful year for all of us. How has it been for you?",
+          answer: "Eventful. I’ve pretty much kept my head down and tried to get through this 'new normal' - harder said than done. Started a new role working with homeless adults during the height of the pandemic. Grateful I’m here. Grateful for the opportunity to work with the delightful Bon, who produced III META."
+        },
+        {
+          type: 'question',
+          title: "Your music carries elements picking from various genres. How would you describe your sound to someone who has never listened to you before?",
+          answer: "I call it soul but I feel like that could confuse someone whose idea of a Black man singing soul is Ray Charles or James Brown because of all the influences I lean on.<br><br>I'm from London - a beautiful melting point. I’m inspired by the magical preachers in the Black church, gospel choirs/quartets and all the legends before who transmuted gospel music into the popular secular music it is today."
+        },
+        {
+          type: 'question',
+          title: "III META explores themes of existence and rebirth, realisation and acceptance. What brought about these particular elements?",
+          answer: "In 2013 I realised that I was a bot of a mess and that to be born anew, I would first have to die - by killing the old me. I decided to document this \"journey to death\" as Alxndr London, over the next 10 years until 2023.<br><br>I killed my old mindset and began taking accountability for my actions. I knew I had to do better so I did. III META is also about escaping Earth, because it’s definitely a mess."
+        },
+        {
+          type: 'question',
+          title: "Your mother features on this body of work singing Yoruba 'praise and worship'. What role does spirituality play in the making of your music?",
+          answer: "So cool innit? Soul music for me isn’t just elements of African-American gospel, jazz, rhythm and blues etc. Soul is an expression of my yester-fears and hopes for a better tomorrow. The spirituality in all this cannot truly be removed - to do so is to unravel the very fabric of music."
+        },
+        {
+          type: 'image',
+          format: 'cover',
+          path: "articles/alxndr/alxndr2.jpg",
+          isArtwork: true,
+          author: 'Zaur'
+        },
+        {
+          type: 'question',
+          title: "Walk me through III META in regards to your journey to 2023?",
+          answer: "III META highlights that I have 3 years until 2023. I feel ‘free’ and I know change is coming. Each year I release a project - it’s my way of doing my bit and leaving the rest in the hands of the universe."
+        },
+        {
+          type: 'question',
+          title: "The cover art for III META carries a lot of depth. Would you care  to share about it and what inspired it?",
+          answer: "The cover was created by an amazing artist called Zaur. It depicts my journey through death and rebirth, simultaneously. Both exist in perpetual harmony. Dotted around and hidden in the art are some of my demons too."
+        },
+        {
+          type: 'question',
+          title: "What is next for you after releasing this EP?",
+          answer: "As of 4th November 2020, a second lockdown is underway in London. Not sure whether I’ll make it to the end of 2020, let alone 2023..."
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase III META here',
+          url: 'https://alxndrlondon.bandcamp.com/album/iii-meta'
+        },
+        {
+          name: 'Follow Alxndr London here',
+          url: 'https://www.instagram.com/mxiiixm'
+        },
+        {
+          name: 'Follow Lauryn Njeri here',
+          url: 'https://www.instagram.com/laurynlikethehills_'
+        }
+      ]
     }
     ]))
     state.current = payload
@@ -2773,6 +2914,147 @@ const mutations = {
         {
           name: 'Follow Tochi Chelsea here',
           url: 'https://www.instagram.com/tochichels/'
+        }
+      ]
+    },
+    {
+      short_name: 'MORGAN MUNROE IS PEELING BACK LAYERS OF HER ARTISTRY ON \'LAYERS 0.5\'',
+      name: 'MORGAN MUNROE IS PEELING BACK LAYERS OF HER ARTISTRY ON \'LAYERS 0.5\'',
+      isSingle: false,
+      bandcamp_id: '3508943609',
+      bandcamp_link: 'https://morganmunroe.bandcamp.com/album/layers-05',
+      credit_illu: 'Ruma',
+      author: 'Lauryn Njeri',
+      date: '11/13/2020',
+      illus: 'articles/munroe/munroe.jpg',
+      introduction: "UK singer-songwriter, <b>Morgan Munroe</b> makes a powerful debut with the release of her long awaited EP, \"<b>Layers 0.5</b>\". <br><br>Moving through the passionate encounters of an empowered, independent  woman navigating love and self worth, Morgan is unapologetic in letting her soft sultry vibe ooze effortlessly through the 5-track EP. \"All of these songs are written from true and personal experiences,\" Morgan explains. \"Five songs that show five different layers to me, musically and personally.\"<br><br>Released on the 13th of November, Layers 0.5 is a collection of easily enjoyable bops graced with Morgan’s silky harmonies and relatable themes.",
+      questions: [
+        {
+          type: 'question',
+          title: "How have you been keeping yourself busy all through the global pandemic?",
+          answer: "I’ve been on Instagram a lot lol, taking part in lotsss of music challenges and competitions on Insta-live’s. I’ve been finding creative new things to do… I had a go at making my own music video, I also started making clothes, decorating the house, and a lot of Netflix!"
+        },
+        {
+          type: 'question',
+          title: "The title to your EP is ‘Layers 0.5’. Tell us a little more about it?",
+          answer: "I called my EP layers because I feel like every song shows a different layer of my personality and also highlights a different musical element of my music."
+        },
+        {
+          type: 'question',
+          title: "What are some of the lessons you learnt from your mother that led you to write 'mama taught me'?",
+          answer: "Never give up, own it, don’t cry over boys who aren’t worth it, put yourself first."
+        },
+        {
+          type: 'image',
+          path: "articles/munroe/munroe2.jpg",
+          author: 'Ruma'
+        },
+        {
+          type: 'question',
+          title: "I'm keen to know about what inspired the track \"Who The F@#*\".",
+          answer: "F*** boys, lol! I think at the time I was very bored with my love life and wanted to do something about that but all I was being met with was unwanted attention from all the wrong boys and never the ones who I actually wanted it from."
+        },
+        {
+          type: 'question',
+          title: "With this being your debut EP what are you hoping your listeners take from it?",
+          answer: "I want my listeners to get to know me, to peel back the layers of my artistry and find something within my music that they can connect with."
+        },
+        {
+          type: 'question',
+          title: "Do you have a favourite record off this body of work? Why that specific track?",
+          answer: "Take me home – it’s my personal banger. Allowed me to explore a more sultry side which I usually keep hidden, since this song I think I’ve felt more comfortable in expressing this side through my music."
+        },
+        {
+          type: 'question',
+          title: "Tell us one thing about yourself that no one would expect?",
+          answer: "I have a pet tortoise named Shelly."
+        },
+
+      ],
+      footer_links: [
+        {
+          name: 'Purchase on Bandcamp here',
+          url: 'https://morganmunroe.bandcamp.com/album/layers-05'
+        },
+        {
+          name: 'Follow Morgan Munroe here',
+          url: 'https://www.instagram.com/morganmunroeofficial'
+        },
+        {
+          name: 'Follow Lauryn Njeri here',
+          url: 'https://www.instagram.com/laurynlikethehills_'
+        }
+      ]
+    },
+    {
+      short_name: 'III META: ALXNDR LONDON’S ASCENT TO SELF ACTUALIZATION',
+      name: 'III META: ALXNDR LONDON’S ASCENT TO SELF ACTUALIZATION',
+      isSingle: false,
+      bandcamp_id: '313033869',
+      bandcamp_link: 'https://alxndrlondon.bandcamp.com/album/iii-meta',
+      credit_illu: 'Mimi Yvonne',
+      author: 'Lauryn Njeri',
+      date: '11/13/2020',
+      illus: 'articles/alxndr/alxndr.jpg',
+      introduction: "Drawing energy from his Yoruba Heritage, London based singer - songwriter <b>Alxndr London</b>, releases an minimalist sci-fi-inspired odyssey, <b>III META</b>. The 3-track project reflects Alxndr transversing introspective themes of existence and rebirth, realisation and acceptance.<br><br>\
+        Produced collaboratively with East London-based production duo, <b>Bon</b> we see Alxndr employ experimental rhythms to which he adds a paradox of haunting yet angelic lyricism. The use of  his mother's tranquil tones of  praise and worship at the end of each track give the air of a welcomed calm after a storm.<br><br>\
+        Prior to 2019’s  IV MERIN, Alxndr released three EPs in as many years, first emerging onto the scene with 2016’s '<i>A Long Time Ago</i>' which was followed up by 2017's '<i>Today</i>' and 2018's '<i>2023</i>'. All lying comfortably within spiritual soul, electronica and experimental music, the enigmatic creator continues to unfold sonically on his intimate journey to 2023.",
+      questions: [
+        {
+          type: 'question',
+          title: "2020 has been quite an eventful year for all of us. How has it been for you?",
+          answer: "Eventful. I’ve pretty much kept my head down and tried to get through this 'new normal' - harder said than done. Started a new role working with homeless adults during the height of the pandemic. Grateful I’m here. Grateful for the opportunity to work with the delightful Bon, who produced III META."
+        },
+        {
+          type: 'question',
+          title: "Your music carries elements picking from various genres. How would you describe your sound to someone who has never listened to you before?",
+          answer: "I call it soul but I feel like that could confuse someone whose idea of a Black man singing soul is Ray Charles or James Brown because of all the influences I lean on.<br><br>I'm from London - a beautiful melting point. I’m inspired by the magical preachers in the Black church, gospel choirs/quartets and all the legends before who transmuted gospel music into the popular secular music it is today."
+        },
+        {
+          type: 'question',
+          title: "III META explores themes of existence and rebirth, realisation and acceptance. What brought about these particular elements?",
+          answer: "In 2013 I realised that I was a bot of a mess and that to be born anew, I would first have to die - by killing the old me. I decided to document this \"journey to death\" as Alxndr London, over the next 10 years until 2023.<br><br>I killed my old mindset and began taking accountability for my actions. I knew I had to do better so I did. III META is also about escaping Earth, because it’s definitely a mess."
+        },
+        {
+          type: 'question',
+          title: "Your mother features on this body of work singing Yoruba 'praise and worship'. What role does spirituality play in the making of your music?",
+          answer: "So cool innit? Soul music for me isn’t just elements of African-American gospel, jazz, rhythm and blues etc. Soul is an expression of my yester-fears and hopes for a better tomorrow. The spirituality in all this cannot truly be removed - to do so is to unravel the very fabric of music."
+        },
+        {
+          type: 'image',
+          format: 'cover',
+          path: "articles/alxndr/alxndr2.jpg",
+          isArtwork: true,
+          author: 'Zaur'
+        },
+        {
+          type: 'question',
+          title: "Walk me through III META in regards to your journey to 2023?",
+          answer: "III META highlights that I have 3 years until 2023. I feel ‘free’ and I know change is coming. Each year I release a project - it’s my way of doing my bit and leaving the rest in the hands of the universe."
+        },
+        {
+          type: 'question',
+          title: "The cover art for III META carries a lot of depth. Would you care  to share about it and what inspired it?",
+          answer: "The cover was created by an amazing artist called Zaur. It depicts my journey through death and rebirth, simultaneously. Both exist in perpetual harmony. Dotted around and hidden in the art are some of my demons too."
+        },
+        {
+          type: 'question',
+          title: "What is next for you after releasing this EP?",
+          answer: "As of 4th November 2020, a second lockdown is underway in London. Not sure whether I’ll make it to the end of 2020, let alone 2023..."
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase III META here',
+          url: 'https://alxndrlondon.bandcamp.com/album/iii-meta'
+        },
+        {
+          name: 'Follow Alxndr London here',
+          url: 'https://www.instagram.com/mxiiixm'
+        },
+        {
+          name: 'Follow Lauryn Njeri here',
+          url: 'https://www.instagram.com/laurynlikethehills_'
         }
       ]
     }

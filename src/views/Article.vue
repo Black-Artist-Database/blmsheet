@@ -25,7 +25,8 @@
         <div class="question" v-for="(question, index) in article.questions" :key="`article-${index}`">
           <div class="image" v-if="question.type === 'image'">
             <img :src="require(`@/assets/${question.path}`)" :class="question.format"/>
-            <p class="credit" v-if="question.author"><i>Photo by {{question.author}}</i></p>
+            <p class="credit" v-if="question.author && !question.isArtwork"><i>Photo by {{question.author}}</i></p>
+            <p class="credit" v-if="question.author && question.isArtwork"><i>Cover art by {{question.author}}</i></p>
           </div>
           <div v-else-if="question.type === 'quote'">
             <p class="quote" v-html="question.answer"></p>
@@ -168,6 +169,9 @@ export default {
         margin: 20px auto;
         &.landscape {
           max-width: 500px;
+        }
+        &.cover {
+          max-width: 700px;
         }
       }
     }
