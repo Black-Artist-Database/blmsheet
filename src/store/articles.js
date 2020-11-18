@@ -1532,6 +1532,93 @@ const mutations = {
           url: 'https://www.instagram.com/laurynlikethehills_'
         }
       ]
+    },
+    {
+      short_name: 'BLESSED: NEW SOUNDS',
+      name: 'BLESSED: NEW SOUNDS',
+      isSingle: false,
+      bandcamp_id: '694552560',
+      bandcamp_link: 'https://blessedtunes.bandcamp.com/album/music-is-the-medicine',
+      credit_illu: 'Leo Harunah',
+      author: 'Tanya Akinola',
+      date: '11/13/2020',
+      illus: 'articles/blessed/blessed.jpg',
+      introduction: "BLESSED is the genre-bending African-Australian artist at the forefront of shaping the exciting new sounds emerging from Sydney. Fusing elements of hip hop, indie, rock and R&B all through his trippy, kaleidoscopic lense, the result is an inimitable sound that has seen him play alongside artists like Matt Corby and Childish Gambino, and have tracks featured on Netflix's 'On My Block' as well as on the NBA 2k20 video game.<br><br>\
+      This Friday November 20th sees BLESSED release a full length mixtape titled 'Music Is The Medicine' on his new label GODSPEED in collaboration with the French label and publishing company 404 HUMAN. Being his most fully conceptualized and intimate project yet, he describes the LP as \"a collection of songs that are tuned to different frequencies that subconsciously target different emotions. It's an introspective piece created in a time where I needed music most.\"<br><br>\
+      Black Bandcamp had a chat with BLESSED about his mixtape, his musical influences and the music community in Sydney.",
+      questions: [
+        {
+          type: 'question',
+          title: "How are you and how have you been spending your time during this semi-shutdown period?",
+          answer: "I'm groovy thank you. Honestly I've been very productive reading, writing and researching the forgotten Black history and the odd conspiracy here and there."
+        },
+        {
+          type: 'question',
+          title: "You're based in Sydney where there's a lot of exciting stuff happening musically, especially within hip hop. I see you've collaborated with Manu Crooks and Mike Akox who are both creating really great hip hop/afrobeats, and like a lot of African-Australian artists, blending their dual cultures and experiences to create something fresh. How do you view this and how do you feel about the music community in Sydney?",
+          answer: "Manu and Mike are like my brothers. I genuinely only create and collaborate with people I love and are fans of, but it's definitely exciting to see such growth and diversity going on in the music scene in Australia as a whole and Sydney being at the forefront of the culture."
+        },
+        {
+          type: 'question',
+          title: "I can hear a wide array of influences in your music. I'm curious to know who or what you were listening to growing up and who you look towards now for musical inspiration?",
+          answer: "Growing up in Australia I listened to whatever my friends were into like Blink 182, Good Charlotte, Yellowcard but after discovering hip hop I was obsessed with Kanye West. These days I tend to listen to a lot of music from the 70s, Jimi Hendrix and Led Zeppelin but I still keep up to date with the outliers of rap."
+        },
+        {
+          type: 'question',
+          title: "This is the first full release you're putting out this year. How has your creative process differed this time around, considering the circumstances with covid, racial inequality and civil rights protests and what generally feels like a global time of unrest?",
+          answer: "This year has been a blessing for me, I've been able to look inward for answers and not out at the world falling apart. A lot of darkness has been brought to light, a lot of people are waking up to the truth of this ugly world and that collective consciousness has inspired my music and I'm sure creatives all over the world."
+        },
+        {
+          type: 'question',
+          title: "On your Twitter you have a pinned tweet about how you want to start a conversation about music and how it helps to soothe the soul, and your upcoming LP is called Music Is The Medicine. How do you think music can be a tool that helps us through difficult times?",
+          answer: "Music is a form of escapism, there's a song for every situation. It can be a relatable message of past or present trauma, beats that move you or melodies that soothe you. Especially when it comes to the scientific makeup of sound and its frequencies that operate on the same frequencies as love, it can be used as a powerful tool to comfort you."
+        },
+        {
+          type: 'image',
+          format: 'landscape',
+          path: "articles/blessed/blessed2.jpg",
+          isArtwork: false,
+          author: 'Leo Harunah'
+        },
+        {
+          type: 'question',
+          title: "Music Is The Medicine is coming out this November 20th. Can you tell us a bit about it?",
+          answer: "Music Is The Medicine is a mixtape or a collection of songs that are tuned to different frequencies that subconsciously target different emotions. It's an introspective piece created in a time where I needed to music most."
+        },
+         {
+          type: 'question',
+          title: "How does it differ from your previous work?",
+          answer: "This is my first body of work, my first cohesive project where I took the time to create music with a message. Artistically and sonically this piece stands out from the rest of my tunes."
+        },
+         {
+          type: 'question',
+          title: "The track with Amaarae, 'Count on Me' is one of my favourites off the mixtape - her voice just melts like honey over those crisp beats and your voices blend beautifully together. I'm a big Amaarae fan! How did that collaboration come about and can you tell us what it was like working with her on the track?",
+          answer: "She's amazing aye. The collaboration came about through Kyu who is a partner on this project with his label 404HUMAN from France. Kyu also produces and collaborates frequently with Ama and was playing tunes from the project when I was in Paris. I fell in love with her voice and was able to connect virtually for 'Count On Me'."
+        },
+         {
+          type: 'question',
+          title: "There are a lot of powerful lyrics throughout the mixtape, especially on tracks like 'True To Me' and 'Something To Believe In'. Do you have any personal favourite lyrical moments on the album?",
+          answer: "\"<i>Racing to the paper, don't do this for status, traitors tried to trade up, haters in my prayers</i>\"<br><br>Which speaks to the reasons why I do think this, and the attitude I carry towards anyone that has wronged me."
+        },
+         {
+          type: 'question',
+          title: "Now that live performances are allowed in Sydney again, what can people expect from your upcoming shows?",
+          answer: "I haven't performed in 10 months so all the energy and angst being released on stage will be magical."
+        },
+      ],
+      footer_links: [
+        {
+          name: 'Purchase Music Is The Medicine here',
+          url: 'https://blessedtunes.bandcamp.com/'
+        },
+        {
+          name: 'Follow BLESSED here',
+          url: 'https://www.instagram.com/blessedtunes/'
+        },
+        {
+          name: 'Follow Tanya Akinola here',
+          url: 'https://www.instagram.com/tanyaakinola'
+        }
+      ]
     }
     ]))
     state.current = payload
@@ -3055,6 +3142,93 @@ const mutations = {
         {
           name: 'Follow Lauryn Njeri here',
           url: 'https://www.instagram.com/laurynlikethehills_'
+        }
+      ]
+    },
+    {
+      short_name: 'BLESSED: NEW SOUNDS',
+      name: 'BLESSED: NEW SOUNDS',
+      isSingle: false,
+      bandcamp_id: '694552560',
+      bandcamp_link: 'https://blessedtunes.bandcamp.com/album/music-is-the-medicine',
+      credit_illu: 'Leo Harunah',
+      author: 'Tanya Akinola',
+      date: '11/13/2020',
+      illus: 'articles/blessed/blessed.jpg',
+      introduction: "BLESSED is the genre-bending African-Australian artist at the forefront of shaping the exciting new sounds emerging from Sydney. Fusing elements of hip hop, indie, rock and R&B all through his trippy, kaleidoscopic lense, the result is an inimitable sound that has seen him play alongside artists like Matt Corby and Childish Gambino, and have tracks featured on Netflix's 'On My Block' as well as on the NBA 2k20 video game.<br><br>\
+      This Friday November 20th sees BLESSED release a full length mixtape titled 'Music Is The Medicine' on his new label GODSPEED in collaboration with the French label and publishing company 404 HUMAN. Being his most fully conceptualized and intimate project yet, he describes the LP as \"a collection of songs that are tuned to different frequencies that subconsciously target different emotions. It's an introspective piece created in a time where I needed music most.\"<br><br>\
+      Black Bandcamp had a chat with BLESSED about his mixtape, his musical influences and the music community in Sydney.",
+      questions: [
+        {
+          type: 'question',
+          title: "How are you and how have you been spending your time during this semi-shutdown period?",
+          answer: "I'm groovy thank you. Honestly I've been very productive reading, writing and researching the forgotten Black history and the odd conspiracy here and there."
+        },
+        {
+          type: 'question',
+          title: "You're based in Sydney where there's a lot of exciting stuff happening musically, especially within hip hop. I see you've collaborated with Manu Crooks and Mike Akox who are both creating really great hip hop/afrobeats, and like a lot of African-Australian artists, blending their dual cultures and experiences to create something fresh. How do you view this and how do you feel about the music community in Sydney?",
+          answer: "Manu and Mike are like my brothers. I genuinely only create and collaborate with people I love and are fans of, but it's definitely exciting to see such growth and diversity going on in the music scene in Australia as a whole and Sydney being at the forefront of the culture."
+        },
+        {
+          type: 'question',
+          title: "I can hear a wide array of influences in your music. I'm curious to know who or what you were listening to growing up and who you look towards now for musical inspiration?",
+          answer: "Growing up in Australia I listened to whatever my friends were into like Blink 182, Good Charlotte, Yellowcard but after discovering hip hop I was obsessed with Kanye West. These days I tend to listen to a lot of music from the 70s, Jimi Hendrix and Led Zeppelin but I still keep up to date with the outliers of rap."
+        },
+        {
+          type: 'question',
+          title: "This is the first full release you're putting out this year. How has your creative process differed this time around, considering the circumstances with covid, racial inequality and civil rights protests and what generally feels like a global time of unrest?",
+          answer: "This year has been a blessing for me, I've been able to look inward for answers and not out at the world falling apart. A lot of darkness has been brought to light, a lot of people are waking up to the truth of this ugly world and that collective consciousness has inspired my music and I'm sure creatives all over the world."
+        },
+        {
+          type: 'question',
+          title: "On your Twitter you have a pinned tweet about how you want to start a conversation about music and how it helps to soothe the soul, and your upcoming LP is called Music Is The Medicine. How do you think music can be a tool that helps us through difficult times?",
+          answer: "Music is a form of escapism, there's a song for every situation. It can be a relatable message of past or present trauma, beats that move you or melodies that soothe you. Especially when it comes to the scientific makeup of sound and its frequencies that operate on the same frequencies as love, it can be used as a powerful tool to comfort you."
+        },
+        {
+          type: 'image',
+          format: 'landscape',
+          path: "articles/blessed/blessed2.jpg",
+          isArtwork: false,
+          author: 'Leo Harunah'
+        },
+        {
+          type: 'question',
+          title: "Music Is The Medicine is coming out this November 20th. Can you tell us a bit about it?",
+          answer: "Music Is The Medicine is a mixtape or a collection of songs that are tuned to different frequencies that subconsciously target different emotions. It's an introspective piece created in a time where I needed to music most."
+        },
+         {
+          type: 'question',
+          title: "How does it differ from your previous work?",
+          answer: "This is my first body of work, my first cohesive project where I took the time to create music with a message. Artistically and sonically this piece stands out from the rest of my tunes."
+        },
+         {
+          type: 'question',
+          title: "The track with Amaarae, 'Count on Me' is one of my favourites off the mixtape - her voice just melts like honey over those crisp beats and your voices blend beautifully together. I'm a big Amaarae fan! How did that collaboration come about and can you tell us what it was like working with her on the track?",
+          answer: "She's amazing aye. The collaboration came about through Kyu who is a partner on this project with his label 404HUMAN from France. Kyu also produces and collaborates frequently with Ama and was playing tunes from the project when I was in Paris. I fell in love with her voice and was able to connect virtually for 'Count On Me'."
+        },
+         {
+          type: 'question',
+          title: "There are a lot of powerful lyrics throughout the mixtape, especially on tracks like 'True To Me' and 'Something To Believe In'. Do you have any personal favourite lyrical moments on the album?",
+          answer: "\"<i>Racing to the paper, don't do this for status, traitors tried to trade up, haters in my prayers</i>\"<br><br>Which speaks to the reasons why I do think this, and the attitude I carry towards anyone that has wronged me."
+        },
+         {
+          type: 'question',
+          title: "Now that live performances are allowed in Sydney again, what can people expect from your upcoming shows?",
+          answer: "I haven't performed in 10 months so all the energy and angst being released on stage will be magical."
+        },
+      ],
+      footer_links: [
+        {
+          name: 'Purchase Music Is The Medicine here',
+          url: 'https://blessedtunes.bandcamp.com/'
+        },
+        {
+          name: 'Follow BLESSED here',
+          url: 'https://www.instagram.com/blessedtunes/'
+        },
+        {
+          name: 'Follow Tanya Akinola here',
+          url: 'https://www.instagram.com/tanyaakinola'
         }
       ]
     }
