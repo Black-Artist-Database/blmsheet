@@ -4,6 +4,7 @@ import os
 import re
 from datetime import datetime, timedelta
 from itertools import zip_longest
+from typing import List
 
 from flask import Blueprint, abort, current_app, request
 from google.auth import compute_engine
@@ -43,7 +44,9 @@ def remove_old_entries():
 @cron_blueprint.route('/sync', methods=['POST'])
 @auth_check
 def sync_db_with_sheet():
+    current_app.logger.debug('Sync requested...')
     values = get_values_from_sheet()
+    current_app.logger.debug(f'Adding {len(values)} to database...')
     set_values_to_database(values)
     return 'OK', 200
 
@@ -69,69 +72,118 @@ def scrape_bandcamp():
     return 'OK', 200
 
 
-def set_values_to_database(values):
+def set_values_to_database(values: List[dict]):
+    """
+    Perform batches of writes to a Firestore database.
+    """
     db = cron_blueprint.config['DB']
     db_name = os.environ['DB_NAME']
-    args = [iter(values)] * 250  # firestore limit of operations (500: 2 per row: 1 write; 1 timestamp)
+    # Firestore limit of operations (500: 2 per row: 1 write; 1 timestamp)
+    args = [iter(values)] * 250
     new_entries = 0
     total_entries = 0
-    for group in zip_longest(*args):  # use grouper pattern to batch process
+    # Use grouper pattern to batch process
+    for group in zip_longest(*args):
         batch = db.batch()
         for entry in group:
             if entry is not None:
                 try:
-                    # something datastore friendly as a unique id (NB: could auto generate but we want to replace existing)
-                    key = str('-'.join(list(entry['name'].strip().replace('/', '-').split(' ')) + [entry['location'].replace('/', '-').strip()])).lower()
-                except KeyError:
+                    # Create something datastore friendly as a unique id (key)
+                    # NB: we could auto generate this but we want to replace existing
+                    name = entry['name'].strip().replace('/', '-').split(' ')
+                    location = entry['location'].replace('/', '-').strip()
+                    key = str('-'.join(list(name) + [location])).lower()
+                except KeyError as e:
+                    current_app.logger.warn(f'Entry missing {e} value (not saved): {entry}')
                     continue
+                
                 entry_ref = db.collection(db_name).document(key)
-                entry.update({u'timestamp': firestore.SERVER_TIMESTAMP})  # counts as an additional operation                
-                existing = entry_ref.get()
-                if existing.exists:
+                
+                # NB: SERVER_TIMESTAMP counts as an additional operation
+                entry.update({u'timestamp': firestore.SERVER_TIMESTAMP})
+
+                # Check for existing entry matching our key in the list
+                if (existing := entry_ref.get()).exists:
                     old = existing.to_dict()
-                    entry['genre_tags'] = list(set(o.replace('#', '') for o in (old.get('genre_tags', []) + entry['genre_tags']) if o))
-                    entry['location_tags'] = list(set(o for o in (old.get('location_tags', []) + entry['location_tags']) if o))
+                    # Combine old and new unique tags 
+                    genres = (old.get('genre_tags', []) + entry['genre_tags'])
+                    locations = (old.get('location_tags', []) + entry['location_tags'])
+                    entry['genre_tags'] = list(set(o.replace('#', '') for o in genres if o))
+                    entry['location_tags'] = list(set(o for o in locations if o))
+                    # Update existing entry
                     batch.update(entry_ref, entry)
                 else:
                     new_entries += 1
+                    # Create new entry
                     batch.set(entry_ref, entry)
+
+                # Finished processing an entry
                 total_entries += 1
+
+        # Finished processing a batch
         batch.commit()
     current_app.logger.info(f'Sync to database complete: {total_entries} entries from Sheet ({new_entries} new)')
 
 
 def get_values_from_sheet():
+    """
+    Use the Google Sheets API to fetch and process rows of data.
+
+    Returns:
+        a list of dicts mapping headers to data    
+    """
     if 'API_KEY' in os.environ:
         service = build('sheets', 'v4', developerKey=os.environ['API_KEY'])
     else:
         credentials = compute_engine.Credentials()
         service = build('sheets', 'v4', credentials=credentials)
     sheet = service.spreadsheets()
-    # if sheet headers change the capture range may have to change
+    # NB: if sheet headers change the capture range may have to change
     sheet_range = f"{os.environ['TAB_ID']}!A{os.environ['START_ROW']}:H"
     result = sheet.values().get(spreadsheetId=os.environ['SHEET_ID'],
                                 range=sheet_range).execute()
-    values = []
-    for row in result.get('values', []):
-        obj = {}
-        # NB: sheet headers may change!
-        for i, field in enumerate(['name', 'country', 'city', 'state', 'type', 'link', 'genre', 'notes']):
-            try:
-                obj[field] = row[i]
-            except IndexError:
-                obj[field] = ''  # some fields may be empty which truncates the row data
-        # fixes issues where submissions mistakenly type e.g.: www.bandname.bandcamp.com
-        match = re.match('www\.([a-zA-Z0-9]+\.bandcamp\.com)', obj['link'])
-        if match is not None:
-            obj['link'] = f'https://{match.group(1)}'
+
+    # NB: sheet headers may change!
+    headers = ['name', 'country', 'city', 'state', 'type', 'link', 'genre', 'notes']
+    return [
+        row
+        for value in result.get('values', [])
+        if (row := process_row(value, headers)) is not None
+    ]
+
+
+def process_row(row: tuple, headers_in_order: list):
+    """
+    Process and map row data returned from Sheets API.
+
+    Returns:
+        mapping of row data to headers
+        None if `name` data missing from row
+    """
+    obj = {}
+
+    for i, field in enumerate(headers_in_order):
         try:
-            obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalpha() else '#'
+            obj[field] = row[i]
         except IndexError:
-            current_app.logger.warn(f'Row missing name value (not saved): {row}')
-            continue
-        # normalise genres and locations, allow for separation with slashes rather than columns
-        obj['location'] = ', '.join(e for e in [obj["city"], obj["state"], obj["country"]] if e)  # temp fix for splitting location into individual columns
-        obj['genre_tags'] = [genre.lower().strip() for genre in obj.get('genre', '').replace('#', ',').replace('/', ',').split(',') if genre]
-        obj['location_tags'] = [part.lower().strip() for part in obj.get('location', '').replace('/', ',').split(',') if part]
-        values.append(obj)
-    return values
+            obj[field] = ''  # some fields may be empty which truncates the row data
+
+    # fixes issues where submissions mistakenly type e.g.: www.bandname.bandcamp.com
+    match = re.match('www\.([a-zA-Z0-9]+\.bandcamp\.com)', obj['link'])
+    if match is not None:
+        obj['link'] = f'https://{match.group(1)}'
+
+    try:
+        obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalpha() else '#'
+    except IndexError:
+        current_app.logger.warn(f'Row missing name value (not saved): {row}')
+        return
+
+    # Normalise genres and locations, allow for separation with slashes rather than columns
+    # TODO: this is a temp fix for splitting location into individual columns
+    obj['location'] = ', '.join(e.replace('/', ',') for e in [obj["city"], obj["state"], obj["country"]] if e)
+    genres = obj.get('genre', '').replace('#', ',').replace('/', ',').split(',')
+    obj['genre_tags'] = [genre.lower().strip() for genre in genres if genre]
+    obj['location_tags'] = [part.lower().strip() for part in obj.get('location', '').split(',') if part]
+
+    return obj
