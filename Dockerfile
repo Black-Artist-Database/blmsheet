@@ -8,7 +8,7 @@ RUN npm install
 RUN npm run-script build
 
 
-FROM python:3.9-slim
+FROM python:3.8-slim
 
 ARG APP_USER=app
 ARG PROJECT_ROOT=/app/
