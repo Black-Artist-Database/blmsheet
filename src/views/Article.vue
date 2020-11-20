@@ -168,7 +168,7 @@ export default {
         max-width: 320px;
         margin: 20px auto;
         &.landscape {
-          max-width: 500px;
+          max-width: 690px;
         }
         &.cover {
           max-width: 700px;
