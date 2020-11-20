@@ -27,6 +27,7 @@
             <img :src="require(`@/assets/${question.path}`)" :class="question.format"/>
             <p class="credit" v-if="question.author && !question.isArtwork"><i>Photo by {{question.author}}</i></p>
             <p class="credit" v-if="question.author && question.isArtwork"><i>Cover art by {{question.author}}</i></p>
+            <p class="credit" v-if="question.editor"><i>Edited by {{question.editor}}</i></p>
           </div>
           <div v-else-if="question.type === 'quote'">
             <p class="quote" v-html="question.answer"></p>
