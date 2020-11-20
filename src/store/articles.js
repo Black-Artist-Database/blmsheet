@@ -1619,6 +1619,74 @@ const mutations = {
           url: 'https://www.instagram.com/tanyaakinola'
         }
       ]
+    },
+    {
+      short_name: "LIKE A MOTH TO A FLAME, RIVER MOON'S LIGHT",
+      name: "LIKE A MOTH TO A FLAME, RIVER MOON'S LIGHT",
+      isSingle: false,
+      bandcamp_id: "3253241199",
+      bandcamp_link: "https://saintdeepthroatxo.bandcamp.com/album/like-a-moth-to-a-flame-remixes",
+      credit_illu: "Jonty Knight",
+      author: "Crystal Mioner",
+      illus: "articles/rivermoon/rivermoon.jpg",
+      introduction: "Geographically, Detroit and Cape Town are 9,000 miles apart but when River gets on the phone, I feel like \
+        we're joined at the hip, the warmth from her voice transmitted with ease across the Atlantic. It's a Leo thing,\
+        that ability to radiate and draw people into your universe. A quick glance at the collaborators for <b>LIKE A MOTH TO \
+        A FLAME</b>, their latest remix album, shows how far reaching Rivers galaxy goes. With tracks from Angel Ho,\
+        Ase Manual, Bapari, Byrell The Great, and Diego Hauz, River Moon provides keen insight into who's who of the \
+        black diasporic club scene.",
+      questions: [{
+        type: "question",
+        title: "",
+        answer: "\"<i>I told them, you know, I'm giving you a pack, do whatever you want on it. Like, however you want to change the \
+          song, change it. If it sounds like a completely different song, I don't care. Just like, make it yours, you know? \
+          And these are like people that I know would not fuck up my song,</i>\" says River in response to my questioning of how the process went to obtain the remix.<br><br>\
+          Existing loosely in between New York and South Africa, she has built a strong network of producers. \
+          Trust is an essential part of the independent artist experience. That and the ability make things happen. \
+          She's self released all of her music over the past 8 years she's been producing. \
+          \"<i>I'm scared of labels...I don't want to like, owe people and I don't want to be owned. I'm not going to be \
+          no slave. I want my freedom. I don't want no white man controlling me,</i>\" she says in reference to an infamous electronic label who tried to sign her. \
+          \"<i>I burned that bridge but may all the bridges I've burnt light my way.</i>\"<br><br> \
+          River hovers in the sweet spot between uncompromising but not stagnant. \
+          From her early RnB flips to her latest contemplative experimental release <b>MARTYR</b>, which <b>LIKE A MOTH TO A FLAME</b> first appears on, she is creating a legacy uniquely her own.<br><br> \
+          \"<i>That's why like, I always say, like, I have no desire to be famous. Yeah, I just want my music to be heard. And I just want to be, you know, remembered, like, I want to leave a legacy. \
+          I don't want to be like, you know, popcorn bitches popping up this year then they're gone. \
+          Yeah, no, I just, I need to create something that's more of like, it was a moment in time. You know, you could read about it in history books or whatever.</i>\""
+        },
+        {
+          type: "image",
+          path: "articles/rivermoon/rivermoon2.jpg",
+          author: "Jonty Knight",
+          editor: '3rdeyechakra'
+        },
+        {
+          type: "question",
+          title: "",
+          answer: "In addition to creating her own moment, she’s also looking out for her community and has aspirations of building a formal music family. \
+          \"<i>I feel like now, or in the next year or two, I would like to start something like, not a label, but like more of a collective of black people who are doing these techno and leftfield and \
+          experimental electronic music and stuff like that.Cuz there's really no platform for us.</i>\"<br><br>\
+          She states, \"<i>I think mostly just community, it comes down to like community because we only have us. \
+          I don't want to rely on you know, the powers that be. I feel like when we're together, \
+          we're more powerful. And I want to be, I just want the kids who think like, Oh my god, maybe I can't do this \
+          because I didn't grow up with money. You know, I just want them to feel like it's possible. You know ? You could, \
+          you could be black and you could make any type of music because most of this music, all this music, is fucking black music.\""
+        }
+      ],
+      footer_links: [
+        {
+            name: "Purchase LIKE A MOTH TO A FLAME - REMIXES on Bandcamp here",
+            url: "https://saintdeepthroatxo.bandcamp.com/album/like-a-moth-to-a-flame-remixes"
+        },
+        {
+            name: "Follow River Moon here",
+            url: "https://www.instagram.com/saint.deepthroat"
+        },
+        {
+          name: 'Follow Crystal Mioner here',
+          url: 'https://www.instagram.com/crystal.mioner/'
+
+        }
+      ]
     }
     ]))
     state.current = payload
@@ -3229,6 +3297,74 @@ const mutations = {
         {
           name: 'Follow Tanya Akinola here',
           url: 'https://www.instagram.com/tanyaakinola'
+        }
+      ]
+    },
+    {
+      short_name: "LIKE A MOTH TO A FLAME, RIVER MOON'S LIGHT",
+      name: "LIKE A MOTH TO A FLAME, RIVER MOON'S LIGHT",
+      isSingle: false,
+      bandcamp_id: "3253241199",
+      bandcamp_link: "https://saintdeepthroatxo.bandcamp.com/album/like-a-moth-to-a-flame-remixes",
+      credit_illu: "Jonty Knight",
+      author: "Crystal Mioner",
+      illus: "articles/rivermoon/rivermoon.jpg",
+      introduction: "Geographically, Detroit and Cape Town are 9,000 miles apart but when River gets on the phone, I feel like \
+        we're joined at the hip, the warmth from her voice transmitted with ease across the Atlantic. It's a Leo thing,\
+        that ability to radiate and draw people into your universe. A quick glance at the collaborators for <b>LIKE A MOTH TO \
+        A FLAME</b>, their latest remix album, shows how far reaching Rivers galaxy goes. With tracks from Angel Ho,\
+        Ase Manual, Bapari, Byrell The Great, and Diego Hauz, River Moon provides keen insight into who's who of the \
+        black diasporic club scene.",
+      questions: [{
+        type: "question",
+        title: "",
+        answer: "\"<i>I told them, you know, I'm giving you a pack, do whatever you want on it. Like, however you want to change the \
+          song, change it. If it sounds like a completely different song, I don't care. Just like, make it yours, you know? \
+          And these are like people that I know would not fuck up my song,</i>\" says River in response to my questioning of how the process went to obtain the remix.<br><br>\
+          Existing loosely in between New York and South Africa, she has built a strong network of producers. \
+          Trust is an essential part of the independent artist experience. That and the ability make things happen. \
+          She's self released all of her music over the past 8 years she's been producing. \
+          \"<i>I'm scared of labels...I don't want to like, owe people and I don't want to be owned. I'm not going to be \
+          no slave. I want my freedom. I don't want no white man controlling me,</i>\" she says in reference to an infamous electronic label who tried to sign her. \
+          \"<i>I burned that bridge but may all the bridges I've burnt light my way.</i>\"<br><br> \
+          River hovers in the sweet spot between uncompromising but not stagnant. \
+          From her early RnB flips to her latest contemplative experimental release <b>MARTYR</b>, which <b>LIKE A MOTH TO A FLAME</b> first appears on, she is creating a legacy uniquely her own.<br><br> \
+          \"<i>That's why like, I always say, like, I have no desire to be famous. Yeah, I just want my music to be heard. And I just want to be, you know, remembered, like, I want to leave a legacy. \
+          I don't want to be like, you know, popcorn bitches popping up this year then they're gone. \
+          Yeah, no, I just, I need to create something that's more of like, it was a moment in time. You know, you could read about it in history books or whatever.</i>\""
+        },
+        {
+          type: "image",
+          path: "articles/rivermoon/rivermoon2.jpg",
+          author: "Jonty Knight",
+          editor: '3rdeyechakra'
+        },
+        {
+          type: "question",
+          title: "",
+          answer: "In addition to creating her own moment, she’s also looking out for her community and has aspirations of building a formal music family. \
+          \"<i>I feel like now, or in the next year or two, I would like to start something like, not a label, but like more of a collective of black people who are doing these techno and leftfield and \
+          experimental electronic music and stuff like that.Cuz there's really no platform for us.</i>\"<br><br>\
+          She states, \"<i>I think mostly just community, it comes down to like community because we only have us. \
+          I don't want to rely on you know, the powers that be. I feel like when we're together, \
+          we're more powerful. And I want to be, I just want the kids who think like, Oh my god, maybe I can't do this \
+          because I didn't grow up with money. You know, I just want them to feel like it's possible. You know ? You could, \
+          you could be black and you could make any type of music because most of this music, all this music, is fucking black music.\""
+        }
+      ],
+      footer_links: [
+        {
+            name: "Purchase LIKE A MOTH TO A FLAME - REMIXES on Bandcamp here",
+            url: "https://saintdeepthroatxo.bandcamp.com/album/like-a-moth-to-a-flame-remixes"
+        },
+        {
+            name: "Follow River Moon here",
+            url: "https://www.instagram.com/saint.deepthroat"
+        },
+        {
+          name: 'Follow Crystal Mioner here',
+          url: 'https://www.instagram.com/crystal.mioner/'
+
         }
       ]
     }
