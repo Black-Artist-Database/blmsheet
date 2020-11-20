@@ -1682,7 +1682,7 @@ const mutations = {
             url: "https://www.instagram.com/saint.deepthroat"
         },
         {
-          name: 'Follow Crystal Monier here',
+          name: 'Follow Crystal Mioner here',
           url: 'https://www.instagram.com/crystal.mioner/'
 
         }
@@ -3362,7 +3362,7 @@ const mutations = {
             url: "https://www.instagram.com/saint.deepthroat"
         },
         {
-          name: 'Follow Crystal Monier here',
+          name: 'Follow Crystal Mioner here',
           url: 'https://www.instagram.com/crystal.mioner/'
 
         }
