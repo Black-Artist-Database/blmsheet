@@ -1687,6 +1687,136 @@ const mutations = {
 
         }
       ]
+    },
+    {
+      short_name: 'BLACK BANDCAMP DECEMBER PICKS: EUROPE',
+      name: 'BLACK BANDCAMP DECEMBER PICKS: EUROPE',
+      bandcamp_link: "",
+      bandcamp_id: "",
+      credit: null,
+      author: null,
+      date: '08/07/2020',
+      illus: 'articles/dec2020/dec2020.jpg',
+      top_desc: "December’s Bandcamp Friday sees us reach out to some of our favourite DJs residing on the European continent. Have a look for some stellar music, all found on our Black Bandcamp database.",
+      links: [
+      ],
+      questions: [
+        {
+          type: 'bandcamp_picks',
+          title: 'Carista',
+          description: 'Music curator, DJ and founder of  <a href="https://unitedidentities.bandcamp.com" target="_blank">United Identities</a>, born, bred and based in Utrecht, The Netherlands with a monthly show on NTS Radio.',
+          links: [
+            {
+              title: 'Jay Sound - Flamingo Dance',
+              description: "That perfect 80's funk with lush sounds brings me back to those summer days during sunset. Detroit native Jay Sound's - all of his productions are just straight up fire!",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2617831924/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2744954044/transparent=true/" seamless><a href="https://jaysound.bandcamp.com/album/playlist-to-paradise">Playlist To Paradise by Jay Sound</a></iframe>'
+            },
+            {
+              title: 'Osagie - Money Bags',
+              description: 'Bad boy tune by Philadelphia\'s very own Osagie taken from his Sagacity II EP.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=326930774/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1729703451/transparent=true/" seamless><a href="https://osagie.bandcamp.com/album/sagacity-ll">SAGACITY ll by OSAGIE</a></iframe>'
+            },
+            {
+              title: 'Ingi Visions - Visionair Tu',
+              description: "Brothers Samuel Deep and Julian Alexander are Ingi Visions from the iconic Utrecht-based collective Slapfunk. This one is a timeless slammer and worth listening/playing out loud whenever you got the chance.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3271753897/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2510258814/transparent=true/" seamless><a href="https://slapfunk.bandcamp.com/album/ingi-visions-ingi-visionair-ep-slpfnk023">Ingi Visions - Ingi Visionair EP - SLPFNK023 by SlapFunk Records</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Suze Ijó',
+          description: 'Suze Ijó, lover, DJ, dancer and radiomaker from Rotterdam, The Netherlands. One of the forces behind United Identities, the label founded by Carista. Always selecting my music by feelings and moods.',
+          links: [
+            {
+              title: 'The Neighbourhood Character - Unacceptable Model (4 A dance track)',
+              description: 'My dearest friend Ari made this! Ari is a talented producer/DJ from Berlin. On this track Ari creates a peaceful atmosphere but with a psychedelic hint. I think this is one of the most refreshing sounds I\'ve heard in a long time! Don\'t forget to check out The Neighbourhood Character\'s other work and collaborations!',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3651240217/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2514743374/transparent=true/" seamless><a href="https://theneighbourhoodcharacter.bandcamp.com/album/there-will-be-magic-ep">There Will Be Magic EP by The Neighbourhood Character</a></iframe>'
+            },
+            {
+              title: 'Ian Fink - full [aries mix]',
+              description: 'Ian Fink is a key player from Detroit. Ian\'s music gives me hope for the future of House and Techno. It\'s raw and emotional, his music always has a message to tell and most importantly it sounds great! \'full [aries mix]\' is a beautiful innovative house track with a nod to the past.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3069262568/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1837443718/transparent=true/" seamless><a href="https://ianfink.bandcamp.com/album/full">FULL by Ian Fink</a></iframe>'
+            },
+            {
+              title: 'Frankie Reyes (Gabriel Reyes-Whittaker a.k.a. GB, Gift & Blessed, The Abstract Eye)',
+              description: "I love how Frankie Reyes explores his Puerto Rican roots with his synthesizer. He creates familiar sounding vulnerable melodies and takes you to a place you didn't know you were longing for. I instantly connect to his sounds through my own Curacao roots and I think many from the diaspora will dig the vibes. To me his music is very calming,soothing and vaguely familiar.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2531816603/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2930024917/transparent=true/" seamless><a href="https://frankiereyes.bandcamp.com/album/originalitos">Originalitos by Frankie Reyes</a></iframe>'
+            },
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Imani',
+          description: 'Imani (she/her) is a multi-faceted artist from Switzerland. In her work she experiments with sound, memory and perception, centering Blackness in her work in an effort to uplift and normalize different Black experiences.',
+          links: [
+            {
+              title: 'Azu Tiwaline - Draw Me A Silence Part. I',
+              description: "Azu Tiwaline does an amazing job at creating a rich and deep soundscape, bringing rhythms stemming from her roots to the forefront, interlacing them with elements of speech. The track \"Until the End\" feels like I'm under water and being transported to distant futures, all the while being guided by an omnipresent voice, guiding me through the depths of the ocean",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1099319844/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://azutiwaline.bandcamp.com/album/draw-me-a-silence-part-i">Draw Me A Silence Part. I by Azu Tiwaline</a></iframe>'
+            },
+            {
+              title: '[MONRHEA] - S P A C E through T I M E',
+              description: '"Space through time" is, in the words of the artist [MONRHEA] themselves, an ambient meditative track. Listening to it, the sounds seem to gently break through all thought and allow the mind and the body to release.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=4126966007/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://monrhea.bandcamp.com/track/s-p-a-c-e-through-t-i-m-e">S P A C E through T I M E by [MONRHEA]</a></iframe>'
+            },
+            {
+              title: 'Purple Hurt - Postcards from the Sun',
+              description: "The beginning of this song starts with the sunrise. \"Postcards from the Sun\" reminds me of Icarus as they fly towards the sun with a painful outburst as it's getting too hot and finally ending on a peaceful note, as they accept their death and plummet into the ocean.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2637358034/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://purplehurt.bandcamp.com/album/postcards-from-the-sun">Postcards from the Sun by Purple Hurt</a></iframe>'
+            },
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'AYBEE',
+          description: "I am AYBEE. Chief Alchemist of <a href=\"http://deepblakmusic.bandcamp.com/\" target=\"_blank\">Deepblak Recordings</a>.",
+          links: [
+            {
+              title: 'AFTA-1 - Cosmic Snap',
+              description: "Always on the lookout for this Brother’s work. There is a tranquil transcendence to what he does. He had been quiet for a time, but recently dropped a new project. A perfect counter melody to the frenetic nature of 2020.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=692190634/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=314550686/transparent=true/" seamless><a href="https://afta1.bandcamp.com/album/103120">103120 by AFTA-1</a></iframe>'
+            },
+            {
+              title: 'Afrikan Sciences - Survivors',
+              description: 'Dizzy Gillespie once said of Charlie Parker "Know him..know me". I have traveled many roads with this cat, yet he ceases to amaze. Any release from Eric should be regarded as a decree of the highest order.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1637858673/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://afrikansciences.bandcamp.com/album/survivors">Survivors by Afrikan Sciences</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Somatic Rituals',
+          description: 'DJs & producers (Kombé, Mafou & Mukuna) functioning out of Basel, Switzerland and running the Somatic Rituals collective.',
+          links: [
+            {
+              title: 'Martyn Bootyspoon - Buss Down (Xzavier Stone Remix)',
+              description: 'One of our favourite remixes by our friend Xzavier Stone. Definitely a club banger and an interesting combination of bouncy 2000 hip hop and a vicious acid line.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2622180351/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2318337832/transparent=true/" seamless><a href="https://modelfuture.bandcamp.com/album/martyn-bootyspoon-no-1-crush-remixes">Martyn Bootyspoon NO. 1 CRUSH REMIXES by Martyn Bootyspoon</a></iframe>'
+            },
+            {
+              title: 'Millia Rage - hopper7',
+              description: 'The first track we heard of Millia Rage. The percussion fueled tune is right in our lane, and we’re looking forward to hearing more from the Chicago producer.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=4277216872/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://milliarage.bandcamp.com/track/hopper7">hopper7 by Millia Rage</a></iframe>'
+            },
+            {
+              title: 'Lamin Fofana - And All the Birds Sing Bass',
+              description: 'Just beautiful textures and feels. The whole EP is great.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3551512510/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3373823273/transparent=true/" seamless><a href="https://laminfofana.bandcamp.com/album/blues">Blues by Lamin Fofana</a></iframe>'
+            },
+            {
+              title: 'Anz - Loos In Twos (NRG)',
+              description: 'A straight up U.K. banger. Unfortunately we only had the chance to play this once in a club before Switzerland went into lockdown again. Nevertheless the track ripped the floor apart.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1285057197/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1285045693/transparent=true/" seamless><a href="https://anzdj.bandcamp.com/album/loos-in-twos-nrg">Loos In Twos (NRG) by Anz</a></iframe>'
+            },
+            {
+              title: 'Hagan - FWD',
+              description: 'This tune has such a nice build up. We\'ve been playing this track for some while now, but it never gets boring.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3488846892/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3516903845/transparent=true/" seamless><a href="https://pushandrunmusic.bandcamp.com/album/roots">Roots by Hagan</a></iframe>'
+            },
+          ]
+        },
+      ]
     }
     ]))
     state.current = payload
@@ -3366,6 +3496,136 @@ const mutations = {
           url: 'https://www.instagram.com/crystal.mioner/'
 
         }
+      ]
+    },
+    {
+      short_name: 'BLACK BANDCAMP DECEMBER PICKS: EUROPE',
+      name: 'BLACK BANDCAMP DECEMBER PICKS: EUROPE',
+      bandcamp_link: "",
+      bandcamp_id: "",
+      credit: null,
+      author: null,
+      date: '08/07/2020',
+      illus: 'articles/dec2020/dec2020.jpg',
+      top_desc: "December’s Bandcamp Friday sees us reach out to some of our favourite DJs residing on the European continent. Have a look for some stellar music, all found on our Black Bandcamp database.",
+      links: [
+      ],
+      questions: [
+        {
+          type: 'bandcamp_picks',
+          title: 'Carista',
+          description: 'Music curator, DJ and founder of  <a href="https://unitedidentities.bandcamp.com" target="_blank">United Identities</a>, born, bred and based in Utrecht, The Netherlands with a monthly show on NTS Radio.',
+          links: [
+            {
+              title: 'Jay Sound - Flamingo Dance',
+              description: "That perfect 80's funk with lush sounds brings me back to those summer days during sunset. Detroit native Jay Sound's - all of his productions are just straight up fire!",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2617831924/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2744954044/transparent=true/" seamless><a href="https://jaysound.bandcamp.com/album/playlist-to-paradise">Playlist To Paradise by Jay Sound</a></iframe>'
+            },
+            {
+              title: 'Osagie - Money Bags',
+              description: 'Bad boy tune by Philadelphia\'s very own Osagie taken from his Sagacity II EP.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=326930774/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1729703451/transparent=true/" seamless><a href="https://osagie.bandcamp.com/album/sagacity-ll">SAGACITY ll by OSAGIE</a></iframe>'
+            },
+            {
+              title: 'Ingi Visions - Visionair Tu',
+              description: "Brothers Samuel Deep and Julian Alexander are Ingi Visions from the iconic Utrecht-based collective Slapfunk. This one is a timeless slammer and worth listening/playing out loud whenever you got the chance.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3271753897/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2510258814/transparent=true/" seamless><a href="https://slapfunk.bandcamp.com/album/ingi-visions-ingi-visionair-ep-slpfnk023">Ingi Visions - Ingi Visionair EP - SLPFNK023 by SlapFunk Records</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Suze Ijó',
+          description: 'Suze Ijó, lover, DJ, dancer and radiomaker from Rotterdam, The Netherlands. One of the forces behind United Identities, the label founded by Carista. Always selecting my music by feelings and moods.',
+          links: [
+            {
+              title: 'The Neighbourhood Character - Unacceptable Model (4 A dance track)',
+              description: 'My dearest friend Ari made this! Ari is a talented producer/DJ from Berlin. On this track Ari creates a peaceful atmosphere but with a psychedelic hint. I think this is one of the most refreshing sounds I\'ve heard in a long time! Don\'t forget to check out The Neighbourhood Character\'s other work and collaborations!',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3651240217/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2514743374/transparent=true/" seamless><a href="https://theneighbourhoodcharacter.bandcamp.com/album/there-will-be-magic-ep">There Will Be Magic EP by The Neighbourhood Character</a></iframe>'
+            },
+            {
+              title: 'Ian Fink - full [aries mix]',
+              description: 'Ian Fink is a key player from Detroit. Ian\'s music gives me hope for the future of House and Techno. It\'s raw and emotional, his music always has a message to tell and most importantly it sounds great! \'full [aries mix]\' is a beautiful innovative house track with a nod to the past.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3069262568/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1837443718/transparent=true/" seamless><a href="https://ianfink.bandcamp.com/album/full">FULL by Ian Fink</a></iframe>'
+            },
+            {
+              title: 'Frankie Reyes (Gabriel Reyes-Whittaker a.k.a. GB, Gift & Blessed, The Abstract Eye)',
+              description: "I love how Frankie Reyes explores his Puerto Rican roots with his synthesizer. He creates familiar sounding vulnerable melodies and takes you to a place you didn't know you were longing for. I instantly connect to his sounds through my own Curacao roots and I think many from the diaspora will dig the vibes. To me his music is very calming,soothing and vaguely familiar.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2531816603/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2930024917/transparent=true/" seamless><a href="https://frankiereyes.bandcamp.com/album/originalitos">Originalitos by Frankie Reyes</a></iframe>'
+            },
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Imani',
+          description: 'Imani (she/her) is a multi-faceted artist from Switzerland. In her work she experiments with sound, memory and perception, centering Blackness in her work in an effort to uplift and normalize different Black experiences.',
+          links: [
+            {
+              title: 'Azu Tiwaline - Draw Me A Silence Part. I',
+              description: "Azu Tiwaline does an amazing job at creating a rich and deep soundscape, bringing rhythms stemming from her roots to the forefront, interlacing them with elements of speech. The track \"Until the End\" feels like I'm under water and being transported to distant futures, all the while being guided by an omnipresent voice, guiding me through the depths of the ocean",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1099319844/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://azutiwaline.bandcamp.com/album/draw-me-a-silence-part-i">Draw Me A Silence Part. I by Azu Tiwaline</a></iframe>'
+            },
+            {
+              title: '[MONRHEA] - S P A C E through T I M E',
+              description: '"Space through time" is, in the words of the artist [MONRHEA] themselves, an ambient meditative track. Listening to it, the sounds seem to gently break through all thought and allow the mind and the body to release.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=4126966007/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://monrhea.bandcamp.com/track/s-p-a-c-e-through-t-i-m-e">S P A C E through T I M E by [MONRHEA]</a></iframe>'
+            },
+            {
+              title: 'Purple Hurt - Postcards from the Sun',
+              description: "The beginning of this song starts with the sunrise. \"Postcards from the Sun\" reminds me of Icarus as they fly towards the sun with a painful outburst as it's getting too hot and finally ending on a peaceful note, as they accept their death and plummet into the ocean.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2637358034/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://purplehurt.bandcamp.com/album/postcards-from-the-sun">Postcards from the Sun by Purple Hurt</a></iframe>'
+            },
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'AYBEE',
+          description: "I am AYBEE. Chief Alchemist of <a href=\"http://deepblakmusic.bandcamp.com/\" target=\"_blank\">Deepblak Recordings</a>.",
+          links: [
+            {
+              title: 'AFTA-1 - Cosmic Snap',
+              description: "Always on the lookout for this Brother’s work. There is a tranquil transcendence to what he does. He had been quiet for a time, but recently dropped a new project. A perfect counter melody to the frenetic nature of 2020.",
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=692190634/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=314550686/transparent=true/" seamless><a href="https://afta1.bandcamp.com/album/103120">103120 by AFTA-1</a></iframe>'
+            },
+            {
+              title: 'Afrikan Sciences - Survivors',
+              description: 'Dizzy Gillespie once said of Charlie Parker "Know him..know me". I have traveled many roads with this cat, yet he ceases to amaze. Any release from Eric should be regarded as a decree of the highest order.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1637858673/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://afrikansciences.bandcamp.com/album/survivors">Survivors by Afrikan Sciences</a></iframe>'
+            }
+          ]
+        },
+        {
+          type: 'bandcamp_picks',
+          title: 'Somatic Rituals',
+          description: 'DJs & producers (Kombé, Mafou & Mukuna) functioning out of Basel, Switzerland and running the Somatic Rituals collective.',
+          links: [
+            {
+              title: 'Martyn Bootyspoon - Buss Down (Xzavier Stone Remix)',
+              description: 'One of our favourite remixes by our friend Xzavier Stone. Definitely a club banger and an interesting combination of bouncy 2000 hip hop and a vicious acid line.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2622180351/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2318337832/transparent=true/" seamless><a href="https://modelfuture.bandcamp.com/album/martyn-bootyspoon-no-1-crush-remixes">Martyn Bootyspoon NO. 1 CRUSH REMIXES by Martyn Bootyspoon</a></iframe>'
+            },
+            {
+              title: 'Millia Rage - hopper7',
+              description: 'The first track we heard of Millia Rage. The percussion fueled tune is right in our lane, and we’re looking forward to hearing more from the Chicago producer.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=4277216872/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://milliarage.bandcamp.com/track/hopper7">hopper7 by Millia Rage</a></iframe>'
+            },
+            {
+              title: 'Lamin Fofana - And All the Birds Sing Bass',
+              description: 'Just beautiful textures and feels. The whole EP is great.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3551512510/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3373823273/transparent=true/" seamless><a href="https://laminfofana.bandcamp.com/album/blues">Blues by Lamin Fofana</a></iframe>'
+            },
+            {
+              title: 'Anz - Loos In Twos (NRG)',
+              description: 'A straight up U.K. banger. Unfortunately we only had the chance to play this once in a club before Switzerland went into lockdown again. Nevertheless the track ripped the floor apart.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1285057197/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1285045693/transparent=true/" seamless><a href="https://anzdj.bandcamp.com/album/loos-in-twos-nrg">Loos In Twos (NRG) by Anz</a></iframe>'
+            },
+            {
+              title: 'Hagan - FWD',
+              description: 'This tune has such a nice build up. We\'ve been playing this track for some while now, but it never gets boring.',
+              embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3488846892/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3516903845/transparent=true/" seamless><a href="https://pushandrunmusic.bandcamp.com/album/roots">Roots by Hagan</a></iframe>'
+            },
+          ]
+        },
       ]
     }
     ]))
