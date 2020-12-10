@@ -1827,12 +1827,12 @@ const mutations = {
       author: 'Lauryn Njeri',
       illus: 'articles/idman/idman.jpg',
       date: '12/11/2020',
-      introduction: "Canadian-Somali singer, songwriter, Idman makes an impressive debut with their first ever release, \"<i>Down For It</i>\". Defining themselves as genreless, Idman brings us along on their raw journey of self discovery as an artist. Their hush vocal tones ravelled in grasping penmanship see Idman dripping in authentic flavour while digging deep into their relationship with self doubt, affirming that they are boldly kicking down any hesitation that stands in their way. With the help of hard hitting bass lines and an infectious hook, we get to experience Idman’s delicate yet striking energy.Black Bandcamp had a conversation with Idman about their debut release, their journey in music and what more we can expect from them.",
+      introduction: "Canadian-Somali singer, songwriter, <b>Idman</b> makes an impressive debut with their first ever release, \"<b>Down For It</b>\". Defining themselves as genreless, Idman brings us along on their raw journey of self discovery as an artist.<br><br>Their hush vocal tones ravelled in grasping penmanship see Idman dripping in authentic flavour while digging deep into their relationship with self doubt, affirming that they are boldly kicking down any hesitation that stands in their way. With the help of hard hitting bass lines and an infectious hook, we get to experience Idman’s delicate yet striking energy.<br><br>Black Bandcamp had a conversation with Idman about their debut release, their journey in music and what more we can expect from them.",
       questions: [
         {
           type: 'question',
           title: 'Who is Idman?',
-          answer: "I would say I am Idman and I would say that's a really hard question for anyone to answer.I'd say I'm getting to know myself and I think that's what's really cool about doing music right now, is trying to understand the nuances and complexities of who I am through word and sound."
+          answer: "I would say I am Idman and I would say that's a really hard question for anyone to answer. I'd say I'm getting to know myself and I think that's what's really cool about doing music right now, is trying to understand the nuances and complexities of who I am through word and sound."
         },
         {
           type: 'question',
@@ -3707,12 +3707,12 @@ const mutations = {
       author: 'Lauryn Njeri',
       illus: 'articles/idman/idman.jpg',
       date: '12/11/2020',
-      introduction: "Canadian-Somali singer, songwriter, Idman makes an impressive debut with their first ever release, \"<i>Down For It</i>\". Defining themselves as genreless, Idman brings us along on their raw journey of self discovery as an artist. Their hush vocal tones ravelled in grasping penmanship see Idman dripping in authentic flavour while digging deep into their relationship with self doubt, affirming that they are boldly kicking down any hesitation that stands in their way. With the help of hard hitting bass lines and an infectious hook, we get to experience Idman’s delicate yet striking energy.Black Bandcamp had a conversation with Idman about their debut release, their journey in music and what more we can expect from them.",
+      introduction: "Canadian-Somali singer, songwriter, <b>Idman</b> makes an impressive debut with their first ever release, \"<b>Down For It</b>\". Defining themselves as genreless, Idman brings us along on their raw journey of self discovery as an artist.<br><br>Their hush vocal tones ravelled in grasping penmanship see Idman dripping in authentic flavour while digging deep into their relationship with self doubt, affirming that they are boldly kicking down any hesitation that stands in their way. With the help of hard hitting bass lines and an infectious hook, we get to experience Idman’s delicate yet striking energy.<br><br>Black Bandcamp had a conversation with Idman about their debut release, their journey in music and what more we can expect from them.",
       questions: [
         {
           type: 'question',
           title: 'Who is Idman?',
-          answer: "I would say I am Idman and I would say that's a really hard question for anyone to answer.I'd say I'm getting to know myself and I think that's what's really cool about doing music right now, is trying to understand the nuances and complexities of who I am through word and sound."
+          answer: "I would say I am Idman and I would say that's a really hard question for anyone to answer. I'd say I'm getting to know myself and I think that's what's really cool about doing music right now, is trying to understand the nuances and complexities of who I am through word and sound."
         },
         {
           type: 'question',
