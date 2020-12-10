@@ -1817,6 +1817,76 @@ const mutations = {
           ]
         },
       ]
+    },
+    {
+      short_name: 'IDMAN IS HERE AND DOWN FOR IT',
+      name: 'IDMAN IS HERE AND DOWN FOR IT',
+      bandcamp_link: "https://idman.bandcamp.com/track/down-for-it",
+      bandcamp_id: "862102097",
+      isSingle: true,
+      author: 'Lauryn Njeri',
+      illus: 'articles/idman/idman.jpg',
+      date: '12/11/2020',
+      introduction: "Canadian-Somali singer, songwriter, Idman makes an impressive debut with their first ever release, \"<i>Down For It</i>\". Defining themselves as genreless, Idman brings us along on their raw journey of self discovery as an artist. Their hush vocal tones ravelled in grasping penmanship see Idman dripping in authentic flavour while digging deep into their relationship with self doubt, affirming that they are boldly kicking down any hesitation that stands in their way. With the help of hard hitting bass lines and an infectious hook, we get to experience Idman’s delicate yet striking energy.Black Bandcamp had a conversation with Idman about their debut release, their journey in music and what more we can expect from them.",
+      questions: [
+        {
+          type: 'question',
+          title: 'Who is Idman?',
+          answer: "I would say I am Idman and I would say that's a really hard question for anyone to answer.I'd say I'm getting to know myself and I think that's what's really cool about doing music right now, is trying to understand the nuances and complexities of who I am through word and sound."
+        },
+        {
+          type: 'question',
+          title: 'What has an average day been like for you during the global lockdown?',
+          answer: 'An average day nowadays is really different than how it was in the early days of lockdown for sure. Nowadays it includes a lot of emails, maybe a few zoom calls, maybe checking on the homies, I’ve got a lot of hobbies so maybe tapping into one of those.  Doing something for myself at some point is usually much much much appreciated but yeah that’s usually what a day looks like.'
+        },
+        {
+          type: 'question',
+          title: "Has your musical journey always been deliberate, or did it gradually evolve to what it's become ?",
+          answer : "The steps that it's taken me to get where I am right now have though unpredictable come super organically. But I will say that the vision in creating it and wanting to share has always been very deliberate and consistent, for sure."
+        },
+        {
+          type: "image",
+          path: "articles/idman/idman2.jpg",
+        },
+        {
+          type: 'question',
+          title: 'Who are some of the artists that have been influential in finding your sound?',
+          answer: "I think some of the artists that have been super influential in finding my sound are artists that I know view music as being a sonic experience that is genreless. I think Janelle Monae for sure, Prince for sure, I think about Tiwa Savage, I think about Sauti Sol, Pac yeah, so many people. Also, I would add that I don't think that I have figured out what my sound is either. I think I'm figuring it out but the comfort that I have in figuring it out is probably tributed to those artists."
+        },
+        {
+          type: 'question',
+          title: 'The lyrics on this body of work are very raw and self  affirming. Do you mind sharing what led to the creation of  this track? ',
+          answer: "I had the first line in my head for a little bit and the first line made me feel really terrified to say out loud and I felt affirmed by that in a weird way. I have social anxiety, diagnosed and I think that something that makes me feel really grounded and in my body is doing things that challenge me and facing my fears head on and yeah, I think I feel like oh my god if I make this song I'll feel like a cornball but Imma be honest. I'm committed to doing the things that challenge those parts of me for sure."
+        },
+        {
+          type: "image",
+          path: "articles/idman/idman3.jpg",
+        },
+        {
+          type: 'question',
+          title: 'Being your debut release, this single carries a very intentional message. What else can we expect to hear on your upcoming EP "Risk"?',
+          answer: "Expect to not have one cohesive sound for sure. I think that this body of work is me presenting to the world, I wouldn't necessarily say my rough drafts, but my current process for sure. I think it was an opportunity for me to figure out what I liked and what I wanted to listen to myself and I think it 's super different. No one song sounds like the other and I'm okay with that fact."
+        },
+        {
+          type: 'question',
+          title: 'When you create music, what would you like your listeners to take away from it?',
+          answer: "I just aim for resonation. I feel like there’s something about music that feels like a shared experience. I think that if we didn't feel like that we’ d all be singing in our rooms and there’ s something to be said about wanting to do this thing and present it to folks and have this back and forth and I think my number one goal is resonation and positive resonation to be exact."
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase on Bandcamp here',
+          url: 'https://idman.bandcamp.com/track/down-for-it'
+        },
+        {
+          name: 'Follow Idman here',
+          url: 'https://www.instagram.com/idman.a/'
+        },
+        {
+          name: 'Follow Lauryn Njeri here',
+          url: 'https://www.instagram.com/laurynlikethehills_/'
+        }
+      ]
     }
     ]))
     state.current = payload
@@ -3626,6 +3696,78 @@ const mutations = {
             },
           ]
         },
+      ]
+    },
+    {
+      short_name: 'IDMAN IS HERE AND DOWN FOR IT',
+      name: 'IDMAN IS HERE AND DOWN FOR IT',
+      bandcamp_link: "https://idman.bandcamp.com/track/down-for-it",
+      bandcamp_id: "862102097",
+      isSingle: true,
+      author: 'Lauryn Njeri',
+      illus: 'articles/idman/idman.jpg',
+      date: '12/11/2020',
+      introduction: "Canadian-Somali singer, songwriter, Idman makes an impressive debut with their first ever release, \"<i>Down For It</i>\". Defining themselves as genreless, Idman brings us along on their raw journey of self discovery as an artist. Their hush vocal tones ravelled in grasping penmanship see Idman dripping in authentic flavour while digging deep into their relationship with self doubt, affirming that they are boldly kicking down any hesitation that stands in their way. With the help of hard hitting bass lines and an infectious hook, we get to experience Idman’s delicate yet striking energy.Black Bandcamp had a conversation with Idman about their debut release, their journey in music and what more we can expect from them.",
+      questions: [
+        {
+          type: 'question',
+          title: 'Who is Idman?',
+          answer: "I would say I am Idman and I would say that's a really hard question for anyone to answer.I'd say I'm getting to know myself and I think that's what's really cool about doing music right now, is trying to understand the nuances and complexities of who I am through word and sound."
+        },
+        {
+          type: 'question',
+          title: 'What has an average day been like for you during the global lockdown?',
+          answer: 'An average day nowadays is really different than how it was in the early days of lockdown for sure. Nowadays it includes a lot of emails, maybe a few zoom calls, maybe checking on the homies, I’ve got a lot of hobbies so maybe tapping into one of those.  Doing something for myself at some point is usually much much much appreciated but yeah that’s usually what a day looks like.'
+        },
+        {
+          type: 'question',
+          title: "Has your musical journey always been deliberate, or did it gradually evolve to what it's become ?",
+          answer : "The steps that it's taken me to get where I am right now have though unpredictable come super organically. But I will say that the vision in creating it and wanting to share has always been very deliberate and consistent, for sure."
+        },
+        {
+          type: "image",
+          format: 'cover',
+          path: "articles/idman/idman2.jpg",
+        },
+        {
+          type: 'question',
+          title: 'Who are some of the artists that have been influential in finding your sound?',
+          answer: "I think some of the artists that have been super influential in finding my sound are artists that I know view music as being a sonic experience that is genreless. I think Janelle Monae for sure, Prince for sure, I think about Tiwa Savage, I think about Sauti Sol, Pac yeah, so many people. Also, I would add that I don't think that I have figured out what my sound is either. I think I'm figuring it out but the comfort that I have in figuring it out is probably tributed to those artists."
+        },
+        {
+          type: 'question',
+          title: 'The lyrics on this body of work are very raw and self  affirming. Do you mind sharing what led to the creation of  this track? ',
+          answer: "I had the first line in my head for a little bit and the first line made me feel really terrified to say out loud and I felt affirmed by that in a weird way. I have social anxiety, diagnosed and I think that something that makes me feel really grounded and in my body is doing things that challenge me and facing my fears head on and yeah, I think I feel like oh my god if I make this song I'll feel like a cornball but Imma be honest. I'm committed to doing the things that challenge those parts of me for sure."
+        },
+        {
+          type: "image",
+          format: 'cover',
+          path: "articles/idman/idman3.jpg",
+        },
+        {
+          type: 'question',
+          title: 'Being your debut release, this single carries a very intentional message. What else can we expect to hear on your upcoming EP "Risk"?',
+          answer: "Expect to not have one cohesive sound for sure. I think that this body of work is me presenting to the world, I wouldn't necessarily say my rough drafts, but my current process for sure. I think it was an opportunity for me to figure out what I liked and what I wanted to listen to myself and I think it 's super different. No one song sounds like the other and I'm okay with that fact."
+        },
+        {
+          type: 'question',
+          title: 'When you create music, what would you like your listeners to take away from it?',
+          answer: "I just aim for resonation. I feel like there’s something about music that feels like a shared experience. I think that if we didn't feel like that we’ d all be singing in our rooms and there’ s something to be said about wanting to do this thing and present it to folks and have this back and forth and I think my number one goal is resonation and positive resonation to be exact."
+        }
+      ],
+      footer_links: [
+        {
+          name: 'Purchase on Bandcamp here',
+          url: 'https://idman.bandcamp.com/track/down-for-it'
+        },
+        {
+          name: 'Follow Idman here',
+          url: 'https://www.instagram.com/idman.a/'
+        },
+        {
+          name: 'Follow Lauryn Njeri here',
+          url: 'https://www.instagram.com/laurynlikethehills_/'
+        }
       ]
     }
     ]))

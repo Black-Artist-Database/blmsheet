@@ -105,7 +105,7 @@ export default {
     }
     img {
       width: 100%;
-      max-width: 600px;
+      max-width: 700px;
       margin: 20px auto;
     }
     .bandcamp {
