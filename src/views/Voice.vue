@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="container" v-if="voice">
-      <router-link to="/listen" class="back">Back to the list</router-link>
+      <router-link to="/voices" class="back">Back to the list</router-link>
       <div class="head">
         <h1>{{voice.name}}</h1>
         <p v-if="voice.credit">Photo by <b>{{voice.credit}}</b></p>
@@ -48,7 +48,7 @@ export default {
       this.$store.commit('voices/set_current_by_id', this.$route.params.id)
       console.log(this.voice)
     } else if (!this.voice && this.list.length === 0 || !this.$route.params.id){
-      this.$router.push({name: 'Read'})
+      this.$router.push({name: 'Voices'})
     }
   },
 }
