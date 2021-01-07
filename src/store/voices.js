@@ -14,6 +14,7 @@ const mutations = {
   set_current (state, payload) {
     state.list = JSON.parse(JSON.stringify([
     {
+      type: "interview",
       short_name: "VOICES: DJ PAULETTE",
       top_desc:"PART 1",
       name: "VOICES: DJ PAULETTE",
@@ -47,6 +48,7 @@ const mutations = {
   set_current_by_id(state, payload) {
     state.list = JSON.parse(JSON.stringify([
     {
+      type: "interview",
       short_name: "VOICES: DJ PAULETTE",
       top_desc:"PART 1",
       name: "VOICES: DJ PAULETTE",
