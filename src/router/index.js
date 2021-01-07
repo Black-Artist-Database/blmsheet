@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Read from '../views/Read.vue'
-import Listen from '../views/Listen.vue'
+import Voices from '../views/Voices.vue'
 import Article from '../views/Article.vue'
 import Voice from '../views/Voice.vue'
 
@@ -20,9 +20,9 @@ Vue.use(VueRouter)
     component: Read
   },
    {
-    path: '/listen',
-    name: 'Listen',
-    component: Listen
+    path: '/voices',
+    name: 'Voices',
+    component: Voices
   },
   {
     path: '/voice/:id',
