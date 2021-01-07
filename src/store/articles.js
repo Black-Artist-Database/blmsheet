@@ -971,7 +971,7 @@ const mutations = {
           url: 'https://lexamor.bandcamp.com/album/government-tropicana'
         },
         {
-          name: 'Follow Lex Amorhere',
+          name: 'Follow Lex Amor here',
           url: 'https://www.instagram.com/lexysaluteme/'
         },
         {
@@ -1330,7 +1330,7 @@ const mutations = {
     {
       type: "article",
       short_name: 'AGAINST ALL ODDS',
-      name: 'CHANNEL U & AGAINST ALL ODS: IN CONVERSATION WITH NICO TYLER JAMES',
+      name: 'CHANNEL U & AGAINST ALL ODDS: IN CONVERSATION WITH NICO TYLER JAMES',
       isSingle: false,
       credit_illu: '',
       author: 'Tochi Chelsea',
@@ -2980,7 +2980,7 @@ const mutations = {
           url: 'https://lexamor.bandcamp.com/album/government-tropicana'
         },
         {
-          name: 'Follow Lex Amorhere',
+          name: 'Follow Lex Amor here',
           url: 'https://www.instagram.com/lexysaluteme/'
         },
         {
@@ -3339,7 +3339,7 @@ const mutations = {
     {
       type: "article",
       short_name: 'AGAINST ALL ODDS',
-      name: 'CHANNEL U & AGAINST ALL ODS: IN CONVERSATION WITH NICO TYLER JAMES',
+      name: 'CHANNEL U & AGAINST ALL ODDS: IN CONVERSATION WITH NICO TYLER JAMES',
       isSingle: false,
       credit_illu: '',
       author: 'Tochi Chelsea',
