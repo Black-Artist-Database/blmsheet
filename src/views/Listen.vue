@@ -11,6 +11,7 @@
           :name="item.short_name"
           :author="item.author"
           :illus="item.illus"
+          :type="item.type"
           @on-click="onClick(item, index)"
         />
       </div>

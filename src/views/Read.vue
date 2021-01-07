@@ -6,12 +6,12 @@
         <p>Sort by <a @click="toggleSort"><span :class="{'active': sort === 'oldest'}">oldest</span></a> | <a @click="toggleSort"><span :class="{'active': sort === 'newest'}">newest</span></a></p>
       </div>
       <div class="row">
-
         <ArticleCard v-for="(item, index) in articles"
           :key="index"
           :name="item.short_name"
           :author="item.author"
           :illus="item.illus"
+          :type="item.type"
           @on-click="onClick(item, index)"
         />
       </div>

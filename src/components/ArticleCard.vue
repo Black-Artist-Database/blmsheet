@@ -8,7 +8,7 @@
         </a>
         <div class="card-body">
             <h5 class="card-title">{{ name }}<br><small v-if="author">by {{author}}</small></h5>
-            <a @click="onClick()">Read the article</a>
+            <a @click="onClick()"><span v-if="type === 'article'">Read the article</span><span v-else-if="type === 'interview'">Listen to the interview</span></a>
         </div>
     </div>
 </div>
@@ -20,7 +20,8 @@ export default {
     props: {
       name: String,
       illus: String,
-      author: String
+      author: String,
+      type: String
     },
     computed: {
     },
