@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import createPersistedState from 'vuex-persistedstate';
 import articles from './articles'
+import voices from './voices'
 
 localStorage.removeItem('vuex-state-name')
 
@@ -11,6 +12,7 @@ export default new Vuex.Store({
   plugins: [createPersistedState()],
   strict: false,
   modules: {
-    articles
+    articles,
+    voices
   }
 })

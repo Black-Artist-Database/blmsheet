@@ -14,6 +14,7 @@ const mutations = {
   set_current (state, payload) {
     state.list = JSON.parse(JSON.stringify([
     {
+      type: "article",
       short_name: 'JON DIXON’S QUIET GENIUS',
       name: 'JON DIXON’S QUIET GENIUS',
       bandcamp_link: "https://jon-dixon.bandcamp.com/album/times-of-change-ep",
@@ -98,6 +99,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BLAQKONGO ON "38 DAYS 38 WAYS"',
       name: 'TAKE OFF ON A SONICALLY ENTRANCING JOURNEY WITH BLAQKONGO ON "38 DAYS 38 WAYS"',
       bandcamp_link: "http://blaqkongo.bandcamp.com/album/38-days-38-ways",
@@ -194,6 +196,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'JOSH CAFFÉ TALKS COLLABORATING WITH HONEY DIJON',
       name: 'JOSH CAFFÉ TALKS COLLABORATING WITH HONEY DIJON',
       bandcamp_link: "https://honeydijon.bandcamp.com/album/la-femme-fantastique-extended-mix",
@@ -278,6 +281,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BLACK BANDCAMP SEPTEMBER PICKS: LONDON',
       name: 'BLACK BANDCAMP SEPTEMBER PICKS: LONDON',
       bandcamp_link: "",
@@ -501,6 +505,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'PREMIERE: A DYNAMIC DOUBLE PACK FROM HLX-1',
       name: 'PREMIERE: A DYNAMIC DOUBLE PACK FROM HLX-1',
       credit: null,
@@ -519,6 +524,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'LOVE IS BLUE: FINDING WARMTH IN AHYA SIMONE\'S FROSTBITE',
       name: 'LOVE IS BLUE: FINDING WARMTH IN AHYA SIMONE\'S FROSTBITE',
       author: 'Crystal Mioner',
@@ -589,6 +595,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BAKHITA REFLECTS ON HER MAGICAL EP \'CHAMO MILE:PYE\'',
       name: 'BAKHITA REFLECTS ON HER MAGICAL EP \'CHAMO MILE:PYE\'',
       bandcamp_link: "https://bakhita.bandcamp.com/album/chamo-mile-pye",
@@ -661,6 +668,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'MILES FROM KINSHASA\'S \'BELOVED\' EP CONVEYS THE POWER OF VULNERABILITY',
       name: 'MILES FROM KINSHASA\'S \'BELOVED\' EP CONVEYS THE POWER OF VULNERABILITY',
       bandcamp_link: "https://milesfromkinshasa.bandcamp.com/album/beloved",
@@ -733,6 +741,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BLACK BANDCAMP OCTOBER PICKS: NAIROBI',
       name: 'BLACK BANDCAMP OCTOBER PICKS: NAIROBI',
       bandcamp_link: "",
@@ -924,6 +933,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'LEX AMOR GOES INWARD',
       name: 'LEX AMOR GOES INWARD',
       bandcamp_link: "https://lexamor.bandcamp.com/album/government-tropican",
@@ -961,7 +971,7 @@ const mutations = {
           url: 'https://lexamor.bandcamp.com/album/government-tropicana'
         },
         {
-          name: 'Follow Lex Amorhere',
+          name: 'Follow Lex Amor here',
           url: 'https://www.instagram.com/lexysaluteme/'
         },
         {
@@ -971,6 +981,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BLACK BANDCAMP NOVEMBER PICKS: NAARM',
       name: 'BLACK BANDCAMP NOVEMBER PICKS: NAARM',
       bandcamp_link: "",
@@ -1162,6 +1173,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BETINA QUEST: ALWAYS EVOLVING',
       name: 'BETINA QUEST: ALWAYS EVOLVING',
       bandcamp_link: "https://betinaquest.bandcamp.com/track/ikangure",
@@ -1251,6 +1263,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'SPIRITUAL JAZZ AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
       name: 'SPIRITUAL JAZZ AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
       bandcamp_link: "https://pyramidprojectfeatcontours.bandcamp.com/album/mangroves-ep",
@@ -1315,8 +1328,9 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'AGAINST ALL ODDS',
-      name: 'CHANNEL U & AGAINST ALL ODS: IN CONVERSATION WITH NICO TYLER JAMES',
+      name: 'CHANNEL U & AGAINST ALL ODDS: IN CONVERSATION WITH NICO TYLER JAMES',
       isSingle: false,
       credit_illu: '',
       author: 'Tochi Chelsea',
@@ -1393,6 +1407,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'MORGAN MUNROE IS UNRAVELING THE LAYERS OF HER ARTISTRY',
       name: 'MORGAN MUNROE IS PEELING BACK LAYERS OF HER ARTISTRY ON \'LAYERS 0.5\'',
       isSingle: false,
@@ -1462,6 +1477,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'III META: ALXNDR LONDON’S ASCENT TO SELF ACTUALIZATION',
       name: 'III META: ALXNDR LONDON’S ASCENT TO SELF ACTUALIZATION',
       isSingle: false,
@@ -1534,6 +1550,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BLESSED: NEW SOUNDS',
       name: 'BLESSED: NEW SOUNDS',
       isSingle: false,
@@ -1621,6 +1638,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: "LIKE A MOTH TO A FLAME, RIVER MOON'S LIGHT",
       name: "LIKE A MOTH TO A FLAME, RIVER MOON'S LIGHT",
       isSingle: false,
@@ -1689,6 +1707,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BLACK BANDCAMP DECEMBER PICKS: EUROPE',
       name: 'BLACK BANDCAMP DECEMBER PICKS: EUROPE',
       bandcamp_link: "",
@@ -1819,6 +1838,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'IDMAN IS HERE AND DOWN FOR IT',
       name: 'IDMAN IS HERE AND DOWN FOR IT',
       bandcamp_link: "https://idman.bandcamp.com/track/down-for-it",
@@ -1889,6 +1909,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BUILDING A QUEER NATION: A RETROSPECTIVE',
       name: 'BUILDING A QUEER NATION: A RETROSPECTIVE',
       author: 'Deborah Findlater',
@@ -1995,15 +2016,14 @@ const mutations = {
           url: 'https://www.instagram.com/pepper_coast/'
         }
       ]
-    },
-
-
+    }
     ]))
     state.current = payload
   },
   set_current_by_id(state, payload) {
     state.list = JSON.parse(JSON.stringify([
     {
+      type: "article",
       short_name: 'JON DIXON’S QUIET GENIUS',
       name: 'JON DIXON’S QUIET GENIUS',
       bandcamp_link: "https://jon-dixon.bandcamp.com/album/times-of-change-ep",
@@ -2088,6 +2108,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BLAQKONGO ON "38 DAYS 38 WAYS"',
       name: 'TAKE OFF ON A SONICALLY ENTRANCING JOURNEY WITH BLAQKONGO ON "38 DAYS 38 WAYS"',
       bandcamp_link: "http://blaqkongo.bandcamp.com/album/38-days-38-ways",
@@ -2184,6 +2205,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'JOSH CAFFÉ TALKS COLLABORATING WITH HONEY DIJON',
       name: 'JOSH CAFFÉ TALKS COLLABORATING WITH HONEY DIJON',
       bandcamp_link: "https://honeydijon.bandcamp.com/album/la-femme-fantastique-extended-mix",
@@ -2268,6 +2290,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BLACK BANDCAMP SEPTEMBER PICKS: LONDON',
       name: 'BLACK BANDCAMP SEPTEMBER PICKS: LONDON',
       bandcamp_link: "",
@@ -2491,6 +2514,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'PREMIERE: A DYNAMIC DOUBLE PACK FROM HLX-1',
       name: 'PREMIERE: A DYNAMIC DOUBLE PACK FROM HLX-1',
       credit: null,
@@ -2505,10 +2529,11 @@ const mutations = {
       The two tracks are available now on <a href="https://hlx-1.bandcamp.com/" target="_blank">Bandcamp</a>.',
       embed_links: [
         '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3846929570/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://hlx-1.bandcamp.com/track/the-cosmos">THE COSMOS by HLX-1</a></iframe>',
-        '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1858466569/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://hlx-1.bandcamp.com/track/i-can-tell-you-can-f">I CAN TELL YOU CAN F*** by HLX-1</a></iframe>',
+        '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1858466569/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://hlx-1.bandcamp.com/track/i-can-tell-you-can-f">I CAN TELL YOU CAN F*** by HLX-1</a></iframe>'
       ]
     },
     {
+      type: "article",
       short_name: 'LOVE IS BLUE: FINDING WARMTH IN AHYA SIMONE\'S FROSTBITE',
       name: 'LOVE IS BLUE: FINDING WARMTH IN AHYA SIMONE\'S FROSTBITE',
       author: 'Crystal Mioner',
@@ -2579,6 +2604,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BAKHITA REFLECTS ON HER MAGICAL EP \'CHAMO MILE:PYE\'',
       name: 'BAKHITA REFLECTS ON HER MAGICAL EP \'CHAMO MILE:PYE\'',
       bandcamp_link: "https://bakhita.bandcamp.com/album/chamo-mile-pye",
@@ -2651,6 +2677,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'MILES FROM KINSHASA\'S \'BELOVED\' EP CONVEYS THE POWER OF VULNERABILITY',
       name: 'MILES FROM KINSHASA\'S \'BELOVED\' EP CONVEYS THE POWER OF VULNERABILITY',
       bandcamp_link: "https://milesfromkinshasa.bandcamp.com/album/beloved",
@@ -2723,6 +2750,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BLACK BANDCAMP OCTOBER PICKS: NAIROBI',
       name: 'BLACK BANDCAMP OCTOBER PICKS: NAIROBI',
       bandcamp_link: "",
@@ -2914,6 +2942,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'LEX AMOR GOES INWARD',
       name: 'LEX AMOR GOES INWARD',
       bandcamp_link: "https://lexamor.bandcamp.com/album/government-tropican",
@@ -2961,6 +2990,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BLACK BANDCAMP NOVEMBER PICKS: NAARM',
       name: 'BLACK BANDCAMP NOVEMBER PICKS: NAARM',
       bandcamp_link: "",
@@ -3042,7 +3072,7 @@ const mutations = {
         {
           type: 'bandcamp_picks',
           title: 'C.FRIM',
-          description: '<a href="https://www.instagram.com/c.frim/" target="_blank">C.FRIM</a> is a Melbourne (Naarm) based selector and presenter who pushes forward-thinking sounds via a monthly show on <a href="https://skylab-radio.com/shows/shakedown-e1" target="_blank">Skylab Radio</a>.',
+          description: '<a href="https://www.instagram.com/c.frim" target="_blank">C.FRIM</a> is a Melbourne (Naarm) based selector and presenter who pushes forward-thinking sounds via a monthly show on <a href="https://skylab-radio.com/shows/shakedown-e1" target="_blank">Skylab Radio</a>.',
           links: [
             {
               title: 'Shyboi - Head Top',
@@ -3152,6 +3182,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BETINA QUEST: ALWAYS EVOLVING',
       name: 'BETINA QUEST: ALWAYS EVOLVING',
       bandcamp_link: "https://betinaquest.bandcamp.com/track/ikangure",
@@ -3232,7 +3263,7 @@ const mutations = {
         },
         {
           name: 'Follow Betina Quest here',
-          url: 'https://www.instagram.com/betinaquest/'
+          url: 'https://www.instagram.com/betinaquest/?hl=en'
         },
         {
           name: 'Follow Tanya Akinola here',
@@ -3241,6 +3272,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'SPIRITUAL JAZZ AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
       name: 'SPIRITUAL JAZZ AND AFRO DISCO BLEND TOGETHER ON PYRAMID PROJECTS’ "MANGROVES EP"',
       bandcamp_link: "https://pyramidprojectfeatcontours.bandcamp.com/album/mangroves-ep",
@@ -3305,6 +3337,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'AGAINST ALL ODDS',
       name: 'CHANNEL U & AGAINST ALL ODDS: IN CONVERSATION WITH NICO TYLER JAMES',
       isSingle: false,
@@ -3383,6 +3416,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'MORGAN MUNROE IS UNRAVELING THE LAYERS OF HER ARTISTRY',
       name: 'MORGAN MUNROE IS PEELING BACK LAYERS OF HER ARTISTRY ON \'LAYERS 0.5\'',
       isSingle: false,
@@ -3452,6 +3486,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'III META: ALXNDR LONDON’S ASCENT TO SELF ACTUALIZATION',
       name: 'III META: ALXNDR LONDON’S ASCENT TO SELF ACTUALIZATION',
       isSingle: false,
@@ -3524,6 +3559,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BLESSED: NEW SOUNDS',
       name: 'BLESSED: NEW SOUNDS',
       isSingle: false,
@@ -3611,6 +3647,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: "LIKE A MOTH TO A FLAME, RIVER MOON'S LIGHT",
       name: "LIKE A MOTH TO A FLAME, RIVER MOON'S LIGHT",
       isSingle: false,
@@ -3679,6 +3716,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BLACK BANDCAMP DECEMBER PICKS: EUROPE',
       name: 'BLACK BANDCAMP DECEMBER PICKS: EUROPE',
       bandcamp_link: "",
@@ -3809,6 +3847,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'IDMAN IS HERE AND DOWN FOR IT',
       name: 'IDMAN IS HERE AND DOWN FOR IT',
       bandcamp_link: "https://idman.bandcamp.com/track/down-for-it",
@@ -3836,7 +3875,6 @@ const mutations = {
         },
         {
           type: "image",
-          format: 'cover',
           path: "articles/idman/idman2.jpg",
         },
         {
@@ -3851,7 +3889,6 @@ const mutations = {
         },
         {
           type: "image",
-          format: 'cover',
           path: "articles/idman/idman3.jpg",
         },
         {
@@ -3881,6 +3918,7 @@ const mutations = {
       ]
     },
     {
+      type: "article",
       short_name: 'BUILDING A QUEER NATION: A RETROSPECTIVE',
       name: 'BUILDING A QUEER NATION: A RETROSPECTIVE',
       author: 'Deborah Findlater',

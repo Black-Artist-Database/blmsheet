@@ -20,6 +20,9 @@
             <li class="nav-item">
               <router-link to="/read" class="nav-link">Read</router-link>
             </li>
+             <li class="nav-item">
+              <router-link to="/voices" class="nav-link">Voices</router-link>
+            </li>
           </ul>
           <ul class="nav navbar-nav ml-auto">
               <li>
