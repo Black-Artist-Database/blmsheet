@@ -8,7 +8,7 @@
         </a>
         <div class="card-body">
             <h5 class="card-title">{{ name }}<br><small v-if="author">by {{author}}</small></h5>
-            <a @click="onClick()"><span v-if="type === 'article'">Read the article</span><span v-else-if="type === 'interview'">Listen to the interview</span></a>
+            <a @click="onClick()"><span v-if="type === 'article'">Read the article</span><span v-else-if="type === 'interview'">Listen to the interview</span><span v-else-if="type === 'livestream'">Watch the livestream</span></a>
         </div>
     </div>
 </div>

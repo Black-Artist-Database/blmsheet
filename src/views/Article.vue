@@ -97,9 +97,9 @@ export default {
   }
   .head {
     text-align: center;
-    margin-top: 40px;
     max-width: 800px;
     margin: auto;
+    margin-top: 40px;
     p.intro {
       text-align: left;
       width: 100%;
