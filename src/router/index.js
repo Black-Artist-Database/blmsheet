@@ -5,6 +5,8 @@ import Read from '../views/Read.vue'
 import Voices from '../views/Voices.vue'
 import Article from '../views/Article.vue'
 import Voice from '../views/Voice.vue'
+import Watch from '../views/Watch.vue'
+import Media from '../views/Media.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +35,16 @@ Vue.use(VueRouter)
     path: '/article/:id',
     name: 'article',
     component: Article
+  },
+  {
+    path: '/watch',
+    name: 'Watch',
+    component: Watch
+  },
+  {
+    path: '/media/:id',
+    name: 'media',
+    component: Media
   },
   {
     path: '/about',
