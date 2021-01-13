@@ -16,7 +16,7 @@ const mutations = {
     {
       type: "interview",
       short_name: "VOICES: DJ PAULETTE (PART 1)",
-      top_desc:"PART 1",
+      top_desc:"",
       name: "VOICES: DJ PAULETTE (PART 1)",
       mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-dj-paulette%2F",
       credit_illu: "Charlie J Watts",
@@ -45,7 +45,7 @@ const mutations = {
     {
       type: "interview",
       short_name: "VOICES: DJ PAULETTE (PART 2)",
-      top_desc:"PART 2",
+      top_desc:"",
       name: "VOICES: DJ PAULETTE (PART 2)",
       mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-dj-paulette-part-2%2F",
       credit_illu: "Charlie J Watts",
@@ -78,7 +78,7 @@ const mutations = {
     {
       type: "interview",
       short_name: "VOICES: DJ PAULETTE (PART 1)",
-      top_desc:"PART 1",
+      top_desc:"",
       name: "VOICES: DJ PAULETTE (PART 1)",
       mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-dj-paulette%2F",
       credit_illu: "Charlie J Watts",
@@ -107,7 +107,7 @@ const mutations = {
     {
       type: "interview",
       short_name: "VOICES: DJ PAULETTE (PART 2)",
-      top_desc:"PART 2",
+      top_desc:"",
       name: "VOICES: DJ PAULETTE (PART 2)",
       mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-dj-paulette-part-2%2F",
       credit_illu: "Charlie J Watts",
