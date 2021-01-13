@@ -1,6 +1,6 @@
 const state = {
   list: [],
-  sort: 'oldest',
+  sort: 'newest',
   current: null
 }
 
@@ -15,9 +15,9 @@ const mutations = {
     state.list = JSON.parse(JSON.stringify([
     {
       type: "interview",
-      short_name: "VOICES: DJ PAULETTE",
+      short_name: "VOICES: DJ PAULETTE (PART 1)",
       top_desc:"PART 1",
-      name: "VOICES: DJ PAULETTE",
+      name: "VOICES: DJ PAULETTE (PART 1)",
       mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-dj-paulette%2F",
       credit_illu: "Charlie J Watts",
       author: "Kay Ferdinand",
@@ -44,9 +44,9 @@ const mutations = {
     },
     {
       type: "interview",
-      short_name: "VOICES: DJ PAULETTE",
+      short_name: "VOICES: DJ PAULETTE (PART 2)",
       top_desc:"PART 2",
-      name: "VOICES: DJ PAULETTE",
+      name: "VOICES: DJ PAULETTE (PART 2)",
       mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-dj-paulette-part-2%2F",
       credit_illu: "Charlie J Watts",
       author: "Kay Ferdinand",
@@ -77,9 +77,9 @@ const mutations = {
     state.list = JSON.parse(JSON.stringify([
     {
       type: "interview",
-      short_name: "VOICES: DJ PAULETTE",
+      short_name: "VOICES: DJ PAULETTE (PART 1)",
       top_desc:"PART 1",
-      name: "VOICES: DJ PAULETTE",
+      name: "VOICES: DJ PAULETTE (PART 1)",
       mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-dj-paulette%2F",
       credit_illu: "Charlie J Watts",
       author: "Kay Ferdinand",
@@ -106,9 +106,9 @@ const mutations = {
     },
     {
       type: "interview",
-      short_name: "VOICES: DJ PAULETTE",
+      short_name: "VOICES: DJ PAULETTE (PART 2)",
       top_desc:"PART 2",
-      name: "VOICES: DJ PAULETTE",
+      name: "VOICES: DJ PAULETTE (PART 2)",
       mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-dj-paulette-part-2%2F",
       credit_illu: "Charlie J Watts",
       author: "Kay Ferdinand",
