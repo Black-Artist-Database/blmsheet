@@ -9,19 +9,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <router-link to="/" class="nav-link">Discover</router-link>
+              <router-link to="/" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Discover</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/about" class="nav-link">About</router-link>
+              <router-link to="/about" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">About</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/add" class="nav-link">Add Submission</router-link>
+              <router-link to="/add" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Add Submission</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/read" class="nav-link">Read</router-link>
+              <router-link to="/read" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Read</router-link>
             </li>
-             <li class="nav-item">
-              <router-link to="/voices" class="nav-link">Voices</router-link>
+            <li class="nav-item">
+              <router-link to="/voices" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Voices</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/watch" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Watch</router-link>
             </li>
           </ul>
           <ul class="nav navbar-nav ml-auto">

@@ -1,30 +1,19 @@
 <template>
   <div class="page">
-    <div class="container" v-if="voice">
-      <router-link to="/voices" class="back">Back to the list</router-link>
+    <div class="container" v-if="watch">
+      <router-link to="/watch" class="back">Back to the list</router-link>
       <div class="head">
-        <h1>{{voice.name}}</h1>
-        <p v-if="voice.credit">Photo by <b>{{voice.credit}}</b></p>
-        <p v-if="voice.author">Words by <b>{{voice.author}}</b></p>
-        <p v-if="voice.top_desc">{{voice.top_desc}}</p>
-        <img v-if="voice.illus" :src="require(`@/assets/${voice.illus}`)" />
-        <p v-if="voice.credit_illu"><i>Photo by {{voice.credit_illu}}</i></p>
-        <p v-if="voice.credit_illu_all"><i>{{voice.credit_illu_all}}</i></p>
-        <div class="mixcloud" v-if="voice.mixcloud_url">
-          <iframe width="100%" height="120" :src="voice.mixcloud_url" frameborder="0" ></iframe>
-        </div>
-        <p class="intro" v-if="voice.introduction" v-html="voice.introduction"></p>
-      </div>
-      <div class="header-links">
-        <div class="link" v-for="(link, index) in voice.links" :key="`link-${index}`">
-          <p><a :href="link.url" target="_blank">{{link.name}} </a></p>
+        <h1>{{watch.name}}</h1>
+        <p class="intro" v-if="watch.introduction" v-html="watch.introduction"></p>
+        <div class="media" v-if="watch.url">
+          <div v-html="watch.url"></div>
         </div>
       </div>
       <div class="footer-links">
-        <div class="link" v-for="(link, index) in voice.footer_links" :key="`footer-link-${index}`">
+        <div class="link" v-for="(link, index) in watch.footer_links" :key="`footer-link-${index}`">
           <p><a :href="link.url" target="_blank">{{link.name}}</a></p>
         </div>
-        <div class="link" v-for="(link, index) in voice.embed_links" :key="`footer-link-${index}`">
+        <div class="link" v-for="(link, index) in watch.embed_links" :key="`footer-link-${index}`">
           <div v-html="link"></div>
         </div>
       </div>
@@ -35,20 +24,20 @@
 <script>
 import {mapState} from 'vuex'
 export default {
-  name: 'voice',
+  name: 'watch',
   computed: {
     ...mapState({
-      list: state => state.voices.list,
-      voice: state => state.voices.current
+      list: state => state.watch.list,
+      watch: state => state.watch.current
     })
   },
   mounted () {
     window.scrollTo(0, 0)
     if (this.$route.params.id) {
-      this.$store.commit('voices/set_current_by_id', this.$route.params.id)
-      console.log(this.voice)
-    } else if (!this.voice && this.list.length === 0 || !this.$route.params.id){
-      this.$router.push({name: 'Voices'})
+      this.$store.commit('watch/set_current_by_id', this.$route.params.id)
+      console.log(this.watch)
+    } else if (!this.watch && this.list.length === 0 || !this.$route.params.id){
+      this.$router.push({name: 'Watch'})
     }
   },
 }
@@ -74,14 +63,28 @@ export default {
     p.intro {
       text-align: left;
       width: 100%;
+      margin-top: 20px;
     }
     img {
       width: 100%;
       max-width: 700px;
       margin: 20px auto;
     }
-    .mixcloud {
+    .media {
       margin: 20px auto;
+      div {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        width: 100%;
+        /deep/ iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
   .header-links, .footer-links{
