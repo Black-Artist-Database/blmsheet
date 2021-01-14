@@ -1,6 +1,6 @@
 const state = {
   list: [],
-  sort: 'oldest',
+  sort: 'newest',
   current: null
 }
 
@@ -15,9 +15,9 @@ const mutations = {
     state.list = JSON.parse(JSON.stringify([
     {
       type: "interview",
-      short_name: "VOICES: DJ PAULETTE",
-      top_desc:"PART 1",
-      name: "VOICES: DJ PAULETTE",
+      short_name: "VOICES: DJ PAULETTE (PART 1)",
+      top_desc:"",
+      name: "VOICES: DJ PAULETTE (PART 1)",
       mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-dj-paulette%2F",
       credit_illu: "Charlie J Watts",
       author: "Kay Ferdinand",
@@ -25,6 +25,34 @@ const mutations = {
       introduction: "Welcome to Voices by Black Bandcamp; a mixed media series of interviews with talented Black artists and music industry members, where we champion the voices of Black people within the global electronic music sphere.<br><br>\
         To kick off the series, we spend some time with the living legend that is DJ Paulette. In this podcast we explore her life as a musician, following her return to her hometown of Manchester, after stints in Paris and Ibiza, as well as looking at her award-winning PR work.<br><br>\
         This conversation was recorded 28th August 2020, and split into two parts. The second part will follow soon.<br><br>\
+        Many thanks to Usher Lavelle for his work on editing the podcasts. (Twitter/IG: @usherlavelle)<br><br>\
+        <i>Content warning: Racism & racist language, mention of homophobia, incidents of mistreatment in the workplace.<i>",
+      footer_links: [
+        {
+          name: "Learn more about DJ Paulette on her website here",
+          url: "http://djpaulette.co.uk"
+        },
+        {
+          name: "You can follow DJ Paulette here",
+          url: "https://www.instagram.com/dj_paulette1/"
+        },
+        {
+          name: "You can follow Kay Ferdinand here",
+          url: "https://www.instagram.com/_kafk/"
+        }
+      ]
+    },
+    {
+      type: "interview",
+      short_name: "VOICES: DJ PAULETTE (PART 2)",
+      top_desc:"",
+      name: "VOICES: DJ PAULETTE (PART 2)",
+      mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-dj-paulette-part-2%2F",
+      credit_illu: "Charlie J Watts",
+      author: "Kay Ferdinand",
+      illus: "voices/djpaulette/part2.jpg",
+      introduction: "Welcome to Voices by Black Bandcamp; a mixed media series of interviews with talented Black artists and music industry members, where we champion the voices of Black people within the global electronic music sphere.<br><br>\
+        As promised, here is part 2 of our fascinating conversation with DJ Paulette (part 1 can be found <a href=\"https://blackbandcamp.info/#/voice/1\" target=\"_blank\">here</a>).<br><br>\
         Many thanks to Usher Lavelle for his work on editing the podcasts. (Twitter/IG: @usherlavelle)<br><br>\
         <i>Content warning: Racism & racist language, mention of homophobia, incidents of mistreatment in the workplace.<i>",
       footer_links: [
@@ -49,9 +77,9 @@ const mutations = {
     state.list = JSON.parse(JSON.stringify([
     {
       type: "interview",
-      short_name: "VOICES: DJ PAULETTE",
-      top_desc:"PART 1",
-      name: "VOICES: DJ PAULETTE",
+      short_name: "VOICES: DJ PAULETTE (PART 1)",
+      top_desc:"",
+      name: "VOICES: DJ PAULETTE (PART 1)",
       mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-dj-paulette%2F",
       credit_illu: "Charlie J Watts",
       author: "Kay Ferdinand",
@@ -59,6 +87,34 @@ const mutations = {
       introduction: "Welcome to Voices by Black Bandcamp; a mixed media series of interviews with talented Black artists and music industry members, where we champion the voices of Black people within the global electronic music sphere.<br><br>\
         To kick off the series, we spend some time with the living legend that is DJ Paulette. In this podcast we explore her life as a musician, following her return to her hometown of Manchester, after stints in Paris and Ibiza, as well as looking at her award-winning PR work.<br><br>\
         This conversation was recorded 28th August 2020, and split into two parts. The second part will follow soon.<br><br>\
+        Many thanks to Usher Lavelle for his work on editing the podcasts. (Twitter/IG: @usherlavelle)<br><br>\
+        <i>Content warning: Racism & racist language, mention of homophobia, incidents of mistreatment in the workplace.<i>",
+      footer_links: [
+        {
+          name: "Learn more about DJ Paulette on her website here",
+          url: "http://djpaulette.co.uk"
+        },
+        {
+          name: "You can follow DJ Paulette here",
+          url: "https://www.instagram.com/dj_paulette1/"
+        },
+        {
+          name: "You can follow Kay Ferdinand here",
+          url: "https://www.instagram.com/_kafk/"
+        }
+      ]
+    },
+    {
+      type: "interview",
+      short_name: "VOICES: DJ PAULETTE (PART 2)",
+      top_desc:"",
+      name: "VOICES: DJ PAULETTE (PART 2)",
+      mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-dj-paulette-part-2%2F",
+      credit_illu: "Charlie J Watts",
+      author: "Kay Ferdinand",
+      illus: "voices/djpaulette/part2.jpg",
+      introduction: "Welcome to Voices by Black Bandcamp; a mixed media series of interviews with talented Black artists and music industry members, where we champion the voices of Black people within the global electronic music sphere.<br><br>\
+        As promised, here is part 2 of our fascinating conversation with DJ Paulette (part 1 can be found <a href=\"https://blackbandcamp.info/#/voice/1\" target=\"_blank\">here</a>).<br><br>\
         Many thanks to Usher Lavelle for his work on editing the podcasts. (Twitter/IG: @usherlavelle)<br><br>\
         <i>Content warning: Racism & racist language, mention of homophobia, incidents of mistreatment in the workplace.<i>",
       footer_links: [
