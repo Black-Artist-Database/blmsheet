@@ -2020,7 +2020,7 @@ const mutations = {
   {
    type: "article",
    short_name: 'BLACK BANDCAMP JANUARY PICKS: TANZANIA',
-   name: 'BLACK BANDCAMP JANURY PICKS: TANZANIA',
+   name: 'BLACK BANDCAMP JANUARY PICKS: TANZANIA',
    bandcamp_link: "",
    bandcamp_id: "",
    credit: null,
@@ -4202,7 +4202,7 @@ const mutations = {
   {
    type: "article",
    short_name: 'BLACK BANDCAMP JANUARY PICKS: TANZANIA',
-   name: 'BLACK BANDCAMP JANURY PICKS: TANZANIA',
+   name: 'BLACK BANDCAMP JANUARY PICKS: TANZANIA',
    bandcamp_link: "",
    bandcamp_id: "",
    credit: null,
