@@ -69,6 +69,34 @@ const mutations = {
           url: "https://www.instagram.com/_kafk/"
         }
       ]
+    },
+    {
+      type: "interview",
+      short_name: "VOICES: CHRIS INPERSPECTIVE",
+      name: "VOICES: CHRIS INPERSPECTIVE",
+      mixcloud_url: "https://www.mixcloud.com/BlackBandcamp/voices-chris-inperspective/",
+      credit_illu: "Chris Inperspective",
+      author: "Kay Ferdinand",
+      illus: "voices/chris/chris.jpg",
+      introduction: "Welcome to Voices by Black Bandcamp; a mixed media series of interviews with talented Black artists and music industry members, where we champion the voices of Black people within the global electronic music sphere.<br><br>\
+        For today’s iteration of the series, we have a conversation with Inperspective Records head, Black Junglist Alliance founder, DJ, producer, and music industry professional Chris Inperspective. Our conversation ranges from his early musical history to his current thoughts on the drum n bass industry, as well as clarity on his dealings with Hospital Records and an update on his own imprint.\
+        This conversation was recorded 1st September 2020.<br><br>\
+        Many thanks to Usher Lavelle for his work on editing the podcasts. (Twitter/IG: @usherlavelle)<br><br>\
+        <i>Content warning: Racism & racist language, incidents of mistreatment in the workplace.<i>",
+      footer_links: [
+        {
+          name: "Learn more about Chris Inperspective on the label’s website here",
+          url: "https://inperspectiverecords.com/artists/chris-inperspective/"
+        },
+        {
+          name: "You can follow Chris Inperspective here",
+          url: "https://www.instagram.com/chris_inp/"
+        },
+        {
+          name: "You can follow Kay Ferdinand here",
+          url: "https://www.instagram.com/_kafk/"
+        }
+      ]
     }
     ]))
     state.current = payload
@@ -125,6 +153,34 @@ const mutations = {
         {
           name: "You can follow DJ Paulette here",
           url: "https://www.instagram.com/dj_paulette1/"
+        },
+        {
+          name: "You can follow Kay Ferdinand here",
+          url: "https://www.instagram.com/_kafk/"
+        }
+      ]
+    },
+    {
+      type: "interview",
+      short_name: "VOICES: CHRIS INPERSPECTIVE",
+      name: "VOICES: CHRIS INPERSPECTIVE",
+      mixcloud_url: "https://www.mixcloud.com/BlackBandcamp/voices-chris-inperspective/",
+      credit_illu: "Chris Inperspective",
+      author: "Kay Ferdinand",
+      illus: "voices/chris/chris.jpg",
+      introduction: "Welcome to Voices by Black Bandcamp; a mixed media series of interviews with talented Black artists and music industry members, where we champion the voices of Black people within the global electronic music sphere.<br><br>\
+        For today’s iteration of the series, we have a conversation with Inperspective Records head, Black Junglist Alliance founder, DJ, producer, and music industry professional Chris Inperspective. Our conversation ranges from his early musical history to his current thoughts on the drum n bass industry, as well as clarity on his dealings with Hospital Records and an update on his own imprint.\
+        This conversation was recorded 1st September 2020.<br><br>\
+        Many thanks to Usher Lavelle for his work on editing the podcasts. (Twitter/IG: @usherlavelle)<br><br>\
+        <i>Content warning: Racism & racist language, incidents of mistreatment in the workplace.<i>",
+      footer_links: [
+        {
+          name: "Learn more about Chris Inperspective on the label’s website here",
+          url: "https://inperspectiverecords.com/artists/chris-inperspective/"
+        },
+        {
+          name: "You can follow Chris Inperspective here",
+          url: "https://www.instagram.com/chris_inp/"
         },
         {
           name: "You can follow Kay Ferdinand here",

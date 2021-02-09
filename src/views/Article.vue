@@ -26,6 +26,7 @@
         <div class="question" v-for="(question, index) in article.questions" :key="`article-${index}`">
           <div class="image" v-if="question.type === 'image'">
             <img :src="require(`@/assets/${question.path}`)" :class="question.format"/>
+            <p class="credit" v-if="question.credit && !question.isArtwork" v-html="question.credit"></p>
             <p class="credit" v-if="question.author && !question.isArtwork"><i>Photo by {{question.author}}</i></p>
             <p class="credit" v-if="question.author && question.isArtwork"><i>Cover art by {{question.author}}</i></p>
             <p class="credit" v-if="question.editor"><i>Edited by {{question.editor}}</i></p>
