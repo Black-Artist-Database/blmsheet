@@ -2195,6 +2195,101 @@ const mutations = {
 
    ]
   },
+  {
+    short_name: "XADI’S NOSTALGIC REMINISCE ‘MOVIES’",
+    name: "XADI’S NOSTALGIC REMINISCE ‘MOVIES’",
+    bandcamp_link: "https://xadi.bandcamp.com/track/movies",
+    isSingle: true,
+    bandcamp_id: "109155119",
+    author: "Lauryn Njeri",
+    date: '02/19/2021',
+    illus: 'articles/xadi/xadi.jpg',
+    credit_illu: 'Peter O’Sullivan',
+    introduction: "West London based artist, Xadi proves to be one to keep an eye out for this year. After the release of ‘Mañana‘, a tranquil hit alongside Manchester’s Nina Cobham, Xadi continues to build his reputation as incredibly multifaceted with ‘Movies’.<br> \
+      Pairing contemplative lyrics with delicate production, Movies is a candid, honest portrait depicting feelings of nostalgia from bygone relationships. “Watching movies in the cinema feels like a timestamp to me, so the song had to be a reminiscent one. ‘Movies’ is a reflection on some of the lesser experiences I've had with people as well as the way I have gone about processing them” explains Xadi.<br> \
+      Soothing melodies, lush flows and grasping penmanship are just some of the specs of casual magic that Xadi brings to the table with this tender introspective tune which seizes you at the first chord and lingers long after you've experienced it.<br>\
+      The singer, rapper and producer is a  legend yet to be recognised as he only seems to get better with each release. We had a chat with Xadi about his transition to music, his latest release and a lot more.",
+    questions: [
+    {
+      type: 'question',
+      title: 'Can you tell us a little bit about yourself?',
+      answer: "My name is Xadi. West London is where I'm from, in Hounslow. I'm a singer, rapper and a music producer I would say. I take a very DIY attitude towards everything  so far in my music career. I produce all my music, mix it and master it.<br>\
+        For this song I've actually made the video as  well...I don't have any desire to go further down that. It was so long but because lockdown came and it wasn't really easy to shoot a video, I just try and if stuff is not available, I tend to just do it myself.  In terms of what my music is like it's probably somewhere between Hip Hop and R&B, somewhere there."
+      },
+    {
+      type: 'question',
+      title: 'How is the new year treating you so far after such unprecedented times in 2020?',
+      answer: "It's been quite busy actually but just because I've been preparing that video. Because I don't know how to make a video so I had to do a lot of learning on YouTube so i was doing that quite a lot.<br>\
+        I do sort of,  like I act. So I was doing a couple of auditions, but it's not like...Basically I did a performance at Edinburgh Fringe in 2019 and then I got an acting agent at the beginning of 2020 because they saw the show and so they'd just send me auditions but I haven’t actually been in anything yet. I'm not very good at acting either hahaha, I'm just taking the opportunities as they come.<br>\
+      Other than that, to be fair the lockdown - because i make all my stuff in my bedroom anyway and I'm quite regimented - it didn't affect me a huge amount but i think towards the end of the first ones I started getting a bit stir crazy so it was nice to have a bit of a break. I'm trying just to make sure 2021 starts right and I look up to myself."
+    },
+    {
+      type: 'question',
+      title: 'I understand that you are a Physics graduate from the University of Cambridge. Is that something you still pursue or are you fully transitioned into music now?',
+      answer: "Yeah, I teach some children science and maths, so it kinda helps me in that way that I could always have a steady source of income from it. But it's not something...It really came from proving kind of a point that i wasn’t dumb do you know what I mean?<br>\
+        I went to a normal state school in Hounslow and I wasn't really that type of student that would go there. I thought I wanted to do medicine at one point and there was such pushback in the past because of being a little bit of a troublesome student and I wasn't really into academics. \
+        So they were like ‘you candid't get into medicine’, so I got really fixated on trying to prove that point wrong.<br>\
+        So I think that whole journey of my life was like a detour that was based on me trying to be like ‘I can do whatever, it doesn't matter if you say I can't do it!’ So it's not something immediately I want to go any further down. I don't know, maybe if i'm like 60 I'll return to it but I don't know."
+    },
+    {
+      type: 'question',
+      title: 'What fueled your decision to make the transition?',
+      answer: "I fell in love with music when i was 13 or something. I'm not gonna lie like that kind of age, that's when I learned to play guitar and I was playing in an indie rock band. I started writing songs and I think that's when it got my heart and then that's kind of what made the detour. So then when i finished I was like I have to give this a try in a serious way, so that's what it was really."
+    },
+    {
+      type: 'question',
+      title: 'Your most recent single ‘Mañana’ is quite the masterpiece. Can you talk about your experience working with Nina Cobham?',
+      answer: "It was an absolute pleasure, It was lovely. We still work quite a lot actually. I think we've just got quite a very similar taste in music. We literally met because I did this freestyle that Koje Radical reposted and we got talking and since then we've just vibed a lot so we'd be sending each other music and she was down in London so we’d go to the studio. It was great, it was a very special kind of musical relationship I say with Nina."
+    },
+    {
+      type: 'question',
+      title: 'You wear many hats as an artist, producer, director & editor. You creatively produce most of your projects. How is that?',
+      answer: "It's a lot of work! haha but at the same time I'm quite fixated on how I want it to be so I feel like it's very difficult for me to let go. Videos, I would like someone else to do but everything else I'm quite particular about how I want it to be so it's a lot of work but I also like working a lot anyway so it's kind of alright. I like it really, deep down."
+    },
+    {
+      type: 'question',
+      title: 'Tell us a little bit about your upcoming release, Movies.',
+      answer: "Movies, yeah so this is a track I started to write I think in like September or something like that. I really like starting to write songs on the guitar so I was just messing around and I found these two chords that I really liked.<br>\
+        Before I even wrote the hook, I'd put in that old movie sound ticking because it just had some kind of nostalgic feeling to it. And then I just started to write about how experiences I've had in the past, not as strong as betrayal but just like people doing your wrong, and the way you can go about processing those kinds of emotions, not in the most constructive way."
+    },
+    {
+      type: 'question',
+      title: 'What was the vision when you created the visuals for this track and can you touch on what the whole process of bringing it to life was like?',
+      answer: "So my initial vision that i wanted to have was I wanted to recreate different movie scenes but obviously that was a little bit tricky.<br>\
+        The opening scene is actually like a recreation of this scene from this film called knives out, I don't know if you've heard of it. It's like some kind of murder mystery film thats got Daniel Craig in it, it's sick! Because of obviously the lockdown, I was just at home watching a film on New Years Eve with my mom so then that was the film and it just gave me inspiration for it.<br>\
+        It felt like a song that was in slow motion as well so that's why I wanted to present that. The visuals are more of just an accompaniment, something to look at that gets you into the vibe rather than something that's got a big vision behind it because obviously there’s circumstances to it.<br>\
+        Just before the lockdown stuff was happening, I went down to Seven Sisters, which I just googled it and it looked quite pretty and it was 2 hours away so we drove down at sunrise and I was just trying to get shots and then put them together against how I felt they matched the song and that was it really."
+    },
+    {
+      type: 'question',
+      title: 'I noticed that you always have a cup of tea in your music videos, care to tell us what that is about?',
+      answer: "I can't talk too much about the tea haha. There’s an element of mystery there because I think I've been quite enjoying - like I've had people with their theories  in my Dms about the tea and stuff like that so I can't share too much about the tea yet but it will come at some point."
+    },
+    {
+      type: 'question',
+      title: 'If you could collaborate with any artist right now, who would it be and why?',
+      answer: "There's a couple that I'd like to work with. But I'd say recently I would love to work with Kojey Radical because the art he makes is so unique and I really see him as a pioneer for the UK in making something that's just so different so I'd love to work with him but it varies. I mean I'd like to work with Drake as well, they're different ends of the spectrum which is literally crazy but I'm such a huge fan so yeah. But I'd say Kojey..."
+    },
+    {
+      type: 'question',
+      title: "What's one thing about you that no one would expect?",
+      answer: "Okay, I really like...ice skating, that's one of my favourite things"
+      },
+    ],
+    footer_links: [
+      {
+        name: 'Purchase on Bandcamp here',
+        url: 'https://xadi.bandcamp.com/track/movies'
+      },
+      {
+        name: 'Follow Xadi',
+        url: 'https://www.instagram.com/xadiboi/'
+      },
+      {
+        name: 'Follow Lauryn Njeri',
+        url: 'https://www.instagram.com/laurynlikethehills_/'
+      }]
+  }
   ]))
   state.current = payload
  },
@@ -4379,8 +4474,102 @@ const mutations = {
       }
      ]
     }
-
    ]
+  },
+  {
+    short_name: "XADI’S NOSTALGIC REMINISCE ‘MOVIES’",
+    name: "XADI’S NOSTALGIC REMINISCE ‘MOVIES’",
+    bandcamp_link: "https://xadi.bandcamp.com/track/movies",
+    isSingle: true,
+    bandcamp_id: "109155119",
+    author: "Lauryn Njeri",
+    date: '02/19/2021',
+    illus: 'articles/xadi/xadi.jpg',
+    credit_illu: 'Peter O’Sullivan',
+    introduction: "West London based artist, Xadi proves to be one to keep an eye out for this year. After the release of ‘Mañana‘, a tranquil hit alongside Manchester’s Nina Cobham, Xadi continues to build his reputation as incredibly multifaceted with ‘Movies’.<br> \
+      Pairing contemplative lyrics with delicate production, Movies is a candid, honest portrait depicting feelings of nostalgia from bygone relationships. “Watching movies in the cinema feels like a timestamp to me, so the song had to be a reminiscent one. ‘Movies’ is a reflection on some of the lesser experiences I've had with people as well as the way I have gone about processing them” explains Xadi.<br> \
+      Soothing melodies, lush flows and grasping penmanship are just some of the specs of casual magic that Xadi brings to the table with this tender introspective tune which seizes you at the first chord and lingers long after you've experienced it.<br>\
+      The singer, rapper and producer is a  legend yet to be recognised as he only seems to get better with each release. We had a chat with Xadi about his transition to music, his latest release and a lot more.",
+    questions: [
+    {
+      type: 'question',
+      title: 'Can you tell us a little bit about yourself?',
+      answer: "My name is Xadi. West London is where I'm from, in Hounslow. I'm a singer, rapper and a music producer I would say. I take a very DIY attitude towards everything  so far in my music career. I produce all my music, mix it and master it.<br>\
+        For this song I've actually made the video as  well...I don't have any desire to go further down that. It was so long but because lockdown came and it wasn't really easy to shoot a video, I just try and if stuff is not available, I tend to just do it myself.  In terms of what my music is like it's probably somewhere between Hip Hop and R&B, somewhere there."
+      },
+    {
+      type: 'question',
+      title: 'How is the new year treating you so far after such unprecedented times in 2020?',
+      answer: "It's been quite busy actually but just because I've been preparing that video. Because I don't know how to make a video so I had to do a lot of learning on YouTube so i was doing that quite a lot.<br>\
+        I do sort of,  like I act. So I was doing a couple of auditions, but it's not like...Basically I did a performance at Edinburgh Fringe in 2019 and then I got an acting agent at the beginning of 2020 because they saw the show and so they'd just send me auditions but I haven’t actually been in anything yet. I'm not very good at acting either hahaha, I'm just taking the opportunities as they come.<br>\
+      Other than that, to be fair the lockdown - because i make all my stuff in my bedroom anyway and I'm quite regimented - it didn't affect me a huge amount but i think towards the end of the first ones I started getting a bit stir crazy so it was nice to have a bit of a break. I'm trying just to make sure 2021 starts right and I look up to myself."
+    },
+    {
+      type: 'question',
+      title: 'I understand that you are a Physics graduate from the University of Cambridge. Is that something you still pursue or are you fully transitioned into music now?',
+      answer: "Yeah, I teach some children science and maths, so it kinda helps me in that way that I could always have a steady source of income from it. But it's not something...It really came from proving kind of a point that i wasn’t dumb do you know what I mean?<br>\
+        I went to a normal state school in Hounslow and I wasn't really that type of student that would go there. I thought I wanted to do medicine at one point and there was such pushback in the past because of being a little bit of a troublesome student and I wasn't really into academics. \
+        So they were like ‘you candid't get into medicine’, so I got really fixated on trying to prove that point wrong.<br>\
+        So I think that whole journey of my life was like a detour that was based on me trying to be like ‘I can do whatever, it doesn't matter if you say I can't do it!’ So it's not something immediately I want to go any further down. I don't know, maybe if i'm like 60 I'll return to it but I don't know."
+    },
+    {
+      type: 'question',
+      title: 'What fueled your decision to make the transition?',
+      answer: "I fell in love with music when i was 13 or something. I'm not gonna lie like that kind of age, that's when I learned to play guitar and I was playing in an indie rock band. I started writing songs and I think that's when it got my heart and then that's kind of what made the detour. So then when i finished I was like I have to give this a try in a serious way, so that's what it was really."
+    },
+    {
+      type: 'question',
+      title: 'Your most recent single ‘Mañana’ is quite the masterpiece. Can you talk about your experience working with Nina Cobham?',
+      answer: "It was an absolute pleasure, It was lovely. We still work quite a lot actually. I think we've just got quite a very similar taste in music. We literally met because I did this freestyle that Koje Radical reposted and we got talking and since then we've just vibed a lot so we'd be sending each other music and she was down in London so we’d go to the studio. It was great, it was a very special kind of musical relationship I say with Nina."
+    },
+    {
+      type: 'question',
+      title: 'You wear many hats as an artist, producer, director & editor. You creatively produce most of your projects. How is that?',
+      answer: "It's a lot of work! haha but at the same time I'm quite fixated on how I want it to be so I feel like it's very difficult for me to let go. Videos, I would like someone else to do but everything else I'm quite particular about how I want it to be so it's a lot of work but I also like working a lot anyway so it's kind of alright. I like it really, deep down."
+    },
+    {
+      type: 'question',
+      title: 'Tell us a little bit about your upcoming release, Movies.',
+      answer: "Movies, yeah so this is a track I started to write I think in like September or something like that. I really like starting to write songs on the guitar so I was just messing around and I found these two chords that I really liked.<br>\
+        Before I even wrote the hook, I'd put in that old movie sound ticking because it just had some kind of nostalgic feeling to it. And then I just started to write about how experiences I've had in the past, not as strong as betrayal but just like people doing your wrong, and the way you can go about processing those kinds of emotions, not in the most constructive way."
+    },
+    {
+      type: 'question',
+      title: 'What was the vision when you created the visuals for this track and can you touch on what the whole process of bringing it to life was like?',
+      answer: "So my initial vision that i wanted to have was I wanted to recreate different movie scenes but obviously that was a little bit tricky.<br>\
+        The opening scene is actually like a recreation of this scene from this film called knives out, I don't know if you've heard of it. It's like some kind of murder mystery film thats got Daniel Craig in it, it's sick! Because of obviously the lockdown, I was just at home watching a film on New Years Eve with my mom so then that was the film and it just gave me inspiration for it.<br>\
+        It felt like a song that was in slow motion as well so that's why I wanted to present that. The visuals are more of just an accompaniment, something to look at that gets you into the vibe rather than something that's got a big vision behind it because obviously there’s circumstances to it.<br>\
+        Just before the lockdown stuff was happening, I went down to Seven Sisters, which I just googled it and it looked quite pretty and it was 2 hours away so we drove down at sunrise and I was just trying to get shots and then put them together against how I felt they matched the song and that was it really."
+    },
+    {
+      type: 'question',
+      title: 'I noticed that you always have a cup of tea in your music videos, care to tell us what that is about?',
+      answer: "I can't talk too much about the tea haha. There’s an element of mystery there because I think I've been quite enjoying - like I've had people with their theories  in my Dms about the tea and stuff like that so I can't share too much about the tea yet but it will come at some point."
+    },
+    {
+      type: 'question',
+      title: 'If you could collaborate with any artist right now, who would it be and why?',
+      answer: "There's a couple that I'd like to work with. But I'd say recently I would love to work with Kojey Radical because the art he makes is so unique and I really see him as a pioneer for the UK in making something that's just so different so I'd love to work with him but it varies. I mean I'd like to work with Drake as well, they're different ends of the spectrum which is literally crazy but I'm such a huge fan so yeah. But I'd say Kojey..."
+    },
+    {
+      type: 'question',
+      title: "What's one thing about you that no one would expect?",
+      answer: "Okay, I really like...ice skating, that's one of my favourite things"
+      },
+    ],
+    footer_links: [
+      {
+        name: 'Purchase on Bandcamp here',
+        url: 'https://xadi.bandcamp.com/track/movies'
+      },
+      {
+        name: 'Follow Xadi',
+        url: 'https://www.instagram.com/xadiboi/'
+      },
+      {
+        name: 'Follow Lauryn Njeri',
+        url: 'https://www.instagram.com/laurynlikethehills_/'
+      }]
   }
   ]))
   state.current = state.list[payload - 1]
