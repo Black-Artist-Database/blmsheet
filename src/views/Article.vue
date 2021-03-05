@@ -39,7 +39,7 @@
             <p v-html="question.description"></p>
             <div class="link" v-for="link in question.links" :key="link.title">
               <p class="bold">{{link.title}}</p>
-              <p>{{link.description}}</p>
+              <p v-html="link.description"></p>
               <div v-html="link.embed"></div>
             </div>
           </div>

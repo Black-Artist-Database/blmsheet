@@ -2289,6 +2289,136 @@ const mutations = {
         name: 'Follow Lauryn Njeri',
         url: 'https://www.instagram.com/laurynlikethehills_/'
       }]
+  },
+  {
+   type: "article",
+    short_name: 'BLACK BANDCAMP MARCH PICKS: WASHINGTON DC',
+    name: 'BLACK BANDCAMP MARCH PICKS: WASHINGTON DC',
+    bandcamp_link: "",
+    bandcamp_id: "",
+    credit: null,
+    author: null,
+    date: '08/07/2020',
+    illus: 'articles/march2021/march2021.jpg',
+    top_desc: "For this month's Bandcamp Friday, we hit up creatives in Washington DC to find out who their top Black Bandcamp discoveries and picks of the month are.",
+    links: [
+    ],
+    questions: [
+      {
+       type: 'bandcamp_picks',
+       title: "James Bangura",
+       description: "Hello, My name is James Bangura, and I’m a DJ and Producer residing in the city of Washington D.C. I also run a small label called PercussionFunctions.",
+       links: [
+        {
+         title: "Brother Aten",
+         description: "You Have Never Belonged EP | Track- Know Here<br><br>Brother Aten is an experimental artist who currently resides in Berlin. I’ve known Brother Aten for a few years now and he honestly never ceases to amaze me. The track “Know Here” is an example of this. I picked this track from his most recent project because it seems to catch the sort of melancholy but also has a groove  that makes you want to keep moving.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2119544160/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=882451521/transparent=true/" seamless><a href="https://brotheraten.bandcamp.com/album/you-have-never-belonged">You Have Never Belonged by Brother Aten</a></iframe>',
+        },
+        {
+         title: "Corey King",
+         description: "A Loveless Sunken Sun | Track- Fertility Filter<br><br>\
+          Corey King is a singer-songwriter / Composer / Multi-Instrumentalist hailing from New York City. \
+          I found Corey’s music just recently through BlackBandCamp and his track Fertility Filter\
+          really drew me in. Having a background as a break dancer, this track took me back to simpler times. Not in the sense of the lyrics but with the composition itself. This is definitely something I have in constant rotation these days.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=631818444/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://corey-king.bandcamp.com/album/a-loveless-sunken-sun">A Loveless Sunken Sun by Corey King</a></iframe>',
+        },
+         {
+         title: "Boofy",
+         description: "EP – IMRV021_Boofy | Track – Ledge<br><br>\
+         Boofy is a Dubstep Producer hailing from Bristol, UK. Dubstep is a genre that heavily influences my writing as a producer. The sparseness, the textures, the use of space, etc. This is an older release from Boofy but his track Ledge is definitely not a slouch and I guarantee it would flex some speakers to their limit. Boofy also maintains the legacy sound that hails from one of the cities that are considered one of the original hotspots for the genre.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2702607120/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3970736391/transparent=true/" seamless><a href="https://innamindrecordings.bandcamp.com/album/imrv021-boofy">IMRV021 - Boofy by Innamind Recordings</a></iframe>',
+        },
+       ]
+      },
+      {
+       type: 'bandcamp_picks',
+       title: "DJ Nativesun",
+       description: "DJ Nativesun is a melodic archivist DJ and producer, co-host for Eaton Radio’s UNSEEN Radio : exploring underground cultural sounds locally and globally.",
+       links: [
+        {
+         title: "Scratchclart & KG - Baga DMs",
+         description: "This track automatically draws me in with it’s magical chords and chants in the background. Feels like this track is preparing me to step into some otherly world dance circle with my ancestors.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2058784746/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3642968912/transparent=true/" seamless><a href="https://scratchadva.bandcamp.com/album/baga-man">&amp; Baga Man by Scratchclart</a></iframe>',
+        },
+        {
+         title: "Lokowat - Perdido No Amazonas",
+         description: "When I hear this I just want to run into the club and play it just to see how hard the people dance. It makes me think of closing my eyes and sweating on the dance floor.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3981838614/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1613410831/transparent=true/" seamless><a href="https://devagar.bandcamp.com/album/dev-a-gar-vol-3">DEV.A.GAR VOL 3 by Devagar</a></iframe>',
+        },
+         {
+         title: "The Impossible - JSPORT Edit",
+         description: "I just feel like every DJ needs this! Never can you go wrong with a lush Mariah Carey edit like this one. Soon as the kick comes in you can’t help but get lost in this track.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3971471155/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://jsport.bandcamp.com/track/the-impossible-jsport-edit">The Impossible - JSPORT Edit by JSPORT</a></iframe>',
+        },
+       ]
+      },
+      {
+       type: 'bandcamp_picks',
+       title: "Amal",
+       description: "Peace, my name is Amal, I’m a musician and founder of HOCHIRUNS.",
+       links: [
+        {
+         title: "JWords",
+         description: "I wanted to start off by highlighting the prolific years Jwords has had. With 6 plus releases it was hard not to catch her music. JWords to me is a perfect example of modern day experimental hip hop music. From her duo with rapper Masaai to some ambient modular pieces you never know what to expect. I would recommend listening to her Sonic Liberation project, which is very reminiscent of early Klipmode / Ras G. Notable track being “Fed Up”.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3609189749/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://jwords.bandcamp.com/album/sonic-liberation">Sonic Liberation by JWords</a></iframe>',
+        },
+        {
+         title: "ANKHLEJOHN",
+         description: "There’s so many Ankhlejohn projects that it's almost hard to choose one. The Shaap Records founder “Drill Scott Heron” EP is a very classy approach to a gritty street sound. I really love the duality of this project. Much respect to Ankh for his beat selection. From John’s sly mafioso raps over gritty gliding 808’s. Notable track being “TELFAR””. Do make sure to check out Raheem Supreme and the rest of the “Shaap records” bandcamp below!",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1866894663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://shaaprecords.bandcamp.com/album/drill-scott-heron-pieces-hittin">DRILL SCOTT-HERON (PIECES HITTIN) by SHAAP RECORDS</a></iframe>',
+        },
+         {
+         title: "Nappy Nappa",
+         description: "Nappa, a longtime friend of mine, has been pushing the boundaries of experimental rap music for years now. I’ve never met anyone else who embodies the energy of our city.As  ½ of the duo Model Home with musician Pat Cain, Nappa’s raw vocal work on their project Model Home x Pure Rave reminds of block parties, Gogo’s and raves but in 2020. Notable song being. An intermediate arrangement of patterns and rhythmic sonic collage",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3176549901/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://modelhomedc.bandcamp.com/album/model-home-x-pure-rave">Model Home x Pure Rave by model home</a></iframe>',
+        },
+       ]
+      },
+      {
+       type: 'bandcamp_picks',
+       title: "Djoser",
+       description: "I’m a Producer/DJ based in Washington, DC and part of the L.E.N.G. collective, I’m also an artist under 3024.",
+       links: [
+        {
+         title: "Loxy",
+         description: "Loxy is one of my favorite Drum & Bass Producers/Djs. His massive catalog goes back to the late 90s. Still today he manages to produce quality tracks on his own and with collaborations with other artists like Resound, Ena, and Genotype. The track I picked from his latest release on Cylon Recordings (his label) titled “Singularity” is from a collaboration he did with Resound. The track is a fast pace energized work out that's sub bass and percussive heavy. One of my favorite elements in the track is the use of percussion in a melodic way, along with the breakdown which gives you a chance to breathe from the intensity of the track.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3095269354/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1633897576/transparent=true/" seamless><a href="https://cylonrecordings.bandcamp.com/album/loxy-resound-straight-1s-singularity">Loxy &amp; Resound -  Straight 1&#39;s / Singularity by Loxy &amp; Resound</a></iframe>',
+        },
+        {
+         title: "E L U C I D",
+         description: "The track I picked from New York rapper E L U C I D is from an album called “An Unknown Infinite” by AMANI + KING VISION ULTRA (out now on PTP). E L U C I D was the Featured artist in the track titled “Scrapes”. The only way I could interpret my feelings for this track is that it's a great winter track. The almost beatless instrumental in the background is very stripped back and warm sounding and it gives room for E L U C I D’s words that pierce through the track to create balance. This is a track that I always tend to listen to multiple times in the row.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3943499932/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1638935951/transparent=true/" seamless><a href="https://purpletapepedigree.bandcamp.com/album/an-unknown-infinite">An Unknown Infinite by AMANI + KING VISION ULTRA</a></iframe>',
+        },
+         {
+         title: "Jossy Mistu",
+         description: "Jossy Mistu is a phenomenal London based producer/Dj that I've been following for the past few years. Her Rinse FM show is one the few shows that I never miss, covering a wide spectrum of different sounds. The track I picked from her latest EP (out now on Astral black) is called “Ø “. The track is a perfect mixture of space and percussion, while also managing to add dark melodic elements throughout the track and deep sub bass to fill the void.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1310531337/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=4276734884/transparent=true/" seamless><a href="https://astralblack.bandcamp.com/album/planet-j">Planet J by Jossy Mitsu</a></iframe>',
+        },
+       ]
+      },
+      {
+       type: 'bandcamp_picks',
+       title: "soso tharpa",
+       description: "Yo what’s up? I go by the name of soso tharpa and I make music based out of Washington D.C. Oh and I DJ sometimes ;).",
+       links: [
+        {
+         title: "KMRU",
+         description: "I was introduced to KMRU by a good friend of mine recently and my life hasn’t been the same since. I’ve sort of gone down a KMRU rabbit hole if you will. The track I chose is called “Degree of Change” from his Jar EP. This track is like putting on the most silkiest white robe while being fed Belgian chocolate, it’s that good. Then you have tracks like “Space of Uncertainty”; a track adorned with bells and texture that always leaves me entranced and begging for more. An overall very solid EP.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1944326644/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://seilrecords.bandcamp.com/album/jar">Jar by KMRU</a></iframe>',
+        },
+        {
+         title: "Nazar",
+         description: "For my second choice I chose the “Supplies EP” by Nazar; Pausado - good lord. I first stumbled upon this EP while stalking a friends Bandcamp and was completely blown away. Pausado is the literal definition of “go dumb” music that I really would like to hear in a club setting one day.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=538663836/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nazar.bandcamp.com/album/supplies-ep">Supplies EP by Nazar</a></iframe>',
+        },
+         {
+         title: "Tim Reaper",
+         description: "Lastly we make our way to who I consider to be a shining light in the DnB/Jungle scene right now. Tim Reaper’s Hoover Sound EP is amazing. With an airy Shogun esque atmosphere coupled with drums that remind me of past greats like Remarc, Tim Reaper captured the essence of a drum and bass sound that I have loved for a long time. My favorite track has to be his remix of Special Request’s “Quiet Storm”. Whenever I listen to that song I close my eyes and become an old guy from London recounting the good old days of raving and proper pre’s - only to open my eyes and realize that I’m actually from Washington D.C. Highly recommended.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=220406601/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://hooversoundrecordings.bandcamp.com/album/hooversound-presents-special-request-x-tim-reaper">HOOVERSOUND PRESENTS: SPECIAL REQUEST X TIM REAPER by Special Request x Tim Reaper</a></iframe>',
+        },
+        ]
+      }
+    ]
   }
   ]))
   state.current = payload
@@ -4570,6 +4700,136 @@ const mutations = {
         name: 'Follow Lauryn Njeri',
         url: 'https://www.instagram.com/laurynlikethehills_/'
       }]
+  },
+  {
+    type: "article",
+    short_name: 'BLACK BANDCAMP MARCH PICKS: WASHINGTON DC',
+    name: 'BLACK BANDCAMP MARCH PICKS: WASHINGTON DC',
+    bandcamp_link: "",
+    bandcamp_id: "",
+    credit: null,
+    author: null,
+    date: '08/07/2020',
+    illus: 'articles/march2021/march2021.jpg',
+    top_desc: "For this month's Bandcamp Friday, we hit up creatives in Washington DC to find out who their top Black Bandcamp discoveries and picks of the month are.",
+    links: [
+    ],
+    questions: [
+      {
+       type: 'bandcamp_picks',
+       title: "James Bangura",
+       description: "Hello, My name is James Bangura, and I’m a DJ and Producer residing in the city of Washington D.C. I also run a small label called PercussionFunctions.",
+       links: [
+        {
+         title: "Brother Aten",
+         description: "You Have Never Belonged EP | Track- Know Here<br><br>Brother Aten is an experimental artist who currently resides in Berlin. I’ve known Brother Aten for a few years now and he honestly never ceases to amaze me. The track “Know Here” is an example of this. I picked this track from his most recent project because it seems to catch the sort of melancholy but also has a groove  that makes you want to keep moving.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2119544160/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=882451521/transparent=true/" seamless><a href="https://brotheraten.bandcamp.com/album/you-have-never-belonged">You Have Never Belonged by Brother Aten</a></iframe>',
+        },
+        {
+         title: "Corey King",
+         description: "A Loveless Sunken Sun | Track- Fertility Filter<br><br>\
+          Corey King is a singer-songwriter / Composer / Multi-Instrumentalist hailing from New York City. \
+          I found Corey’s music just recently through BlackBandCamp and his track Fertility Filter\
+          really drew me in. Having a background as a break dancer, this track took me back to simpler times. Not in the sense of the lyrics but with the composition itself. This is definitely something I have in constant rotation these days.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=631818444/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://corey-king.bandcamp.com/album/a-loveless-sunken-sun">A Loveless Sunken Sun by Corey King</a></iframe>',
+        },
+         {
+         title: "Boofy",
+         description: "EP – IMRV021_Boofy | Track – Ledge<br><br>\
+         Boofy is a Dubstep Producer hailing from Bristol, UK. Dubstep is a genre that heavily influences my writing as a producer. The sparseness, the textures, the use of space, etc. This is an older release from Boofy but his track Ledge is definitely not a slouch and I guarantee it would flex some speakers to their limit. Boofy also maintains the legacy sound that hails from one of the cities that are considered one of the original hotspots for the genre.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2702607120/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3970736391/transparent=true/" seamless><a href="https://innamindrecordings.bandcamp.com/album/imrv021-boofy">IMRV021 - Boofy by Innamind Recordings</a></iframe>',
+        },
+       ]
+      },
+      {
+       type: 'bandcamp_picks',
+       title: "DJ Nativesun",
+       description: "DJ Nativesun is a melodic archivist DJ and producer, co-host for Eaton Radio’s UNSEEN Radio : exploring underground cultural sounds locally and globally.",
+       links: [
+        {
+         title: "Scratchclart & KG - Baga DMs",
+         description: "This track automatically draws me in with it’s magical chords and chants in the background. Feels like this track is preparing me to step into some otherly world dance circle with my ancestors.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2058784746/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3642968912/transparent=true/" seamless><a href="https://scratchadva.bandcamp.com/album/baga-man">&amp; Baga Man by Scratchclart</a></iframe>',
+        },
+        {
+         title: "Lokowat - Perdido No Amazonas",
+         description: "When I hear this I just want to run into the club and play it just to see how hard the people dance. It makes me think of closing my eyes and sweating on the dance floor.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3981838614/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1613410831/transparent=true/" seamless><a href="https://devagar.bandcamp.com/album/dev-a-gar-vol-3">DEV.A.GAR VOL 3 by Devagar</a></iframe>',
+        },
+         {
+         title: "The Impossible - JSPORT Edit",
+         description: "I just feel like every DJ needs this! Never can you go wrong with a lush Mariah Carey edit like this one. Soon as the kick comes in you can’t help but get lost in this track.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3971471155/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://jsport.bandcamp.com/track/the-impossible-jsport-edit">The Impossible - JSPORT Edit by JSPORT</a></iframe>',
+        },
+       ]
+      },
+      {
+       type: 'bandcamp_picks',
+       title: "Amal",
+       description: "Peace, my name is Amal, I’m a musician and founder of HOCHIRUNS.",
+       links: [
+        {
+         title: "JWords",
+         description: "I wanted to start off by highlighting the prolific years Jwords has had. With 6 plus releases it was hard not to catch her music. JWords to me is a perfect example of modern day experimental hip hop music. From her duo with rapper Masaai to some ambient modular pieces you never know what to expect. I would recommend listening to her Sonic Liberation project, which is very reminiscent of early Klipmode / Ras G. Notable track being “Fed Up”.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3609189749/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://jwords.bandcamp.com/album/sonic-liberation">Sonic Liberation by JWords</a></iframe>',
+        },
+        {
+         title: "ANKHLEJOHN",
+         description: "There’s so many Ankhlejohn projects that it's almost hard to choose one. The Shaap Records founder “Drill Scott Heron” EP is a very classy approach to a gritty street sound. I really love the duality of this project. Much respect to Ankh for his beat selection. From John’s sly mafioso raps over gritty gliding 808’s. Notable track being “TELFAR””. Do make sure to check out Raheem Supreme and the rest of the “Shaap records” bandcamp below!",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1866894663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://shaaprecords.bandcamp.com/album/drill-scott-heron-pieces-hittin">DRILL SCOTT-HERON (PIECES HITTIN) by SHAAP RECORDS</a></iframe>',
+        },
+         {
+         title: "Nappy Nappa",
+         description: "Nappa, a longtime friend of mine, has been pushing the boundaries of experimental rap music for years now. I’ve never met anyone else who embodies the energy of our city.As  ½ of the duo Model Home with musician Pat Cain, Nappa’s raw vocal work on their project Model Home x Pure Rave reminds of block parties, Gogo’s and raves but in 2020. Notable song being. An intermediate arrangement of patterns and rhythmic sonic collage",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3176549901/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://modelhomedc.bandcamp.com/album/model-home-x-pure-rave">Model Home x Pure Rave by model home</a></iframe>',
+        },
+       ]
+      },
+      {
+       type: 'bandcamp_picks',
+       title: "Djoser",
+       description: "I’m a Producer/DJ based in Washington, DC and part of the L.E.N.G. collective, I’m also an artist under 3024.",
+       links: [
+        {
+         title: "Loxy",
+         description: "Loxy is one of my favorite Drum & Bass Producers/Djs. His massive catalog goes back to the late 90s. Still today he manages to produce quality tracks on his own and with collaborations with other artists like Resound, Ena, and Genotype. The track I picked from his latest release on Cylon Recordings (his label) titled “Singularity” is from a collaboration he did with Resound. The track is a fast pace energized work out that's sub bass and percussive heavy. One of my favorite elements in the track is the use of percussion in a melodic way, along with the breakdown which gives you a chance to breathe from the intensity of the track.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3095269354/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1633897576/transparent=true/" seamless><a href="https://cylonrecordings.bandcamp.com/album/loxy-resound-straight-1s-singularity">Loxy &amp; Resound -  Straight 1&#39;s / Singularity by Loxy &amp; Resound</a></iframe>',
+        },
+        {
+         title: "E L U C I D",
+         description: "The track I picked from New York rapper E L U C I D is from an album called “An Unknown Infinite” by AMANI + KING VISION ULTRA (out now on PTP). E L U C I D was the Featured artist in the track titled “Scrapes”. The only way I could interpret my feelings for this track is that it's a great winter track. The almost beatless instrumental in the background is very stripped back and warm sounding and it gives room for E L U C I D’s words that pierce through the track to create balance. This is a track that I always tend to listen to multiple times in the row.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3943499932/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1638935951/transparent=true/" seamless><a href="https://purpletapepedigree.bandcamp.com/album/an-unknown-infinite">An Unknown Infinite by AMANI + KING VISION ULTRA</a></iframe>',
+        },
+         {
+         title: "Jossy Mistu",
+         description: "Jossy Mistu is a phenomenal London based producer/Dj that I've been following for the past few years. Her Rinse FM show is one the few shows that I never miss, covering a wide spectrum of different sounds. The track I picked from her latest EP (out now on Astral black) is called “Ø “. The track is a perfect mixture of space and percussion, while also managing to add dark melodic elements throughout the track and deep sub bass to fill the void.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1310531337/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=4276734884/transparent=true/" seamless><a href="https://astralblack.bandcamp.com/album/planet-j">Planet J by Jossy Mitsu</a></iframe>',
+        },
+       ]
+      },
+      {
+       type: 'bandcamp_picks',
+       title: "soso tharpa",
+       description: "Yo what’s up? I go by the name of soso tharpa and I make music based out of Washington D.C. Oh and I DJ sometimes ;).",
+       links: [
+        {
+         title: "KMRU",
+         description: "I was introduced to KMRU by a good friend of mine recently and my life hasn’t been the same since. I’ve sort of gone down a KMRU rabbit hole if you will. The track I chose is called “Degree of Change” from his Jar EP. This track is like putting on the most silkiest white robe while being fed Belgian chocolate, it’s that good. Then you have tracks like “Space of Uncertainty”; a track adorned with bells and texture that always leaves me entranced and begging for more. An overall very solid EP.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1944326644/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://seilrecords.bandcamp.com/album/jar">Jar by KMRU</a></iframe>',
+        },
+        {
+         title: "Nazar",
+         description: "For my second choice I chose the “Supplies EP” by Nazar; Pausado - good lord. I first stumbled upon this EP while stalking a friends Bandcamp and was completely blown away. Pausado is the literal definition of “go dumb” music that I really would like to hear in a club setting one day.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=538663836/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nazar.bandcamp.com/album/supplies-ep">Supplies EP by Nazar</a></iframe>',
+        },
+         {
+         title: "Tim Reaper",
+         description: "Lastly we make our way to who I consider to be a shining light in the DnB/Jungle scene right now. Tim Reaper’s Hoover Sound EP is amazing. With an airy Shogun esque atmosphere coupled with drums that remind me of past greats like Remarc, Tim Reaper captured the essence of a drum and bass sound that I have loved for a long time. My favorite track has to be his remix of Special Request’s “Quiet Storm”. Whenever I listen to that song I close my eyes and become an old guy from London recounting the good old days of raving and proper pre’s - only to open my eyes and realize that I’m actually from Washington D.C. Highly recommended.",
+         embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=220406601/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://hooversoundrecordings.bandcamp.com/album/hooversound-presents-special-request-x-tim-reaper">HOOVERSOUND PRESENTS: SPECIAL REQUEST X TIM REAPER by Special Request x Tim Reaper</a></iframe>',
+        },
+        ]
+      }
+    ]
   }
   ]))
   state.current = state.list[payload - 1]
