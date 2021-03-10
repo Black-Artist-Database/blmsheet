@@ -107,7 +107,7 @@ const mutations = {
       author: "Kay Ferdinand",
       illus: "voices/russel/russel.jpg",
       introduction: "Welcome to Voices by Black Bandcamp; a mixed media series of interviews with talented Black artists and music industry members, where we champion the voices of Black people within the global electronic music sphere.<br><br>\
-        Next up in the series we have Russell Ellington Langston Butler, an artist hailing from Bermuda, and currently residing in New York. Known for their stripped back but emotionally charged music, Russell has released on various prestigious labels, as well as self-releasing a wealth of great music on Bandcamp. Tune in to our conversation with Rusell to explore a truly fascinating musical mind.<br><br>\
+        Next up in the series we have Russell Ellington Langston Butler, an artist hailing from Bermuda, and currently residing in New York. Known for their stripped back but emotionally charged music, Russell has released on various prestigious labels, as well as self-releasing a wealth of great music on Bandcamp. Tune in to our conversation with Russell to explore a truly fascinating musical mind.<br><br>\
         This conversation was recorded 12th January 2021.<br><br>\
         Many thanks to Usher Lavelle for his work on editing the podcasts. (Twitter/IG: @usherlavelle)<br><br>\
         <i>Content warning: Racism, violence<i>",
@@ -225,7 +225,7 @@ const mutations = {
       author: "Kay Ferdinand",
       illus: "voices/russel/russel.jpg",
       introduction: "Welcome to Voices by Black Bandcamp; a mixed media series of interviews with talented Black artists and music industry members, where we champion the voices of Black people within the global electronic music sphere.<br><br>\
-        Next up in the series we have Russell Ellington Langston Butler, an artist hailing from Bermuda, and currently residing in New York. Known for their stripped back but emotionally charged music, Russell has released on various prestigious labels, as well as self-releasing a wealth of great music on Bandcamp. Tune in to our conversation with Rusell to explore a truly fascinating musical mind.<br><br>\
+        Next up in the series we have Russell Ellington Langston Butler, an artist hailing from Bermuda, and currently residing in New York. Known for their stripped back but emotionally charged music, Russell has released on various prestigious labels, as well as self-releasing a wealth of great music on Bandcamp. Tune in to our conversation with Russell to explore a truly fascinating musical mind.<br><br>\
         This conversation was recorded 12th January 2021.<br><br>\
         Many thanks to Usher Lavelle for his work on editing the podcasts. (Twitter/IG: @usherlavelle)<br><br>\
         <i>Content warning: Racism, violence<i>",
