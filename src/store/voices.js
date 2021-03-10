@@ -97,6 +97,34 @@ const mutations = {
           url: "https://www.instagram.com/_kafk/"
         }
       ]
+    },
+    {
+      type: "interview",
+      short_name: "VOICES: RUSSELL E.L. BUTLER",
+      name: "VOICES: RUSSELL E.L. BUTLER",
+      mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-russell-el-butler%2F",
+      credit_illu: "",
+      author: "Kay Ferdinand",
+      illus: "voices/russel/russel.jpg",
+      introduction: "Welcome to Voices by Black Bandcamp; a mixed media series of interviews with talented Black artists and music industry members, where we champion the voices of Black people within the global electronic music sphere.<br><br>\
+        Next up in the series we have Russell Ellington Langston Butler, an artist hailing from Bermuda, and currently residing in New York. Known for their stripped back but emotionally charged music, Russell has released on various prestigious labels, as well as self-releasing a wealth of great music on Bandcamp. Tune in to our conversation with Rusell to explore a truly fascinating musical mind.<br><br>\
+        This conversation was recorded 12th January 2021.<br><br>\
+        Many thanks to Usher Lavelle for his work on editing the podcasts. (Twitter/IG: @usherlavelle)<br><br>\
+        <i>Content warning: Racism, violence<i>",
+      footer_links: [
+        {
+          name: "Learn more about Russell E.L. Butler on their website here",
+          url: "https://russellelbutler.com"
+        },
+        {
+          name: "You can follow Russell E.L. Butler here",
+          url: "https://www.instagram.com/russellelbutler/"
+        },
+        {
+          name: "You can follow Kay Ferdinand here",
+          url: "https://www.instagram.com/_kafk/"
+        }
+      ]
     }
     ]))
     state.current = payload
@@ -181,6 +209,34 @@ const mutations = {
         {
           name: "You can follow Chris Inperspective here",
           url: "https://www.instagram.com/chris_inp/"
+        },
+        {
+          name: "You can follow Kay Ferdinand here",
+          url: "https://www.instagram.com/_kafk/"
+        }
+      ]
+    },
+    {
+      type: "interview",
+      short_name: "VOICES: RUSSELL E.L. BUTLER",
+      name: "VOICES: RUSSELL E.L. BUTLER",
+      mixcloud_url: "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBlackBandcamp%2Fvoices-russell-el-butler%2F",
+      credit_illu: "",
+      author: "Kay Ferdinand",
+      illus: "voices/russel/russel.jpg",
+      introduction: "Welcome to Voices by Black Bandcamp; a mixed media series of interviews with talented Black artists and music industry members, where we champion the voices of Black people within the global electronic music sphere.<br><br>\
+        Next up in the series we have Russell Ellington Langston Butler, an artist hailing from Bermuda, and currently residing in New York. Known for their stripped back but emotionally charged music, Russell has released on various prestigious labels, as well as self-releasing a wealth of great music on Bandcamp. Tune in to our conversation with Rusell to explore a truly fascinating musical mind.<br><br>\
+        This conversation was recorded 12th January 2021.<br><br>\
+        Many thanks to Usher Lavelle for his work on editing the podcasts. (Twitter/IG: @usherlavelle)<br><br>\
+        <i>Content warning: Racism, violence<i>",
+      footer_links: [
+        {
+          name: "Learn more about Russell E.L. Butler on their website here",
+          url: "https://russellelbutler.com"
+        },
+        {
+          name: "You can follow Russell E.L. Butler here",
+          url: "https://www.instagram.com/russellelbutler/"
         },
         {
           name: "You can follow Kay Ferdinand here",
