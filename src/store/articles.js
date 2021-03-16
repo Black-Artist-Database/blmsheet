@@ -2291,7 +2291,7 @@ const mutations = {
       }]
   },
   {
-   type: "article",
+    type: "article",
     short_name: 'BLACK BANDCAMP MARCH PICKS: WASHINGTON DC',
     name: 'BLACK BANDCAMP MARCH PICKS: WASHINGTON DC',
     bandcamp_link: "",
@@ -2419,7 +2419,107 @@ const mutations = {
         ]
       }
     ]
-  }
+  },
+  {
+    short_name: "NAME ME MVNSA",
+    name: "NAME ME MVNSA",
+    bandcamp_link: "https://mvnsa.bandcamp.com/album/name-me-mansa",
+    isSingle: false,
+    bandcamp_id: "3468227601",
+    author: "Lauryn Njeri",
+    date: '02/19/2021',
+    illus: 'articles/mvnsa/mvnsa.jpg',
+    credit_illu: 'Michael Aboya',
+    introduction: "Hailing from different parts of the African continent, 23 year old <b>MVNSA</b> tells stories that reflect the many facets of himself on his striking debut EP, ‘<b>Name Me Mansa</b>’. Mansa was born in Niger and lived the better part of his life in Tanzania before later pursuing his education in South Africa.<br><br>\
+    All these places quite audibly play a part in the curation of his musical identity. A blend of modern music and subtle traditional instrumentals are  intricately played with to curate an authentic yet versatile sound. Seamlessly moving  from euphoric feel good elements to more strikingly introspective themes, the eclectic EP is jam packed with high energy, hard hitting rap flows, sublime rhythms and even transcendental chants to showcase the many dimensions to Mvnsa.",
+    questions: [
+    {
+      type: 'question',
+      title: 'Who would you introduce MVNSA to the world as?',
+      answer: "I'd introduce him as a creative 23 year old man who dared to be different. Someone who wanted to show the youth, especially from where he's from, that they too can freely be themselves and that they can pursue their dreams no matter how crazy people think they are!<br><br>\
+      He is driven by his passion for the arts and has dedicated his life to creating art that is great in quality and an accurate reflection of who he is as a person.  Art that manages to move, and connect deeply with his audience.",
+      },
+    {
+      type: 'question',
+      title: 'How is the year treating you so far?',
+      answer: "Wow. This is such a simple, but deep question… Well to begin with it's treating me better than last year.  A Lot of the work I've put into different projects are starting to come into fruition. Releasing Name Me Mansa has been the highlight for sure! Seeing the positive reception from everyone who has listened to it has been amazing. People are truly connecting to my music, and that's truly one of the best feelings in the world.<br><br>\
+      Unfortunately 2021 has also involved many different struggles and complications such as the Internet in Niger being cut a week after I released the EP meaning I wasn't able to promote the project as planned. Fortunately though people are still vibing to it regularly and sending me messages about how great it is!",
+    },
+    {
+      type: 'question',
+      title: 'Tell us a little bit about Zalika’s Intro and why you felt it was important to include in your debut project.',
+      answer: "So Zalika is my older sister. She was literally the first person to ever support and believe in my musical career. Way before I even took any of this seriously, I was super trash at the time to be honest haha...but she saw a rock that had the potential to turn into a diamond before anyone else did and  I'll always love and appreciate her for that.<br><br>\
+      So she sent me that voice note on my 20th birthday, I was in Arusha at the time. The moment I heard it, I knew I was going to use it as the introduction to my debut project. I remember returning to Cape Town after that summer and getting straight  to working on the E.P. with Tronomie.",
+    },
+    {
+      type: 'image',
+      path: "articles/mvnsa/mvnsa2.jpg",
+      author: "Michael Aboya",
+    },
+    {
+      type: 'question',
+      title: 'Your sound is both sublime and striking at the same time. Can you tell us a little bit about your process while creating Name Me Mansa?',
+      answer: "Ah, thank you so much! So at the beginning stages of this project all I knew how to do was rap in front of a microphone. I couldn't use ableton or any DAW, I didn't know how to produce, write melodies, mix...my music making skills were almost non existent to be honest.<br><br>\
+      Initially I was working with Ghanaian artist and producer Tronomie who was a classmate of mine in Cape Town. We had worked on the demo's for Name Me Mansa and Euphoria together. He was supposed to produce the whole project, but unfortunately things didn't work out and he had to return to Accra. At the time I felt so lost and I honestly didn't know how I would proceed with the rest of the project.<br><br>\
+      Little did I know it was a blessing in disguise.  I had to make a choice, whether I was going to keep depending on others to be able to create my art, or learn how to do everything and be an independent creative. I chose the latter. Though it made the creation process a lot longer than what I had anticipated, it was 100% worth it.<br><br>\
+      Big shout out to THEBOYNAMEDSIMBA too man, he truly guided me through this journey and helped so much. While creating the project, I wanted to make something that would mirror my personality.  I wanted to make something that was real and honest. There are songs where I have that ‘cool rapper’ persona like SKYNZ, and others where I'm completely naked and vulnerable like P34CE. What's important is that they are both a part of who I am. I think my music is subtle because when you make real and honest music there's no need to force anything. Nothing sounds out of place, those who relate will organically connect to it, and others will just connect to the different sounds they're hearing.",
+    },
+    {
+      type: 'image',
+      path: "articles/mvnsa/mvnsa3.jpg",
+      author: "Michael Aboya",
+    },
+    {
+      type: 'question',
+      title: '',
+      answer: "Big shout out to THEBOYNAMEDSIMBA too man, he truly guided me through this journey and helped so much. While creating the project, I wanted to make something that would mirror my personality.  I wanted to make something that was real and honest. There are songs where I have that ‘cool rapper’ persona like SKYNZ, and others where I'm completely naked and vulnerable like P34CE. What's important is that they are both a part of who I am. I think my music is subtle because when you make real and honest music there's no need to force anything. Nothing sounds out of place, those who relate will organically connect to it, and others will just connect to the different sounds they're hearing.<br><br>\
+      I don't always get it where I want it to be which is something I think all artists have had to accept, but I do get it where I need it to be. Overall I'd say it was a beautiful struggle. I went through some real hardships creating this project but the results were so beautiful,  and those moments where shit sounded the way I wanted them to were absolutely priceless!",
+    },
+    {
+      type: 'question',
+      title: 'What is your favourite track on the EP and why?',
+      answer: "They are all my babies and I love each of them for different reasons. But I'd have to say Timbuktu is the one I'm a little more attached to. To begin with getting to record a band like Dag Tenere was a lot of fun. Some of the members of the band are originally from the ancient city which increased the  emotional value of the song. To be honest  It's the most important song on the E.P.<br><br>\
+      The content of the lyrics are quite profound and there are so many different layers to the song. We're covering  real issues that are unfortunately still ongoing throughout the continent and black culture in general. We're not only attacking colonization from Europeans but we also refer to the current situation in the Sahel region with the terrorist group Boko Haram trying to dominate our land, and culture.<br><br>\
+      In the second half Ibrahim the lead vocalist of the band sings (in Tamasheq) about how unification as Africans is important no matter the tribe, and skin complexion. I believe now more than ever those lyrics are important, especially here in Niger.",
+    },
+    {
+      type: 'quote',
+      answer: "“...Knowing what you want from life means you'll know where you're going. You're not just blindly existing, but you're living for a purpose...”",
+    },
+    {
+      type: 'question',
+      title: 'I understand that you have roots in Niger, Tanzania and South Africa. Can you touch on how this influences your process and music altogether?',
+      answer: "I am from Niger, I was born here and moved to Arusha in Tanzania when I was 4 which is where I grew up.  I then pursued a degree in sound engineering in South Africa. Those 3 places each played a huge role in my music. Niger and West Africa in general has set a foundation in my sound, my production especially. I sample sounds from here and use many traditional instruments in my music.<br><br>\
+      Tanzania has inspired me mostly because of the lifestyle and memories I've lived while growing up there. It's given me more content to write about because I feel like that's where I truly experienced life at its fullest. <br><br>\
+      South Africa is where I developed my sound, production skills, and identity as an artist. I was surrounded by top tier producers and creatives and I made sure not to feel left behind by the end of my three year course.",
+    },
+    {
+      type: "question",
+      title: "‘You can't be a visionary when your vision blurry’ is one of the lyrics on P34CE that really stood out to me. I'm assuming this is something you stand by. How do you make sure that you don't lose sight of what's important to you?",
+      answer: "Yes it absolutely is. That line is kind of a double entendre because I was referring to the old lifestyle I was living, and how after chilling out from certain things, I was able to not only lucidly see and plan my future, but also execute those plans. I went from having blurry vision to tunnel vision.<br><br>\
+      In order to reach that stage I think it's important to know yourself and what it is you want from life. Knowing yourself is important because it keeps you level headed making it difficult for you to lose your identity amidst all the different trials and tribulations and temptations life can throw your way. Whereas knowing what you want from life means you'll know where you're going. You're not just blindly existing, but you're living for a purpose and to actually achieve something."
+    },
+    {
+      type: "question",
+      title: "What can we expect from you in the months to come? ",
+      answer: "I want to keep pushing and unfolding this project. I'll give my fans and followers a more in depth experience on what went down behind the scenes and how certain songs were created. So you can expect some more BTS videos and vlogs on my YouTube page. I might also have another visual or two under my sleeves. *wink* *wink*<br><br>\
+      Apart from that I got some new music coming too. Now that I've finally released this EP, I want to spend the rest of the year just releasing singles without the pressure of having to create a whole project alongside it. I want to work with some of my peers and join their worlds and sounds. I enjoy experimenting and pushing myself creatively so yeah more cool art!  All I know for sure is that this isn't the last you're hearing from me."
+    }
+    ],
+    footer_links: [
+      {
+        name: 'Purchase Name Me Mansa',
+        url: 'https://mvnsa.bandcamp.com/album/name-me-mansa'
+      },
+      {
+        name: 'Follow MVNSA',
+        url: 'https://www.instagram.com/mansa.nova'
+      },
+      {
+        name: 'Follow Lauryn Njeri',
+        url: 'https://www.instagram.com/laurynlikethehills_/'
+      }]
+  },
   ]))
   state.current = payload
  },
@@ -4830,7 +4930,107 @@ const mutations = {
         ]
       }
     ]
-  }
+  },
+  {
+    short_name: "NAME ME MVNSA",
+    name: "NAME ME MVNSA",
+    bandcamp_link: "https://mvnsa.bandcamp.com/album/name-me-mansa",
+    isSingle: false,
+    bandcamp_id: "3468227601",
+    author: "Lauryn Njeri",
+    date: '02/19/2021',
+    illus: 'articles/mvnsa/mvnsa.jpg',
+    credit_illu: 'Michael Aboya',
+    introduction: "Hailing from different parts of the African continent, 23 year old <b>MVNSA</b> tells stories that reflect the many facets of himself on his striking debut EP, ‘<b>Name Me Mansa</b>’. Mansa was born in Niger and lived the better part of his life in Tanzania before later pursuing his education in South Africa.<br><br>\
+    All these places quite audibly play a part in the curation of his musical identity. A blend of modern music and subtle traditional instrumentals are  intricately played with to curate an authentic yet versatile sound. Seamlessly moving  from euphoric feel good elements to more strikingly introspective themes, the eclectic EP is jam packed with high energy, hard hitting rap flows, sublime rhythms and even transcendental chants to showcase the many dimensions to Mvnsa.",
+    questions: [
+    {
+      type: 'question',
+      title: 'Who would you introduce MVNSA to the world as?',
+      answer: "I'd introduce him as a creative 23 year old man who dared to be different. Someone who wanted to show the youth, especially from where he's from, that they too can freely be themselves and that they can pursue their dreams no matter how crazy people think they are!<br><br>\
+      He is driven by his passion for the arts and has dedicated his life to creating art that is great in quality and an accurate reflection of who he is as a person.  Art that manages to move, and connect deeply with his audience.",
+      },
+    {
+      type: 'question',
+      title: 'How is the year treating you so far?',
+      answer: "Wow. This is such a simple, but deep question… Well to begin with it's treating me better than last year.  A Lot of the work I've put into different projects are starting to come into fruition. Releasing Name Me Mansa has been the highlight for sure! Seeing the positive reception from everyone who has listened to it has been amazing. People are truly connecting to my music, and that's truly one of the best feelings in the world.<br><br>\
+      Unfortunately 2021 has also involved many different struggles and complications such as the Internet in Niger being cut a week after I released the EP meaning I wasn't able to promote the project as planned. Fortunately though people are still vibing to it regularly and sending me messages about how great it is!",
+    },
+    {
+      type: 'question',
+      title: 'Tell us a little bit about Zalika’s Intro and why you felt it was important to include in your debut project.',
+      answer: "So Zalika is my older sister. She was literally the first person to ever support and believe in my musical career. Way before I even took any of this seriously, I was super trash at the time to be honest haha...but she saw a rock that had the potential to turn into a diamond before anyone else did and  I'll always love and appreciate her for that.<br><br>\
+      So she sent me that voice note on my 20th birthday, I was in Arusha at the time. The moment I heard it, I knew I was going to use it as the introduction to my debut project. I remember returning to Cape Town after that summer and getting straight  to working on the E.P. with Tronomie.",
+    },
+    {
+      type: 'image',
+      path: "articles/mvnsa/mvnsa2.jpg",
+      author: "Michael Aboya",
+    },
+    {
+      type: 'question',
+      title: 'Your sound is both sublime and striking at the same time. Can you tell us a little bit about your process while creating Name Me Mansa?',
+      answer: "Ah, thank you so much! So at the beginning stages of this project all I knew how to do was rap in front of a microphone. I couldn't use ableton or any DAW, I didn't know how to produce, write melodies, mix...my music making skills were almost non existent to be honest.<br><br>\
+      Initially I was working with Ghanaian artist and producer Tronomie who was a classmate of mine in Cape Town. We had worked on the demo's for Name Me Mansa and Euphoria together. He was supposed to produce the whole project, but unfortunately things didn't work out and he had to return to Accra. At the time I felt so lost and I honestly didn't know how I would proceed with the rest of the project.<br><br>\
+      Little did I know it was a blessing in disguise.  I had to make a choice, whether I was going to keep depending on others to be able to create my art, or learn how to do everything and be an independent creative. I chose the latter. Though it made the creation process a lot longer than what I had anticipated, it was 100% worth it.<br><br>\
+      Big shout out to THEBOYNAMEDSIMBA too man, he truly guided me through this journey and helped so much. While creating the project, I wanted to make something that would mirror my personality.  I wanted to make something that was real and honest. There are songs where I have that ‘cool rapper’ persona like SKYNZ, and others where I'm completely naked and vulnerable like P34CE. What's important is that they are both a part of who I am. I think my music is subtle because when you make real and honest music there's no need to force anything. Nothing sounds out of place, those who relate will organically connect to it, and others will just connect to the different sounds they're hearing.",
+    },
+    {
+      type: 'image',
+      path: "articles/mvnsa/mvnsa3.jpg",
+      author: "Michael Aboya",
+    },
+    {
+      type: 'question',
+      title: '',
+      answer: "Big shout out to THEBOYNAMEDSIMBA too man, he truly guided me through this journey and helped so much. While creating the project, I wanted to make something that would mirror my personality.  I wanted to make something that was real and honest. There are songs where I have that ‘cool rapper’ persona like SKYNZ, and others where I'm completely naked and vulnerable like P34CE. What's important is that they are both a part of who I am. I think my music is subtle because when you make real and honest music there's no need to force anything. Nothing sounds out of place, those who relate will organically connect to it, and others will just connect to the different sounds they're hearing.<br><br>\
+      I don't always get it where I want it to be which is something I think all artists have had to accept, but I do get it where I need it to be. Overall I'd say it was a beautiful struggle. I went through some real hardships creating this project but the results were so beautiful,  and those moments where shit sounded the way I wanted them to were absolutely priceless!",
+    },
+    {
+      type: 'question',
+      title: 'What is your favourite track on the EP and why?',
+      answer: "They are all my babies and I love each of them for different reasons. But I'd have to say Timbuktu is the one I'm a little more attached to. To begin with getting to record a band like Dag Tenere was a lot of fun. Some of the members of the band are originally from the ancient city which increased the  emotional value of the song. To be honest  It's the most important song on the E.P.<br><br>\
+      The content of the lyrics are quite profound and there are so many different layers to the song. We're covering  real issues that are unfortunately still ongoing throughout the continent and black culture in general. We're not only attacking colonization from Europeans but we also refer to the current situation in the Sahel region with the terrorist group Boko Haram trying to dominate our land, and culture.<br><br>\
+      In the second half Ibrahim the lead vocalist of the band sings (in Tamasheq) about how unification as Africans is important no matter the tribe, and skin complexion. I believe now more than ever those lyrics are important, especially here in Niger.",
+    },
+    {
+      type: 'quote',
+      answer: "“...Knowing what you want from life means you'll know where you're going. You're not just blindly existing, but you're living for a purpose...”",
+    },
+    {
+      type: 'question',
+      title: 'I understand that you have roots in Niger, Tanzania and South Africa. Can you touch on how this influences your process and music altogether?',
+      answer: "I am from Niger, I was born here and moved to Arusha in Tanzania when I was 4 which is where I grew up.  I then pursued a degree in sound engineering in South Africa. Those 3 places each played a huge role in my music. Niger and West Africa in general has set a foundation in my sound, my production especially. I sample sounds from here and use many traditional instruments in my music.<br><br>\
+      Tanzania has inspired me mostly because of the lifestyle and memories I've lived while growing up there. It's given me more content to write about because I feel like that's where I truly experienced life at its fullest. <br><br>\
+      South Africa is where I developed my sound, production skills, and identity as an artist. I was surrounded by top tier producers and creatives and I made sure not to feel left behind by the end of my three year course.",
+    },
+    {
+      type: "question",
+      title: "‘You can't be a visionary when your vision blurry’ is one of the lyrics on P34CE that really stood out to me. I'm assuming this is something you stand by. How do you make sure that you don't lose sight of what's important to you?",
+      answer: "Yes it absolutely is. That line is kind of a double entendre because I was referring to the old lifestyle I was living, and how after chilling out from certain things, I was able to not only lucidly see and plan my future, but also execute those plans. I went from having blurry vision to tunnel vision.<br><br>\
+      In order to reach that stage I think it's important to know yourself and what it is you want from life. Knowing yourself is important because it keeps you level headed making it difficult for you to lose your identity amidst all the different trials and tribulations and temptations life can throw your way. Whereas knowing what you want from life means you'll know where you're going. You're not just blindly existing, but you're living for a purpose and to actually achieve something."
+    },
+    {
+      type: "question",
+      title: "What can we expect from you in the months to come? ",
+      answer: "I want to keep pushing and unfolding this project. I'll give my fans and followers a more in depth experience on what went down behind the scenes and how certain songs were created. So you can expect some more BTS videos and vlogs on my YouTube page. I might also have another visual or two under my sleeves. *wink* *wink*<br><br>\
+      Apart from that I got some new music coming too. Now that I've finally released this EP, I want to spend the rest of the year just releasing singles without the pressure of having to create a whole project alongside it. I want to work with some of my peers and join their worlds and sounds. I enjoy experimenting and pushing myself creatively so yeah more cool art!  All I know for sure is that this isn't the last you're hearing from me."
+    }
+    ],
+    footer_links: [
+      {
+        name: 'Purchase Name Me Mansa',
+        url: 'https://mvnsa.bandcamp.com/album/name-me-mansa'
+      },
+      {
+        name: 'Follow MVNSA',
+        url: 'https://www.instagram.com/mansa.nova'
+      },
+      {
+        name: 'Follow Lauryn Njeri',
+        url: 'https://www.instagram.com/laurynlikethehills_/'
+      }]
+  },
   ]))
   state.current = state.list[payload - 1]
  }
