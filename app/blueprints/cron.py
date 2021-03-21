@@ -50,7 +50,7 @@ def sync_db_with_music_sheet():
         os.environ['MUSIC_SHEET_ID'],
         os.environ['MUSIC_TAB_ID'],
         os.environ['MUSIC_START_ROW'],
-        os.environ['MUSIC_SHEET_HEADERS']
+        headers=["name", "country", "city", "state", "type", "link", "genre", "notes"],
     )
     current_app.logger.debug(f'Adding {len(values)} to {db_name} database...')
     set_values_to_database(db_name, values)
@@ -67,7 +67,7 @@ def sync_db_with_creatives_sheet():
         os.environ['CREATIVES_SHEET_ID'],
         os.environ['CREATIVES_TAB_ID'],
         os.environ['CREATIVES_START_ROW'],
-        os.environ['CREATIVES_SHEET_HEADERS']
+        headers=["name", "location", "city", "state", "field", "links", "gender", "contact"],
     )
     current_app.logger.debug(f'Adding {len(values)} to {db_name} database...')
     set_values_to_database(db_name, values)
@@ -164,9 +164,6 @@ def get_values_from_sheet(sheet_id, tab_id, start_row, headers) -> List[dict]:
     sheet_range = f"{tab_id}!A{start_row}:H"
     result = sheet.values().get(spreadsheetId=sheet_id,
                                 range=sheet_range).execute()
-
-    # NB: sheet headers may change!
-    headers = map(str.strip, headers.split(","))
 
     return [
         obj
