@@ -50,7 +50,7 @@ def sync_db_with_music_sheet():
         os.environ['MUSIC_SHEET_ID'],
         os.environ['MUSIC_TAB_ID'],
         os.environ['MUSIC_START_ROW'],
-        headers=["name", "country", "city", "state", "type", "link", "genre", "notes"],
+        headers=["name", "country", "city", "state", "type", "link", "mixcloud", "genre", "notes"],
     )
     current_app.logger.debug(f'Adding {len(values)} to {db_name} database...')
     set_values_to_database(db_name, values)
@@ -176,15 +176,32 @@ class ProcessingError(Exception):
 
 
 def process_links(value: str):
+    def process_link(url):
+        if "bandcamp" in url:
+            return process_bandcamp(url)
+        elif "mixcloud" in url:
+            return process_mixcloud(url)
+        return url
     return [process_link(url) for url in value.split()]
 
 
-def process_link(value: str):
+def process_bandcamp(value: str):
     """
-    www.bandname.bandcamp.com -> https://bandname.bandcamp.com
+    www.{artist}.bandcamp.com -> https://{artist}.bandcamp.com
     """
     value = value.strip().replace('"', '')
-    match = re.match("www\.([a-zA-Z0-9]+\.bandcamp\.com)", value)
+    match = re.match("([a-zA-Z0-9]+\.bandcamp\.com)", value)
+    if match is not None:
+        value = f"https://{match.group(1)}"
+    return value
+
+
+def process_mixcloud(value: str):
+    """
+     -> https://mixcloud.com/{artist}/[{mix}/]
+    """
+    value = value.strip().replace('"', '')
+    match = re.match("(mixcloud\.com/[a-zA-Z0-9/-]+)", value)
     if match is not None:
         value = f"https://{match.group(1)}"
     return value
@@ -245,6 +262,7 @@ def process_row(row: tuple, headers_in_order: list):
         obj["name_first_letter"] = process_name_first_letter(obj["name"])
         obj["link"] = process_link(obj.get("link", ""))
         obj["links"] = process_links(obj.get("links", ""))
+        obj["mixcloud"] = process_mixcloud(obj.get("mixcloud", ""))
         obj["location"] = process_location(obj.get("country", "") or obj.get("location", ""))
         obj["location"] = process_location_concat(obj["city"], obj["state"], obj["location"])
         obj["location_tags"] = process_location_tags(obj["location"])
