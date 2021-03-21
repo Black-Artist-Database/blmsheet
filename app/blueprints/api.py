@@ -19,7 +19,7 @@ def entry_list():
     results = cache.get(cache_key)
     if results is None:
         db = api_blueprint.config['DB']
-        db_name = os.environ['DB_NAME']
+        db_name = os.environ['MUSIC_DB_NAME']
 
         entries = db.collection(db_name)
 
@@ -60,7 +60,7 @@ def locations():
 
     if locations is None:
         db = api_blueprint.config['DB']
-        db_name = os.environ['DB_NAME']
+        db_name = os.environ['MUSIC_DB_NAME']
 
         entries = db.collection(db_name).get()
 
@@ -85,7 +85,7 @@ def genres():
 
     if genres is None:
         db = api_blueprint.config['DB']
-        db_name = os.environ['DB_NAME']
+        db_name = os.environ['MUSIC_DB_NAME']
 
         entries = db.collection(db_name).get()
 

@@ -99,7 +99,7 @@ steps:
   - '--memory'
   - '256MB'
   - '--set-env-vars'
-  - 'DB_NAME=entries'
+  - 'MUSIC_DB_NAME=entries'
   waitFor: ['build', 'push']
 images:
 - gcr.io/$PROJECT_ID/$_IMAGE_NAME

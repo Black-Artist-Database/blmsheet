@@ -19,10 +19,11 @@ Data sourced from the public **["*1800+ Black Producers / Artists / Labels for B
 - `pip install python-dotenv`
 - create a file called `.env`:
 ```bash
-export SHEET_ID="1OIUBp4kFxmpWJihhq6WLwJQR1Am4DsD59bEYlJZxeGY"
-export TAB_ID="Original Sheet"
-export START_ROW=5
-export DB_NAME="entries"
+export MUSIC_SHEET_ID="1OIUBp4kFxmpWJihhq6WLwJQR1Am4DsD59bEYlJZxeGY"
+export MUSIC_TAB_ID="Original Sheet"
+export MUSIC_START_ROW=5
+export MUSIC_DB_NAME="entries"
+export MUSIC_SHEET_HEADERS="name,country,city,state,type,link,genre,notes"
 export FLASK_APP="application:application"
 export FLASK_ENV="development"
 export GOOGLE_APPLICATION_CREDENTIALS="[SERVICE_ACCOUNT_KEY.json]"
