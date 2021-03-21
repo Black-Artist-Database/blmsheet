@@ -57,7 +57,6 @@ def sync_db_with_music_sheet():
     return 'OK', 200
 
 
-
 @cron_blueprint.route('/sync-creatives', methods=['POST'])
 @auth_check
 def sync_db_with_creatives_sheet():
@@ -252,7 +251,7 @@ def process_row(row: tuple, headers_in_order: list):
         obj["genre_tags"] = process_genre_tags(obj.get("genre", ""))
         obj["type"] = obj.get("type") or process_field(obj.get("field", ""))
     except (KeyError, ProcessingError) as e:
-        current_app.logger.warn(f'Processing row {row} failed (not saved): {e.message}')
+        current_app.logger.warn(f'Processing row {row} failed (not saved): {str(e)}')
         return
 
     return obj
