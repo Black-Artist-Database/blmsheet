@@ -144,7 +144,7 @@ def get_values_from_sheet():
                                 range=sheet_range).execute()
 
     # NB: sheet headers may change!
-    headers = ['name', 'country', 'city', 'state', 'type', 'link', 'genre', 'notes']
+    headers = ['name', 'country', 'city', 'state', 'type', 'link', 'mixcloud', 'genre', 'notes']
     return [
         row
         for value in result.get('values', [])
