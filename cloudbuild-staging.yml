@@ -2,19 +2,19 @@ steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
   id: 'build'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/$_IMAGE_NAME:$BRANCH_NAME', '.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/$_IMAGE_NAME:${_BRANCH_TAG}', '.']
 # Push the image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
   id: 'push'
-  args: ['push', 'gcr.io/$PROJECT_ID/$_IMAGE_NAME:$BRANCH_NAME']
+  args: ['push', 'gcr.io/$PROJECT_ID/$_IMAGE_NAME:${_BRANCH_TAG}']
 # Deploy image to Cloud Run Staging
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'run'
   - 'deploy'
-  - '$_IMAGE_NAME-$BRANCH_NAME'
+  - '$_IMAGE_NAME-${_BRANCH_TAG}'
   - '--image'
-  - 'gcr.io/$PROJECT_ID/$_IMAGE_NAME:$BRANCH_NAME'
+  - 'gcr.io/$PROJECT_ID/$_IMAGE_NAME:${_BRANCH_TAG}'
   - '--region'
   - 'europe-west1'
   - '--platform'
