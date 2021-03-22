@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "logical-matrix-302423",
+  "private_key_id": "d2dc225dd07ce00bfee188305201754ffd8383f2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCZxZKh9g6eW2vf\n3uXRQfrCu/EKmDwvU0PHDi+zfbhELvPmSI9YsLuILEHt/iJDI44hNuU6E72Pf94q\nVY10WT3FcXzPDUaS2fGt5CgaaeKBTV5QzU0P7Xlf7vogBx7kC5f9JpinkfhPig9P\nZTl9umpMAXv0NlHtWCdUlvQVdMHcPLrbeZU5H5KhSf9uI0XzVlKt4eveXUeypIOx\nQBhs8cshewdpnmf83NJxNVUyB9+Ss5nxTHBMXaQ8rR4MT/nUiQK2PaAIKL6+TY5U\nSHYZJUcs48NzDvLdhBIQ8J2wGKUeFCN4e6sduvx1ODeBVXmrJPo7JrwvPxcW2xMw\nIrvxwXBHAgMBAAECggEAAkQKAWmZv4rt+lIo0BOJJAjBktFkGaJqyOppmNsiYEbS\nKzN91pBhba6RQ3Yk1RkXWrVEsr1gZAE9/yEG6472Z7a2CxWmqOVIjV0ORjgHMWE4\nIY1U3wY1wqHH0mRTIohqiJK4BHK/K5Tc3Y5KnD1R8aVtSSTqbMqJZygDmAlXY0Ja\noN+wPhUrxM/LNgdRht78D1cbCojpzMGuVN+GcOP0NvCuKOD54kunADguwhvRWzU3\n8fNPz4VBLOoU8diaAyORrRHunvznqJL6SN2nB6ziMjRn4M/f472c8S44WWlVLPQW\ni6UGUc+VgdE0RJiNKVte4H1NGVjKrijPNNyS/HsAAQKBgQDUV5tlcf27b9tLLn/8\n8jwKLBsbfDtqNDbs+KWdczoswRdYjFyZE9tZdnz1pbjzYhCHD9mMP5R4d5qLZMl/\nkBKtIyvcoyb+1SrXgECzlZ2WMR0DvRuOl2CDpeeWwxAPZePL0jIvKjbAzSDpfv/v\nX61xvwMEUvWza53r1kz5DZ4AAQKBgQC5Yy0n+U21y3v0AiuqVbYX0Z3jH8fRkD06\nftlnKMz5xr8d4dDwEHO9w1qIeSgYMKlOqRc6myDS09mdAzGuvO3xug4LnKCND5Vd\nLUxFpvz9Iffb7jfHWOqOHo33vG1u2bLRIxZUOsQga+auHgp+CTok7p3GLlIKyMzr\nK/EyCu9wRwKBgQCYJHE+PW+slhfNBXNE3JcyPqnphpjXnrPgFMQtTTtYh71ff6p1\nL+oRbrlYFLaxBAmNjEi2mXOa4S+FQuCxGpyXG0U5IFk3a6r3n3g8dC3mSChe3mdZ\nQpMvoHaP6hGexsVx65hzfM6gVBmJ06ozbB1NC6xws7RCKxCKwxCBvkUAAQKBgBZY\n2iyjZLaxXLPBPzo9MsIURpAGWLPuSzMt7078IBlL1+XmPqVxlkIdtmAVGrwvwXj1\n8RLjeEVxvB2tMOP7akNlRiQoMUJPypV8zGDpDD4HRjWAtcCV+1A+ZqaiVB60p1WG\ngT6OBu5Rk3ERtfoTaqrhCKvHEaSzJ+CBX4XEw7ApAoGAcN1zRChE/cZJ09moDtRG\nu61QUQUHl1ES+ot9wpii1Lk/LfLUSk7jNFy45kg4J/kE7drdOgmgWOQgQRjcjLs8\nvsoNr9Wq1zhxmCByV1q+5blypQZcsNzSNODZvfROFJzNMk8/e0+cyXwgJcyXUPcn\nfVNMLEzNQxYDGR472thl7Xk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "jcregg-bbc2@logical-matrix-302423.iam.gserviceaccount.com",
+  "client_id": "102591082563942253436",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/jcregg-bbc2%40logical-matrix-302423.iam.gserviceaccount.com"
+}
