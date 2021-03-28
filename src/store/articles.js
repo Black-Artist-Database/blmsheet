@@ -2519,6 +2519,132 @@ const mutations = {
         url: 'https://www.instagram.com/laurynlikethehills_/'
       }]
   },
+  {
+   type: "article",
+   short_name: 'BLACK BANDCAMP APRIL PICKS: SOUTH AFRICA',
+   name: 'BLACK BANDCAMP APRIL PICKS: SOUTH AFRICA',
+   bandcamp_link: "",
+   bandcamp_id: "",
+   credit: null,
+   author: null,
+   date: '08/07/2020',
+   illus: 'articles/apr2021/apr2021.jpg',
+   top_desc: "For this month's Bandcamp Friday, we hit up creatives in South Africa to find out who their top Black Bandcamp discoveries and picks of the month are.",
+   questions: [
+    {
+     type: 'bandcamp_picks',
+     title: 'Gina Jeanz',
+     description: "Hello Hello, my name is Gina Jeanz, I’m a Music Producer and DJ currently based in Cape Town, South Africa, I’m also a creative and co-own an online art business.",
+     links: [
+      {
+       title: "KG - Sensei",
+       description: "I’ve had the pleasure of connecting with KG online throughout 2020. This was truly the best time to discover new artists and build new connections, she’s literally one of my favourite producers out of the UK. KG is a DJ, Music Producer and Broadcaster, Sensei was one of my first purchases from her Bandcamp catalog released with Goon Club Allstars. She’s got this really intricate take to how she blends Afro house and UK Funky, adding her own twists and creating her own signature style. This track has been on rotation.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=503683494/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1059574857/transparent=true/" seamless><a href="https://gooncluballstars.bandcamp.com/album/gca011-kg-sensei-ep">GCA011 KG - Sensei EP by KG</a></iframe>',
+      },
+      {
+       title: "Uniiqu3 - Uniiqu3’s Groove",
+       description: "The name says it all, her sound and style is definitely unique. The jersey club queen is a Music Producer and DJ from New Jersey, USA. One thing I love about her is literally the drive she’s got, putting out music on the regular, hosting her own shows on Twitch, selling merch, Uniiqu3’s brand is strong. Her track Uniiqu3’s Groove is one of my favourites from her extensive catalog of bangers. Jersey Club really gets you going, it's one of those genres that just make you feel so damn good, this track puts me in such a great mood, I always make sure to spin it in my sets.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=956694361/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://uniiqu3.bandcamp.com/track/uniiqu3s-groove-get-down">UNIIQU3&#39;S GROOVE ( GET DOWN) by UNIIQU3</a></iframe>',
+      },
+      {
+       title: "Cajoux - Gotta Lotta Nerve",
+       description: "Cajoux’s take on Global Bass is so refreshing. She’s a Music Producer and DJ with flare and style. I’ve had the pleasure of seeing her in action in Cape Town on multiple occasions and she always makes sure to include influences of her Mozambican heritage during her DJ sets.  I love her latest edit Gotta Lotta Nerve, it comes in heavy, this is one of those tracks you absolutely need to have in your playlist because its just got that high energy that commands you to the dance floor. Cajoux is definitely one to watch and has been putting in the work, she’s always bringing that fresh global bass sound!",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4085752043/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=84935261/transparent=true/" seamless><a href="https://cajoux.bandcamp.com/album/the-edits-vol-1">The Edit&#39;s Vol. 1 by C A J O U X</a></iframe>',
+      }
+     ]
+    },
+    {
+     type: 'bandcamp_picks',
+     title: 'Queezy',
+     description: "Queezy (b. 1992, Cape Town) is a multidisciplinary artist bridging the intersections of fine art, fashion, and performance. From printmaking and videography to drag performances and DJ sets, QUEEZY creates immersive worlds, where fantasy meets the radical subversion of the status quo.",
+     links: [
+      {
+       title: "Solange - True",
+       description: "I have seen and listened to Solange grow musically and artistically from her days in Destiny’s Child’s videos to \"Sandcastle Disco\" to her debut album \"When I get home\" allowed me to know that you should hone on your own point of view and that developing an aesthetic takes time. I love how she harmonizes in her song \"Time (is)\" beautifully.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=741161746/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://solangeknowles.bandcamp.com/album/true">True by Solange</a></iframe>',
+      },
+      {
+       description: "Desire Marea had always been a powerhouse from the time they were in Faka with Fela Gucci referencing South African culture to making their own music inspired me to dig deeper and go further than my own borders musically and visually and to honor your ancestors. My pick from their album is Tavern Kween, I'm obsessed with the project because I've never seen Johannesburg portrayed in a truer light.",
+       title: "Desire Marea - Tavern Kween",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3249836095/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1788042126/transparent=true/" seamless><a href="https://desiremarea.bandcamp.com/album/desire">DESIRE by Desire Marea</a></iframe>',
+      },
+      {
+       title: "Abra - Sick Girl",
+       description: "When I heard Abras music for the first time it sounded too familiar yet completely new and contemporary, I am inspired by the way she writes about love in a way that I have never heard before and that’s so special. My favourite lyric of hers is “everything I thought I suppose is a lie, everything dies and everything changes”   is from her song roses.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3094308701/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://darkwaveduchess.bandcamp.com/track/sick-girl">SICK GIRL by ABRA</a></iframe>',
+      }
+     ]
+    },
+    {
+     type: 'bandcamp_picks',
+     title: 'THEBOYNAMEDSIMBA',
+     description: "Hello I'm THEBOYNAMEDSIMBA, a recording artist; producer, mixing and mastering engineer from South Africa who conceives records based on issues which plague my spirit through a vast array of genres.",
+     links: [
+      {
+       title: "MVNSA - Euphoria/Moonlight",
+       description: "This is probably my favourite record of 2021. The rhythmic yet lush production/composition is somewhat unprecedented. Mvnsa lyrical and vocal performance are exactly what this inspiring production cried out for.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3468227601/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3513458769/transparent=true/" seamless><a href="https://mvnsa.bandcamp.com/album/name-me-mansa">Name Me Mansa by MVNSA</a></iframe>',
+      },
+      {
+       title: "Oliver 'Tuku' Mtukudzi - Hear Me Lord",
+       description: "I have a serious case of nostalgia whenever I listen to Oliver 'Tuku' Mtukudzi of my childhood in Zimbabwe. This song is probably my favourite song of the legend.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4243624573/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=643590145/transparent=true/" seamless><a href="https://gallorecords.bandcamp.com/album/oliver-tuku-mtukudzi-the-collection-1991-1997">Oliver &#39;Tuku&#39; Mtukudzi: The Collection 1991 -1997 by Oliver &#39;Tuku&#39; Mtukudzi</a></iframe>',
+      },
+      {
+       title: "Denzel Curry - Clout Cobain| Clout Co13a1n",
+       description: "The reason why I chose this song is because of Denzel's vocal performance/deliverance. This song was vital in helping me improve my deliverance as a rapper. The subject matter and the beat intentionally contrast each other, I really love this technique.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2227015489/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3848905623/transparent=true/" seamless><a href="https://denzelcurrymusic.bandcamp.com/album/ta13oo">TA13OO by Denzel Curry</a></iframe>',
+      }
+     ]
+    },
+    {
+     type: 'bandcamp_picks',
+     title: 'No Diggity',
+     description: "My name is Nodiggity. I'm a DJ based in South Africa whose sound selections aim at centring the voices of femmes across house music and its subgenres. I started playing and mixing music at the end of 2016 as a way to reconnect to my first love which is of course music lol. My work and grind is motivated by wanting to contribute to inclusive and affirming dance floors and lineups across the globe.",
+     links: [
+      {
+       title: "BŪJIN - Weird Venom",
+       description: "BŪJIN is a multi disciplinary artist whose work is provocative across realms including the sonic. Their sound on this particular track is captured through their intricate music element selections. They are based in Cape Town South Africa and contribute extensively to this growing movement of nu wave sounds that collaborate genres and energies of the divine femme.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2621505807/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://bujin.bandcamp.com/track/weird-venom">WEIRD VENOM by BŪJIN</a></iframe>',
+      },
+      {
+       title: "Dumma & Kechou - Wessi Walking Mama (feat. Siya Makuzeni)",
+       description: "South African based artists dumama + kechou (aka Gugulethu Duma and Kerim Melik Becker) explore nomadic future folklore sounds that serenade the spirit through their work titled Buffering Juju. Their music explores freedom through the sonic realm in ways that are grounding and summoning through instrument choices and the stories they choose tell.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1882667359/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2597222713/transparent=true/" seamless><a href="https://dumamakechou.bandcamp.com/album/buffering-juju">buffering juju by dumama + kechou</a></iframe>',
+      },
+      {
+       title: "Mx Blouse - Zandla Phezulu",
+       description: "Mx Blouse is an electronic music artist based in Johannesburg, South Africa whose music is filled with nostalgia of local throwback sounds of kwaito collaborated with hip hop and electronic music. A blend of feel good storytelling to dance beats, their work echoes a powerful artistic voice that speaks to the creative queer scene in SA occupying space in an inspiring way.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2781969168/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=979743643/transparent=true/" seamless><a href="https://mxblouse.bandcamp.com/album/elementality">Elementality by Mx Blouse</a></iframe>',
+      }
+     ]
+    },
+    {
+     type: 'bandcamp_picks',
+     title: 'Phatstoki',
+     description: "Phatstoki is a DJ from Johannesburg, South Africa. She is the co-founder of Pussy Party, a group that gives a regular platform to queer femme and woman Dj’s and Artists.",
+     links: [
+      {
+       title: "Desire Marea - Tarven Kween",
+       description: "Desire Marea, a South African born multifaceted creative, has an undeniable energy you can't help be drawn towards.  Desire debuted their highly acclaimed self titled EP in 2020. By the sounds of it, Tarven Queen is my spirit person.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3249836095/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1788042126/transparent=true/" seamless><a href="https://desiremarea.bandcamp.com/album/desire">DESIRE by Desire Marea</a></iframe>',
+      },
+      {
+       title: "Stiff Pap ft Moonchild Sanelly - Ngomso",
+       description: "South African producer & rapper due Stiff Pap collaborated with the unstoppable force and powerhouse; Moonchild Sanelly (who I plan to marry by the way), on a track that has a little bit of everything. Nobody knows what it is but it’s provocative. It gets the People going!! A little gqom fused with a bit of Kwaito and a dash of electronic? Count me in.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=4269097179/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://cotchinternational.bandcamp.com/track/stiff-pap-ngomso-feat-moonchild-sanelly">Stiff Pap - Ngomso (feat. Moonchild Sanelly) by Stiff Pap</a></iframe>',
+      },
+      {
+       title: "Citizen Boy - Mob",
+       description: "Legendary GQOM producer Citizen Boy released a project titled “The Lost Files”. The songs remind me of the first times I was introduced to and fell in love with Gqom.  Let’s just say I’m glad the files were found. This is the gqom that elevated the genre across continents. Mob is a favourite, because... it just bangs.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3812820819/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1952057936/transparent=true/" seamless><a href="https://citizenboysa.bandcamp.com/album/the-lost-files">The Lost Files by Citizen Boy</a></iframe>',
+      }
+     ]
+    },
+    
+   ]
+  }
+  /* LAST_ARTICLE */
   ]))
   state.current = payload
  },
@@ -5028,6 +5154,131 @@ const mutations = {
         name: 'Follow Lauryn Njeri',
         url: 'https://www.instagram.com/laurynlikethehills_/'
       }]
+  },
+  {
+   type: "article",
+   short_name: 'BLACK BANDCAMP APRIL PICKS: SOUTH AFRICA',
+   name: 'BLACK BANDCAMP APRIL PICKS: SOUTH AFRICA',
+   bandcamp_link: "",
+   bandcamp_id: "",
+   credit: null,
+   author: null,
+   date: '08/07/2020',
+   illus: 'articles/apr2021/apr2021.jpg',
+   top_desc: "For this month's Bandcamp Friday, we hit up creatives in South Africa to find out who their top Black Bandcamp discoveries and picks of the month are.",
+   questions: [
+    {
+     type: 'bandcamp_picks',
+     title: 'Gina Jeanz',
+     description: "Hello Hello, my name is Gina Jeanz, I’m a Music Producer and DJ currently based in Cape Town, South Africa, I’m also a creative and co-own an online art business.",
+     links: [
+      {
+       title: "KG - Sensei",
+       description: "I’ve had the pleasure of connecting with KG online throughout 2020. This was truly the best time to discover new artists and build new connections, she’s literally one of my favourite producers out of the UK. KG is a DJ, Music Producer and Broadcaster, Sensei was one of my first purchases from her Bandcamp catalog released with Goon Club Allstars. She’s got this really intricate take to how she blends Afro house and UK Funky, adding her own twists and creating her own signature style. This track has been on rotation.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=503683494/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1059574857/transparent=true/" seamless><a href="https://gooncluballstars.bandcamp.com/album/gca011-kg-sensei-ep">GCA011 KG - Sensei EP by KG</a></iframe>',
+      },
+      {
+       title: "Uniiqu3 - Uniiqu3’s Groove",
+       description: "The name says it all, her sound and style is definitely unique. The jersey club queen is a Music Producer and DJ from New Jersey, USA. One thing I love about her is literally the drive she’s got, putting out music on the regular, hosting her own shows on Twitch, selling merch, Uniiqu3’s brand is strong. Her track Uniiqu3’s Groove is one of my favourites from her extensive catalog of bangers. Jersey Club really gets you going, it's one of those genres that just make you feel so damn good, this track puts me in such a great mood, I always make sure to spin it in my sets.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=956694361/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://uniiqu3.bandcamp.com/track/uniiqu3s-groove-get-down">UNIIQU3&#39;S GROOVE ( GET DOWN) by UNIIQU3</a></iframe>',
+      },
+      {
+       title: "Cajoux - Gotta Lotta Nerve",
+       description: "Cajoux’s take on Global Bass is so refreshing. She’s a Music Producer and DJ with flare and style. I’ve had the pleasure of seeing her in action in Cape Town on multiple occasions and she always makes sure to include influences of her Mozambican heritage during her DJ sets.  I love her latest edit Gotta Lotta Nerve, it comes in heavy, this is one of those tracks you absolutely need to have in your playlist because its just got that high energy that commands you to the dance floor. Cajoux is definitely one to watch and has been putting in the work, she’s always bringing that fresh global bass sound!",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4085752043/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=84935261/transparent=true/" seamless><a href="https://cajoux.bandcamp.com/album/the-edits-vol-1">The Edit&#39;s Vol. 1 by C A J O U X</a></iframe>',
+      }
+     ]
+    },
+    {
+     type: 'bandcamp_picks',
+     title: 'Queezy',
+     description: "Queezy (b. 1992, Cape Town) is a multidisciplinary artist bridging the intersections of fine art, fashion, and performance. From printmaking and videography to drag performances and DJ sets, QUEEZY creates immersive worlds, where fantasy meets the radical subversion of the status quo.",
+     links: [
+      {
+       title: "Solange - True",
+       description: "I have seen and listened to Solange grow musically and artistically from her days in Destiny’s Child’s videos to \"Sandcastle Disco\" to her debut album \"When I get home\" allowed me to know that you should hone on your own point of view and that developing an aesthetic takes time. I love how she harmonizes in her song \"Time (is)\" beautifully.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=741161746/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://solangeknowles.bandcamp.com/album/true">True by Solange</a></iframe>',
+      },
+      {
+       description: "Desire Marea had always been a powerhouse from the time they were in Faka with Fela Gucci referencing South African culture to making their own music inspired me to dig deeper and go further than my own borders musically and visually and to honor your ancestors. My pick from their album is Tavern Kween, I'm obsessed with the project because I've never seen Johannesburg portrayed in a truer light.",
+       title: "Desire Marea - Tavern Kween",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3249836095/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1788042126/transparent=true/" seamless><a href="https://desiremarea.bandcamp.com/album/desire">DESIRE by Desire Marea</a></iframe>',
+      },
+      {
+       title: "Abra - Sick Girl",
+       description: "When I heard Abras music for the first time it sounded too familiar yet completely new and contemporary, I am inspired by the way she writes about love in a way that I have never heard before and that’s so special. My favourite lyric of hers is “everything I thought I suppose is a lie, everything dies and everything changes”   is from her song roses.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3094308701/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://darkwaveduchess.bandcamp.com/track/sick-girl">SICK GIRL by ABRA</a></iframe>',
+      }
+     ]
+    },
+    {
+     type: 'bandcamp_picks',
+     title: 'THEBOYNAMEDSIMBA',
+     description: "Hello I'm THEBOYNAMEDSIMBA, a recording artist; producer, mixing and mastering engineer from South Africa who conceives records based on issues which plague my spirit through a vast array of genres.",
+     links: [
+      {
+       title: "MVNSA - Euphoria/Moonlight",
+       description: "This is probably my favourite record of 2021. The rhythmic yet lush production/composition is somewhat unprecedented. Mvnsa lyrical and vocal performance are exactly what this inspiring production cried out for.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3468227601/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3513458769/transparent=true/" seamless><a href="https://mvnsa.bandcamp.com/album/name-me-mansa">Name Me Mansa by MVNSA</a></iframe>',
+      },
+      {
+       title: "Oliver 'Tuku' Mtukudzi - Hear Me Lord",
+       description: "I have a serious case of nostalgia whenever I listen to Oliver 'Tuku' Mtukudzi of my childhood in Zimbabwe. This song is probably my favourite song of the legend.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4243624573/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=643590145/transparent=true/" seamless><a href="https://gallorecords.bandcamp.com/album/oliver-tuku-mtukudzi-the-collection-1991-1997">Oliver &#39;Tuku&#39; Mtukudzi: The Collection 1991 -1997 by Oliver &#39;Tuku&#39; Mtukudzi</a></iframe>',
+      },
+      {
+       title: "Denzel Curry - Clout Cobain| Clout Co13a1n",
+       description: "The reason why I chose this song is because of Denzel's vocal performance/deliverance. This song was vital in helping me improve my deliverance as a rapper. The subject matter and the beat intentionally contrast each other, I really love this technique.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2227015489/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3848905623/transparent=true/" seamless><a href="https://denzelcurrymusic.bandcamp.com/album/ta13oo">TA13OO by Denzel Curry</a></iframe>',
+      }
+     ]
+    },
+    {
+     type: 'bandcamp_picks',
+     title: 'No Diggity',
+     description: "My name is Nodiggity. I'm a DJ based in South Africa whose sound selections aim at centring the voices of femmes across house music and its subgenres. I started playing and mixing music at the end of 2016 as a way to reconnect to my first love which is of course music lol. My work and grind is motivated by wanting to contribute to inclusive and affirming dance floors and lineups across the globe.",
+     links: [
+      {
+       title: "BŪJIN - Weird Venom",
+       description: "BŪJIN is a multi disciplinary artist whose work is provocative across realms including the sonic. Their sound on this particular track is captured through their intricate music element selections. They are based in Cape Town South Africa and contribute extensively to this growing movement of nu wave sounds that collaborate genres and energies of the divine femme.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2621505807/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://bujin.bandcamp.com/track/weird-venom">WEIRD VENOM by BŪJIN</a></iframe>',
+      },
+      {
+       title: "Dumma & Kechou - Wessi Walking Mama (feat. Siya Makuzeni)",
+       description: "South African based artists dumama + kechou (aka Gugulethu Duma and Kerim Melik Becker) explore nomadic future folklore sounds that serenade the spirit through their work titled Buffering Juju. Their music explores freedom through the sonic realm in ways that are grounding and summoning through instrument choices and the stories they choose tell.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1882667359/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2597222713/transparent=true/" seamless><a href="https://dumamakechou.bandcamp.com/album/buffering-juju">buffering juju by dumama + kechou</a></iframe>',
+      },
+      {
+       title: "Mx Blouse - Zandla Phezulu",
+       description: "Mx Blouse is an electronic music artist based in Johannesburg, South Africa whose music is filled with nostalgia of local throwback sounds of kwaito collaborated with hip hop and electronic music. A blend of feel good storytelling to dance beats, their work echoes a powerful artistic voice that speaks to the creative queer scene in SA occupying space in an inspiring way.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2781969168/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=979743643/transparent=true/" seamless><a href="https://mxblouse.bandcamp.com/album/elementality">Elementality by Mx Blouse</a></iframe>',
+      }
+     ]
+    },
+    {
+     type: 'bandcamp_picks',
+     title: 'Phatstoki',
+     description: "Phatstoki is a DJ from Johannesburg, South Africa. She is the co-founder of Pussy Party, a group that gives a regular platform to queer femme and woman Dj’s and Artists.",
+     links: [
+      {
+       title: "Desire Marea - Tarven Kween",
+       description: "Desire Marea, a South African born multifaceted creative, has an undeniable energy you can't help be drawn towards.  Desire debuted their highly acclaimed self titled EP in 2020. By the sounds of it, Tarven Queen is my spirit person.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3249836095/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1788042126/transparent=true/" seamless><a href="https://desiremarea.bandcamp.com/album/desire">DESIRE by Desire Marea</a></iframe>',
+      },
+      {
+       title: "Stiff Pap ft Moonchild Sanelly - Ngomso",
+       description: "South African producer & rapper due Stiff Pap collaborated with the unstoppable force and powerhouse; Moonchild Sanelly (who I plan to marry by the way), on a track that has a little bit of everything. Nobody knows what it is but it’s provocative. It gets the People going!! A little gqom fused with a bit of Kwaito and a dash of electronic? Count me in.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=4269097179/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://cotchinternational.bandcamp.com/track/stiff-pap-ngomso-feat-moonchild-sanelly">Stiff Pap - Ngomso (feat. Moonchild Sanelly) by Stiff Pap</a></iframe>',
+      },
+      {
+       title: "Citizen Boy - Mob",
+       description: "Legendary GQOM producer Citizen Boy released a project titled “The Lost Files”. The songs remind me of the first times I was introduced to and fell in love with Gqom.  Let’s just say I’m glad the files were found. This is the gqom that elevated the genre across continents. Mob is a favourite, because... it just bangs.",
+       embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3812820819/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1952057936/transparent=true/" seamless><a href="https://citizenboysa.bandcamp.com/album/the-lost-files">The Lost Files by Citizen Boy</a></iframe>',
+      }
+     ]
+    },
+    
+   ]
   },
   ]))
   state.current = state.list[payload - 1]
