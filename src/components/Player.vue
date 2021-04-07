@@ -27,12 +27,7 @@ export default {
         width:100%;
         z-index:100;
         padding:5px 5px 0 5px;
-        @media (prefers-color-scheme: light) {
-            background:#eee;
-        }
-        @media (prefers-color-scheme: dark) {
-            background: #343a40;
-        }
+        background:#eee;
         
         iframe {
             max-width:700px;

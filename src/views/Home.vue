@@ -7,7 +7,7 @@
         <h4 class="alert-heading">We are now on Instagram</h4>
         <p><a href="https://www.instagram.com/blackbandcamp/" class="ig-link" target="_blank">Follow us for updates</a></p>
       </div> -->
-      <h2 class="mt-4 mb-4">A crowd-sourced list of Black artists on Bandcamp.</h2>
+      <h1 class="h3 mt-4 mb-4 bad-title">EVERYDAY IS A GOOD DAY TO SUPPORT AND BUY FROM <span>BLACK ARTISTS</span>.</h1>
       <Filters :filters="filters" @loading="e => loading = e"/>
       <div class="d-flex justify-content-center" v-if="loading">
         <div class="spinner-border m-5" role="status">

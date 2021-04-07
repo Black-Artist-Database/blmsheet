@@ -1,43 +1,25 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="/">blackbandcamp.info</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <router-link to="/" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Discover</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/about" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">About</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/add" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Add Submission</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/read" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Read</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/voices" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Voices</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/watch" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Watch</router-link>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav ml-auto">
-              <li>
-                  <a href="https://www.instagram.com/blackbandcamp/" class="nav-link" target="_blank"><img src="./assets/instagram-icon.png" class="ig-icon"></a>
-              </li>
-              <li>
-                  <a href="https://www.twitter.com/blackbandcamp/" class="nav-link" target="_blank"><img src="./assets/twitter-icon.png" class="ig-icon"></a>
-              </li>
-          </ul>
-        </div>
+
+    <header>
+      <div class="top-header container pt-3 pb-4">
+        <a href="/">
+        <img src="./assets/bad.svg" alt="Black Artist Database" class="th-logo">
+        </a>
       </div>
-    </nav>
+      <div class="container">
+        <nav class="t-nav d-flex">
+          <router-link to="/" class="d-flex"><i></i> <span>DATABASE</span></router-link>
+          <router-link to="/about" class="d-flex"><i></i> <span>MISSION STATEMENT</span></router-link>
+          <a href="" class="d-flex"><i></i> <span>[PAUSE]</span></a>
+          <a href="" class="d-flex"><i></i> <span>CONTENT</span></a>
+          <a href="" class="d-flex"><i></i> <span>STORE</span></a>
+          <a href="" target="_blank" class="d-flex"><i></i> <span>PATREON</span></a>
+        </nav>
+      </div>
+    </header>
+
+    
     <router-view/>
 
   </div>
@@ -61,27 +43,77 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: lexia-mono, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: black;
   min-height:100vh;
-  @media (prefers-color-scheme: dark) {
-    background-color: black;
-    color: white;
-  }
-  @media (prefers-color-scheme: light) {
-    background-color: #f7f7f7;
-    color: black;
-  }
+  background-color: #f7f7f7;
+  color: black;
 }
 
 .router-link-exact-active {
-  color: #fff !important;
+  text-decoration:underline;
 }
 
-.ig-icon {
-  width:30px;
+.top-header {
+  text-align:left;
+  .th-logo {
+    max-width:100px;
+  }
+}
+.t-nav {
+  justify-content:space-between;
+  border-bottom:1px solid black;
+  padding-bottom:5px;
+  a {
+    align-items:center;
+    color:black;
+    &:first-of-type {
+      margin-left:-15px;
+    }
+    i {
+      background:black;
+      width:8px;
+      height:8px;
+      border-radius:50px;
+      display:block;
+      margin-right:5px;
+    }
+  }
+}
+.bad-title {
+  background:#32ff99;
+  text-transform:uppercase;
+  display:inline-block;
+  padding:10px 20px 5px 20px;
+  border:2px solid black;
+  position:relative;
+  transform-style: preserve-3d;
+  span {
+    color:white;
+  }
+  &::before  {
+    content:"";
+    display:block;
+    top:-7px;
+    right:-7px;
+    width:100%;
+    height:100%;
+    position: absolute;
+    transform:translateZ(-1px);
+    background-image:url(./assets/back-bar.png);
+    border:2px solid black;
+  }
+}
+.bad-subtitle {
+  color:#336666;
+  border:2px solid #336666;
+  background:#e8e8e8;
+  padding:10px;
+  max-width:400px;
+  font-size:1.3em;
+  margin-bottom:25px;
 }
 </style>

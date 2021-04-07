@@ -22,12 +22,12 @@
         </span>
         </a>
         <div class="card-body">
-            <h5 class="card-title">{{ name }}<br><small>{{location}}</small></h5>
-            <p class="genres"><span v-for="(genre, index) in genres" :key="index">
-                {{genre}}<span v-if="index != Object.keys(genres).length - 1">, </span>
-                </span>
+            <h6 class="card-title mb-0">{{ name }}</h6>
+            <p class="mt-0 location-genre"><small>{{location}} - <span v-for="(genre, index) in genres.slice(0,1)" :key="index">
+                {{genre}}
+                </span></small> 
             </p>
-            <a :href=link target="_blank">Open in Bandcamp</a>
+            <a :href=link target="_blank">Bandcamp</a>
         </div>
     </div>
 </div>
@@ -100,19 +100,21 @@ export default {
   $bc-purple: #941DC3;
   $bc-blue: #0064b5;
 
-   @media (prefers-color-scheme: dark) {
-    .card {
-      border-color: rgba(255,255,255,0.3);
-      background-color: transparent;
-      &:hover {
-        border-color: rgba(255,255,255,0.5);
-      }
-      .card-body {
-        a { color: white; text-decoration:underline; }
-      }
-
-    }
+  .card {
+    border:1px solid black;
+    border-radius:0;
+    height:100%;
   }
+
+  a {
+    color:black;
+  }
+
+  h6 {
+    color:#0daa6c;
+    text-decoration:underline;
+  }
+
   .badge {
     z-index: 10;
   }
@@ -174,6 +176,10 @@ export default {
   small {
     font-weight:bold;
     font-size:60%;
+  }
+
+  .location-genre {
+    text-transform:uppercase;
   }
 
 
