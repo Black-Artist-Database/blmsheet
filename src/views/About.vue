@@ -25,15 +25,16 @@
     </div>  
 
     <div class="row mt-5">
+      <div class="col-md-4 image-right">
+        <img src="../assets/about/2.png" alt="About Us Image">
+      </div>
       <div class="col-md-8 text-left">
         <h3 class="bad-subtitle">THE DATABASE.</h3>
         <p>The database is accessible in website form, and we are now moving to other mediums through which we can channel the project and the momentum it’s gathered. Through the database, we highlight the boundless range of Black musicality, as well as (in a more practical sense) fight against the structural inequalities resulting in lesser support for Black artists, by sidestepping some of the more traditional methods of generating visibility.</p>
         <p>Through this centralised database, we hope to give the power back to the community far and wide, whereby users submit artists, removing a layer of gatekeeping. In addition to this, the database can now be used for labels, bookers, promoters and programmers to diversify their communities and projects moving forward.</p>
         <img src="../assets/ball-bar.svg" alt="-" class="bb">
       </div>
-      <div class="col-md-4 image-right">
-        <img src="../assets/about/2.png" alt="About Us Image">
-      </div>
+  
     </div> 
 
 
@@ -51,6 +52,9 @@
 
 
     <div class="row mt-5">
+      <div class="col-md-4 image-right">
+        <img src="../assets/about/4.png" alt="About Us Image">
+      </div>
       <div class="col-md-8 text-left">
         <h3 class="bad-subtitle">SELF DEFINITION.</h3>
         <p>With the definition and term ‘Black’ being relative to each individual’s geographical location, genetic make up and societal conceptualisation, we have a team who screen each and every submission to ensure that the space is preserved for Black artists. It’s important to note, we do not want to define what is Black for others, and encourage self-definition. Ask Raag to add their process of screening.</p>
@@ -61,9 +65,7 @@
         
         <img src="../assets/ball-bar.svg" alt="-" class="bb">
       </div>
-      <div class="col-md-4 image-right">
-        <img src="../assets/about/4.png" alt="About Us Image">
-      </div>
+
     </div> 
 
     <div class="row mt-5">
@@ -80,6 +82,9 @@
     </div> 
 
     <div class="row mt-5">
+      <div class="col-md-4 image-right">
+        <img src="../assets/about/6.png" alt="About Us Image">
+      </div>
       <div class="col-md-8 text-left">
         <h3 class="bad-subtitle">THE TEAM.</h3>
         <p>The core team is made up of several Black team members based across different continents, with an additional 15 volunteer members worldwide. As a whole we represent a diverse cross section of the electronic music community, however we are always striving to take on points of view from other members of society; primarily, of course, from Black folk who we may not represent in some way. We are very aware of the fact that we cannot represent everyone; therefore, we try to regularly feedback with Black members of the community to ensure we are engaging with more voices; this process will be formalised in our new working structure.</p>
@@ -87,9 +92,7 @@
         <p>We have a wider support team made up of electronic music lovers with key skill sets such as developers, administrators, database managers and other supporting roles.</p>
         <img src="../assets/ball-bar.svg" alt="-" class="bb">
       </div>
-      <div class="col-md-4 image-right">
-        <img src="../assets/about/6.png" alt="About Us Image">
-      </div>
+
     </div> 
 
 

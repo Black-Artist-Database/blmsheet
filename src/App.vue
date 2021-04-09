@@ -67,12 +67,11 @@ export default {
   justify-content:space-between;
   border-bottom:1px solid black;
   padding-bottom:5px;
+  flex-wrap:wrap;
   a {
     align-items:center;
     color:black;
-    &:first-of-type {
-      margin-left:-15px;
-    }
+
     i {
       background:black;
       width:8px;
@@ -103,7 +102,7 @@ export default {
     height:100%;
     position: absolute;
     transform:translateZ(-1px);
-    background-image:url(./assets/back-bar.png);
+    background-image:url(./assets/back-bar.gif);
     border:2px solid black;
   }
 }

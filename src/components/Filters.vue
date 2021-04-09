@@ -183,7 +183,6 @@ export default {
     .filters {
       text-align:left;
       display:inline-block;
-      background-color: white;
       color: black;
     }
     select, input, /deep/ div input {

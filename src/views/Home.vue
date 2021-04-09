@@ -10,9 +10,7 @@
       <h1 class="h3 mt-4 mb-4 bad-title">EVERYDAY IS A GOOD DAY TO SUPPORT AND BUY FROM <span>BLACK ARTISTS</span>.</h1>
       <Filters :filters="filters" @loading="e => loading = e"/>
       <div class="d-flex justify-content-center" v-if="loading">
-        <div class="spinner-border m-5" role="status">
-          <span class="sr-only">Loading...</span>
-        </div>
+        <img src="../assets/loading-spinner.gif">
       </div>
       <div v-if="list.length === 0 && !loading" class="m-4">No results found, try broadening your search or <a href="/">reset all filters</a>.</div>
       <div class="row" v-if="!loading">

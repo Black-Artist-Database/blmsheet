@@ -61,28 +61,28 @@ export default {
             
             switch(randomFileNumber) {
               case 1:
-                return require('@/assets/placeholders/1.png');
+                return require('@/assets/placeholders/01.jpg');
               case 2:
-                return require('@/assets/placeholders/2.png');
+                return require('@/assets/placeholders/02.jpg');
               case 3:
-                return require('@/assets/placeholders/3.png');
+                return require('@/assets/placeholders/03.jpg');
               case 4:
-                return require('@/assets/placeholders/4.png');
+                return require('@/assets/placeholders/04.jpg');
               case 5:
-                return require('@/assets/placeholders/5.png');
+                return require('@/assets/placeholders/05.jpg');
               case 6:
-                return require('@/assets/placeholders/6.png');
+                return require('@/assets/placeholders/06.jpg');
               case 7:
-                return require('@/assets/placeholders/7.png');
+                return require('@/assets/placeholders/07.jpg');
               case 8:
-                return require('@/assets/placeholders/8.png');
+                return require('@/assets/placeholders/08.jpg');
               case 9:
-                return require('@/assets/placeholders/9.png');
+                return require('@/assets/placeholders/09.jpg');
               case 10:
-                return require('@/assets/placeholders/10.png');
+                return require('@/assets/placeholders/10.jpg');
             } 
 
-            return require('@/assets/placeholders/1.png');
+            return require('@/assets/placeholders/01.jpg');
         }
     },
     methods: {
@@ -117,27 +117,16 @@ export default {
 
   .badge {
     z-index: 10;
-  }
-  .badge-bc-green {
-    background-color: $bc-green;
-  }
-
-  .badge-bc-red {
-    background-color: $bc-red;
-  }
-
-  .badge-bc-purple {
-    background-color: $bc-purple;
-  }
-
-  .badge-bc-blue {
-    background-color: $bc-blue;
+    background:#32ff99;
   }
 
   .badge {
     position:absolute;
     top:15px;
     right:15px;
+  }
+  .card-title {
+    text-transform: uppercase;
   }
 
   .image-wrapper{
