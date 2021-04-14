@@ -148,9 +148,9 @@ const mutations = {
       <b>What setbacks have you faced during your career? How has this affected you personally?</b><br><br>\
       People generally being clapped. There’s a huge disconnect between the origins of dance music and rave culture which is now a capitalist commodity. It’s so entwined with whiteness that structurally, I’m at a disadvantage at every facet of the industry relying on anti-blackness to be sustained. It’s weird because it’s so glaringly obvious that people refusing to acknowledge it results in gaslighting behaviour and if you challenge it, you’re automatically the bad person, the trouble maker. When you’re essentially just saying, ‘hey I like dance music and this is super important to me because just like the pioneers, I’m Black and we use this to express ourselves’. People are still not understanding how structural racism affects all of us and how it plays out. <br><br>\
       To be honest, not many people realise what racism looks like. I think one of the most distressing things was my treatment in Bristol. I love the city but it has a lot to really grapple with when it comes to removing the facade of a liberal city because it’s the opposite - it’s no different from any other cities in the U.K. Looking back, the treatment from Noods Radio and the general way they handled it and stayed quiet during the current BLM after publicly engaging in misogynoir sums up everything I hate about the industry currently. Cool lads commodifying Black culture, being racist and sexst then still being held as the standard when they’re lacking in vibes completely. Social clout is one hell of a drug. I’m baffled why instead of holding them to account and striving for change and this goes for other collectives and people who have caused me harm, it’s just pushed to the side. It’s pretty fucked. My mental health took a huge huge hit and I’m still trying to piece it back together. <br><br>\
-      <b>Where did the inspiration come from for Intervention?</b> <br><br>\
+      <b>Where did the inspiration come from for INTERVENTION?</b> <br><br>\
       It was a pretty simple idea tbh. I just wanted people like me and other people who had been excluded to be able to express themselves behind the decks. It can be such a freeing experience that I thought we need to go back to basics and get the people who need dance music, dancing in general and DJing the most at the front and centre again!<br><br>\
-      <b>How would you best describe the conditions, in a structural sense, that make Intervention, and projects like it, so necessary?</b><br><br>\
+      <b>How would you best describe the conditions, in a structural sense, that make INTERVENTION, and projects like it, so necessary?</b><br><br>\
       This ties in a lot with what I’ve said above about setbacks but also venues, promoters and clubbers need to fix up too. It can’t be up to the marginalised to fix a problem they did not create and they’re harmed under. We’re now seeing tokenistic bookings, performative allyship and weird faux niceness - the British way of addressing anything. Even after BLM was worldwide this summer, nothing changed. You would have thought this would have shown how ingrained structural racism is but it only confirmed that we shouldn’t even dismantle or decolonise the industry but burn it and start again. <br><br>\
       <b>You’ve been a player in a few of the UK’s most reputed local scenes...do you see them as separate entities or is there a commonality that binds them together?</b> <br><br>\
       They’re all different but there is a general feeling of people wanting to let loose. Especially Black and People of Colour. You have to dig beneath the surface - you can’t expect to find the new sounds by going to the bait clubs. They all have experimental (whatever that even means these days) sub-scenes which I guess would be the commonality!<br><br>\
@@ -172,8 +172,8 @@ const mutations = {
           url: "https://www.instagram.com/interventioncru/"
         },
         {
-          name: "You can follow Kay Ferdinand here",
-          url: "https://www.instagram.com/_kafk/"
+          name: "You can follow NIKS here",
+          url: "https://www.instagram.com/niksdelanancy/"
         }
       ]
     },
@@ -317,9 +317,9 @@ const mutations = {
       <b>What setbacks have you faced during your career? How has this affected you personally?</b><br><br>\
       People generally being clapped. There’s a huge disconnect between the origins of dance music and rave culture which is now a capitalist commodity. It’s so entwined with whiteness that structurally, I’m at a disadvantage at every facet of the industry relying on anti-blackness to be sustained. It’s weird because it’s so glaringly obvious that people refusing to acknowledge it results in gaslighting behaviour and if you challenge it, you’re automatically the bad person, the trouble maker. When you’re essentially just saying, ‘hey I like dance music and this is super important to me because just like the pioneers, I’m Black and we use this to express ourselves’. People are still not understanding how structural racism affects all of us and how it plays out. <br><br>\
       To be honest, not many people realise what racism looks like. I think one of the most distressing things was my treatment in Bristol. I love the city but it has a lot to really grapple with when it comes to removing the facade of a liberal city because it’s the opposite - it’s no different from any other cities in the U.K. Looking back, the treatment from Noods Radio and the general way they handled it and stayed quiet during the current BLM after publicly engaging in misogynoir sums up everything I hate about the industry currently. Cool lads commodifying Black culture, being racist and sexst then still being held as the standard when they’re lacking in vibes completely. Social clout is one hell of a drug. I’m baffled why instead of holding them to account and striving for change and this goes for other collectives and people who have caused me harm, it’s just pushed to the side. It’s pretty fucked. My mental health took a huge huge hit and I’m still trying to piece it back together. <br><br>\
-      <b>Where did the inspiration come from for Intervention?</b> <br><br>\
+      <b>Where did the inspiration come from for INTERVENTION?</b> <br><br>\
       It was a pretty simple idea tbh. I just wanted people like me and other people who had been excluded to be able to express themselves behind the decks. It can be such a freeing experience that I thought we need to go back to basics and get the people who need dance music, dancing in general and DJing the most at the front and centre again!<br><br>\
-      <b>How would you best describe the conditions, in a structural sense, that make Intervention, and projects like it, so necessary?</b><br><br>\
+      <b>How would you best describe the conditions, in a structural sense, that make INTERVENTION, and projects like it, so necessary?</b><br><br>\
       This ties in a lot with what I’ve said above about setbacks but also venues, promoters and clubbers need to fix up too. It can’t be up to the marginalised to fix a problem they did not create and they’re harmed under. We’re now seeing tokenistic bookings, performative allyship and weird faux niceness - the British way of addressing anything. Even after BLM was worldwide this summer, nothing changed. You would have thought this would have shown how ingrained structural racism is but it only confirmed that we shouldn’t even dismantle or decolonise the industry but burn it and start again. <br><br>\
       <b>You’ve been a player in a few of the UK’s most reputed local scenes...do you see them as separate entities or is there a commonality that binds them together?</b> <br><br>\
       They’re all different but there is a general feeling of people wanting to let loose. Especially Black and People of Colour. You have to dig beneath the surface - you can’t expect to find the new sounds by going to the bait clubs. They all have experimental (whatever that even means these days) sub-scenes which I guess would be the commonality!<br><br>\
@@ -341,8 +341,8 @@ const mutations = {
           url: "https://www.instagram.com/interventioncru/"
         },
         {
-          name: "You can follow Kay Ferdinand here",
-          url: "https://www.instagram.com/_kafk/"
+          name: "You can follow NIKS here",
+          url: "https://www.instagram.com/niksdelanancy/"
         }
       ]
     },  
