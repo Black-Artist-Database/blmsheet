@@ -10,10 +10,13 @@
         <img v-if="voice.illus" :src="require(`@/assets/${voice.illus}`)" />
         <p v-if="voice.credit_illu"><i>Photo by {{voice.credit_illu}}</i></p>
         <p v-if="voice.credit_illu_all"><i>{{voice.credit_illu_all}}</i></p>
-        <div class="mixcloud" v-if="voice.mixcloud_url">
+        <div class="mixcloud" v-if="voice.mixcloud_url && !voice.mixcloud_bottom">
           <iframe width="100%" height="120" :src="voice.mixcloud_url" frameborder="0" ></iframe>
         </div>
         <p class="intro" v-if="voice.introduction" v-html="voice.introduction"></p>
+      </div>
+      <div class="mixcloud" v-if="voice.mixcloud_url && voice.mixcloud_bottom">
+        <iframe width="100%" height="120" :src="voice.mixcloud_url" frameborder="0" ></iframe>
       </div>
       <div class="header-links">
         <div class="link" v-for="(link, index) in voice.links" :key="`link-${index}`">
@@ -58,6 +61,10 @@ export default {
 .page {
   text-align: left;
 }
+  .mixcloud {
+    max-width: 800px;
+    margin: auto;
+  }
 
   .back {
     display: block;
