@@ -161,7 +161,7 @@ const mutations = {
       <b>How does it relate to your work in the electronic music sphere?</b><br><br>\
       The use of drums from Nigeria, West African more widely, and how it’s been used by Black people in electronic music is the link between the two. It’s been important for me in contextualising why I feel so passionately about genres like techno and house, the connection I feel to dance music but also why I carry on trying to use INTERVENTION to help, connect and platform as many people as possible.<br><br>\
       <b>And finally, who should we be looking out for from the INTERVENTION camp?</b><br><br>\
-      PMS Casualty, Ayla L, Meterman, Pet Bitch, Ayaya & Strayer.<br><br>",
+      PMS Casualty, Ayla L, Meterman, Ayaya & Strayer.<br><br>",
       footer_links: [
         {
           name: "You can follow Ifeoluwa here",
@@ -330,7 +330,7 @@ const mutations = {
       <b>How does it relate to your work in the electronic music sphere?</b><br><br>\
       The use of drums from Nigeria, West African more widely, and how it’s been used by Black people in electronic music is the link between the two. It’s been important for me in contextualising why I feel so passionately about genres like techno and house, the connection I feel to dance music but also why I carry on trying to use INTERVENTION to help, connect and platform as many people as possible.<br><br>\
       <b>And finally, who should we be looking out for from the INTERVENTION camp?</b><br><br>\
-      PMS Casualty, Ayla L, Meterman, Pet Bitch, Ayaya & Strayer.<br><br>",
+      PMS Casualty, Ayla L, Meterman, Ayaya & Strayer.<br><br>",
       footer_links: [
         {
           name: "You can follow Ifeoluwa here",
