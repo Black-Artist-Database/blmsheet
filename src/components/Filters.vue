@@ -154,9 +154,10 @@ export default {
     background-position:bottom;
     background-repeat:no-repeat;
     display:inline-block;
+    width:100%;
     ul {
       padding-left: 0;
-      min-width:710px;
+      min-width:900px;
     }
     &.disabled {
       opacity:0.3;

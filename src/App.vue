@@ -6,15 +6,39 @@
         <a href="/">
         <img src="./assets/bad.svg" alt="Black Artist Database" class="th-logo">
         </a>
+        <a class="mobile-menu" @click="showNav = !showNav">
+          <img src="./assets/nav.png" alt="nav">
+        </a>
       </div>
-      <div class="container">
-        <nav class="t-nav d-flex">
-          <router-link to="/" class="d-flex"><i></i> <span>DATABASE</span></router-link>
-          <router-link to="/about" class="d-flex"><i></i> <span>MISSION STATEMENT</span></router-link>
-          <a href="" class="d-flex"><i></i> <span>[PAUSE]</span></a>
-          <a href="" class="d-flex"><i></i> <span>CONTENT</span></a>
-          <a href="" class="d-flex"><i></i> <span>STORE</span></a>
-          <a href="" target="_blank" class="d-flex"><i></i> <span>PATREON</span></a>
+      <div class="container main-navigation" v-bind:class="{ active: showNav }">
+        <nav>
+          <ul class="t-nav d-flex">
+            <li><router-link to="/" class="d-flex"><i></i> <span>DATABASE</span></router-link></li>
+            <li>
+              <a class="d-flex"><i></i> ABOUT</a>
+              <ul class="d-flex">
+                <li><router-link to="/about" class="d-flex">- <span>MISSION STATEMENT</span></router-link></li>
+                <li><a href="" class="d-flex">- <span>CONTACT</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <router-link to="/pause" class="d-flex"><i></i> <span>PAUSE</span></router-link>
+              <ul class="d-flex">
+                <li><router-link to="/pause" class="d-flex">- <span>ABOUT [PAUSE]</span></router-link></li>
+                <li><a href="" class="d-flex">- <span>CONTACT</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="d-flex"><i></i> CONTENT</a>
+              <ul class="d-flex">
+                <li><a href="" class="d-flex">- <span>READ</span></a></li>
+                <li><a href="" class="d-flex">- <span>LISTEN</span></a></li>
+                <li><a href="" class="d-flex">- <span>WATCH</span></a></li>
+              </ul>
+            </li>
+            <li><a href="" class="d-flex"><i></i> <span>STORE</span></a></li>
+            <li><a href="" target="_blank" class="d-flex"><i></i> <span>PATREON</span></a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -30,9 +54,10 @@
 
 export default {
   name: 'App',
-
+  props: {
+    showNav: Boolean,
+  },
   data: () => ({
-
   }),
   computed: {
   },
@@ -63,11 +88,68 @@ export default {
     max-width:100px;
   }
 }
+.mobile-menu {
+  width:50px;
+  position:absolute;
+  top:5px;
+  right:5px;
+  img {
+    width:100%;
+  }
+  display:none;
+  @media screen and (max-width: 800px) {
+    display:block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-navigation {
+    display:none;
+    &.active {
+      display:block;
+    }
+    ul {
+      display:block !important;
+      border-bottom:none !important;
+      li {
+        margin-bottom:10px;
+      }
+      li ul {
+        display:block !important;
+        position:relative !important;
+        border:none !important;
+        li {
+          margin-bottom:2px;
+        }
+      }
+    }
+  }
+}
 .t-nav {
   justify-content:space-between;
   border-bottom:1px solid black;
   padding-bottom:5px;
   flex-wrap:wrap;
+  list-style:none;
+  padding-left:0;
+  li {
+    position: relative;
+    padding-right:50px;
+    ul {
+      display:none !important;
+      position: absolute;
+      left:0;
+      padding:0;
+      list-style:none;
+      min-width:400px;
+      background:white;
+      border:1px solid black;
+      padding:5px 10px;
+      z-index:999;
+    }
+    &:hover ul {
+      display:flex !important;
+    }
+  }
   a {
     align-items:center;
     color:black;
@@ -90,13 +172,15 @@ export default {
   border:2px solid black;
   position:relative;
   transform-style: preserve-3d;
+  font-weight:bold;
+
   span {
     color:white;
   }
   &::before  {
     content:"";
     display:block;
-    top:-7px;
+    bottom:-7px;
     right:-7px;
     width:100%;
     height:100%;
