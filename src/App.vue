@@ -27,8 +27,8 @@
             <li @click="showNav = !showNav">
               <router-link to="/pause" class="d-flex"><i></i> <span>[PAUSE]</span></router-link>
             </li>
-            <li @click="showNav = !showNav"><a href="https://blackad.wpengine.com/categories/read/" class="d-flex"><i></i> <span>READ</span></a></li>
-            <li @click="showNav = !showNav"><a href="https://blackad.wpengine.com/categories/listen/" class="d-flex"><i></i> <span>LISTEN</span></a></li>
+            <li @click="showNav = !showNav"><a href="https://content.blackartistdatabase.co/categories/read/" class="d-flex"><i></i> <span>READ</span></a></li>
+            <li @click="showNav = !showNav"><a href="https://content.blackartistdatabase.co/categories/listen/" class="d-flex"><i></i> <span>LISTEN</span></a></li>
             <!--
             <li>
               <a class="d-flex"><i></i> CONTENT</a>
