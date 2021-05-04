@@ -119,7 +119,7 @@
     <p>Please contact the relevant team members below with any enquires you may have.</p>
 
     <p><b>General enquiries:</b><br>
-    <a href="mailto:hello@blackartistdatabase.co">hello@blackartistdatabase.co</a>
+    <a href="mailto:hello@blackartistdatabase.co">hello@blackartistdatabase.co</a><br>
     <a href="mailto:submissions@blackartistdatabase.co">submissions@blackartistdatabase.co</a>
     </p>
 
