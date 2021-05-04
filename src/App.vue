@@ -13,8 +13,8 @@
       <div class="container main-navigation" v-bind:class="{ active: showNav }">
         <nav>
           <ul class="t-nav d-flex">
-            <li><router-link to="/" class="d-flex"><i></i> <span>DATABASE</span></router-link></li>
-            <li><router-link to="/about" class="d-flex"><i></i> <span>MISSION STATEMENT</span></router-link></li>
+            <li @click="showNav = !showNav"><router-link to="/" class="d-flex"><i></i> <span>DATABASE</span></router-link></li>
+            <li @click="showNav = !showNav"><router-link to="/about" class="d-flex"><i></i> <span>ABOUT</span></router-link></li>
             <!--
             <li>
               <a class="d-flex"><i></i> ABOUT</a>
@@ -24,11 +24,11 @@
               </ul>
             </li>
             -->
-            <li>
-              <router-link to="/pause" class="d-flex"><i></i> <span>PAUSE</span></router-link>
+            <li @click="showNav = !showNav">
+              <router-link to="/pause" class="d-flex"><i></i> <span>[PAUSE]</span></router-link>
             </li>
-            <li><a href="https://blackad.wpengine.com/categories/read/" class="d-flex"><i></i> <span>READ</span></a></li>
-            <li><a href="https://blackad.wpengine.com/categories/listen/" class="d-flex"><i></i> <span>LISTEN</span></a></li>
+            <li @click="showNav = !showNav"><a href="https://blackad.wpengine.com/categories/read/" class="d-flex"><i></i> <span>READ</span></a></li>
+            <li @click="showNav = !showNav"><a href="https://blackad.wpengine.com/categories/listen/" class="d-flex"><i></i> <span>LISTEN</span></a></li>
             <!--
             <li>
               <a class="d-flex"><i></i> CONTENT</a>
@@ -40,7 +40,7 @@
             </li>
             <li><a href="" class="d-flex"><i></i> <span>STORE</span></a></li>
             -->
-            <li><a href="https://www.patreon.com/blackartistdatabase" target="_blank" class="d-flex"><i></i> <span>PATREON</span></a></li>
+            <li @click="showNav = !showNav"><a href="https://www.patreon.com/blackartistdatabase" target="_blank" class="d-flex"><i></i> <span>PATREON</span></a></li>
           </ul>
         </nav>
         <div class="socials">

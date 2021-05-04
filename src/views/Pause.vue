@@ -83,6 +83,9 @@
 </template>
 
 <style lang="scss" scoped>
+h3 {
+  text-transform: uppercase;
+}
 .page {
     background:#336666;
     color:white;
