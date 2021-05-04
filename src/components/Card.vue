@@ -12,10 +12,10 @@
             v-if="type"
             class="badge badge-primary"
             v-bind:class="{
-                'badge-bc-red': type == 'Producer',
-                'badge-bc-purple': type == 'Label',
-                'badge-bc-blue': type == 'Artist',
-                'badge-bc-green': type == 'Band'
+                'badge-producer': type == 'Producer',
+                'badge-label': type == 'Label',
+                'badge-artist': type == 'Artist',
+                'badge-band': type == 'Band'
             }"
         >
             {{type}}
@@ -95,10 +95,7 @@ export default {
 
 <style scoped lang="scss">
 
-  $bc-green: #1DC379;
-  $bc-red: #C3411D;
-  $bc-purple: #941DC3;
-  $bc-blue: #0064b5;
+
 
   .card {
     border:1px solid black;
@@ -118,6 +115,12 @@ export default {
   .badge {
     z-index: 10;
     background:#32ff99;
+    
+    &.badge-producer { background:#33FF99; }
+    &.badge-label { background:#336666; }
+    &.badge-artist { background:#66CC99; }
+    &.badge-band { background:#0AAA6C; }
+
   }
 
   .badge {

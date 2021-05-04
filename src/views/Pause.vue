@@ -4,20 +4,17 @@
 
     <div class="row mt-5">
       <div class="col-md-8 text-left">
-            <h3 class="mb-4 h4">[PAUSE] IS AN INITIATIVE CREATED BY B.A.D. (BLACK ART-
-            IST DATABASE), TO SUPPORT AND ENCOURAGE BUSINESSES IN
-            THE MUSIC INDUSTRY TOWARDS THE GOAL OF MORE EQUITABLE
-            WORKSPACES.</h3>
+            <h3 class="mb-4 h4">[pause] is an initiative created by B.A.D. (Black Artist Database), to support and encourage businesses in the music industry towards the goal of more equitable workspaces.</h3>
 
             <p>With only 11.4% of music industry jobs filled by BIPoC creatives, [pause] aims to encourage those in positions of power to actively bridge this inequality gap.</p>
 
-            <p>[pause] is comprised of two parts;</p>
+            <p> [pause] is comprised of two parts; </p>
 
             <ol>
-                <li>1. A monetary donation from participants to B.A.D. to support the considerable labour and infrastructural costs incurred by the platform.</li>
+                <li>A monetary donation from participants to B.A.D. to support the considerable labour and infrastructural costs incurred by the platform.</li>
                 <li>A partnership, wherein B.A.D. enters a short- or medium-term consultation agreement with participants to address internal racial equity issues.</li>
             </ol>
-            <p>The [pause] partnership is not intended to be an all-encompassing fix, but rather to be a positive and proactive step in the right direction.</p>
+            <p>The [pause] partnership is not intended to be an all-encompassing fix, but rather to be a positive and proactive step in the right direction. </p>
 
       </div>
       <div class="col-md-4 image-right">
@@ -30,7 +27,7 @@
         <img src="../assets/about/pause2.png" alt="About Us Image">
       </div>
       <div class="col-md-8 text-left">
-          <h3 class="mb-4 h4">WHAT THE DONATION SUPPORT:</h3>
+          <h3 class="mb-4 h4">What the donation supports:</h3>
 
             <p>The BAD website:</p>
             <ul>
@@ -40,7 +37,7 @@
             </ul>
             <p>The Team:</p>
                 <ul>
-                    <li>Over 60 international volunteers and members, working an average of 720 hours a week, across 4 continents (Europe, Africa, Australaisia and North America)</li>
+                    <li>Over 20 international volunteers and members, working an average of 720 hours a week, across 4 continents (Europe, Africa, Australaisia and North America)</li>
                     <li>Front and back end developers, product managers, content curators, writers, editors, project coordinators and data management maintain the input, output and overall maintenance of the site, database systems and the community we serve</li>
                 </ul>
             <p>The Community:</p>
@@ -56,10 +53,17 @@
     <div class="row mt-5">
       <div class="col-md-8 text-left">
            <h3 class="mb-4 h4">HOW THE [PAUSE] PARTNESHIP WORKS:</h3>
-            <p>BAD will consult with industry partners to better support their Black employees and
-            contract workers, and develop strategies to prioritise Black racial equity within their
-            organisations. This will be facilitated via the development of realistic, actionable
-            goals, a mutually agreed-upon roadmap, and regular check-ins.</p>
+            <p>B.A.D. will consult with industry partners to better support their Black employees and contract workers, and develop strategies to prioritise Black racial equity within their organisations. This will be facilitated via the development of realistic, actionable goals, a mutually agreed-upon roadmap, and regular check-ins.</p>
+
+      </div>
+      <div class="col-md-4 image-right">
+        <img src="../assets/about/pause3.png" alt="About Us Image">
+      </div>
+    </div> 
+
+    <div class="row mt-5 pt-5" style="border-top:1px solid white;">
+      <div class="col-md-8 text-left">
+
 
             <h3 class="mb-4 h4">CONTACT:</h3>
             <p>
@@ -70,13 +74,9 @@
                 <a href="mailto:carin@blackartistdatabase.co">carin@blackartistdatabase.co</a><br>
                 <a href="mailto:christine@blackartistdatabase.co">christine@blackartistdatabase.co</a>
             </p>
-      </div>
-      <div class="col-md-4 image-right">
-        <img src="../assets/about/pause3.png" alt="About Us Image">
-      </div>
-    </div> 
 
-
+      </div>
+      </div>
 
   </div>
 </div>

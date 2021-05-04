@@ -14,6 +14,8 @@
         <nav>
           <ul class="t-nav d-flex">
             <li><router-link to="/" class="d-flex"><i></i> <span>DATABASE</span></router-link></li>
+            <li><router-link to="/about" class="d-flex"><i></i> <span>MISSION STATEMENT</span></router-link></li>
+            <!--
             <li>
               <a class="d-flex"><i></i> ABOUT</a>
               <ul class="d-flex">
@@ -21,13 +23,13 @@
                 <li><a href="" class="d-flex">- <span>CONTACT</span></a></li>
               </ul>
             </li>
+            -->
             <li>
               <router-link to="/pause" class="d-flex"><i></i> <span>PAUSE</span></router-link>
-              <ul class="d-flex">
-                <li><router-link to="/pause" class="d-flex">- <span>ABOUT [PAUSE]</span></router-link></li>
-                <li><a href="" class="d-flex">- <span>CONTACT</span></a></li>
-              </ul>
             </li>
+            <li><a href="https://blackad.wpengine.com/categories/read/" class="d-flex"><i></i> <span>READ</span></a></li>
+            <li><a href="https://blackad.wpengine.com/categories/listen/" class="d-flex"><i></i> <span>LISTEN</span></a></li>
+            <!--
             <li>
               <a class="d-flex"><i></i> CONTENT</a>
               <ul class="d-flex">
@@ -37,9 +39,15 @@
               </ul>
             </li>
             <li><a href="" class="d-flex"><i></i> <span>STORE</span></a></li>
-            <li><a href="" target="_blank" class="d-flex"><i></i> <span>PATREON</span></a></li>
+            -->
+            <li><a href="https://www.patreon.com/blackartistdatabase" target="_blank" class="d-flex"><i></i> <span>PATREON</span></a></li>
           </ul>
         </nav>
+        <div class="socials">
+          <a href="https://www.facebook.com/blackartistdatabase" target="_blank"><img src="./assets/social-icons/fb.png" alt="Facebook"></a>
+          <a href="https://twitter.com/blackartistdatabase" target="_blank"><img src="./assets/social-icons/tw.png" alt="Twitter"></a>
+          <a href="https://instagram.com/blackartistdatabase" target="_blank"><img src="./assets/social-icons/ig.png" alt="Instagram"></a>
+        </div>
       </div>
     </header>
 
@@ -78,6 +86,43 @@ export default {
   color: black;
 }
 
+p, ul, ol {
+font-weight: 300;
+text-align:justify;
+}
+
+h1, h2, h3 { 
+  font-weight:bold;
+}
+
+nav ul {
+  font-weight:400;
+}
+
+.socials {
+  position:absolute;
+  top:-70px;
+  right:10px;
+  a {
+    display:block;
+    width:20px;
+    margin-bottom:1px;
+    img {
+      width:100%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    position:relative;
+    top:0;
+    right:0;
+    a {
+      display:inline-block;
+      margin-right:5px;
+      width:25px;
+    }
+  }
+}
+
 .router-link-exact-active {
   text-decoration:underline;
 }
@@ -101,10 +146,16 @@ export default {
     display:block;
   }
 }
+.main-navigation {
+  position:relative;
+}
 @media screen and (max-width: 800px) {
   .main-navigation {
     display:none;
+
     &.active {
+  min-height:100vh;
+    
       display:block;
     }
     ul {
@@ -198,5 +249,7 @@ export default {
   max-width:400px;
   font-size:1.3em;
   margin-bottom:25px;
+  font-weight:bold;
+  text-transform: uppercase;
 }
 </style>
