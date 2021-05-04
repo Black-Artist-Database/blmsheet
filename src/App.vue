@@ -45,7 +45,7 @@
         </nav>
         <div class="socials">
           <a href="https://www.facebook.com/blackartistdatabase" target="_blank"><img src="./assets/social-icons/fb.png" alt="Facebook"></a>
-          <a href="https://twitter.com/blackartistdatabase" target="_blank"><img src="./assets/social-icons/tw.png" alt="Twitter"></a>
+          <a href="https://twitter.com/blackartistdata" target="_blank"><img src="./assets/social-icons/tw.png" alt="Twitter"></a>
           <a href="https://instagram.com/blackartistdatabase" target="_blank"><img src="./assets/social-icons/ig.png" alt="Instagram"></a>
         </div>
       </div>
