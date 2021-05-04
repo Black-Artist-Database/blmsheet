@@ -8,6 +8,10 @@
         <p><a href="https://www.instagram.com/blackbandcamp/" class="ig-link" target="_blank">Follow us for updates</a></p>
       </div> -->
       <h1 class="h3 mt-4 mb-4 bad-title">EVERYDAY IS A GOOD DAY TO SUPPORT AND BUY FROM <span>BLACK ARTISTS</span>.</h1>
+      <!-- Revive Adserver Hosted edition - Ad Management iFrame Tag - Generated with Revive Adserver v5.2.0 -->
+      <iframe id='ab87ff01' name='ab87ff01' src='http://servedby.revive-adserver.net/afr.php?zoneid=9161&amp;cb=INSERT_RANDOM_NUMBER_HERE' frameborder='0' scrolling='no' width='728' height='90' allow='autoplay' class='ad-unit-desktop'><a href='http://servedby.revive-adserver.net/ck.php?n=aabc519c&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://servedby.revive-adserver.net/avw.php?zoneid=9161&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=aabc519c' border='0' alt='' /></a></iframe>
+
+      
       <Filters :filters="filters" @loading="e => loading = e"/>
       <div class="d-flex justify-content-center" v-if="loading">
         <img src="../assets/loading-spinner.gif">
@@ -128,4 +132,14 @@ export default {
   text-decoration:underline;
 }
 
+ .ad-unit-desktop {
+max-width:100%;
+ }
+  @media screen and (max-width: 800px) {
+
+    .ad-unit-desktop {
+      display:none;
+    }
+
+  }
 </style>
