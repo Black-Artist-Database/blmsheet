@@ -158,6 +158,7 @@ export default {
     ul {
       padding-left: 0;
       min-width:900px;
+      text-align:center;
     }
     &.disabled {
       opacity:0.3;
