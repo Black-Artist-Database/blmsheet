@@ -4,7 +4,7 @@
 
     <div class="row mt-5">
       <div class="col-md-8 text-left">
-            <h3 class="mb-4 h4">[pause] is an initiative created by B.A.D. (Black Artist Database), to support and encourage businesses in the music industry towards the goal of more equitable workspaces.</h3>
+            <h3 class="mb-4 h4">[ [pause] is an initiative created by B.A.D. (Black Artist Database), to support and encourage businesses in the music industry towards the goal of more equitable workspaces. ]</h3>
 
             <p>With only 11.4% of music industry jobs filled by BIPoC creatives, [pause] aims to encourage those in positions of power to actively bridge this inequality gap.</p>
 
@@ -27,7 +27,7 @@
         <img src="../assets/about/pause2.png" alt="About Us Image">
       </div>
       <div class="col-md-8 text-left">
-          <h3 class="mb-4 h4">What the donation supports:</h3>
+          <h3 class="mb-4 h4">[ What the donation supports: ]</h3>
 
             <p>The BAD website:</p>
             <ul>
@@ -52,7 +52,7 @@
 
     <div class="row mt-5">
       <div class="col-md-8 text-left">
-           <h3 class="mb-4 h4">HOW THE [PAUSE] PARTNESHIP WORKS:</h3>
+           <h3 class="mb-4 h4">[ HOW THE [PAUSE] PARTNESHIP WORKS: ]</h3>
             <p>B.A.D. will consult with industry partners to better support their Black employees and contract workers, and develop strategies to prioritise Black racial equity within their organisations. This will be facilitated via the development of realistic, actionable goals, a mutually agreed-upon roadmap, and regular check-ins.</p>
 
       </div>
@@ -65,7 +65,7 @@
       <div class="col-md-8 text-left">
 
 
-            <h3 class="mb-4 h4">CONTACT:</h3>
+            <h3 class="mb-4 h4">[ CONTACT: ]</h3>
             <p>
             For more information about [pause] please contact our project leads:
             </p>

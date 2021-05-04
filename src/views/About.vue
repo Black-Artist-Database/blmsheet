@@ -103,7 +103,6 @@
 
         <p>If we have mishandled anything, we will address the issue directly with those involved and if required, address it publicly on our website and social media after having a team discussion and enacting a plan of resolution.</p>
 
-        <p>If you would like to get in touch with any feedback or suggestions for B.A.D., please contact us at <a href="mailto:hello@blackartistdatabase.co">hello@blackartistdatabase.co</a></p>
           <img src="../assets/ball-bar.svg" alt="-" class="bb">
       </div>
       <div class="col-md-4 image-right">
@@ -116,10 +115,10 @@
 
     <div class="text-left pb-5">
 
-    <p>Please contact the relevant team members below with any enquires you may have.</p>
+    <p>If you would like to get in touch with any feedback of suggestions please for B.A.D. please contact the relevant persons below.</p>
 
     <p><b>General enquiries:</b><br>
-    <a href="mailto:hello@blackartistdatabase.co">hello@blackartistdatabase.co</a>
+    <a href="mailto:hello@blackartistdatabase.co">hello@blackartistdatabase.co</a><br>
     <a href="mailto:submissions@blackartistdatabase.co">submissions@blackartistdatabase.co</a>
     </p>
 
