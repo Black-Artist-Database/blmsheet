@@ -12,22 +12,22 @@
             v-if="type"
             class="badge badge-primary"
             v-bind:class="{
-                'badge-bc-red': type == 'Producer',
-                'badge-bc-purple': type == 'Label',
-                'badge-bc-blue': type == 'Artist',
-                'badge-bc-green': type == 'Band'
+                'badge-producer': type == 'Producer',
+                'badge-label': type == 'Label',
+                'badge-artist': type == 'Artist',
+                'badge-band': type == 'Band'
             }"
         >
             {{type}}
         </span>
         </a>
         <div class="card-body">
-            <h5 class="card-title">{{ name }}<br><small>{{location}}</small></h5>
-            <p class="genres"><span v-for="(genre, index) in genres" :key="index">
-                {{genre}}<span v-if="index != Object.keys(genres).length - 1">, </span>
-                </span>
+            <h6 class="card-title mb-0">{{ name }}</h6>
+            <p class="mt-0 location-genre"><small>{{location}} - <span v-for="(genre, index) in genres.slice(0,1)" :key="index">
+                {{genre}}
+                </span></small> 
             </p>
-            <a :href=link target="_blank">Open in Bandcamp</a>
+            <a :href=link target="_blank">Bandcamp</a>
         </div>
     </div>
 </div>
@@ -61,28 +61,28 @@ export default {
             
             switch(randomFileNumber) {
               case 1:
-                return require('@/assets/placeholders/1.png');
+                return require('@/assets/placeholders/01.jpg');
               case 2:
-                return require('@/assets/placeholders/2.png');
+                return require('@/assets/placeholders/02.jpg');
               case 3:
-                return require('@/assets/placeholders/3.png');
+                return require('@/assets/placeholders/03.jpg');
               case 4:
-                return require('@/assets/placeholders/4.png');
+                return require('@/assets/placeholders/04.jpg');
               case 5:
-                return require('@/assets/placeholders/5.png');
+                return require('@/assets/placeholders/05.jpg');
               case 6:
-                return require('@/assets/placeholders/6.png');
+                return require('@/assets/placeholders/06.jpg');
               case 7:
-                return require('@/assets/placeholders/7.png');
+                return require('@/assets/placeholders/07.jpg');
               case 8:
-                return require('@/assets/placeholders/8.png');
+                return require('@/assets/placeholders/08.jpg');
               case 9:
-                return require('@/assets/placeholders/9.png');
+                return require('@/assets/placeholders/09.jpg');
               case 10:
-                return require('@/assets/placeholders/10.png');
+                return require('@/assets/placeholders/10.jpg');
             } 
 
-            return require('@/assets/placeholders/1.png');
+            return require('@/assets/placeholders/01.jpg');
         }
     },
     methods: {
@@ -95,47 +95,41 @@ export default {
 
 <style scoped lang="scss">
 
-  $bc-green: #1DC379;
-  $bc-red: #C3411D;
-  $bc-purple: #941DC3;
-  $bc-blue: #0064b5;
 
-   @media (prefers-color-scheme: dark) {
-    .card {
-      border-color: rgba(255,255,255,0.3);
-      background-color: transparent;
-      &:hover {
-        border-color: rgba(255,255,255,0.5);
-      }
-      .card-body {
-        a { color: white; text-decoration:underline; }
-      }
 
-    }
+  .card {
+    border:1px solid black;
+    border-radius:0;
+    height:100%;
   }
+
+  a {
+    color:black;
+  }
+
+  h6 {
+    color:#0daa6c;
+    text-decoration:underline;
+  }
+
   .badge {
     z-index: 10;
-  }
-  .badge-bc-green {
-    background-color: $bc-green;
-  }
+    background:#32ff99;
+    
+    &.badge-producer { background:#33FF99; }
+    &.badge-label { background:#336666; }
+    &.badge-artist { background:#66CC99; }
+    &.badge-band { background:#0AAA6C; }
 
-  .badge-bc-red {
-    background-color: $bc-red;
-  }
-
-  .badge-bc-purple {
-    background-color: $bc-purple;
-  }
-
-  .badge-bc-blue {
-    background-color: $bc-blue;
   }
 
   .badge {
     position:absolute;
     top:15px;
     right:15px;
+  }
+  .card-title {
+    text-transform: uppercase;
   }
 
   .image-wrapper{
@@ -174,6 +168,10 @@ export default {
   small {
     font-weight:bold;
     font-size:60%;
+  }
+
+  .location-genre {
+    text-transform:uppercase;
   }
 
 

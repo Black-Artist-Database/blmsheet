@@ -1,35 +1,40 @@
 <template>
 <div>
   <div class="filters p-3 mb-2">
-    <p>Discover artists, producers and labels...</p>    
-    <a class="btn btn-bc-blue text-white" v-on:click="shuffleRandom">
-    <svg class="bi bi-shuffle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <div class="btns">
+    <a class="btn btn-sml btn-grey" v-on:click="shuffleRandom">
+  
+     Random Shuffle
+      <svg class="bi bi-shuffle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M12.646 1.146a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.793 4l-2.147-2.146a.5.5 0 0 1 0-.708zm0 8a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.793 12l-2.147-2.146a.5.5 0 0 1 0-.708z"/>
       <path fill-rule="evenodd" d="M0 4a.5.5 0 0 1 .5-.5h2c3.053 0 4.564 2.258 5.856 4.226l.08.123c.636.97 1.224 1.865 1.932 2.539.718.682 1.538 1.112 2.632 1.112h2a.5.5 0 0 1 0 1h-2c-1.406 0-2.461-.57-3.321-1.388-.795-.755-1.441-1.742-2.055-2.679l-.105-.159C6.186 6.242 4.947 4.5 2.5 4.5h-2A.5.5 0 0 1 0 4z"/>
       <path fill-rule="evenodd" d="M0 12a.5.5 0 0 0 .5.5h2c3.053 0 4.564-2.258 5.856-4.226l.08-.123c.636-.97 1.224-1.865 1.932-2.539C11.086 4.93 11.906 4.5 13 4.5h2a.5.5 0 0 0 0-1h-2c-1.406 0-2.461.57-3.321 1.388-.795.755-1.441 1.742-2.055 2.679l-.105.159C6.186 9.758 4.947 11.5 2.5 11.5h-2a.5.5 0 0 0-.5.5z"/>
     </svg>
-    Random Shuffle
     </a>
-  <hr>
-    <p>Or filter by name, genre or location...</p>
+     <router-link to="/add" class="btn btn-sml btn-grey">
+     Add Submission
+    </router-link>
+    </div>
 
-    <form class="d-flex justify-content-center">
+    <form class="d-flex justify-space-between">
       <div class="d-flex flex-row flex-wrap justify-content-center">
         <div class="input-group input-group-sm d-flex justify-content-center">
-          <input placeholder="Search by name" type="text" class="form-control" id="name-filter" v-model="filters.name">
+          <input placeholder="Name" type="text" class="form-control" id="name-filter" v-model="filters.name">
           <a @click="filters.name = ''" v-if="filters.name !== ''">&times;</a>
         </div>
         <div class="input-group input-group-sm">
           <div>
           <select class="custom-select" v-model="filters.genre" :disabled="filters.name !== ''">
-            <option value="">All Genres</option>
+            <option value="">GENRE</option>
             <option v-for="genre in genresData" :value="genre" :key="genre">
                 {{ genre }}
             </option>
           </select>
           </div>
         </div>
+        <div class="input-group">
         <LocationTypeAhead :filters="filters" class="location-filter"/>
+        </div>
       </div>
     </form>
   </div>
@@ -88,23 +93,13 @@ export default {
 
   .letter {
     cursor: pointer;
-    @media (prefers-color-scheme: dark) {
-      color: rgba(255,255,255, 0.5);
+    &:hover {
+      color:#ccc;
+    } 
+    &.active {
+      color: black;
     }
-   
-    &:hover, &.active {
-      color: $bc-blue;
-      @media (prefers-color-scheme: dark) {
-        color: white;
-      }
-    }
-
-     @media (prefers-color-scheme: light) {
-      color: rgba(0,0,0, 0.5);
-      &:hover {
-        color: black;
-      }
-    }
+    color: rgba(0,0,0, 0.5);
   }
 
   select {
@@ -118,7 +113,8 @@ export default {
     width: 200px;
     // width: 100%;
     height: 40px !important;
-    margin:10px ;
+    margin:10px 0;
+    padding:0 !important;
     input, /deep/div, /deep/ div input {
       height: 100%;
       width: 100%;
@@ -132,6 +128,7 @@ export default {
     margin:auto;
   }
   .input-group {
+    border-right:1px solid black;
     position: relative;
     input {
       z-index: 2;
@@ -152,47 +149,42 @@ export default {
   .alphabet-filter {
     overflow-x:scroll;
     transition:opacity 0.2s;
+    background-image:url(../assets/ball-bar.svg);
+    background-size:100% auto;
+    background-position:bottom;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100%;
     ul {
       padding-left: 0;
-      min-width:710px;
+      min-width:900px;
+      text-align:center;
     }
     &.disabled {
       opacity:0.3;
       pointer-events: none;
     }
+    margin-bottom:30px;
   }
 
-  .btn-bc-blue {
-    background-color: $bc-blue;
-    border: 1px solid $bc-blue;
-    @media (prefers-color-scheme: dark) {
-      background-color: transparent;
-      border: 1px solid white;
+  .btn-grey {
+    background:#e8e8e8;
+    color:black;
+    border-radius:0;
+    border-color:black;
+    text-transform:uppercase;
+    padding:2px 8px;
+    font-size:12px;
+    &:hover {
+      background:black;
+      color:#e8e8e8;
     }
   }
 
-  @media (prefers-color-scheme: dark) {
+
     .filters {
-      border: 1px solid rgba(255,255,255,0.3);
-      background-color: transparent;
-    }
-    select, input, /deep/div, /deep/ div input {
-      background-color: transparent;
-      color: white !important;
-      border-color: rgba(255,255,255,0.5);
-    }
-    select:disabled {
-      background-color: transparent;
-      opacity: 0.7;
-    }
-    hr {
-      background-color: rgba(255,255,255,0.3);
-    }
-  }
-
-  @media (prefers-color-scheme: light) {
-    .filters {
-      background-color: white;
+      text-align:left;
+      display:inline-block;
       color: black;
     }
     select, input, /deep/ div input {
@@ -200,7 +192,16 @@ export default {
     }
      select, input, /deep/div, /deep/ div input {
       color: black !important;
-      border-color: black !important;
+      ::placeholder {
+        color:black !important;
+      }
+      font-size:15px !important;
+      text-transform:uppercase;
+    }
+    #name-filter {
+      padding-left:0;
+    }
+    select {
     }
     select:disabled {
       opacity: 1;
@@ -208,6 +209,10 @@ export default {
     hr {
       background-color: #f7f7f7;
     }
-  }
+
+    .btns {
+      display:flex;
+      justify-content:space-between;
+    }
 
 </style>

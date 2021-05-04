@@ -158,8 +158,4 @@ export default {
  }
 
 
-@media (prefers-color-scheme: dark) {
-  a { color: white !important; text-decoration:underline; }
-}
-
 </style>

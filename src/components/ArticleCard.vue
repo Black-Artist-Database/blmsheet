@@ -39,19 +39,6 @@ export default {
 
 <style scoped lang="scss">
 
-   @media (prefers-color-scheme: dark) {
-    .card {
-      border-color: rgba(255,255,255,0.3);
-      background-color: transparent;
-      &:hover {
-        border-color: rgba(255,255,255,0.5);
-      }
-      .card-body {
-        a { color: white; text-decoration:underline; }
-      }
-
-    }
-  }
 
   a { cursor: pointer; }
 

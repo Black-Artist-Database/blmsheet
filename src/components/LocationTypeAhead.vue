@@ -7,7 +7,7 @@
         minLength=1
         :serializer="s => s"
         :class="{'disabled': filters.name !== ''}"
-        placeholder="Type a location..."
+        placeholder="Location"
         backgroundVariant="#343a50"
       />
     </div>
