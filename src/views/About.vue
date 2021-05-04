@@ -107,7 +107,7 @@
           <img src="../assets/ball-bar.svg" alt="-" class="bb">
       </div>
       <div class="col-md-4 image-right">
-        <img src="../assets/about/2.png" alt="About Us Image">
+        <img src="../assets/about/7.jpg" alt="About Us Image">
       </div>
     </div> 
 
@@ -120,11 +120,14 @@
 
     <p><b>General enquiries:</b><br>
     <a href="mailto:hello@blackartistdatabase.co">hello@blackartistdatabase.co</a>
+    <a href="mailto:submissions@blackartistdatabase.co">submissions@blackartistdatabase.co</a>
     </p>
 
     <p><b>Database</b><br>
     <a href="mailto:christine@blackartistdatabase.co">christine@blackartistdatabase.co</a><br>
+    <a href="mailto:database@blackartistdatabase.co">database@blackartistdatabase.co</a><br>
     <a href="mailto:denise@blackartistdatabase.co">denise@blackartistdatabase.co</a><br>
+    <a href="mailto:nadja@blackartistdatabase.co">nadja@blackartistdatabase.co</a><br>
     <a href="mailto:rushell@blackartistdatabase.co">rushell@blackartistdatabase.co</a><br>
     </p>
 
