@@ -76,6 +76,7 @@ def setup_cache(app, development=False):
     app.config.from_mapping(config)
     app.config['CACHE'] = Cache(app)
     app.before_first_request(test_redis_connection)
+    app.before_request(redirect_old_domain)
     app.register_error_handler(Exception, fallback_cache)
     app.logger.info(f'{app.config["CACHE_TYPE"].title()} cache initialised')
 
@@ -119,3 +120,8 @@ def setup_db(app):
 def setup_pubsub(app):
     publisher = pubsub.PublisherClient()
     app.config['PUBLISHER'] = publisher
+
+
+def redirect_old_domain():
+    if request.host == "blackbandcamp.info":
+        redirect("https://blackartistdatabase.co", 301)
