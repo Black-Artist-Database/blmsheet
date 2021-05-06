@@ -38,7 +38,7 @@
         <img src="../assets/about/2.png" alt="About Us Image">
       </div>
       <div class="col-md-8 text-left">
-        <h3 class="bad-subtitle">THE FUTURE.</h3>
+        <h3 class="bad-subtitle">THE FUTURE</h3>
         <p>We hope to leverage the platform that has been created to further service the community, and to strive towards the goals outlined above. B.A.D. was created in the midst of the COVID-19 pandemic; to this end, the project so far has remained focused on the online space. In the future we hope to reach the physical space globally, with panels, forums and other celebratory events. Maintaining a presence in the physical sense is beneficial to the furthering of Black liberation, Black ownership and cross-continental connection. Creating spaces where Black people can be comfortable and safe while enjoying themselves is a goal in its own right, but it also inspires newer generations of Black folk, serves to form networks, and educates all folk on the origins of the music they so love.</p>
 
         <p>In the online space, we plan to continue to maintain, expand and promote the database, and work to ensure that those on it have a platform upon which they can showcase their art. To this end, the editorial content, podcasts and special features will continue to be produced by our team, to highlight sections and individuals within the Black community. </p>
@@ -60,7 +60,7 @@
 
     <div class="row mt-5">
       <div class="col-md-8 text-left">
-        <h3 class="bad-subtitle">THE TEAM.</h3>
+        <h3 class="bad-subtitle">THE TEAM</h3>
         <p>The core team is made up of numerous Black team members based across 4 different continents, with additional volunteer members worldwide. As a whole we represent a diverse cross section of the electronic music community, however we are always striving to take on points of view from other members of society; primarily, of course, from Black folk who we may not represent in some way. We are very aware of the fact that we cannot represent everyone; therefore, we try to regularly feed back with Black members of the community to ensure we are engaging with more voices.</p>
 
         <p>Within this structure, we hope to flatten the hierarchy of the project to ensure that there is no overarching influence within what we aim to do. Further to this, and fitting with our goal of creating Black networks within the electronic music space, we wish for the project not to be the only one of its kind  - we wish to join and eventually form larger networks that have the same or similar goals of Black liberation, representation and ownership within the electronic music realm.</p>
@@ -96,7 +96,7 @@
 
     <div class="row mt-5 pb-5">
       <div class="col-md-8 text-left">
-        <h3 class="bad-subtitle">Contacts, methods of redress and accountability.</h3>
+        <h3 class="bad-subtitle">Contacts, methods of redress and accountability</h3>
         <p>We aim to be as transparent as possible with our operations. B.A.D. believes in remaining 100% independent and Black-owned, and this belief is at the forefront when considering who we partner with and on what projects. We aim to only work with partners whose values are in line with ours, and who are actively working towards equality for Black people and other marginalised identities in the music industry.</p>
 
         <p>Every collaboration and partnership is deeply considered and questioned by our team and must meet our internal standards and criteria. The partner must also agree to our terms and conditions. Ultimately, our end goal is always to serve the wider Black community and dismantle structural inequity in the music industry. We understand the ideas and beliefs from Black people on how to achieve this common goal are not homogenous, and encourage our community to hold us accountable and raise any concerns, ideas and suggestions. We believe in growth and view B.A.D. as a community project where we are in constant communication with our community.</p>
