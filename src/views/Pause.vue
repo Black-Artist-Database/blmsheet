@@ -20,7 +20,7 @@
       <div class="col-md-4 image-right">
         <img src="../assets/about/pause1.jpg" alt="About Us Image">
       </div>
-    </div>  
+    </div>
 
     <div class="row mt-5 pt-5">
       <div class="col-md-4 image-right">
@@ -46,20 +46,20 @@
                     <li>Supporting free and accessible opportunities, initiatives and engagement across BAD</li>
                 </ul>
       </div>
-  
-    </div> 
+
+    </div>
 
 
     <div class="row mt-5">
       <div class="col-md-8 text-left">
-           <h3 class="mb-4 h4">[ HOW THE [PAUSE] PARTNESHIP WORKS ]</h3>
+           <h3 class="mb-4 h4">[ HOW THE [PAUSE] PARTNERSHIP WORKS ]</h3>
             <p>B.A.D. will consult with industry partners to better support their Black employees and contract workers, and develop strategies to prioritise Black racial equity within their organisations. This will be facilitated via the development of realistic, actionable goals, a mutually agreed-upon roadmap, and regular check-ins.</p>
 
       </div>
       <div class="col-md-4 image-right">
         <img src="../assets/about/pause3.png" alt="About Us Image">
       </div>
-    </div> 
+    </div>
 
     <div class="row mt-5 pt-5" style="border-top:1px solid white;">
       <div class="col-md-8 text-left">
