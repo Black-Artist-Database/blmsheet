@@ -8,7 +8,7 @@
 
             <p>With only 11.4% of music industry jobs filled by BIPoC creatives, [pause] aims to encourage those in positions of power to actively bridge this inequality gap.</p>
 
-            <p> [pause] is comprised of two parts; </p>
+            <p> [pause] is comprised of two parts, </p>
 
             <ol>
                 <li>A monetary donation from participants to B.A.D. to support the considerable labour and infrastructural costs incurred by the platform.</li>
@@ -23,9 +23,7 @@
     </div>
 
     <div class="row mt-5 pt-5">
-      <div class="col-md-4 image-right">
-        <img src="../assets/about/pause2.png" alt="About Us Image">
-      </div>
+      
       <div class="col-md-8 text-left">
           <h3 class="mb-4 h4">[ What the donation supports ]</h3>
 
@@ -46,6 +44,9 @@
                     <li>Supporting free and accessible opportunities, initiatives and engagement across BAD</li>
                 </ul>
       </div>
+      <div class="col-md-4 image-right">
+        <img src="../assets/about/pause2.png" alt="About Us Image">
+      </div>  
 
     </div>
 
@@ -70,9 +71,9 @@
             For more information about [pause] please contact our project leads:
             </p>
             <p>
-                <a href="mailto:ranen@blackartistdatabase.co">ranen@blackartistdatabase.co</a><br>
-                <a href="mailto:carin@blackartistdatabase.co">carin@blackartistdatabase.co</a><br>
-                <a href="mailto:christine@blackartistdatabase.co">christine@blackartistdatabase.co</a>
+                <a href="mailto:ranen@blackartistdatabase.co" target="_blank">ranen@blackartistdatabase.co</a><br>
+                <a href="mailto:carin@blackartistdatabase.co" target="_blank">carin@blackartistdatabase.co</a><br>
+                <a href="mailto:christine@blackartistdatabase.co" target="_blank">christine@blackartistdatabase.co</a>
             </p>
 
       </div>
@@ -87,7 +88,9 @@ h3 {
   text-transform: uppercase;
 }
 .page {
-    background:#336666;
+    background: url('../assets/about/bg-tile.png');
+    background-size: 100% auto;
+    // background-size: 100% 100%;
     color:white;
     padding-bottom:100px;
     a {
@@ -104,6 +107,11 @@ h3 {
     width:100%;
     max-width:250px;
   }
+}
+
+.row {
+  // height: calc(100vh - 127px);
+
 }
 
 .bb {

@@ -215,4 +215,14 @@ export default {
       justify-content:space-between;
     }
 
+    @media (max-width: 500px) {
+      .input-group {
+        width: 100%;
+
+        select, /deep/ input {
+          padding-left: 0
+        }
+      }
+    }
+
 </style>
