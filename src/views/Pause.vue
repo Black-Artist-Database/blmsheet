@@ -24,7 +24,7 @@
 
     <div class="row mt-5 pt-5">
       
-      <div class="col-md-8 text-left">
+      <div class="col-md-8 text-left custom-bullet">
           <h3 class="mb-4 h4">[ What the donation supports ]</h3>
 
             <p>The BAD website:</p>
@@ -120,4 +120,21 @@ h3 {
   display:block;
 }
 
+
+.custom-bullet {
+  li {
+    list-style: none;
+    padding-left: 5px;
+  }
+  
+  li::before {
+     content: ' ';
+     display: inline-block;
+     width: 40px;
+     height: 20px;
+     background: url('../assets/bullet.png') no-repeat;
+     background-position: center bottom;
+     background-size: 9px auto;
+  }
+}
 </style>
