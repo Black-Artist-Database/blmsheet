@@ -243,6 +243,7 @@ nav ul {
     position: absolute;
     transform:translateZ(-1px);
     background-image:url(./assets/back-bar.gif);
+    background-size: 100% auto;
     border:2px solid black;
   }
 }
