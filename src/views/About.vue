@@ -6,6 +6,7 @@
         <p>Black Artist Database (formerly known as Black Bandcamp) is a community-based platform, hosting a wealth of international Black-owned record labels, artists, producers and bands. </p>
         <p>This crowd-sourced database provides an easy way to search, filter and directly support the creative output of Black artists globally, via their online profiles. The database is a continuous work-in-progress maintained by volunteers and paid administrators.  </p>
         <p>The database was started as a community effort on 4th June 2020, as Black Bandcamp. On 5th May 2021, the project relaunched as Black Artist Database, a move which we hope will expand the project’s scale and scope, and bring cultural and material support to the Black community. </p>
+
         <p>B.A.D. is growing in order to more effectively cover the wider diaspora. With a bigger network, B.A.D. can continue to support Black artists, by connecting communities and challenging the inequality that is rife at present  in the music industry.</p>
 
 
@@ -31,7 +32,7 @@
       <div class="col-md-4 image-right">
         <img src="../assets/about/1.png" alt="About Us Image">
       </div>
-    </div>  
+    </div>
 
     <div class="row mt-5">
       <div class="col-md-4 image-right">
@@ -54,8 +55,8 @@
 
         <img src="../assets/ball-bar.svg" alt="-" class="bb">
       </div>
-  
-    </div> 
+
+    </div>
 
 
     <div class="row mt-5">
@@ -70,7 +71,7 @@
       <div class="col-md-4 image-right">
         <img src="../assets/about/3.png" alt="About Us Image">
       </div>
-    </div> 
+    </div>
 
 
     <div class="row mt-5">
@@ -91,7 +92,7 @@
         <img src="../assets/ball-bar.svg" alt="-" class="bb">
       </div>
 
-    </div> 
+    </div>
 
 
     <div class="row mt-5 pb-5">
@@ -108,7 +109,7 @@
       <div class="col-md-4 image-right">
         <img src="../assets/about/7.jpg" alt="About Us Image">
       </div>
-    </div> 
+    </div>
 
   <div>
     <h1 class="h3 mt-4 mb-4 bad-title">CONTACT</h1>
