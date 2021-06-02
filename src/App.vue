@@ -103,10 +103,13 @@ nav ul {
   position:absolute;
   top:-70px;
   right:10px;
+  display: flex;
+  flex-direction: row;
   a {
     display:block;
-    width:20px;
+    width: 25px;
     margin-bottom:1px;
+    margin: 2px;
     img {
       width:100%;
     }
@@ -130,7 +133,7 @@ nav ul {
 .top-header {
   text-align:left;
   .th-logo {
-    max-width:100px;
+    max-width:120px;
   }
 }
 .mobile-menu {
@@ -184,7 +187,8 @@ nav ul {
   padding-left:0;
   li {
     position: relative;
-    padding-right:50px;
+    // padding-right:50px;
+    flex: 1;
     ul {
       display:none !important;
       position: absolute;
@@ -204,7 +208,8 @@ nav ul {
   a {
     align-items:center;
     color:black;
-
+    justify-content: center;
+    width: 100%;
     i {
       background:black;
       width:8px;
@@ -238,6 +243,7 @@ nav ul {
     position: absolute;
     transform:translateZ(-1px);
     background-image:url(./assets/back-bar.gif);
+    background-size: 100% auto;
     border:2px solid black;
   }
 }

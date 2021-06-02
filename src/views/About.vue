@@ -34,9 +34,7 @@
     </div>  
 
     <div class="row mt-5">
-      <div class="col-md-4 image-right">
-        <img src="../assets/about/2.png" alt="About Us Image">
-      </div>
+      
       <div class="col-md-8 text-left">
         <h3 class="bad-subtitle">THE FUTURE</h3>
         <p>We hope to leverage the platform that has been created to further service the community, and to strive towards the goals outlined above. B.A.D. was created in the midst of the COVID-19 pandemic; to this end, the project so far has remained focused on the online space. In the future we hope to reach the physical space globally, with panels, forums and other celebratory events. Maintaining a presence in the physical sense is beneficial to the furthering of Black liberation, Black ownership and cross-continental connection. Creating spaces where Black people can be comfortable and safe while enjoying themselves is a goal in its own right, but it also inspires newer generations of Black folk, serves to form networks, and educates all folk on the origins of the music they so love.</p>
@@ -54,7 +52,9 @@
 
         <img src="../assets/ball-bar.svg" alt="-" class="bb">
       </div>
-  
+      <div class="col-md-4 image-right">
+        <img src="../assets/about/2.png" alt="About Us Image">
+      </div>
     </div> 
 
 
@@ -74,9 +74,7 @@
 
 
     <div class="row mt-5">
-      <div class="col-md-4 image-right">
-        <img src="../assets/about/4.png" alt="About Us Image">
-      </div>
+     
       <div class="col-md-8 text-left">
         <h3 class="bad-subtitle">SELF-DEFINITION</h3>
         <p>With the definition and term ‘Black’ being relative to each individual's geographical location, genetic make up and personal identity, we have a team who screen each and every submission to ensure that the space is preserved for Black artists. It’s important to note that we do not want to define what is Black for others.</p>
@@ -89,6 +87,9 @@
 
 
         <img src="../assets/ball-bar.svg" alt="-" class="bb">
+      </div>
+       <div class="col-md-4 image-right">
+        <img src="../assets/about/4.png" alt="About Us Image">
       </div>
 
     </div> 
@@ -118,32 +119,32 @@
     <p>If you would like to get in touch with any feedback of suggestions please for B.A.D. please contact the relevant persons below.</p>
 
     <p><b>General enquiries:</b><br>
-    <a href="mailto:hello@blackartistdatabase.co">hello@blackartistdatabase.co</a><br>
-    <a href="mailto:submissions@blackartistdatabase.co">submissions@blackartistdatabase.co</a>
+    <a href="mailto:hello@blackartistdatabase.co" target="_blank">hello@blackartistdatabase.co</a><br>
+    <a href="mailto:submissions@blackartistdatabase.co" target="_blank">submissions@blackartistdatabase.co</a>
     </p>
 
     <p><b>Database</b><br>
-    <a href="mailto:christine@blackartistdatabase.co">christine@blackartistdatabase.co</a><br>
-    <a href="mailto:database@blackartistdatabase.co">database@blackartistdatabase.co</a><br>
-    <a href="mailto:denise@blackartistdatabase.co">denise@blackartistdatabase.co</a><br>
-    <a href="mailto:nadja@blackartistdatabase.co">nadja@blackartistdatabase.co</a><br>
-    <a href="mailto:rushell@blackartistdatabase.co">rushell@blackartistdatabase.co</a><br>
+    <a href="mailto:christine@blackartistdatabase.co" target="_blank">christine@blackartistdatabase.co</a><br>
+    <a href="mailto:database@blackartistdatabase.co" target="_blank">database@blackartistdatabase.co</a><br>
+    <a href="mailto:denise@blackartistdatabase.co" target="_blank">denise@blackartistdatabase.co</a><br>
+    <a href="mailto:nadja@blackartistdatabase.co" target="_blank">nadja@blackartistdatabase.co</a><br>
+    <a href="mailto:rushell@blackartistdatabase.co" target="_blank">rushell@blackartistdatabase.co</a><br>
     </p>
 
     <p><b>[pause]</b><br>
-    <a href="mailto:carin@blackartistdatabase.co">carin@blackartistdatabase.co</a><br>
-    <a href="mailto:christine@blackartistdatabase.co">christine@blackartistdatabase.co</a><br>
-    <a href="mailto:ranen@blackartistdatabase.co">ranen@blackartistdatabase.co</a>
+    <a href="mailto:carin@blackartistdatabase.co" target="_blank">carin@blackartistdatabase.co</a><br>
+    <a href="mailto:christine@blackartistdatabase.co" target="_blank">christine@blackartistdatabase.co</a><br>
+    <a href="mailto:ranen@blackartistdatabase.co" target="_blank">ranen@blackartistdatabase.co</a>
     </p>
 
     <p><b>Partnerships</b><br>
-    <a href="mailto:ranen@blackartistdatabase.co">ranen@blackartistdatabase.co</a>
+    <a href="mailto:ranen@blackartistdatabase.co" target="_blank">ranen@blackartistdatabase.co</a>
     </p>
 
     <p><b>Editorial &amp; Content</b><br>
-    <a href="mailto:kay@blackartistdatabase.co">kay@blackartistdatabase.co</a><br>
-    <a href="mailto:shiba@blackartistdatabase.co">shiba@blackartistdatabase.co</a><br>
-    <a href="mailto:tanya@blackartistdatabase.co">tanya@blackartistdatabase.co</a></p>
+    <a href="mailto:kay@blackartistdatabase.co" target="_blank">kay@blackartistdatabase.co</a><br>
+    <a href="mailto:shiba@blackartistdatabase.co" target="_blank">shiba@blackartistdatabase.co</a><br>
+    <a href="mailto:tanya@blackartistdatabase.co" target="_blank">tanya@blackartistdatabase.co</a></p>
 
     </div>
 
