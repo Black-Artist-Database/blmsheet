@@ -8,7 +8,7 @@
 
             <p>With only 11.4% of music industry jobs filled by BIPoC creatives, [pause] aims to encourage those in positions of power to actively bridge this inequality gap.</p>
 
-            <p> [pause] is comprised of two parts, </p>
+            <p> [pause] is comprised of two parts: </p>
 
             <ol>
                 <li>A monetary donation from participants to B.A.D. to support the considerable labour and infrastructural costs incurred by the platform.</li>
