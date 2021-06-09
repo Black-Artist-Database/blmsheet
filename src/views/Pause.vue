@@ -18,7 +18,7 @@
 
       </div>
       <div class="col-md-4 image-right">
-        <img src="../assets/about/pause1.jpg" alt="About Us Image">
+        <img src="../assets/about/pause1.png" alt="About Us Image">
       </div>
     </div>
 
@@ -103,7 +103,6 @@ h3 {
   text-align:center;
   padding-top:20px;
   img {
-    border:1px solid black;
     width:100%;
     max-width:250px;
   }
