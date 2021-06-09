@@ -106,7 +106,7 @@ export default {
 
   .bc-link {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     right: 0;
     margin: auto;
