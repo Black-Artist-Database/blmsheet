@@ -23,7 +23,7 @@
         </a>
         <div class="card-body">
             <h6 class="card-title mb-0">{{ name }}</h6>
-            <p class="mt-0 location-genre mb-0"><small>{{location}}</small><p>
+            <p class="mt-0 location-genre mb-0"><small>{{location}}</small></p>
             <p class="mt-0 location-genre">
               <small>
                 <span v-for="(genre, index) in genres.slice(0,1)" :key="index">
