@@ -23,9 +23,13 @@
         </a>
         <div class="card-body">
             <h6 class="card-title mb-0">{{ name }}</h6>
-            <p class="mt-0 location-genre"><small>{{location}} - <span v-for="(genre, index) in genres.slice(0,1)" :key="index">
-                {{genre}}
-                </span></small> 
+            <p class="mt-0 location-genre"><small>{{location}}</small><p>
+            <p class="mt-0 location-genre">
+              <small>
+                <span v-for="(genre, index) in genres.slice(0,1)" :key="index">
+                  {{genre}}
+                </span>
+              </small> 
             </p>
             <a :href=link target="_blank">Bandcamp</a>
         </div>
@@ -171,7 +175,8 @@ export default {
   }
 
   .location-genre {
-    text-transform:uppercase;
+    text-transform: uppercase;
+    text-align: center;
   }
 
 

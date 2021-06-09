@@ -40,10 +40,12 @@
   </div>
   <div :class="{ 'alphabet-filter': true, disabled: filters.name }">
   <ul class="mt-3 mb-3 mb-0">
+      
       <li v-on:click="filters.first_letter = null" :class="{ 'd-inline text-uppercase h4 letter mr-3': true, active: filters.first_letter === null }">All</li>
       <li v-for="letter in alphabet" :key="letter" v-on:click="filters.first_letter = letter; filters.name = ''" :class="{ 'd-inline text-uppercase h4 letter': true, active: letter === filters.first_letter }" >
         {{ letter }}
       </li>
+      
   </ul>
   </div>
 
@@ -144,8 +146,6 @@ export default {
     }
   }
 
-
-
   .alphabet-filter {
     overflow-x:scroll;
     transition:opacity 0.2s;
@@ -153,11 +153,15 @@ export default {
     background-size:100% auto;
     background-position:bottom;
     background-repeat:no-repeat;
-    display:inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width:100%;
     ul {
       padding-left: 0;
-      min-width:900px;
+      width: 100%;
+      max-width: 900px;
       text-align:center;
     }
     &.disabled {
