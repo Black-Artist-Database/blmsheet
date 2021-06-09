@@ -23,15 +23,15 @@
         </a>
         <div class="card-body">
             <h6 class="card-title mb-0">{{ name }}</h6>
-            <p class="mt-0 location-genre"><small>{{location}}</small><p>
-            <p class="mt-0 mb-0 location-genre">
+            <p class="mt-0 location-genre mb-0"><small>{{location}}</small><p>
+            <p class="mt-0 location-genre">
               <small>
                 <span v-for="(genre, index) in genres.slice(0,1)" :key="index">
                   {{genre}}
                 </span>
               </small> 
             </p>
-            <a :href=link target="_blank">Bandcamp</a>
+            <a :href=link target="_blank" class="bc-link">Bandcamp</a>
         </div>
     </div>
 </div>
@@ -99,7 +99,18 @@ export default {
 
 <style scoped lang="scss">
 
+  .card-body {
+    position: relative;
+    min-height: 170px;
+  }
 
+  .bc-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 
   .card {
     border:1px solid black;
