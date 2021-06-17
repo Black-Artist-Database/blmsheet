@@ -167,7 +167,7 @@ h3 {
 }
 
 .corners {
-  min-height: 800px
+  min-height: 800px;
   position: relative;
   box-sizing: border-box;
   padding: 20px;
