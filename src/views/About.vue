@@ -134,11 +134,11 @@
     <p><b>[pause]</b><br>
     <a href="mailto:carin@blackartistdatabase.co" target="_blank">carin@blackartistdatabase.co</a><br>
     <a href="mailto:christine@blackartistdatabase.co" target="_blank">christine@blackartistdatabase.co</a><br>
-    <a href="mailto:ranen@blackartistdatabase.co" target="_blank">ranen@blackartistdatabase.co</a>
+    <a href="mailto:oscar@blackartistdatabase.co" target="_blank">oscar@blackartistdatabase.co</a>
     </p>
 
     <p><b>Partnerships</b><br>
-    <a href="mailto:ranen@blackartistdatabase.co" target="_blank">ranen@blackartistdatabase.co</a>
+    <a href="mailto:oscar@blackartistdatabase.co" target="_blank">oscar@blackartistdatabase.co</a>
     </p>
 
     <p><b>Editorial &amp; Content</b><br>

@@ -88,7 +88,7 @@
             For more information about [pause] please contact our project leads:
             </p>
             <p>
-                <a href="mailto:ranen@blackartistdatabase.co" target="_blank">ranen@blackartistdatabase.co</a><br>
+                <a href="mailto:oscar@blackartistdatabase.co" target="_blank">oscar@blackartistdatabase.co</a><br>
                 <a href="mailto:carin@blackartistdatabase.co" target="_blank">carin@blackartistdatabase.co</a><br>
                 <a href="mailto:christine@blackartistdatabase.co" target="_blank">christine@blackartistdatabase.co</a>
             </p>
