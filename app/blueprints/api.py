@@ -35,15 +35,11 @@ def entry_list():
             entries = entries.where('name_first_letter', '==', request.args.get('first_letter').lower())
 
         if request.args.get('genre'):
-            entries = entries.where('genre_tags', 'array_contains', request.args.get('genre').lower())
-        elif request.args.get('location'):  # firestore only allows a single `array_contains` in a query
-            entries = entries.where('location_tags', 'array_contains', request.args.get('location').lower())
+            entries = entries.where('broadgenre', '==', request.args.get('genre'))
+        if request.args.get('location'):  # firestore only allows a single `array_contains` in a query
+            entries = entries.where('location', '==', request.args.get('location'))
 
         results = [entry.to_dict() for entry in entries.get()]
-
-        if request.args.get('genre') and request.args.get('location'):
-            location = request.args.get('location').lower()  # workaround for firestore limitation
-            results = [entry for entry in results if location in entry.get('location_tags', [])]
 
         if request.args.get('random') and results:
             results = random.sample(results, 12)
@@ -68,9 +64,8 @@ def locations():
 
         for entry in entries:
             item = entry.to_dict()
-            for part in item['location_tags']:
-                if part:
-                    locations.add(part.strip().lower())
+            if (location := item['location']):
+                locations.add(location.strip())
 
         locations = sorted(list(locations))
         cache.set(cache_key, locations, timeout=60 * 60 * 6)
@@ -93,9 +88,8 @@ def genres():
 
         for entry in entries:
             item = entry.to_dict()
-            for genre in item['genre_tags']:
-                if genre:
-                    genres.add(genre.strip().lower())
+            if (genre := item['broadgenre']):
+                genres.add(genre.strip())
 
         genres = sorted(list(genres))
         cache.set(cache_key, genres, timeout=60 * 60 * 6)
