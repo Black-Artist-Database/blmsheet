@@ -144,7 +144,7 @@ def get_values_from_sheet():
                                 range=sheet_range).execute()
 
     # NB: sheet headers may change!
-    headers = ['name', 'country', 'city', 'state', 'type', 'link', 'mixcloud', 'genre', 'notes']
+    headers = ['name', 'country', 'city', 'state', 'type', 'location', 'broadgenre', 'link', 'beatport', 'junodownload', 'junorecord', 'soundcloud', 'genre', 'notes']
     return [
         row
         for value in result.get('values', [])
@@ -180,10 +180,9 @@ def process_row(row: tuple, headers_in_order: list):
         return
 
     # Normalise genres and locations, allow for separation with slashes rather than columns
-    # TODO: this is a temp fix for splitting location into individual columns
-    obj['location'] = ', '.join(e.replace('/', ',') for e in [obj["city"], obj["state"], obj["country"]] if e)
+    locations = ', '.join(e.replace('/', ',') for e in [obj["city"], obj["state"], obj["country"], obj["location"]] if e)
     genres = obj.get('genre', '').replace('#', ',').replace('/', ',').split(',')
     obj['genre_tags'] = [genre.lower().strip() for genre in genres if genre]
-    obj['location_tags'] = [part.lower().strip() for part in obj.get('location', '').split(',') if part]
+    obj['location_tags'] = [part.lower().strip() for part in locations.split(',') if part]
 
     return obj
