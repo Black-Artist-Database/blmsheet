@@ -124,5 +124,5 @@ def setup_pubsub(app):
 
 
 def redirect_old_domain():
-    if "blackbandcamp" in request.host:
+    if request.method == "GET" and "blackbandcamp" in request.host:
         return redirect("https://blackartistdatabase.co", 301)
