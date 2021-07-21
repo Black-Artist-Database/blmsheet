@@ -33,8 +33,13 @@
           </div>
         </div>
         <div class="input-group">
-        <LocationTypeAhead :filters="filters" class="location-filter"/>
-        </div>
+          <select class="custom-select" v-model="filters.location" :disabled="filters.name !== ''">
+            <option value="">LOCATION</option>
+            <option v-for="location in locationsData" :value="location" :key="location">
+                {{ location }}
+            </option>
+          </select>
+          </div>
       </div>
     </form>
   </div>
@@ -54,7 +59,6 @@
 
 <script>
 import axios from 'axios';
-import LocationTypeAhead from '@/components/LocationTypeAhead.vue'
 
 export default {
   name: 'Filters',
@@ -62,10 +66,11 @@ export default {
     filters: Object,
   },
   components: {
-    LocationTypeAhead
   },
   mounted(){
+    this.filters.location = '';
     this.fetchGenres();
+    this.fetchLocations();
   },
   data: function() {
     return {
@@ -82,6 +87,12 @@ export default {
             this.genresData = response.data
             this.$emit('loading', false)
         })
+    },
+    fetchLocations(){
+        axios.get('/api/locations')
+        .then((response) => (
+            this.locationsData = response.data
+        ))
     },
     shuffleRandom(){
       this.$parent.fetchRandom();
@@ -109,6 +120,10 @@ export default {
     height: 100%;
     background-color: transparent;
     border-color: rgba(255,255,255,0.5);
+    font-family: lexia-mono, serif;
+    option {
+      font-family: monospace;
+    }
   }
 
   .input-group, .location-filter {
