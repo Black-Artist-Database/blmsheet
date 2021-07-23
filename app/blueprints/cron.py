@@ -169,9 +169,16 @@ def process_row(row: tuple, headers_in_order: list):
             obj[field] = ''  # some fields may be empty which truncates the row data
 
     # fixes issues where submissions mistakenly type e.g.: www.bandname.bandcamp.com
-    match = re.match('www\.([a-zA-Z0-9]+\.bandcamp\.com)', obj['link'])
-    if match is not None:
-        obj['link'] = f'https://{match.group(1)}'
+    bandcamp_url = re.compile("www\.([a-zA-Z0-9]+\.bandcamp\.com)")
+    link_match = bandcamp_url.search(obj["link"])
+    if link_match is not None:
+        obj["link"] = f"https://{link_match.group(1)}"
+
+    # reports issues with bandcamp urls being in location column
+    location_match = bandcamp_url.search(obj["location"])
+    if location_match is not None:
+        current_app.logger.warn(f"Row has bandcamp value in location (not saved): {row}")
+        return
 
     try:
         obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalpha() else '#'
