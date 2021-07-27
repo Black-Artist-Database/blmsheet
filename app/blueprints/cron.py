@@ -223,7 +223,7 @@ def get_broad_values_from_sheet():
 
     batch = db.batch()
     for key, entry in ((genre_key, genre_entry), (location_key, location_entry):
-        entry_ref = db.collection(db_name).document(entry)
+        entry_ref = db.collection(db_name).document(key)
 
         # NB: SERVER_TIMESTAMP counts as an additional operation
         entry.update({u'timestamp': firestore.SERVER_TIMESTAMP})
