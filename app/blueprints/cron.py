@@ -140,7 +140,7 @@ def get_values_from_sheet():
         service = build('sheets', 'v4', credentials=credentials)
     sheet = service.spreadsheets()
     # NB: if sheet headers change the capture range may have to change
-    sheet_range = f"{os.environ['TAB_ID']}!A{os.environ['START_ROW']}:H"
+    sheet_range = f"{os.environ['TAB_ID']}!A{os.environ['START_ROW']}:N"
     result = sheet.values().get(spreadsheetId=os.environ['SHEET_ID'],
                                 range=sheet_range).execute()
 
@@ -167,6 +167,7 @@ def process_row(row: tuple, headers_in_order: list):
         try:
             obj[field] = row[i]
         except IndexError:
+            current_app.logger.warn(f"Row has an empty value for {field}: {row}")
             obj[field] = ''  # some fields may be empty which truncates the row data
 
     # fixes issues where submissions mistakenly type e.g.: www.bandname.bandcamp.com
