@@ -35,10 +35,10 @@
               <a :href=link target="_blank" v-if="link">
                 <img src="@/assets/vendors/bandcamp.svg" alt="Bandcamp">
               </a>
-              <a :href=junorecord target="_blank" v-if="junorecord">
+              <a :href="junorecord + '?ref=BAD'" target="_blank" v-if="junorecord">
                 <img src="@/assets/vendors/juno.svg" alt="Bandcamp">
               </a>
-              <a :href=junodownload target="_blank" v-if="junodownload">
+              <a :href="junodownload + '?ref=BAD'" target="_blank" v-if="junodownload">
                 <img src="@/assets/vendors/junodownload.svg" alt="Bandcamp">
               </a>
             </div>
@@ -232,6 +232,9 @@ export default {
     img {
       width:80%;
       max-width:100px;
+      &:hover {
+        filter: invert(58%) sepia(64%) saturate(5723%) hue-rotate(130deg) brightness(96%) contrast(90%);
+      }
     }
   }
 </style>
