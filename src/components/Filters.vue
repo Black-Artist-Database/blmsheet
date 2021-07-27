@@ -69,6 +69,7 @@ export default {
   },
   mounted(){
     this.filters.location = '';
+    this.filters.first_letter = 'a'
     this.fetchGenres();
     this.fetchLocations();
   },
