@@ -220,7 +220,8 @@ def get_broad_values_from_sheet():
     genre_entry = {u'values': list(genres)}
     location_key = "broad-locations"
     location_entry = {u'values': list(locations)}
-
+    new_entries = 0
+    total_entries = 0
     batch = db.batch()
     for key, entry in ((genre_key, genre_entry), (location_key, location_entry)):
         entry_ref = db.collection(db_name).document(key)
