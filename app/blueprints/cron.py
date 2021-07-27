@@ -211,8 +211,8 @@ def get_broad_values_from_sheet():
                                 range=sheet_range).execute()
 
     genres, locations = tee(result.get('values', []))
-    genres = set(g[0].strip() for g in genres if g and g[0])
-    locations = set(l[2].strip() for l in locations if l and l[2])
+    genres = set(g[0].strip() for g in genres if g and len(g) > 0 and g[0])
+    locations = set(l[2].strip() for l in locations if l and len(l) > 2 and l[2])
 
     db = cron_blueprint.config['DB']
     db_name = "lists"
