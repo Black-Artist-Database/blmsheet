@@ -3,7 +3,7 @@ import json
 import os
 import re
 from datetime import datetime, timedelta
-from itertools import zip_longest
+from itertools import tee, zip_longest
 from typing import List
 
 from flask import Blueprint, abort, current_app, request
@@ -45,6 +45,7 @@ def remove_old_entries():
 @auth_check
 def sync_db_with_sheet():
     current_app.logger.debug('Sync requested...')
+    get_broad_values_from_sheet()
     values = get_values_from_sheet()
     current_app.logger.debug(f'Adding {len(values)} to database...')
     set_values_to_database(values)
@@ -193,3 +194,53 @@ def process_row(row: tuple, headers_in_order: list):
     obj['location_tags'] = [part.lower().strip() for part in locations.split(',') if part]
 
     return obj
+
+
+def get_broad_values_from_sheet():
+    """
+    Use the Google Sheets API to fetch and process rows of data.
+    """
+    if 'API_KEY' in os.environ:
+        service = build('sheets', 'v4', developerKey=os.environ['API_KEY'])
+    else:
+        credentials = compute_engine.Credentials()
+        service = build('sheets', 'v4', credentials=credentials)
+    sheet = service.spreadsheets()
+    sheet_range = f"{os.environ.get('LISTS_TAB_ID', 'Lists')}!A2:C"
+    result = sheet.values().get(spreadsheetId=os.environ['SHEET_ID'],
+                                range=sheet_range).execute()
+
+    genres, locations = tee(result.get('values', []))
+    genres = set((g[0].strip() for g in genres if g and g[0])
+    locations = set(l[2].strip() for l in locations if l and l[2])
+
+    db = cron_blueprint.config['DB']
+    db_name = "lists"
+    genre_key = "broad-genres"
+    genre_entry = {u'values': list(genres)}
+    location_key = "broad-locations"
+    location_entry = {u'values': list(locations)}
+
+    batch = db.batch()
+    for key, entry in ((genre_key, genre_entry), (location_key, location_entry):
+        entry_ref = db.collection(db_name).document(entry)
+
+        # NB: SERVER_TIMESTAMP counts as an additional operation
+        entry.update({u'timestamp': firestore.SERVER_TIMESTAMP})
+
+        # Check for existing entry matching our key in the list
+        if (existing := entry_ref.get()).exists:
+            # Update existing entry
+            batch.update(entry_ref, entry)
+        else:
+            new_entries += 1
+            # Create new entry
+            batch.set(entry_ref, entry)
+
+        # Finished processing an entry
+        total_entries += 1
+
+        # Finished processing a batch
+        batch.commit()
+    current_app.logger.info(f'List sync to database complete: {total_entries} entries from Lists ({new_entries} new)')
+    current_app.logger.info(f'Genres: {len(genres)}, Locations: {len(locations)}')
