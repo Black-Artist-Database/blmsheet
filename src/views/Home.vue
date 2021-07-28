@@ -24,6 +24,8 @@
           :genres="item.genre_tags"
           :location="item.location"
           :link="item.link"
+          :junodownload="item.junodownload"
+          :junorecord="item.junorecord"
           :artwork="item.custom_image_url && item.custom_image_url.length > 0 ? item.custom_image_url : item.bandcamp_image_url"
           :bandcamp_ids="item.bandcamp_album_ids"
           :type="item.type"

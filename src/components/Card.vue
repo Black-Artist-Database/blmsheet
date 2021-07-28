@@ -31,7 +31,18 @@
                 </span>
               </small> 
             </p>
-            <a :href=link target="_blank" class="bc-link">Bandcamp</a>
+            <div class="vendors">
+              <a :href=link target="_blank" v-if="link">
+                <img src="@/assets/vendors/bandcamp.svg" alt="Bandcamp">
+              </a>
+              <a :href="junorecord + '?ref=BAD'" target="_blank" v-if="junorecord">
+                <img src="@/assets/vendors/juno.svg" alt="Bandcamp">
+              </a>
+              <a :href="junodownload + '?ref=BAD'" target="_blank" v-if="junodownload">
+                <img src="@/assets/vendors/junodownload.svg" alt="Bandcamp">
+              </a>
+            </div>
+
         </div>
     </div>
 </div>
@@ -43,6 +54,8 @@ export default {
     props: {
         name: String,
         link: String,
+        junorecord: String,
+        junodownload: String,
         artwork: String,
         type: String,
         location: String,
@@ -210,6 +223,18 @@ export default {
   .image-wrapper:hover {
     .play {
       opacity:1;
+    }
+  }
+  .vendors {
+    a {
+      display:block;
+    }
+    img {
+      width:80%;
+      max-width:100px;
+      &:hover {
+        filter: invert(58%) sepia(64%) saturate(5723%) hue-rotate(130deg) brightness(96%) contrast(90%);
+      }
     }
   }
 </style>
