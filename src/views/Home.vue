@@ -59,7 +59,7 @@ export default {
     filters: {
       genre: '',
       name: '',
-      location: null,
+      location: '',
       first_letter: 'a'
     },
   }),
