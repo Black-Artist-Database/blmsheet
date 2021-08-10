@@ -2,24 +2,44 @@
     <div class="page">
         <div class="events container mt-4">
             <div class="row">
-                <div class="col">
-                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank">
+                <div class="col-md">
+                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                     <img src="@/assets/events/ableton_lj.png" alt="Loraine James">
+                    <div class="info">
+                        <h5>Tuesday 24th August</h5>
+                        <h2>How to turn your production into a live performance</h2>
+                        <p>Online</p>
+                    </div>
                     </a>
                 </div>
-                <div class="col">
-                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank">
-                    <img src="@/assets/events/ableton_rb.png" alt="Russell E.L. Butler">
+                <div class="col-md">
+                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
+                        <img src="@/assets/events/ableton_rb.png" alt="Russell E.L. Butler">
+                        <div class="info">
+                            <h5>Tuesday 28th September</h5>
+                            <h2>Bus Processing Premasters</h2>
+                            <p>Online</p>
+                        </div>
                     </a>
                 </div>
-                <div class="col">
-                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank">
-                    <img src="@/assets/events/ableton_kmru.png" alt="KMRU">
+                <div class="col-md">
+                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
+                        <img src="@/assets/events/ableton_kmru.png" alt="KMRU">
+                        <div class="info">
+                            <h5>Tuesday 26th October</h5>
+                            <h2>Field recording as a compositional tool</h2>
+                            <p>Online</p>
+                        </div>
                     </a>
                 </div>
-                <div class="col">
-                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank">
-                    <img src="@/assets/events/ableton_rm.png" alt="rRoxymore">
+                <div class="col-md">
+                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
+                        <img src="@/assets/events/ableton_rm.png" alt="rRoxymore">
+                        <div class="info">
+                            <h5>Tuesday 23rd November</h5>
+                            <h2>An intro to live</h2>
+                            <p>Online</p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -38,6 +58,40 @@ p a {
 
 .events img {
     width:100%;
+}
+
+.event {
+    display:block;
+    border:2px solid black;
+    @media screen and (min-width: 800px) {
+        height:100%;
+    }
+    margin-bottom:20px;
+    .info {
+        text-align:left;
+        padding:15px;
+        text-transform: uppercase;
+        h5 {
+            color:#6acf99;
+            font-size:0.8em;
+            margin-bottom:5px;
+        }
+        h2 {
+            color:#366766;
+            font-size:1.2em;
+            margin-top:0;
+            margin-bottom:15px;
+        }
+        p {
+            color:black;
+            text-decoration: none;
+            margin-bottom:0;
+            font-size:0.7em;
+        }
+    }
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 
