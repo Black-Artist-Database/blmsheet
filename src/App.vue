@@ -40,6 +40,7 @@
             </li>
             <li><a href="" class="d-flex"><i></i> <span>STORE</span></a></li>
             -->
+            <li @click="showNav = !showNav"><router-link to="/events" class="d-flex"><i></i> <span>EVENTS</span></router-link></li>
             <li @click="showNav = !showNav"><a href="https://www.patreon.com/blackartistdatabase" target="_blank" class="d-flex"><i></i> <span>PATREON</span></a></li>
           </ul>
         </nav>
