@@ -15,26 +15,26 @@
       <Filters :filters="filters" @loading="e => loading = e"/>
       
       <p v-if="maintenance === true && !loading" style="background: #ffffed;padding: 10px;text-align: center;max-width: 600px;margin: 20px auto 100px auto;">We’re currently running some maintenance on the database, in the meantime check out our mixes, interviews and more using the headers above!</p>
-      <div v-if="maintenance === true && !loading" style="display:none">
-      <div class="d-flex justify-content-center" v-if="loading">
-        <img src="../assets/loading-spinner.gif">
-      </div>
-      <div v-if="list.length === 0 && !loading" class="m-4">No results found, try broadening your search or <a href="/">reset all filters</a>.</div>
-      <div class="row" v-if="!loading">
-        <Card v-for="(item, index) in list"
-          :key="index"
-          :name="item.name"
-          :genres="item.genre_tags"
-          :location="item.location"
-          :link="item.link"
-          :junodownload="item.junodownload"
-          :junorecord="item.junorecord"
-          :artwork="item.custom_image_url && item.custom_image_url.length > 0 ? item.custom_image_url : item.bandcamp_image_url"
-          :bandcamp_ids="item.bandcamp_album_ids"
-          :type="item.type"
-          @on-play="onPlay"
-        />
-      </div>
+      <div v-if="!maintenance && !loading">
+        <div class="d-flex justify-content-center" v-if="loading">
+          <img src="../assets/loading-spinner.gif">
+        </div>
+        <div v-if="list.length === 0 && !loading" class="m-4">No results found, try broadening your search or <a href="/">reset all filters</a>.</div>
+        <div class="row" v-if="!loading">
+          <Card v-for="(item, index) in list"
+            :key="index"
+            :name="item.name"
+            :genres="item.genre_tags"
+            :location="item.location"
+            :link="item.link"
+            :junodownload="item.junodownload"
+            :junorecord="item.junorecord"
+            :artwork="item.custom_image_url && item.custom_image_url.length > 0 ? item.custom_image_url : item.bandcamp_image_url"
+            :bandcamp_ids="item.bandcamp_album_ids"
+            :type="item.type"
+            @on-play="onPlay"
+          />
+        </div>
       </div>
     </div>
     <Player v-if='currentBandcampId' :bandcamp-id='currentBandcampId' />
@@ -100,8 +100,11 @@ export default {
         axios.get('/api/list', { params: this.filters })
         .then((response) => {
             this.loading = false
-            this.maintenance = response.data.maintenance
-            this.list = response.data
+            if (response.data.maintenance) {
+              this.maintenance = response.data.maintenance
+            } else {
+              this.list = response.data
+            }
         })
     },
     fetchRandom(){
@@ -110,8 +113,11 @@ export default {
         axios.get('/api/list?random=12&timestamp='+new Date().getSeconds())
         .then((response) => {
             this.loading = false
-            this.maintenance = response.data.maintenance
-            this.list = response.data
+            if (response.data.maintenance) {
+              this.maintenance = response.data.maintenance
+            } else {
+              this.list = response.data
+            }
         })
     },
     onPlay(bandcampId) {
