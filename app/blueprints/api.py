@@ -14,6 +14,8 @@ CORS(api_blueprint)  # enable CORS on the API blueprint
 
 @api_blueprint.route('/list', methods=['GET'])
 def entry_list():
+    if api_blueprint.config['ENABLE_MAINTENANCE']:
+        return jsonify({'maintenance': True})
     cache = api_blueprint.config['CACHE']
     cache_key = request.full_path
     results = cache.get(cache_key)

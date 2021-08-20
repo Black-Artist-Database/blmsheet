@@ -24,6 +24,8 @@ def create_app():
     development = os.environ.get('FLASK_ENV', '') == 'development'
     init_logging(app, development=development)
     setup_cache(app, development=development)
+    enable_maintenance = os.environ.get('ENABLE_MAINTENANCE', '') == '1'
+    app.config["ENABLE_MAINTENANCE"] = enable_maintenance
     # setup_compress(app, development=development)
     setup_db(app)
     setup_pubsub(app)
