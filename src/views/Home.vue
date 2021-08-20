@@ -15,10 +15,10 @@
       <Filters :filters="filters" @loading="e => loading = e"/>
       
       <p v-if="maintenance === true && !loading" style="background: #ffffed;padding: 10px;text-align: center;max-width: 600px;margin: 20px auto 100px auto;">We’re currently running some maintenance on the database, in the meantime check out our mixes, interviews and more using the headers above!</p>
+      <div class="d-flex justify-content-center" v-if="loading">
+        <img src="../assets/loading-spinner.gif">
+      </div>
       <div v-if="!maintenance && !loading">
-        <div class="d-flex justify-content-center" v-if="loading">
-          <img src="../assets/loading-spinner.gif">
-        </div>
         <div v-if="list.length === 0 && !loading" class="m-4">No results found, try broadening your search or <a href="/">reset all filters</a>.</div>
         <div class="row" v-if="!loading">
           <Card v-for="(item, index) in list"
