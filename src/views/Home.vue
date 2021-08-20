@@ -13,6 +13,9 @@
 
       
       <Filters :filters="filters" @loading="e => loading = e"/>
+      
+      <p style="background: #ffffed;padding: 10px;text-align: center;max-width: 600px;margin: 20px auto 100px auto;">We’re currently running some maintenance on the database, in the meantime check out our mixes, interviews and more using the headers above!</p>
+      <div style="display:none">
       <div class="d-flex justify-content-center" v-if="loading">
         <img src="../assets/loading-spinner.gif">
       </div>
@@ -31,6 +34,7 @@
           :type="item.type"
           @on-play="onPlay"
         />
+      </div>
       </div>
     </div>
     <Player v-if='currentBandcampId' :bandcamp-id='currentBandcampId' />
