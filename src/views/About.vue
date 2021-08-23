@@ -140,12 +140,6 @@
     <p><b>Partnerships</b><br>
     <a href="mailto:oscar@blackartistdatabase.co" target="_blank">oscar@blackartistdatabase.co</a>
     </p>
-
-    <p><b>Editorial &amp; Content</b><br>
-    <a href="mailto:kay@blackartistdatabase.co" target="_blank">kay@blackartistdatabase.co</a><br>
-    <a href="mailto:shiba@blackartistdatabase.co" target="_blank">shiba@blackartistdatabase.co</a><br>
-    <a href="mailto:tanya@blackartistdatabase.co" target="_blank">tanya@blackartistdatabase.co</a></p>
-
     </div>
 
   </div>
