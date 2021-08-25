@@ -2,7 +2,7 @@
     <div class="page">
         <div class="events container mt-4">
             <div class="row">
-                <div class="col-md">
+                <div class="col-md-3" style="opacity:0.3;">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                     <img src="@/assets/events/ableton_lj.png" alt="Loraine James">
                     <div class="info">
@@ -12,7 +12,7 @@
                     </div>
                     </a>
                 </div>
-                <div class="col-md">
+                <div class="col-md-3">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_rb.png" alt="Russell E.L. Butler">
                         <div class="info">
@@ -22,7 +22,17 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md">
+                <div class="col-md-3">
+                    <a href="https://ra.co/pre/1459467" target="_blank" class="event">
+                        <img src="@/assets/events/colour-factory-01-10-21.png" alt="A Celebration Of Black Culture. 01/10 The Colour Factory Hackney Wick London. Tickets via events.blackartistdatabase.co">
+                        <div class="info">
+                            <h5>Friday 1st October</h5>
+                            <h2>A celebration of Black culture</h2>
+                            <p>The Colour Factory, Hackney Wick</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_kmru.png" alt="KMRU">
                         <div class="info">
@@ -32,7 +42,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md">
+                <div class="col-md-3 my-3">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_rm.png" alt="rRoxymore">
                         <div class="info">
@@ -42,6 +52,7 @@
                         </div>
                     </a>
                 </div>
+
             </div>
         </div>
     </div>
