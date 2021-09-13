@@ -18,7 +18,7 @@
 
     <form class="d-flex justify-space-between">
       <div class="d-flex flex-row flex-wrap justify-content-center">
-        <div class="input-group input-group-sm d-flex justify-content-center">
+        <div class="input-group input-group-name input-group-sm d-flex justify-content-center">
           <input placeholder="Name" type="text" class="form-control" id="name-filter" v-model="filters.name">
           <a @click="filters.name = ''" v-if="filters.name !== ''">&times;</a>
         </div>
@@ -147,6 +147,9 @@ export default {
   .input-group {
     border-right:1px solid black;
     position: relative;
+    &.input-group-name {
+      border-left:1px solid black;
+    }
     input {
       z-index: 2;
     }
@@ -217,9 +220,7 @@ export default {
       font-size:15px !important;
       text-transform:uppercase;
     }
-    #name-filter {
-      padding-left:0;
-    }
+
     select {
     }
     select:disabled {

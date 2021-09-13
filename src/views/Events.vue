@@ -12,7 +12,7 @@
                     </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" style="opacity:0.3;">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_rb.png" alt="Russell E.L. Butler">
                         <div class="info">
@@ -92,6 +92,7 @@ p a {
             font-size:1.2em;
             margin-top:0;
             margin-bottom:15px;
+            min-height:70px;
         }
         p {
             color:black;
