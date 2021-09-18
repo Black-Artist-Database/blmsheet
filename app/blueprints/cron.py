@@ -58,7 +58,7 @@ def sync_db_with_broad_list():
 def sync_db_with_artist_sheet():
     db_name = os.environ['ARTIST_DB_NAME']
     current_app.logger.debug('Artist sync requested...')
-    values = get_values_from_artist_sheet(
+    values = get_values_from_sheet(
         os.environ['ARTIST_SHEET_ID'],
         os.environ['ARTIST_TAB_ID'],
         os.environ['ARTIST_START_ROW'],
