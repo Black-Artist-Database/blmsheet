@@ -21,7 +21,7 @@ def entry_list():
     results = cache.get(cache_key)
     if results is None:
         db = api_blueprint.config['DB']
-        db_name = os.environ['DB_NAME']
+        db_name = request.args.get('db') or os.environ['ARTIST_DB_NAME']
 
         entries = db.collection(db_name)
 
@@ -58,18 +58,12 @@ def locations():
 
     if locations is None:
         db = api_blueprint.config['DB']
-        db_name = os.environ['DB_NAME']
+        db_name = "lists"
+        key = "broad-locations"
 
-        entries = db.collection(db_name).get()
-
-        locations = set()
-
-        for entry in entries:
-            item = entry.to_dict()
-            if (location := item['location']):
-                locations.add(location.strip())
-
-        locations = sorted(list(locations))
+        entry = db.collection(db_name).document(key).get()
+        item = entry.to_dict()
+        locations = sorted(list(set(item["values"])))
         cache.set(cache_key, locations, timeout=60 * 60 * 6)
     return jsonify(locations)
 
@@ -82,18 +76,12 @@ def genres():
 
     if genres is None:
         db = api_blueprint.config['DB']
-        db_name = os.environ['DB_NAME']
+        db_name = "lists"
+        key = "broad-genres"
 
-        entries = db.collection(db_name).get()
-
-        genres = set()
-
-        for entry in entries:
-            item = entry.to_dict()
-            if (genre := item['broadgenre']):
-                genres.add(genre.strip())
-
-        genres = sorted(list(genres))
+        entry = db.collection(db_name).document(key).get()
+        item = entry.to_dict()
+        genres = sorted(list(set(item["values"])))
         cache.set(cache_key, genres, timeout=60 * 60 * 6)
     return jsonify(genres)
 
