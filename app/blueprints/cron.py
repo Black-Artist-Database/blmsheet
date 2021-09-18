@@ -45,12 +45,19 @@ def remove_old_entries():
     return 'OK', 200
 
 
+@cron_blueprint.route('/sync-broad', methods=['POST'])
+@auth_check
+def sync_db_with_broad_list():
+    current_app.logger.debug('Broad list sync requested...')
+    get_broad_values_from_sheet()
+    return 'OK', 200
+
+
 @cron_blueprint.route('/sync', methods=['POST'])
 @auth_check
 def sync_db_with_artist_sheet():
     db_name = os.environ['ARTIST_DB_NAME']
     current_app.logger.debug('Artist sync requested...')
-    get_broad_values_from_sheet()
     values = get_values_from_artist_sheet(
         os.environ['ARTIST_SHEET_ID'],
         os.environ['ARTIST_TAB_ID'],

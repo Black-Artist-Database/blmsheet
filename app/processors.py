@@ -26,7 +26,7 @@ def process_bandcamp(value: str):
     www.{artist}.bandcamp.com -> https://{artist}.bandcamp.com
     """
     value = value.strip().replace('"', '')
-    match = re.match(, value)
+    match = bandcamp_url.search(value)
     if match is not None:
         value = f"https://{match.group(1)}"
     return value
@@ -37,7 +37,7 @@ def process_mixcloud(value: str):
      -> https://mixcloud.com/{artist}/[{mix}/]
     """
     value = value.strip().replace('"', '')
-    match = re.match(, value)
+    match = mixcloud_url.search(value)
     if match is not None:
         value = f"https://{match.group(1)}"
     return value
