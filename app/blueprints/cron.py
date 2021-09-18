@@ -224,12 +224,12 @@ def process_creative_row(row: tuple):
     return obj
 
 
-def get_values_from_sheet(sheet_id: str, tab_id: str, start_row: str, process_func=process_row):
+def get_values_from_sheet(sheet_id: str, tab_id: str, start_row: str, process_func):
     """
     Use the Google Sheets API to fetch and process rows of data.
 
     Returns:
-        a list of dicts mapping headers to data    
+        a list of dicts mapping headers to data
     """
     if 'API_KEY' in os.environ:
         service = build('sheets', 'v4', developerKey=os.environ['API_KEY'])
@@ -246,7 +246,7 @@ def get_values_from_sheet(sheet_id: str, tab_id: str, start_row: str, process_fu
     return [
         row
         for value in result.get('values', [])
-        if (row := process_row(value)) is not None
+        if (row := process_func(value)) is not None
     ]
 
 
