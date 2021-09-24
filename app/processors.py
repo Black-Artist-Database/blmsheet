@@ -43,6 +43,12 @@ def process_mixcloud(value: str):
     return value
 
 
+def process_name(value: str):
+    if "#REF!" in value:
+        raise ProcessingError('Row missing reference (#REF!) for `name`')
+    return value
+
+
 def process_name_first_letter(value: str):
     try:
         return (

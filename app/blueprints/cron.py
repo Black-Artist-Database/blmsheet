@@ -179,9 +179,10 @@ def process_artist_row(row: tuple):
             obj[field] = ''  # some fields may be empty which truncates the row data
 
     try:
+        obj["name"] = process_name(obj["name"])
+        obj['name_first_letter'] = process_name_first_letter(obj["name"])
         # fixes issues where submissions mistakenly type e.g.: www.bandname.bandcamp.com
         obj["link"] = process_link(obj["link"])
-        obj['name_first_letter'] = process_name_first_letter(obj["name"])
         # reports issues with bandcamp urls being in location column
         process_link_in_location(obj["location"])
         locations = process_location_concat(obj["city"], obj["state"], obj["country"], obj["location"])
@@ -212,6 +213,7 @@ def process_creative_row(row: tuple):
             obj[field] = ''  # some fields may be empty which truncates the row data
 
     try:
+        obj["name"] = process_name(obj["name"])
         obj['name_first_letter'] = process_name_first_letter(obj["name"])
         obj["subs"] = process_sub_professions(obj.get("subs"))
         obj["links"] = process_links(obj.get("links"))
