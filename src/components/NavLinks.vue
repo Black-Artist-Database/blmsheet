@@ -34,7 +34,7 @@
 		</div>
 
 		<div class="nav-link store">
-      <a href="" target="_blank" @click="$emit('dismissMobileMenu')"><span><i/>STORE</span></a>
+      <a href="https://store.blackartistdatabase.co/" target="_blank" @click="$emit('dismissMobileMenu')"><span><i/>STORE</span></a>
     </div>
 	</div>
 </template>
