@@ -94,6 +94,8 @@ def fallback_cache(e):
         return e
 
     if not isinstance(original, redis.exceptions.ConnectionError):
+        current_app.logger.exception(e)
+        current_app.logger.exception(original)
         return e
 
     current_app.logger.exception(f'{current_app.config["CACHE_TYPE"].title()} cache connection failed')

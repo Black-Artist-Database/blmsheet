@@ -32,7 +32,7 @@ def entry_list():
             cache.set(f'{request.path}?name={name}', results, timeout=60 * 60 * 1)
             return jsonify(results)
 
-        if (first_letter := request.args.get('first_letter').lower()):
+        if (first_letter := request.args.get('first_letter', '').lower()):
             entries = entries.where('name_first_letter', '==', first_letter)
         if (genre := request.args.get('genre')):
             entries = entries.where('broadgenre', '==', genre)
