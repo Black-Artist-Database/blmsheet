@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Creatives from '../views/Creatives.vue'
 import Read from '../views/Read.vue'
 import Voices from '../views/Voices.vue'
 import Article from '../views/Article.vue'
@@ -15,6 +16,11 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/creative',
+    name: 'Creatives',
+    component: Creatives
   },
   {
     path: '/read',
