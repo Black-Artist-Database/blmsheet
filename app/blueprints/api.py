@@ -94,7 +94,10 @@ def filter_set():
         for entry in entries:
             item = entry.to_dict()
             if (result := item.get(name)):
-                results.add(result.strip())
+                if isinstance(result, list):
+                    results.update([r.strip() for r in result])
+                else:
+                    results.add(result.strip())
 
         results = sorted(list(results))
         cache.set(cache_key, results, timeout=60 * 60 * 6)
