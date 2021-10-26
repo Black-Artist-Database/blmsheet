@@ -25,28 +25,28 @@ def entry_list():
 
         entries = db.collection(db_name)
 
-        if request.args.get('name'):
-            name = request.args.get('name').lower()
+        if (name := request.args.pop('name', '').lower()):
             entries = entries.where('name_first_letter', '==', name[0])
             results = [entry.to_dict() for entry in entries.get()]
             results = [entry for entry in results if name in entry['name'].lower()]
             cache.set(f'{request.path}?name={name}', results, timeout=60 * 60 * 1)
             return jsonify(results)
 
-        if request.args.get('first_letter'):
-            entries = entries.where('name_first_letter', '==', request.args.get('first_letter').lower())
+        if (first_letter := request.args.get('first_letter').lower()):
+            entries = entries.where('name_first_letter', '==', first_letter)
+        if (genre := request.args.get('genre')):
+            entries = entries.where('broadgenre', '==', genre)
+        if (location := request.args.get('location')):
+            entries = entries.where('location', '==', location)
 
-        if request.args.get('genre'):
-            entries = entries.where('broadgenre', '==', request.args.get('genre'))
-        if request.args.get('location'):
-            entries = entries.where('location', '==', request.args.get('location'))
-
-        for field in request.args:
+        for field, value in request.args.items():
+            if not value:
+                continue
             if field == "subs":
                 # NB: firestore only allows a single `array_contains` in a query
-                entries = entries.where(field, 'array_contains', request.args[field])
+                entries = entries.where(field, 'array_contains', value)
             elif field in api_blueprint.config["creative_headers"]:
-                entries = entries.where(field, '==', request.args[field])
+                entries = entries.where(field, '==', value)
 
         results = [entry.to_dict() for entry in entries.get()]
 
