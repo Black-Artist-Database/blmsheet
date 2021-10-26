@@ -25,7 +25,7 @@ def entry_list():
 
         entries = db.collection(db_name)
 
-        if (name := request.args.pop('name', '').lower()):
+        if (name := request.args.get('name', '').lower()):
             entries = entries.where('name_first_letter', '==', name[0])
             results = [entry.to_dict() for entry in entries.get()]
             results = [entry for entry in results if name in entry['name'].lower()]
