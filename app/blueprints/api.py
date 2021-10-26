@@ -41,6 +41,10 @@ def entry_list():
         if request.args.get('location'):  # firestore only allows a single `array_contains` in a query
             entries = entries.where('location', '==', request.args.get('location'))
 
+        for field in request.args:
+            if field in api_blueprint.config["creative_headers"]:
+                entries = entries.where(field, '==', request.args[field])
+
         results = [entry.to_dict() for entry in entries.get()]
 
         if request.args.get('random') and results:
@@ -66,6 +70,35 @@ def locations():
         locations = sorted(list(set(item["values"])))
         cache.set(cache_key, locations, timeout=60 * 60 * 6)
     return jsonify(locations)
+
+
+@api_blueprint.route('/filters', methods=['GET'])
+def filter_set():
+    cache = api_blueprint.config['CACHE']
+    cache_key = request.full_path
+    results = cache.get(cache_key)
+    name = request.args.get('name')
+    db_name = request.args.get('db') or os.environ['CREATIVE_DB_NAME']
+
+    if name is None:
+        results = api_blueprint.config["creative_headers"]
+        cache.set(cache_key, results, timeout=60 * 60 * 6)
+
+    if results is None:
+        db = api_blueprint.config['DB']
+
+        entries = db.collection(db_name).get()
+
+        results = set()
+
+        for entry in entries:
+            item = entry.to_dict()
+            if (result := item.get(name)):
+                results.add(result.strip())
+
+        results = sorted(list(results))
+        cache.set(cache_key, results, timeout=60 * 60 * 6)
+    return jsonify(results)
 
 
 @api_blueprint.route('/genres', methods=['GET'])

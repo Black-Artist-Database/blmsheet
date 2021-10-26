@@ -17,8 +17,6 @@ from app.processors import *
 cron_blueprint = Blueprint(name='cron',
                            import_name=__name__,
                            url_prefix='/cron')
-cron_blueprint.creative_headers = ["name", "country", "city", "profession", "subs", "links", "socials", "gender", "contact", "image", "headline"]
-cron_blueprint.artist_headers = ['name', 'country', 'city', 'state', 'type', 'location', 'broadgenre', 'link', 'beatport', 'junodownload', 'junorecord', 'soundcloud', 'genre', 'notes']
 
 
 def auth_check(func):
@@ -171,7 +169,7 @@ def process_artist_row(row: tuple):
     """
     obj = {}
 
-    for i, field in enumerate(cron_blueprint.artist_headers):
+    for i, field in enumerate(cron_blueprint.config["artist_headers"]):
         try:
             obj[field] = row[i]
         except IndexError:
@@ -205,7 +203,7 @@ def process_creative_row(row: tuple):
     """
     obj = {}
 
-    for i, field in enumerate(cron_blueprint.creative_headers):
+    for i, field in enumerate(cron_blueprint.config["creative_headers"]):
         try:
             obj[field] = row[i]
         except IndexError:
@@ -217,7 +215,13 @@ def process_creative_row(row: tuple):
         obj['name_first_letter'] = process_name_first_letter(obj["name"])
         obj["subs"] = process_sub_professions(obj.get("subs"))
         obj["links"] = process_links(obj.get("links"))
-        obj["socials"] = process_links(obj.get("socials"))
+        obj["instagram"] = process_link(obj.get("instagram"))
+        obj["twitter"] = process_link(obj.get("twitter"))
+        obj["socials"] = {
+            "website": obj["links"][:1],
+            "twitter": obj["twitter"],
+            "instagram": obj["instagram"],
+        }
         obj["image"] = process_link(obj.get("image"))
     except ProcessingError as e:
         current_app.logger.warn(f'Processing row {row} failed (not saved): {str(e)}')

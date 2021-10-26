@@ -35,6 +35,9 @@ def create_app():
 
 
 def add_blueprints(app):
+    app.config["creative_headers"] = ["name", "country", "city", "profession", "subs", "links", "twitter", "instagram", "gender", "contact", "image", "headline"]
+    app.config["artist_headers"] = ['name', 'country', 'city', 'state', 'type', 'location', 'broadgenre', 'link', 'beatport', 'junodownload', 'junorecord', 'soundcloud', 'genre', 'notes']
+
     from app.blueprints.api import api_blueprint
     app.register_blueprint(api_blueprint)
     api_blueprint.config = app.config.copy()

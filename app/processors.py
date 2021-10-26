@@ -3,6 +3,8 @@ import re
 
 bandcamp_url = re.compile("([a-zA-Z0-9]+\.bandcamp\.com)")
 mixcloud_url = re.compile("(mixcloud\.com/[a-zA-Z0-9/-]+)")
+instagram_url = re.compile("(instagram\.com/[a-zA-Z0-9\._-]+)")
+twitter_url = re.compile("(twitter\.com/[a-zA-Z0-9\._-]+)")
 
 
 class ProcessingError(Exception):
@@ -14,11 +16,37 @@ def process_link(url):
         return process_bandcamp(url)
     elif "mixcloud" in url:
         return process_mixcloud(url)
+    elif "instagram" in url:
+        return process_instagram(url)
+    elif "twitter" in url:
+        return process_twitter(url)
     return url
 
 
 def process_links(value: str):
     return [process_link(url) for url in value.split()]
+
+
+def process_instagram(value: str):
+    """
+    -> https://instagram.com/{profile}
+    """
+    value = value.strip().replace('"', '')
+    match = instagram_url.search(value)
+    if match is not None:
+        value = f"https://{match.group(1)}"
+    return value
+
+
+def process_twitter(value: str):
+    """
+    -> https://twitter.com/{profile}
+    """
+    value = value.strip().replace('"', '')
+    match = twitter_url.search(value)
+    if match is not None:
+        value = f"https://{match.group(1)}"
+    return value
 
 
 def process_bandcamp(value: str):
