@@ -218,7 +218,7 @@ def process_creative_row(row: tuple):
         obj["instagram"] = process_link(obj.get("instagram"))
         obj["twitter"] = process_link(obj.get("twitter"))
         obj["socials"] = {
-            "website": obj["links"][:1],
+            "website": next(iter(obj["links"] or []), ""),
             "twitter": obj["twitter"],
             "instagram": obj["instagram"],
         }

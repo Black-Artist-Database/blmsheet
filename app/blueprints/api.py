@@ -38,11 +38,14 @@ def entry_list():
 
         if request.args.get('genre'):
             entries = entries.where('broadgenre', '==', request.args.get('genre'))
-        if request.args.get('location'):  # firestore only allows a single `array_contains` in a query
+        if request.args.get('location'):
             entries = entries.where('location', '==', request.args.get('location'))
 
         for field in request.args:
-            if field in api_blueprint.config["creative_headers"]:
+            if field == "subs":
+                # NB: firestore only allows a single `array_contains` in a query
+                entries = entries.where(field, 'array_contains', request.args[field])
+            elif field in api_blueprint.config["creative_headers"]:
                 entries = entries.where(field, '==', request.args[field])
 
         results = [entry.to_dict() for entry in entries.get()]
