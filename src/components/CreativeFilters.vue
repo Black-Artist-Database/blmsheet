@@ -109,6 +109,9 @@ export default {
             this.professionsData = response.data
             this.$emit('loading', false)
         })
+        .catch(() => {
+          this.$emit('loading', false)
+        })
     },
     fetchSubProfessions(){
         this.$emit('loading', true)
@@ -117,18 +120,27 @@ export default {
             this.subProfessionsData = response.data
             this.$emit('loading', false)
         })
+        .catch(() => {
+          this.$emit('loading', false)
+        })
     },
     fetchCities(){
         axios.get('/api/filters?db=creatives&name=city')
         .then((response) => (
             this.citiesData = response.data
         ))
+        .catch(() => {
+          this.$emit('loading', false)
+        })
     },
     fetchCountries(){
         axios.get('/api/filters?db=creatives&name=country')
         .then((response) => (
             this.countriesData = response.data
         ))
+        .catch(() => {
+          this.$emit('loading', false)
+        })
     },
     shuffleRandom(){
       this.$parent.fetchRandom();
