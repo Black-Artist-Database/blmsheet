@@ -21,7 +21,7 @@
         <div class="card-body">
           <transition name="fade">
             <div class="transition-body" v-if="!displayCopy" key="infos">
-              <h6 class="card-title mb-0">{{ name }}</h6>
+              <h6 class="card-title mb-0"><a :href="link" target="_blank">{{ name }}</a></h6>
               <p class="profession mb-0">{{profession}}</p>
               <p class="mt-0 subprofession mb-0" :class="{'long': subprofession.join(', ').length > 28}" @mouseover="setTransition" @mouseleave="reset">
                 <span v-if="subprofession.length > 0">{{ subprofession.join(', ') }}</span>
@@ -41,11 +41,11 @@
                   <img src="@/assets/creatives/twitter.svg" alt="twitter">
                 </a>
               </div>
-              <a class="copy-button" @click="displayCopy = true" v-if="headline">copy</a>
+              <a class="copy-button" @click="displayCopy = true" v-if="headline"><img src="@/assets/creatives/copy.svg"/></a>
             </div>
             <div class="transition-body copy" v-else key="copy">
               <p class="headline">{{ headline }}</p>
-              <a class="back-button" @click="displayCopy = false">back</a>
+              <a class="back-button" @click="displayCopy = false"><img src="@/assets/creatives/copy.svg"/></a>
             </div>
           </transition>
         </div>
@@ -66,7 +66,8 @@ export default {
       website: String,
       instagram: String,
       twitter: String,
-      headline: String
+      headline: String,
+      link: String
     },
     computed: {
       image(){
@@ -170,16 +171,29 @@ export default {
 
   .copy-button {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 10px;
     cursor: pointer;
+    img {
+      width: 30px;
+      &:hover {
+        filter: invert(58%) sepia(64%) saturate(5723%) hue-rotate(130deg) brightness(96%) contrast(90%);
+      }
+    }
   }
 
   .back-button {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 10px;
     cursor: pointer;
+    img {
+      transform: rotate(180deg);
+      width: 30px;
+      &:hover {
+        filter: invert(58%) sepia(64%) saturate(5723%) hue-rotate(130deg) brightness(96%) contrast(90%);
+      }
+    }
   }
 
   // .badge {
@@ -201,6 +215,9 @@ export default {
 
   .card-title {
     text-transform: uppercase;
+    a {
+      color: #0daa6c;
+    }
   }
 
   .image-wrapper{
@@ -234,30 +251,18 @@ export default {
   .profession {
     text-transform: uppercase;
     text-align: center;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: normal;
     margin-top: 5px;
 
   }
 
-  .subtooltip {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 20px;
-    background-color: rgba(255,255,255, 1);
-    border-radius: 3px;
-    width: 100%;
-    &:hover {
-      display: block;
-    }
-  }
   .subprofession {
     position: relative;
     text-transform: uppercase;
     text-align: center;
     font-size: 12px;
-    font-weight:bold;
+    font-weight: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -292,7 +297,7 @@ export default {
   .location-genre {
     text-transform: uppercase;
     text-align: center;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 65%;;
   }
 

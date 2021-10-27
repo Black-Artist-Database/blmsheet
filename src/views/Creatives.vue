@@ -26,8 +26,8 @@
             :instagram="item.socials.instagram"
             :twitter="item.socials.twitter"
             :headline="item.headline"
+            :link="item.links.length > 0 ? item.links[0] : ''"
           />
-          
         </div>
       </div>
     </div>

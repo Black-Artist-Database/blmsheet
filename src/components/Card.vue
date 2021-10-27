@@ -22,7 +22,7 @@
         </span>
         </a>
         <div class="card-body">
-            <h6 class="card-title mb-0">{{ name }}</h6>
+            <h6 class="card-title mb-0"><a :href="link" target="_blank">{{ name }</a></h6>
             <p class="mt-0 location-genre mb-0"><small>{{location}}</small></p>
             <p class="mt-0 location-genre">
               <small>
@@ -32,7 +32,7 @@
               </small> 
             </p>
             <div class="vendors">
-              <a :href=link target="_blank" v-if="link">
+              <a :href="link" target="_blank" v-if="link">
                 <img src="@/assets/vendors/bandcamp.svg" alt="Bandcamp">
               </a>
               <a :href="beatport + '?ref=BAD'" target="_blank" v-if="beatport">
