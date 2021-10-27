@@ -22,7 +22,7 @@
         </span>
         </a>
         <div class="card-body">
-            <h6 class="card-title mb-0"><a :href="link" target="_blank">{{ name }</a></h6>
+            <h6 class="card-title mb-0"><a :href="link" target="_blank">{{ name }}</a></h6>
             <p class="mt-0 location-genre mb-0"><small>{{location}}</small></p>
             <p class="mt-0 location-genre">
               <small>
