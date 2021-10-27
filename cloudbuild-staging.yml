@@ -21,5 +21,5 @@ steps:
   - 'managed'
   - '--allow-unauthenticated'
   - '--update-env-vars'
-  - 'SHEET_ID=1OIUBp4kFxmpWJihhq6WLwJQR1Am4DsD59bEYlJZxeGY,TAB_ID=Database test [DO NOT DELETE],START_ROW=1,DB_NAME=entries-staging,PROJECT_ID=$PROJECT_ID,FLASK_ENV=development'
+  - 'ARTIST_SHEET_ID=1OIUBp4kFxmpWJihhq6WLwJQR1Am4DsD59bEYlJZxeGY,ARTIST_TAB_ID=Database phase 2 [DO NOT DELETE],ARTIST_START_ROW=1,ARTIST_DB_NAME=entries-staging,CREATIVE_SHEET_ID=11xvRHdQomN6bBEJiBGbyKiEbTNikUQoLx0keaXx_MwU,CREATIVE_TAB_ID=Original Sheet,CREATIVE_START_ROW=3,CREATIVE_DB_NAME=creatives-staging,PROJECT_ID=$PROJECT_ID,FLASK_ENV=development'
   waitFor: ['build', 'push']

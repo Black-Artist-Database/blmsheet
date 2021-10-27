@@ -35,11 +35,14 @@
               <a :href=link target="_blank" v-if="link">
                 <img src="@/assets/vendors/bandcamp.svg" alt="Bandcamp">
               </a>
+              <a :href="beatport + '?ref=BAD'" target="_blank" v-if="beatport">
+                <img src="@/assets/vendors/beatport.svg" alt="Beatport" class="vendor-beatport">
+              </a>
               <a :href="junorecord + '?ref=BAD'" target="_blank" v-if="junorecord">
-                <img src="@/assets/vendors/juno.svg" alt="Bandcamp">
+                <img src="@/assets/vendors/juno.svg" alt="Juno">
               </a>
               <a :href="junodownload + '?ref=BAD'" target="_blank" v-if="junodownload">
-                <img src="@/assets/vendors/junodownload.svg" alt="Bandcamp">
+                <img src="@/assets/vendors/junodownload.svg" alt="Juno Download">
               </a>
             </div>
 
@@ -56,6 +59,7 @@ export default {
         link: String,
         junorecord: String,
         junodownload: String,
+        beatport: String,
         artwork: String,
         type: String,
         location: String,
@@ -234,6 +238,9 @@ export default {
       max-width:100px;
       &:hover {
         filter: invert(58%) sepia(64%) saturate(5723%) hue-rotate(130deg) brightness(96%) contrast(90%);
+      }
+      &.vendor-beatport {
+        max-width:90px;
       }
     }
   }
