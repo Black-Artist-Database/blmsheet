@@ -223,6 +223,7 @@ def process_creative_row(row: tuple):
             "instagram": obj["instagram"],
         }
         obj["image"] = process_link(obj.get("image"))
+        obj["contact"] = process_email(obj.get("contact"))
     except ProcessingError as e:
         current_app.logger.warn(f'Processing row {row} failed (not saved): {str(e)}')
         return
@@ -267,7 +268,7 @@ def get_broad_values_from_sheet():
         service = build('sheets', 'v4', credentials=credentials)
     sheet = service.spreadsheets()
     sheet_range = f"{os.environ.get('LISTS_TAB_ID', 'Lists')}!A2:C"
-    result = sheet.values().get(spreadsheetId=os.environ['SHEET_ID'],
+    result = sheet.values().get(spreadsheetId=os.environ['ARTIST_SHEET_ID'],
                                 range=sheet_range).execute()
 
     genres, locations = tee(result.get('values', []))

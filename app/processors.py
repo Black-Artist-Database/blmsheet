@@ -11,6 +11,14 @@ class ProcessingError(Exception):
     pass
 
 
+def process_email(value: str):
+    """
+    -> ""
+    Strips email data from an entry.
+    """
+    return ""
+
+
 def process_link(url):
     if "bandcamp" in url:
         return process_bandcamp(url)
