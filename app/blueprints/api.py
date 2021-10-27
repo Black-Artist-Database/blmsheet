@@ -102,7 +102,7 @@ def filter_set():
                 else:
                     results.add(result.strip())
 
-        results = sorted(list(results))
+        results = sorted(list((r for r in results if r)))
         cache.set(cache_key, results, timeout=60 * 60 * 6)
     return jsonify(results)
 
