@@ -2,10 +2,11 @@ import re
 from urllib.parse import urlparse
 
 
-bandcamp_url = re.compile("([a-zA-Z0-9]+\.bandcamp\.com)")
-mixcloud_url = re.compile("(mixcloud\.com/[a-zA-Z0-9/-]+)")
-instagram_url = re.compile("(instagram\.com/[a-zA-Z0-9\._-]+)")
-twitter_url = re.compile("(twitter\.com/[a-zA-Z0-9\._-]+)")
+bandcamp_re = re.compile("([a-zA-Z0-9]+\.bandcamp\.com)")
+mixcloud_re = re.compile("([Mm]ixcloud\.com/[a-zA-Z0-9/-]+)")
+instagram_re = re.compile("([Ii]nstagram\.com/[a-zA-Z0-9\._-]+)")
+twitter_re = re.compile("([Tt]witter\.com/[a-zA-Z0-9\._-]+)")
+matchers = [bandcamp_re, mixcloud_re, instagram_re, twitter_re]
 
 
 class ProcessingError(Exception):
@@ -23,62 +24,18 @@ def process_email(value: str):
 def process_link(url):
     if not url:
         return ""
-    url = url.strip().replace('"', '')
-    url = urlparse(url)._replace(scheme="https").geturl()
 
-    if "bandcamp" in parsed.netloc:
-        return process_bandcamp(url)
-    elif "mixcloud" in parsed.netloc:
-        return process_mixcloud(url)
-    elif "instagram" in parsed.netloc:
-        return process_instagram(url)
-    elif "twitter" in parsed.netloc:
-        return process_twitter(url)
-    return url
+    url = url.strip().replace('"', '')
+
+    for matcher in matchers:
+        if (match := matcher.search(url)) is not None:
+            return f"https://{match.group(1)}"
+
+    return urlparse(url)._replace(scheme="https").geturl()
 
 
 def process_links(value: str):
     return [process_link(url) for url in value.split() if url]
-
-
-def process_instagram(value: str):
-    """
-    -> https://instagram.com/{profile}
-    """
-    match = instagram_url.search(value)
-    if match is not None:
-        value = f"https://{match.group(1)}"
-    return value
-
-
-def process_twitter(value: str):
-    """
-    -> https://twitter.com/{profile}
-    """
-    match = twitter_url.search(value)
-    if match is not None:
-        value = f"https://{match.group(1)}"
-    return value
-
-
-def process_bandcamp(value: str):
-    """
-    www.{artist}.bandcamp.com -> https://{artist}.bandcamp.com
-    """
-    match = bandcamp_url.search(value)
-    if match is not None:
-        value = f"https://{match.group(1)}"
-    return value
-
-
-def process_mixcloud(value: str):
-    """
-     -> https://mixcloud.com/{artist}/[{mix}/]
-    """
-    match = mixcloud_url.search(value)
-    if match is not None:
-        value = f"https://{match.group(1)}"
-    return value
 
 
 def process_name(value: str):
@@ -104,7 +61,7 @@ def process_sub_professions(value: str):
 
 
 def process_link_in_location(value: str):
-    location_match = bandcamp_url.search(value)
+    location_match = bandcamp_re.search(value)
     if location_match is not None:
         raise ProcessingError("Row has bandcamp value in `location`")
 
