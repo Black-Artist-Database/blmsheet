@@ -21,6 +21,8 @@ def process_email(value: str):
 
 
 def process_link(url):
+    if not url:
+        return ""
     url = url.strip().replace('"', '')
     url = urlparse(url)._replace(scheme="https").geturl()
 
