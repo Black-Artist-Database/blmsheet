@@ -19,35 +19,35 @@
         </div>
         </a>
         <div class="card-body">
-            <h6 class="card-title mb-0">{{ name }}</h6>
-            <p class="profession mb-0">{{profession}}</p>
-            <p class="mt-0 subprofession mb-0">
-
-              <span v-if="subprofession.length > 0">{{ subprofession.join(', ') }}</span>
-              <!-- <span v-for="(sub, index) in subprofession" :key="index">
-                {{sub}}<span v-if="index < subprofession.length - 1">,</span>
-              </span> -->
+          <transition name="fade">
+            <div class="transition-body" v-if="!displayCopy" key="infos">
+              <h6 class="card-title mb-0">{{ name }}</h6>
+              <p class="profession mb-0">{{profession}}</p>
+              <p class="mt-0 subprofession mb-0" :class="{'long': subprofession.join(', ').length > 28}" @mouseover="setTransition" @mouseleave="reset">
+                <span v-if="subprofession.length > 0">{{ subprofession.join(', ') }}</span>
+              </p>
+              <p class="mt-0 location-genre mb-0">{{city}}</p>
+              <p class="mt-0 location-genre mb-0">{{country}}</p>
               
-            </p>
-            <span class="subtooltip" v-if="subprofession.length > 0">
-              {{ subprofession.join(', ') }}
-            </span>
-            <p class="mt-0 location-genre mb-0"><small>{{country}}</small></p>
-            <p class="mt-0 location-genre mb-0"><small>{{city}}</small></p>
-            
-            <div class="vendors">
-              <a :href="instagram" target="_blank">
-                <img src="@/assets/creatives/instagram.svg" alt="instagram">
-              </a>
-              <a :href="website" target="_blank">
-                <img src="@/assets/creatives/website.svg" alt="website">
-              </a>
-              
-              <a :href="twitter" target="_blank">
-                <img src="@/assets/creatives/twitter.svg" alt="twitter">
-              </a>
+              <div class="vendors">
+                <a :href="instagram" target="_blank" v-if="instagram">
+                  <img src="@/assets/creatives/instagram.svg" alt="instagram">
+                </a>
+                <a :href="website" target="_blank" v-if="website">
+                  <img src="@/assets/creatives/website.svg" alt="website">
+                </a>
+                
+                <a :href="twitter" target="_blank" v-if="twitter">
+                  <img src="@/assets/creatives/twitter.svg" alt="twitter">
+                </a>
+              </div>
+              <a class="copy-button" @click="displayCopy = true" v-if="headline">copy</a>
             </div>
-
+            <div class="transition-body copy" v-else key="copy">
+              <p class="headline">{{ headline }}</p>
+              <a class="back-button" @click="displayCopy = false">back</a>
+            </div>
+          </transition>
         </div>
     </div>
 </div>
@@ -65,7 +65,8 @@ export default {
       country: String,
       website: String,
       instagram: String,
-      twitter: String
+      twitter: String,
+      headline: String
     },
     computed: {
       image(){
@@ -99,6 +100,24 @@ export default {
 
         return require('@/assets/placeholders/01.jpg');
       }
+    },
+    data() {
+      return {
+        displayCopy: false,
+        hover: false,
+      }
+    },
+    methods: {
+      setTransition(e) {
+        if (!this.hover) {
+          this.hover = true
+          e.srcElement.style['transition'] = `transform ${Math.max(8, (this.subprofession.join(', ').length - 28) / 10 * 2)}s linear`;
+        }
+      },
+      reset(e) {
+        e.srcElement.style['transition'] = 'none'
+        this.hover = false
+      }
     }
 }
 </script>
@@ -107,16 +126,31 @@ export default {
 
   .card-body {
     position: relative;
-    min-height: 190px;
+    height: 190px;
     padding-bottom: 40px;
+    overflow: hidden;
   }
 
-  .bc-link {
+  .transition-body {
     position: absolute;
-    bottom: 10px;
+    top: 20px;
     left: 0;
-    right: 0;
-    margin: auto;
+    height: calc(100% - 20px);
+    width: 100%;
+    
+    &.copy {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  .headline {
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    ;
   }
 
   .card {
@@ -132,6 +166,20 @@ export default {
   h6 {
     color:#0daa6c;
     text-decoration:underline;
+  }
+
+  .copy-button {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .back-button {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    cursor: pointer;
   }
 
   // .badge {
@@ -215,12 +263,19 @@ export default {
     white-space: nowrap;
     height: 20px;
     width: 100%;
-    span {
-      cursor: pointer;
+    margin-bottom: 10px;
+    &.long {
+      span {
+        cursor: pointer;
+        padding-left: 10px;
+      }
     }
-    &:hover + .subtooltip {
-      display: block;
     
+    &.long:hover {
+      overflow: visible;
+      text-overflow: none;
+      transition: transform 10s ease;
+      transform: translateX(-100%);
     }
 
   }
@@ -237,6 +292,8 @@ export default {
   .location-genre {
     text-transform: uppercase;
     text-align: center;
+    font-weight: 500;
+    font-size: 65%;;
   }
 
 
@@ -270,9 +327,11 @@ export default {
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
+
     a {
       display:block;
       margin: 0 5px;
+      cursor: pointer;
     }
     img {
       width:30px;
@@ -281,4 +340,16 @@ export default {
       }
     }
   }
+
+
+.fade-enter-active {
+  transition: opacity .3s ease;
+}
+.fade-leave-active {
+  transition: opacity .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.fade-enter, .fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 </style>

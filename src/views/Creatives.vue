@@ -22,12 +22,12 @@
             :city="item.city"
             :country="item.country"
             :imageUrl="item.image"
-          />
-          <!--
             :website="item.socials.website"
             :instagram="item.socials.instagram"
             :twitter="item.socials.twitter"
-            -->
+            :headline="item.headline"
+          />
+          
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@ export default {
       subprofession: '',
       city: '',
       country: '',
-      first_letter: 'a'
+      first_letter: null
     },
   }),
   watch: {
@@ -88,7 +88,7 @@ export default {
   methods: {
     fetchList(){
         this.loading = true
-        axios.get('/api/list?db=creatives-staging', { params: this.filters })
+        axios.get('/api/list?db=creatives', { params: this.filters })
         .then((response) => {
             this.loading = false
             if (response.data.maintenance) {
@@ -101,7 +101,7 @@ export default {
     fetchRandom(){
         this.filters.name = ''
         this.loading = true
-        axios.get('/api/list?db=creatives-staging?random=12&timestamp='+new Date().getSeconds())
+        axios.get('/api/list?db=creatives&random=12&timestamp='+new Date().getSeconds())
         .then((response) => {
             this.loading = false
             if (response.data.maintenance) {

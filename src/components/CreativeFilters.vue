@@ -104,7 +104,7 @@ export default {
   methods: {
     fetchProfessions(){
         this.$emit('loading', true)
-        axios.get('/api/professions')
+        axios.get('/api/filters?db=creatives&name=profession')
         .then((response) => {
             this.professionsData = response.data
             this.$emit('loading', false)
@@ -112,20 +112,20 @@ export default {
     },
     fetchSubProfessions(){
         this.$emit('loading', true)
-        axios.get('/api/subprofessions')
+        axios.get('/api/filters?db=creatives&name=subs')
         .then((response) => {
             this.subProfessionsData = response.data
             this.$emit('loading', false)
         })
     },
     fetchCities(){
-        axios.get('/api/cities')
+        axios.get('/api/filters?db=creatives&name=city')
         .then((response) => (
             this.citiesData = response.data
         ))
     },
     fetchCountries(){
-        axios.get('/api/countries')
+        axios.get('/api/filters?db=creatives&name=country')
         .then((response) => (
             this.countriesData = response.data
         ))
