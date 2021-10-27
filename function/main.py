@@ -40,7 +40,7 @@ def scrape_and_update_bandcamp_details(event, context):
 
 @firestore.transactional
 def update_database(transaction, entry_key, entry):
-    db_name = os.environ['DB_NAME']
+    db_name = os.environ['ARTIST_DB_NAME']
     entry_ref = db.collection(db_name).document(document_id=entry_key)
 
     try:

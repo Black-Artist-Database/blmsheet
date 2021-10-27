@@ -11,6 +11,8 @@ from google.auth import compute_engine
 from google.cloud import firestore
 from googleapiclient.discovery import build
 
+from app.processors import *
+
 
 cron_blueprint = Blueprint(name='cron',
                            import_name=__name__,
@@ -30,7 +32,7 @@ def auth_check(func):
 @auth_check
 def remove_old_entries():
     db = cron_blueprint.config['DB']
-    db_name = os.environ['DB_NAME']
+    db_name = request.args.get('db') or os.environ['ARTIST_DB_NAME']
 
     entries = db.collection(db_name)
     entries = entries.where('timestamp', '<', datetime.utcnow() - timedelta(hours=24))
@@ -41,14 +43,43 @@ def remove_old_entries():
     return 'OK', 200
 
 
+@cron_blueprint.route('/sync-broad', methods=['POST'])
+@auth_check
+def sync_db_with_broad_list():
+    current_app.logger.debug('Broad list sync requested...')
+    get_broad_values_from_sheet()
+    return 'OK', 200
+
+
 @cron_blueprint.route('/sync', methods=['POST'])
 @auth_check
-def sync_db_with_sheet():
-    current_app.logger.debug('Sync requested...')
-    get_broad_values_from_sheet()
-    values = get_values_from_sheet()
-    current_app.logger.debug(f'Adding {len(values)} to database...')
-    set_values_to_database(values)
+def sync_db_with_artist_sheet():
+    db_name = os.environ['ARTIST_DB_NAME']
+    current_app.logger.debug('Artist sync requested...')
+    values = get_values_from_sheet(
+        os.environ['ARTIST_SHEET_ID'],
+        os.environ['ARTIST_TAB_ID'],
+        os.environ['ARTIST_START_ROW'],
+        process_func=process_artist_row,
+    )
+    current_app.logger.debug(f'Adding {len(values)} to {db_name} database...')
+    set_values_to_database(db_name, values)
+    return 'OK', 200
+
+
+@cron_blueprint.route('/sync-creatives', methods=['POST'])
+@auth_check
+def sync_db_with_creatives_sheet():
+    db_name = os.environ['CREATIVE_DB_NAME']
+    current_app.logger.debug('Creatives sync requested...')
+    values = get_values_from_sheet(
+        os.environ['CREATIVE_SHEET_ID'],
+        os.environ['CREATIVE_TAB_ID'],
+        os.environ['CREATIVE_START_ROW'],
+        process_func=process_creative_row,
+    )
+    current_app.logger.debug(f'Adding {len(values)} to {db_name} database...')
+    set_values_to_database(db_name, values)
     return 'OK', 200
 
 
@@ -56,7 +87,7 @@ def sync_db_with_sheet():
 @auth_check
 def scrape_bandcamp():
     db = cron_blueprint.config['DB']
-    db_name = os.environ['DB_NAME']
+    db_name = os.environ['ARTIST_DB_NAME']
     publisher = cron_blueprint.config['PUBLISHER']
     topic_name = f'projects/{os.environ["PROJECT_ID"]}/topics/{os.environ["SCRAPE_TOPIC"]}'
 
@@ -73,12 +104,11 @@ def scrape_bandcamp():
     return 'OK', 200
 
 
-def set_values_to_database(values: List[dict]):
+def set_values_to_database(db_name: str, values: List[dict]):
     """
     Perform batches of writes to a Firestore database.
     """
     db = cron_blueprint.config['DB']
-    db_name = os.environ['DB_NAME']
     # Firestore limit of operations (500: 2 per row: 1 write; 1 timestamp)
     args = [iter(values)] * 250
     new_entries = 0
@@ -92,10 +122,10 @@ def set_values_to_database(values: List[dict]):
                     # Create something datastore friendly as a unique id (key)
                     # NB: we could auto generate this but we want to replace existing
                     name = entry['name'].strip().replace('/', '-').split(' ')
-                    location = entry['location'].replace('/', '-').strip()
-                    key = str('-'.join(list(name) + [location])).lower()
+                    country = entry['country'].replace('/', '-').strip()
+                    key = str('-'.join(list(name) + [country])).lower()
                 except KeyError as e:
-                    current_app.logger.warn(f'Entry missing {e} value (not saved): {entry}')
+                    current_app.logger.warn(f'{db_name} entry missing {e} value (not saved): {entry}')
                     continue
                 
                 entry_ref = db.collection(db_name).document(key)
@@ -106,11 +136,14 @@ def set_values_to_database(values: List[dict]):
                 # Check for existing entry matching our key in the list
                 if (existing := entry_ref.get()).exists:
                     old = existing.to_dict()
-                    # Combine old and new unique tags 
-                    genres = (old.get('genre_tags', []) + entry['genre_tags'])
-                    locations = (old.get('location_tags', []) + entry['location_tags'])
-                    entry['genre_tags'] = list(set(o.replace('#', '') for o in genres if o))
-                    entry['location_tags'] = list(set(o for o in locations if o))
+                    # Combine old and new unique tags
+                    try:
+                        genres = (old.get('genre_tags', []) + entry['genre_tags'])
+                        locations = (old.get('location_tags', []) + entry['location_tags'])
+                        entry['genre_tags'] = list(set(o.replace('#', '') for o in genres if o))
+                        entry['location_tags'] = list(set(o for o in locations if o))
+                    except KeyError:
+                        pass
                     # Update existing entry
                     batch.update(entry_ref, entry)
                 else:
@@ -123,37 +156,10 @@ def set_values_to_database(values: List[dict]):
 
         # Finished processing a batch
         batch.commit()
-    current_app.logger.info(f'Sync to database complete: {total_entries} entries from Sheet ({new_entries} new)')
+    current_app.logger.info(f'Sync to {db_name} database complete: {total_entries} entries from Sheet ({new_entries} new)')
 
 
-def get_values_from_sheet():
-    """
-    Use the Google Sheets API to fetch and process rows of data.
-
-    Returns:
-        a list of dicts mapping headers to data    
-    """
-    if 'API_KEY' in os.environ:
-        service = build('sheets', 'v4', developerKey=os.environ['API_KEY'])
-    else:
-        credentials = compute_engine.Credentials()
-        service = build('sheets', 'v4', credentials=credentials)
-    sheet = service.spreadsheets()
-    # NB: if sheet headers change the capture range may have to change
-    sheet_range = f"{os.environ['TAB_ID']}!A{os.environ['START_ROW']}:N"
-    result = sheet.values().get(spreadsheetId=os.environ['SHEET_ID'],
-                                range=sheet_range).execute()
-
-    # NB: sheet headers may change!
-    headers = ['name', 'country', 'city', 'state', 'type', 'location', 'broadgenre', 'link', 'beatport', 'junodownload', 'junorecord', 'soundcloud', 'genre', 'notes']
-    return [
-        row
-        for value in result.get('values', [])
-        if (row := process_row(value, headers)) is not None
-    ]
-
-
-def process_row(row: tuple, headers_in_order: list):
+def process_artist_row(row: tuple):
     """
     Process and map row data returned from Sheets API.
 
@@ -163,38 +169,91 @@ def process_row(row: tuple, headers_in_order: list):
     """
     obj = {}
 
-    for i, field in enumerate(headers_in_order):
+    for i, field in enumerate(cron_blueprint.config["artist_headers"]):
         try:
             obj[field] = row[i]
         except IndexError:
             current_app.logger.warn(f"Row has an empty value for {field}: {row}")
             obj[field] = ''  # some fields may be empty which truncates the row data
 
-    # fixes issues where submissions mistakenly type e.g.: www.bandname.bandcamp.com
-    bandcamp_url = re.compile("www\.([a-zA-Z0-9]+\.bandcamp\.com)")
-    link_match = bandcamp_url.search(obj["link"])
-    if link_match is not None:
-        obj["link"] = f"https://{link_match.group(1)}"
-
-    # reports issues with bandcamp urls being in location column
-    location_match = bandcamp_url.search(obj["location"])
-    if location_match is not None:
-        current_app.logger.warn(f"Row has bandcamp value in location (not saved): {row}")
-        return
-
     try:
-        obj['name_first_letter'] = obj['name'][0].lower() if obj['name'][0].isalpha() else '#'
-    except IndexError:
-        current_app.logger.warn(f'Row missing name value (not saved): {row}')
+        obj["name"] = process_name(obj["name"])
+        obj['name_first_letter'] = process_name_first_letter(obj["name"])
+        # fixes issues where submissions mistakenly type e.g.: www.bandname.bandcamp.com
+        obj["link"] = process_link(obj["link"])
+        # reports issues with bandcamp urls being in location column
+        process_link_in_location(obj["location"])
+        locations = process_location_concat(obj["city"], obj["state"], obj["country"], obj["location"])
+        obj['location_tags'] = process_location_tags(locations)
+        obj['genre_tags'] = process_genre_tags(obj.get('genre', ''))
+    except ProcessingError as e:
+        current_app.logger.warn(f'Processing row {row} failed (not saved): {str(e)}')
         return
-
-    # Normalise genres and locations, allow for separation with slashes rather than columns
-    locations = ', '.join(e.replace('/', ',') for e in [obj["city"], obj["state"], obj["country"], obj["location"]] if e)
-    genres = obj.get('genre', '').replace('#', ',').replace('/', ',').split(',')
-    obj['genre_tags'] = [genre.lower().strip() for genre in genres if genre]
-    obj['location_tags'] = [part.lower().strip() for part in locations.split(',') if part]
 
     return obj
+
+
+def process_creative_row(row: tuple):
+    """
+    Process and map row data returned from Sheets API.
+
+    Returns:
+        mapping of row data to headers
+        None if `name` data missing from row
+    """
+    obj = {}
+
+    for i, field in enumerate(cron_blueprint.config["creative_headers"]):
+        try:
+            obj[field] = row[i]
+        except IndexError:
+            current_app.logger.warn(f"Row has an empty value for {field}: {row}")
+            obj[field] = ''  # some fields may be empty which truncates the row data
+
+    try:
+        obj["name"] = process_name(obj["name"])
+        obj['name_first_letter'] = process_name_first_letter(obj["name"])
+        obj["subs"] = process_sub_professions(obj.get("subs"))
+        obj["links"] = process_links(obj.get("links"))
+        obj["instagram"] = process_link(obj.get("instagram"))
+        obj["twitter"] = process_link(obj.get("twitter"))
+        obj["socials"] = {
+            "website": next(iter(obj["links"] or []), ""),
+            "twitter": obj["twitter"],
+            "instagram": obj["instagram"],
+        }
+        obj["image"] = process_link(obj.get("image"))
+    except ProcessingError as e:
+        current_app.logger.warn(f'Processing row {row} failed (not saved): {str(e)}')
+        return
+
+    return obj
+
+
+def get_values_from_sheet(sheet_id: str, tab_id: str, start_row: str, process_func):
+    """
+    Use the Google Sheets API to fetch and process rows of data.
+
+    Returns:
+        a list of dicts mapping headers to data
+    """
+    if 'API_KEY' in os.environ:
+        service = build('sheets', 'v4', developerKey=os.environ['API_KEY'])
+    else:
+        credentials = compute_engine.Credentials()
+        service = build('sheets', 'v4', credentials=credentials)
+    sheet = service.spreadsheets()
+    # NB: if sheet headers change the capture range may have to change
+    sheet_range = f"{tab_id}!A{start_row}:N"
+    result = sheet.values().get(spreadsheetId=sheet_id,
+                                range=sheet_range).execute()
+
+    # NB: sheet headers may change!
+    return [
+        row
+        for value in result.get('values', [])
+        if (row := process_func(value)) is not None
+    ]
 
 
 def get_broad_values_from_sheet():
