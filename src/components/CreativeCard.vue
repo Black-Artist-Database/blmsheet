@@ -70,9 +70,9 @@ export default {
     },
     computed: {
       image(){
-        // if (this.imageUrl && this.imageUrl.length > 1) {
-        //     return this.imageUrl
-        // } 
+        if (this.imageUrl && this.imageUrl.length > 1) {
+            return this.imageUrl
+        } 
         var randomFileNumber = parseInt(Math.floor(Math.random() * 10) + 1);
         
         switch(randomFileNumber) {
