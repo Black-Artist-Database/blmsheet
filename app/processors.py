@@ -1,4 +1,5 @@
 import re
+from urllib.parse import urlparse
 
 
 bandcamp_url = re.compile("([a-zA-Z0-9]+\.bandcamp\.com)")
@@ -20,26 +21,28 @@ def process_email(value: str):
 
 
 def process_link(url):
-    if "bandcamp" in url:
+    url = url.strip().replace('"', '')
+    url = urlparse(url)._replace(scheme="https").geturl()
+
+    if "bandcamp" in parsed.netloc:
         return process_bandcamp(url)
-    elif "mixcloud" in url:
+    elif "mixcloud" in parsed.netloc:
         return process_mixcloud(url)
-    elif "instagram" in url:
+    elif "instagram" in parsed.netloc:
         return process_instagram(url)
-    elif "twitter" in url:
+    elif "twitter" in parsed.netloc:
         return process_twitter(url)
     return url
 
 
 def process_links(value: str):
-    return [process_link(url) for url in value.split()]
+    return [process_link(url) for url in value.split() if url]
 
 
 def process_instagram(value: str):
     """
     -> https://instagram.com/{profile}
     """
-    value = value.strip().replace('"', '')
     match = instagram_url.search(value)
     if match is not None:
         value = f"https://{match.group(1)}"
@@ -50,7 +53,6 @@ def process_twitter(value: str):
     """
     -> https://twitter.com/{profile}
     """
-    value = value.strip().replace('"', '')
     match = twitter_url.search(value)
     if match is not None:
         value = f"https://{match.group(1)}"
@@ -61,7 +63,6 @@ def process_bandcamp(value: str):
     """
     www.{artist}.bandcamp.com -> https://{artist}.bandcamp.com
     """
-    value = value.strip().replace('"', '')
     match = bandcamp_url.search(value)
     if match is not None:
         value = f"https://{match.group(1)}"
@@ -72,7 +73,6 @@ def process_mixcloud(value: str):
     """
      -> https://mixcloud.com/{artist}/[{mix}/]
     """
-    value = value.strip().replace('"', '')
     match = mixcloud_url.search(value)
     if match is not None:
         value = f"https://{match.group(1)}"
