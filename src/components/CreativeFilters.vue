@@ -11,7 +11,7 @@
       <path fill-rule="evenodd" d="M0 12a.5.5 0 0 0 .5.5h2c3.053 0 4.564-2.258 5.856-4.226l.08-.123c.636-.97 1.224-1.865 1.932-2.539C11.086 4.93 11.906 4.5 13 4.5h2a.5.5 0 0 0 0-1h-2c-1.406 0-2.461.57-3.321 1.388-.795.755-1.441 1.742-2.055 2.679l-.105.159C6.186 9.758 4.947 11.5 2.5 11.5h-2a.5.5 0 0 0-.5.5z"/>
     </svg>
     </a>
-     <router-link to="/add" class="btn btn-sml btn-grey">
+     <router-link to="/addcreative" class="btn btn-sml btn-grey">
      Add Submission
     </router-link>
     </div>
