@@ -31,7 +31,7 @@
 
     <div class="row mt-5 corners">    
       <div class="col-md-8 text-left custom-bullet">
-        <h3 class="mb-4 h4">[ What the donation supports ]</h3>
+        <h3 class="mb-4 h4">[&nbsp;What the donation supports&nbsp;]</h3>
         <div class="content">
           <img src="../assets/about/corner.png" class="corner bottom-right" />
           <img src="../assets/about/corner.png" class="corner top-left" />
