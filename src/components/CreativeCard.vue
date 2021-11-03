@@ -246,6 +246,8 @@ export default {
     right: 0;
     color: white;
     text-align: center;
+    height: 100%;
+    object-fit: cover;
   }
 
   .profession {
