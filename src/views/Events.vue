@@ -22,7 +22,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" style="opacity:0.3;">
                     <a href="https://ra.co/pre/1459467" target="_blank" class="event">
                         <img src="@/assets/events/colour-factory-01-10-21.png" alt="A Celebration Of Black Culture. 01/10 The Colour Factory Hackney Wick London. Tickets via events.blackartistdatabase.co">
                         <div class="info">
@@ -32,7 +32,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" style="opacity:0.3;">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_kmru.png" alt="KMRU">
                         <div class="info">
