@@ -5,7 +5,7 @@
 			<span><i/>DATABASE</span>
 			<div class="custom-dropdown database-dropdown">
 				<router-link to="/" class="" @click.native="$emit('dismissMobileMenu')"><span>-ARTIST DATABASE</span></router-link>
-				<router-link to="/creative" class="creative-link" @click.native="$emit('dismissMobileMenu')"><span>-CREATIVE DATABASE <div class="green">(BETA)</div></span></router-link>
+				<router-link to="/creative" class="creative-link" @click.native="$emit('dismissMobileMenu')"><span>-CREATIVE DATABASE</span></router-link>
 			</div>
 		</div>
 		<!-- EXPLORE -->
