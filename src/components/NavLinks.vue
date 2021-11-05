@@ -98,7 +98,7 @@
 		padding: 5px 0 5px 15px;
 		&.database-dropdown {
 			left: -11px;
-			min-width: 260px;
+			min-width: 210px;
 		}
 	}
 	a {
