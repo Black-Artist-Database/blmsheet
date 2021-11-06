@@ -2,22 +2,22 @@
     <div class="page">
         <div class="events container mt-4">
             <div class="row">
-                <div class="col-md-3" style="opacity:0.3;">
+                <div class="col-md-3">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
-                    <img src="@/assets/events/ableton_lj.png" alt="Loraine James">
-                    <div class="info">
-                        <h5>Tuesday 24th August</h5>
-                        <h2>How to turn your production into a live performance</h2>
-                        <p>Online</p>
-                    </div>
+                        <img src="@/assets/events/ableton_rm.png" alt="rRoxymore">
+                        <div class="info">
+                            <h5>Tuesday 23rd November</h5>
+                            <h2>An intro to live</h2>
+                            <p>Online</p>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-3" style="opacity:0.3;">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
-                        <img src="@/assets/events/ableton_rb.png" alt="Russell E.L. Butler">
+                        <img src="@/assets/events/ableton_kmru.png" alt="KMRU">
                         <div class="info">
-                            <h5>Tuesday 28th September</h5>
-                            <h2>Bus Processing Premasters</h2>
+                            <h5>Tuesday 26th October</h5>
+                            <h2>Field recording as a compositional tool</h2>
                             <p>Online</p>
                         </div>
                     </a>
@@ -34,25 +34,24 @@
                 </div>
                 <div class="col-md-3" style="opacity:0.3;">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
-                        <img src="@/assets/events/ableton_kmru.png" alt="KMRU">
+                        <img src="@/assets/events/ableton_rb.png" alt="Russell E.L. Butler">
                         <div class="info">
-                            <h5>Tuesday 26th October</h5>
-                            <h2>Field recording as a compositional tool</h2>
+                            <h5>Tuesday 28th September</h5>
+                            <h2>Bus Processing Premasters</h2>
                             <p>Online</p>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3 my-3">
+                <div class="col-md-3" style="opacity:0.3;">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
-                        <img src="@/assets/events/ableton_rm.png" alt="rRoxymore">
-                        <div class="info">
-                            <h5>Tuesday 23rd November</h5>
-                            <h2>An intro to live</h2>
-                            <p>Online</p>
-                        </div>
+                    <img src="@/assets/events/ableton_lj.png" alt="Loraine James">
+                    <div class="info">
+                        <h5>Tuesday 24th August</h5>
+                        <h2>How to turn your production into a live performance</h2>
+                        <p>Online</p>
+                    </div>
                     </a>
                 </div>
-
             </div>
         </div>
     </div>
@@ -61,6 +60,9 @@
 <style lang="scss" scoped>
 .page {
   // border-top:#1DA0C3 100px solid;
+}
+.col-md-3 {
+    margin-bottom: 20px;
 }
 
 p a {
