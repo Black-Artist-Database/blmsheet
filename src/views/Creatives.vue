@@ -26,7 +26,7 @@
             :instagram="item.socials.instagram"
             :twitter="item.socials.twitter"
             :headline="item.headline"
-            :link="item.links.length > 0 ? item.links[0] : ''"
+            :link="getCreativeLink(item)"
           />
         </div>
       </div>
@@ -113,6 +113,17 @@ export default {
     },
     onPlay(bandcampId) {
       this.currentBandcampId = bandcampId
+    },
+    getCreativeLink(item) {
+      if (item.links.length > 0) {
+        return item.links[0]
+      } else {
+        if (item.socials.instagram.length > 0) {
+          return item.socials.instagram
+        } else if (item.socials.twitter.length > 0) {
+          return item.socials.twitter
+        }
+      }
     }
   }
 
