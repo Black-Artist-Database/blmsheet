@@ -31,7 +31,8 @@ def process_link(url):
         if (match := matcher.search(url)) is not None:
             return f"https://{match.group(1)}"
 
-    return urlparse(url)._replace(scheme="https").geturl()
+    # return urlparse(url)._replace(scheme="https").geturl()
+    return url
 
 
 def process_links(value: str):
