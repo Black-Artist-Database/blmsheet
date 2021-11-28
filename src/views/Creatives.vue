@@ -82,6 +82,7 @@ export default {
       }
    },
    'filters.profession': function(){
+      this.filters.subprofession = null
       this.$refs.filters_ref.fetchSubProfessions()
    },
   },
