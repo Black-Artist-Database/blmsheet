@@ -115,7 +115,7 @@ export default {
     },
     fetchSubProfessions(){
         this.$emit('loading', true)
-        axios.get('/api/filters?db=creatives&name=subs&profession=' + this.filters.profession)
+        axios.get('/api/filters?db=creatives&name=subs&profession=' + this.$parent.filters.profession)
         .then((response) => {
             this.subProfessionsData = response.data
             this.$emit('loading', false)

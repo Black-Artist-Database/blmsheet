@@ -5,7 +5,7 @@
   
       <h1 class="h3 mt-4 mb-4 bad-title">EVERYDAY IS A GOOD DAY TO COLLABORATE WITH <span>BLACK CREATIVES</span>.</h1>
   
-      <CreativeFilters :filters="filters" @loading="e => loading = e" :loading="loading"/>
+      <CreativeFilters :filters="filters" @loading="e => loading = e" :loading="loading" ref="filters_ref"/>
       
       <p v-if="maintenance && !loading" style="background: #ffffed;padding: 10px;text-align: center;max-width: 600px;margin: 20px auto 100px auto;">We’re currently running some maintenance on the database, in the meantime check out our mixes, interviews and more using the headers above!</p>
       <div class="d-flex justify-content-center" v-if="loading">
@@ -80,6 +80,9 @@ export default {
       if (this.filters.first_letter) {
         this.filters.first_letter = null
       }
+   },
+   'filters.profession': function(){
+      this.$refs.filters_ref.fetchSubProfessions()
    },
   },
   mounted(){
