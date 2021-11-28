@@ -81,6 +81,7 @@ def filter_set():
     cache_key = request.full_path
     results = cache.get(cache_key)
     name = request.args.get('name')
+    profession = request.args.get('profession')
     db_name = request.args.get('db') or os.environ['CREATIVE_DB_NAME']
 
     if name is None:
@@ -88,13 +89,12 @@ def filter_set():
         cache.set(cache_key, results, timeout=60 * 60 * 6)
 
     if results is None:
-        db = api_blueprint.config['DB']
-
-        entries = db.collection(db_name).get()
-
         results = set()
-
-        for entry in entries:
+        db = api_blueprint.config['DB']
+        entries = db.collection(db_name)
+        if profession:
+            entries = entries.where("profession", "==", profession)
+        for entry in entries.get():
             item = entry.to_dict()
             if (result := item.get(name)):
                 if isinstance(result, list):
