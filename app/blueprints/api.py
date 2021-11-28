@@ -42,11 +42,11 @@ def entry_list():
         for field, value in request.args.items():
             if not value:
                 continue
-            if field == "subs":
+            if field == "subprofession":
                 # NB: firestore only allows a single `array_contains` in a query
-                entries = entries.where(field, 'array_contains', value)
+                entries = entries.where("subs", "array_contains", value)
             elif field in api_blueprint.config["creative_headers"]:
-                entries = entries.where(field, '==', value)
+                entries = entries.where(field, "==", value)
 
         results = [entry.to_dict() for entry in entries.get()]
 
