@@ -85,6 +85,10 @@ export default {
       this.filters.subprofession = null
       this.$refs.filters_ref.fetchSubProfessions()
    },
+   'filters.country': function(){
+     this.filters.city = null
+     this.$refs.filters_ref.fetchCities()
+   }
   },
   mounted(){
     this.fetchList()

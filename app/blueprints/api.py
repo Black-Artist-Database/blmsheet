@@ -82,6 +82,7 @@ def filter_set():
     results = cache.get(cache_key)
     name = request.args.get('name')
     profession = request.args.get('profession')
+    country = request.args.get('country')
     db_name = request.args.get('db') or os.environ['CREATIVE_DB_NAME']
 
     if name is None:
@@ -92,8 +93,11 @@ def filter_set():
         results = set()
         db = api_blueprint.config['DB']
         entries = db.collection(db_name)
+        # filter the filters by profession and country
         if profession:
             entries = entries.where("profession", "==", profession)
+        if country:
+            entries = entries.where("country", "==", country)
         for entry in entries.get():
             item = entry.to_dict()
             if (result := item.get(name)):

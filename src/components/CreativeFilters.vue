@@ -125,7 +125,7 @@ export default {
         })
     },
     fetchCities(){
-        axios.get('/api/filters?db=creatives&name=city')
+        axios.get('/api/filters?db=creatives&name=city&country=' + this.$parent.filters.country)
         .then((response) => (
             this.citiesData = response.data
         ))
