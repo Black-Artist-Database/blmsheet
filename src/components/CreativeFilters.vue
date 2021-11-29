@@ -43,18 +43,18 @@
           </div>
         </div>
         <div class="input-group">
-          <select class="custom-select" v-model="filters.city" :disabled="loading">
-            <option value="">CITY</option>
-            <option v-for="city in citiesData" :value="city" :key="city">
-                {{ city }}
-            </option>
-          </select>
-        </div>
-        <div class="input-group">
           <select class="custom-select" v-model="filters.country" :disabled="loading">
             <option value="">COUNTRY</option>
             <option v-for="country in countriesData" :value="country" :key="country">
                 {{ country }}
+            </option>
+          </select>
+        </div>
+        <div class="input-group">
+          <select class="custom-select" v-model="filters.city" :disabled="loading">
+            <option value="">CITY</option>
+            <option v-for="city in citiesData" :value="city" :key="city">
+                {{ city }}
             </option>
           </select>
         </div>
