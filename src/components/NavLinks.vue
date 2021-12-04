@@ -22,7 +22,6 @@
 			<span><i/>SUPPORT</span>
 			<div class="custom-dropdown">
 				<a href="https://www.patreon.com/blackartistdatabase/" target="_blank" @click="$emit('dismissMobileMenu')"><span>-PATREON</span></a>
-				<router-link to="/pause" class="" @click.native="$emit('dismissMobileMenu')"><span>-[PAUSE]</span></router-link>
 			</div>
 		</div>
 		<!-- EVENTS -->
