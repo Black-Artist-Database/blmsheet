@@ -2,7 +2,7 @@
     <div class="page">
         <div class="events container mt-4">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 past">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_rm.png" alt="rRoxymore">
                         <div class="info">
