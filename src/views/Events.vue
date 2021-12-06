@@ -1,6 +1,8 @@
 <template>
     <div class="page">
         <div class="events container mt-4">
+        
+            <h2 class="my-3">Past Events</h2>
             <div class="row">
                 <div class="col-md-3 past">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
