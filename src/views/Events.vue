@@ -1,7 +1,18 @@
 <template>
     <div class="page">
         <div class="events container mt-4">
-        
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
+                        <img src="@/assets/events/ableton_acemo.jpg" alt="acemo">
+                        <div class="info">
+                            <h5>Tuesday 2nd February</h5>
+                            <h2>A production seminar with AceMo</h2>
+                            <p>Online</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
             <h2 class="my-3">Past Events</h2>
             <div class="row">
                 <div class="col-md-3 past">
