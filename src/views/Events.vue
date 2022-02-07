@@ -6,8 +6,38 @@
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_acemo.jpg" alt="acemo">
                         <div class="info">
-                            <h5>Tuesday 2nd February</h5>
+                            <h5>Tuesday 22nd February</h5>
                             <h2>A production seminar with AceMo</h2>
+                            <p>Online</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
+                        <img src="@/assets/events/ableton_kessler.jpg" alt="kessler">
+                        <div class="info">
+                            <h5>Tuesday 15th March</h5>
+                            <h2>Drum programming & Creative Production Techniques in Ableton Live 11</h2>
+                            <p>Online</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
+                        <img src="@/assets/events/ableton_suzianalogue.jpg" alt="suzi analogue">
+                        <div class="info">
+                            <h5>Tuesday 19th April</h5>
+                            <h2>Remixing in Ableton Live 11: The Art of the Remix/Flipping Tracks like Suzi Analogue</h2>
+                            <p>Online</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
+                        <img src="@/assets/events/ableton_zyrra.jpg" alt="zyrra">
+                        <div class="info">
+                            <h5>Tuesday 3rd May</h5>
+                            <h2>How to make Techno Music</h2>
                             <p>Online</p>
                         </div>
                     </a>
