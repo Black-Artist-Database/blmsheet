@@ -23,8 +23,8 @@
                     </a>
                 </div>
                 <div class="col-md-3">
-                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
-                        <img src="@/assets/events/ableton_kessler.jpg" alt="kessler">
+                    <a href="https://ra.co/promoters/100734" target="_blank" class="event">
+                        <img src="@/assets/events/colour-factory-02-04-22.png" alt="kessler">
                         <div class="info">
                             <h5>Saturday 2nd Apil</h5>
                             <h2>A celebration of Black culture</h2>
