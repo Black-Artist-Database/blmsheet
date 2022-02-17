@@ -24,6 +24,16 @@
                 </div>
                 <div class="col-md-3">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
+                        <img src="@/assets/events/ableton_kessler.jpg" alt="kessler">
+                        <div class="info">
+                            <h5>Saturday 2nd Apil</h5>
+                            <h2>A celebration of Black culture</h2>
+                            <p>The Colour Factory, Hackney Wick</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_suzianalogue.jpg" alt="suzi analogue">
                         <div class="info">
                             <h5>Tuesday 19th April</h5>
