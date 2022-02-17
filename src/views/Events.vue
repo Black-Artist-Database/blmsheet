@@ -23,7 +23,7 @@
                     </a>
                 </div>
                 <div class="col-md-3">
-                    <a href="https://ra.co/promoters/100734" target="_blank" class="event">
+                    <a href="https://ra.co/events/1503067" target="_blank" class="event">
                         <img src="@/assets/events/colour-factory-02-04-22.png" alt="kessler">
                         <div class="info">
                             <h5>Saturday 2nd Apil</h5>
