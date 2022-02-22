@@ -6,7 +6,7 @@
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_acemo.jpg" alt="acemo">
                         <div class="info">
-                            <h5>Tuesday 22nd February</h5>
+                            <h5>Tuesday 8th March</h5>
                             <h2>A production seminar with AceMo</h2>
                             <p>Online</p>
                         </div>
