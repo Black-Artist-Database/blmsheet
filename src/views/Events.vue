@@ -35,17 +35,17 @@
             </div>
             <h2 class="my-3">Past Events</h2>
             <div class="row">
-                <div class="col-md-3">
-                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
-                        <img src="@/assets/events/ableton_acemo.jpg" alt="acemo">
+                <div class="col-md-3 past">
+                    <a href="https://ra.co/events/1503067" target="_blank" class="event">
+                        <img src="@/assets/events/colour-factory-02-04-22.png" alt="kessler">
                         <div class="info">
-                            <h5>Tuesday 22nd February</h5>
-                            <h2>A production seminar with AceMo</h2>
-                            <p>Online</p>
+                            <h5>Saturday 2nd Apil</h5>
+                            <h2>A celebration of Black culture</h2>
+                            <p>The Colour Factory, Hackney Wick</p>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 past">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_kessler.jpg" alt="kessler">
                         <div class="info">
@@ -55,13 +55,13 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
-                    <a href="https://ra.co/events/1503067" target="_blank" class="event">
-                        <img src="@/assets/events/colour-factory-02-04-22.png" alt="kessler">
+                <div class="col-md-3 past">
+                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
+                        <img src="@/assets/events/ableton_acemo.jpg" alt="acemo">
                         <div class="info">
-                            <h5>Saturday 2nd Apil</h5>
-                            <h2>A celebration of Black culture</h2>
-                            <p>The Colour Factory, Hackney Wick</p>
+                            <h5>Tuesday 22nd February</h5>
+                            <h2>A production seminar with AceMo</h2>
+                            <p>Online</p>
                         </div>
                     </a>
                 </div>
