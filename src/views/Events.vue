@@ -4,6 +4,39 @@
             <div class="row">
                 <div class="col-md-3">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
+                        <img src="@/assets/events/ableton_suzianalogue.jpg" alt="suzi analogue">
+                        <div class="info">
+                            <h5>Tuesday 19th April</h5>
+                            <h2>Remixing in Ableton Live 11: The Art of the Remix/Flipping Tracks like Suzi Analogue</h2>
+                            <p>Online</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
+                        <img src="@/assets/events/ableton_zyrra.jpg" alt="zyrra">
+                        <div class="info">
+                            <h5>Tuesday 3rd May</h5>
+                            <h2>How to make Techno Music</h2>
+                            <p>Online</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://ra.co/events/1522415" target="_blank" class="event">
+                        <img src="@/assets/events/village-underground-280522.jpg" alt="village underground">
+                        <div class="info">
+                            <h5>Saturday 28th May</h5>
+                            <h2>B.A.D. &amp; Village Underground Present...</h2>
+                            <p>Village Underground</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <h2 class="my-3">Past Events</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_acemo.jpg" alt="acemo">
                         <div class="info">
                             <h5>Tuesday 22nd February</h5>
@@ -32,29 +65,6 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
-                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
-                        <img src="@/assets/events/ableton_suzianalogue.jpg" alt="suzi analogue">
-                        <div class="info">
-                            <h5>Tuesday 19th April</h5>
-                            <h2>Remixing in Ableton Live 11: The Art of the Remix/Flipping Tracks like Suzi Analogue</h2>
-                            <p>Online</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
-                        <img src="@/assets/events/ableton_zyrra.jpg" alt="zyrra">
-                        <div class="info">
-                            <h5>Tuesday 3rd May</h5>
-                            <h2>How to make Techno Music</h2>
-                            <p>Online</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <h2 class="my-3">Past Events</h2>
-            <div class="row">
                 <div class="col-md-3 past">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_rm.png" alt="rRoxymore">
