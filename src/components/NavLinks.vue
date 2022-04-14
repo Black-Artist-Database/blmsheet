@@ -114,7 +114,14 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	border-left: 1px solid black;
+	border: 1px solid black;
+	border-left-width: 2px;
+	// box-sizing: border-box;
+	background-color: #33ff99;
+	color: black;
+	margin-right: 0;
+	height: calc(100%);
+	line-height: 25px;
 	span {
 		text-align: right;
 		padding: 0 15px;
@@ -142,8 +149,13 @@
 		right: unset;
 		bottom: 0;
 		left: 0;
+		border: none;
 		border-left: none;
 		border-top: 1px solid black;
+		background-color: transparent;
+		color: black;
+		margin: 0px;
+		height: auto;
 		width: 100%;
 		span {
 			text-align: left;
