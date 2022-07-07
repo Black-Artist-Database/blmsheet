@@ -1,7 +1,7 @@
 <template>
     <div class="page">
         <div class="events container mt-4">
-            <div class="row">
+            <div class="py-5 text-center">
                 <h2 class="my-3">Upcoming Events</h2>
                 <p>No scheduled events right now, check back soon</p>
             </div>
