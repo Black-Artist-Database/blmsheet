@@ -2,7 +2,12 @@
     <div class="page">
         <div class="events container mt-4">
             <div class="row">
-                <div class="col-md-3">
+                <h2 class="my-3">Upcoming Events</h2>
+                <p>No scheduled events right now, check back soon</p>
+            </div>
+            <h2 class="my-3">Past Events</h2>
+            <div class="row">
+            <div class="col-md-3 past">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_suzianalogue.jpg" alt="suzi analogue">
                         <div class="info">
@@ -12,7 +17,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 past">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_zyrra.jpg" alt="zyrra">
                         <div class="info">
@@ -22,7 +27,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 past">
                     <a href="https://ra.co/events/1522415" target="_blank" class="event">
                         <img src="@/assets/events/village-underground-280522.jpg" alt="village underground">
                         <div class="info">
@@ -32,9 +37,6 @@
                         </div>
                     </a>
                 </div>
-            </div>
-            <h2 class="my-3">Past Events</h2>
-            <div class="row">
                 <div class="col-md-3 past">
                     <a href="https://ra.co/events/1503067" target="_blank" class="event">
                         <img src="@/assets/events/colour-factory-02-04-22.png" alt="kessler">
