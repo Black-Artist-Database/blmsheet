@@ -5,7 +5,7 @@
                 <h2 class="my-3">Label</h2>
             </div>
             <div class="row">
-            <div class="col-md-3 past">
+            <div class="col-md-3">
                     <a href="https://blackartistdatabase.bandcamp.com" target="_blank" class="event">
                         <img src="@/assets/label/sv1.jpg" alt="suzi analogue">
                         <div class="info">
