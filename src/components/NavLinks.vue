@@ -31,7 +31,13 @@
 				<router-link to="/events" class="" @click.native="$emit('dismissMobileMenu')"><span>-BAD EVENTS</span></router-link>
 			</div>
 		</div>
-
+		<!-- LABEL -->
+		<div class="nav-link">
+			<span><i/>LABEL</span>
+			<div class="custom-dropdown">
+				<router-link to="/label" class="" @click.native="$emit('dismissMobileMenu')"><span>-BAD LABEL</span></router-link>
+			</div>
+		</div>
 		<div class="nav-link store">
       <a href="https://store.blackartistdatabase.co/" target="_blank" @click="$emit('dismissMobileMenu')"><span><i/>STORE</span></a>
     </div>

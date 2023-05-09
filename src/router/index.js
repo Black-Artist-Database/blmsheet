@@ -69,6 +69,14 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "events" */ '../views/Events.vue')
   },
   {
+    path: '/label',
+    name: 'Label',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "label" */ '../views/Label.vue')
+  },
+  {
     path: '/pause',
     name: 'Pause',
     // route level code-splitting
