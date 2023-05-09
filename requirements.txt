@@ -1,6 +1,6 @@
 grpcio
 redis
-Flask
+Flask==2.2.5
 Flask-Caching
 Flask-Compress
 Flask-Cors
