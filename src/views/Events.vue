@@ -3,7 +3,18 @@
         <div class="events container mt-4">
             <div class="py-5 text-center">
                 <h2 class="my-3">Upcoming Events</h2>
-                <p>No scheduled events right now, check back soon</p>
+                <div class="row">
+                    <div class="col-md-3 past">
+                        <a href="https://deschool.stager.co/web/tickets/111311444" target="_blank" class="event">
+                            <img src="@/assets/events/ds23.jpg" alt="De School">
+                            <div class="info">
+                                <h5>Tuesday 3rd May</h5>
+                                <h2>De Scorro x B.A.D</h2>
+                                <p>De School</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
             <h2 class="my-3">Past Events</h2>
             <div class="row">
