@@ -4,7 +4,7 @@
             <div class="py-5 text-center">
                 <h2 class="my-3">Upcoming Events</h2>
                 <div class="row">
-                    <div class="col-md-3 past">
+                    <div class="col-md-3">
                         <a href="https://deschool.stager.co/web/tickets/111311444" target="_blank" class="event">
                             <img src="@/assets/events/ds23.jpg" alt="De School">
                             <div class="info">
