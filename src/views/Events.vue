@@ -8,7 +8,7 @@
                         <a href="https://deschool.stager.co/web/tickets/111311444" target="_blank" class="event">
                             <img src="@/assets/events/ds23.jpg" alt="De School">
                             <div class="info">
-                                <h5>Tuesday 3rd May</h5>
+                                <h5>Friday 20 October</h5>
                                 <h2>De Scorro x B.A.D</h2>
                                 <p>De School</p>
                             </div>
