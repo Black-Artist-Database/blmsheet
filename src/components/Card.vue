@@ -35,9 +35,11 @@
               <a :href="link" target="_blank" v-if="link">
                 <img src="@/assets/vendors/bandcamp.svg" alt="Bandcamp">
               </a>
-              <a :href="beatport + '?ref=BAD'" target="_blank" v-if="beatport">
-                <img src="@/assets/vendors/beatport.svg" alt="Beatport" class="vendor-beatport">
-              </a>
+              <!-- Comment beatport link
+                <a :href="beatport + '?ref=BAD'" target="_blank" v-if="beatport">
+                    <img src="@/assets/vendors/beatport.svg" alt="Beatport" class="vendor-beatport">
+                </a>
+              -->
               <a :href="junorecord + '?ref=BAD'" target="_blank" v-if="junorecord">
                 <img src="@/assets/vendors/juno.svg" alt="Juno">
               </a>
