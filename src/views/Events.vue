@@ -5,12 +5,12 @@
                 <h2 class="my-3">Upcoming Events</h2>
                 <div class="row">
                     <div class="col-md-3">
-                        <a href="https://deschool.stager.co/web/tickets/111311444" target="_blank" class="event">
-                            <img src="@/assets/events/ds23.jpg" alt="De School">
+                        <a href="https://ra.co/events/1883481" target="_blank" class="event">
+                            <img src="https://i.imgur.com/33OENFd.png" alt="De School">
                             <div class="info">
-                                <h5>Friday 20 October</h5>
-                                <h2>De Scorro x B.A.D</h2>
-                                <p>De School</p>
+                                <h5>Saturday 18 May</h5>
+                                <h2>fabric x B.A.D: CARISTA, DJ Holographic, Afrodeutsche, TYGAPAW, rRoxymore</h2>
+                                <p>Fabric, London</p>
                             </div>
                         </a>
                     </div>
@@ -18,6 +18,16 @@
             </div>
             <h2 class="my-3">Past Events</h2>
             <div class="row">
+            <div class="col-md-3 past">
+                <a href="https://deschool.stager.co/web/tickets/111311444" target="_blank" class="event">
+                    <img src="@/assets/events/ds23.jpg" alt="De School">
+                    <div class="info">
+                        <h5>Friday 20 October</h5>
+                        <h2>De Scorro x B.A.D</h2>
+                        <p>De School</p>
+                    </div>
+                </a>
+            </div>
             <div class="col-md-3 past">
                     <a href="https://forms.gle/QHE7YPHTVpu38ZmP9" target="_blank" class="event">
                         <img src="@/assets/events/ableton_suzianalogue.jpg" alt="suzi analogue">
